@@ -1,0 +1,47 @@
+backend:
+  name: github
+  repo: sofquipeut/emissiontousazimuts
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+locale: fr
+
+collections:
+  - name: "emissions"
+    label: "Émissions"
+    label_singular: "Émission"
+    folder: "src/content/emissions"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Titre", name: "title", widget: "string", hint: "Ex : Émission 175" }
+      - { label: "Numéro", name: "number", widget: "number", required: false, value_type: "int" }
+      - label: "Saison"
+        name: "season"
+        widget: "relation"
+        collection: "saisons"
+        search_fields: ["years"]
+        value_field: "{{slug}}"
+        display_fields: ["years"]
+      - { label: "Date de diffusion", name: "pubDate", widget: "datetime" }
+      - { label: "Diffusion (texte libre, optionnel)", name: "diffusion", widget: "string", required: false }
+      - { label: "Lien d'écoute (optionnel)", name: "audioUrl", widget: "string", required: false }
+      - { label: "Résumé court", name: "excerpt", widget: "text" }
+      - { label: "Brouillon (masqué du site tant que coché)", name: "draft", widget: "boolean", default: true }
+      - { label: "Contenu du conducteur", name: "body", widget: "markdown" }
+
+  - name: "saisons"
+    label: "Saisons"
+    label_singular: "Saison"
+    folder: "src/content/saisons"
+    create: true
+    slug: "saison-{{fields.number}}"
+    extension: "md"
+    fields:
+      - { label: "Numéro", name: "number", widget: "number", value_type: "int" }
+      - { label: "Années", name: "years", widget: "string", hint: "Ex : 2025-2026" }
+      - { label: "Saison en cours ?", name: "ongoing", widget: "boolean", default: false }
+      - { label: "Texte (optionnel)", name: "body", widget: "markdown", required: false }
