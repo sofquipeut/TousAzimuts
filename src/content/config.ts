@@ -18,6 +18,7 @@ const emissions = defineCollection({
     pubDate: z.date(),
     diffusion: z.string().optional(),
     audioUrl: z.string().url().optional(),
+    rssPlayerId: z.string().optional(),
     excerpt: z.string(),
     draft: z.boolean().default(true),
   }),
