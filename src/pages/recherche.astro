@@ -1,42 +1,88 @@
 ---
 import Base from '../layouts/Base.astro';
-
-const base = import.meta.env.BASE_URL;
 ---
 
 <Base title="Recherche" description="Rechercher dans les émissions de Tous Azimuts.">
   <h1>Rechercher</h1>
   <p>Cherchez un mot-clé, un sujet ou un nom dans toutes les émissions du site.</p>
 
-  <link href={`${base}pagefind/pagefind-ui.css`} rel="stylesheet" />
-  <div id="search">Chargement de la recherche…</div>
+  <form id="search-form" role="search">
+    <label for="search-input">Votre recherche</label><br />
+    <input type="search" id="search-input" name="q" autocomplete="off" />
+    <button type="submit">Rechercher</button>
+  </form>
+
+  <p id="search-status" role="status" aria-live="polite"></p>
+  <ul id="search-results" class="emission-list"></ul>
 
   <script is:inline>
-    window.addEventListener('error', function (e) {
-      var box = document.getElementById('search');
-      if (box) {
-        box.textContent = 'Erreur script : ' + e.message + ' (' + (e.filename || 'source inconnue') + ':' + e.lineno + ':' + e.colno + ')';
-      }
-    });
-  </script>
-  <script is:inline src={`${base}pagefind/pagefind-ui.js`}></script>
-  <script is:inline>
     window.addEventListener('DOMContentLoaded', function () {
-      var box = document.getElementById('search');
-      if (box.textContent.indexOf('Erreur script') === 0) return;
-      try {
-        if (typeof PagefindUI === 'undefined') {
-          throw new Error('PagefindUI est introuvable (le script pagefind-ui.js ne s\'est pas exécuté, sans erreur détectée).');
+      var status = document.getElementById('search-status');
+      var results = document.getElementById('search-results');
+      var form = document.getElementById('search-form');
+      var input = document.getElementById('search-input');
+      var base = '/TousAzimuts/';
+      var pagefindPromise = null;
+
+      function loadPagefind() {
+        if (!pagefindPromise) {
+          pagefindPromise = import(base + 'pagefind/pagefind.js')
+            .then(function (pf) {
+              return pf.init().then(function () {
+                return pf;
+              });
+            })
+            .catch(function (err) {
+              status.textContent = 'Erreur de chargement du moteur de recherche : ' + err.message;
+              throw err;
+            });
         }
-        box.textContent = '';
-        new PagefindUI({
-          element: '#search',
-          showSubResults: true,
-          bundlePath: '/TousAzimuts/pagefind/'
-        });
-      } catch (err) {
-        box.textContent = 'Erreur recherche : ' + err.message;
+        return pagefindPromise;
       }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var query = input.value.trim();
+        results.innerHTML = '';
+        if (!query) {
+          status.textContent = '';
+          return;
+        }
+        status.textContent = 'Recherche en cours…';
+        loadPagefind()
+          .then(function (pf) {
+            return pf.search(query);
+          })
+          .then(function (search) {
+            if (!search.results.length) {
+              status.textContent = 'Aucun résultat pour « ' + query + ' ».';
+              return;
+            }
+            status.textContent = search.results.length + ' résultat(s) pour « ' + query + ' ».';
+            return Promise.all(search.results.map(function (r) { return r.data(); })).then(function (dataList) {
+              dataList.forEach(function (data) {
+                var li = document.createElement('li');
+                li.className = 'emission-card';
+                var a = document.createElement('a');
+                var url = data.url.indexOf(base) === 0 ? data.url : base.slice(0, -1) + data.url;
+                a.href = url;
+                a.textContent = (data.meta && data.meta.title) ? data.meta.title : data.url;
+                var h3 = document.createElement('h3');
+                h3.appendChild(a);
+                li.appendChild(h3);
+                var excerpt = document.createElement('p');
+                excerpt.innerHTML = data.excerpt;
+                li.appendChild(excerpt);
+                results.appendChild(li);
+              });
+            });
+          })
+          .catch(function (err) {
+            status.textContent = 'Erreur pendant la recherche : ' + err.message;
+          });
+      });
+
+      loadPagefind();
     });
   </script>
 </Base>
