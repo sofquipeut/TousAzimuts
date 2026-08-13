@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { withBase } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const emissions = await getCollection('emissions');
+  return emissions.map((e) => ({ params: { slug: e.slug }, props: { emission: e } }));
+}
+
+const { emission } = Astro.props;
+const saison = await getEntry(emission.data.season);
+const { Content } = await emission.render();
+const formattedDate = emission.data.pubDate.toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<Base title={emission.data.title} description={emission.data.excerpt}>
+  <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({saison.data.years})</a></p>
+  <h1>{emission.data.title}</h1>
+  <p class="emission-meta">
+    {emission.data.diffusion ? emission.data.diffusion : `Diffusée le ${formattedDate}`}
+  </p>
+
+  <div class="emission-body">
+    <Content />
+  </div>
+
+  {emission.data.audioUrl && (
+    <p class="cta-center"><a class="button" href={emission.data.audioUrl}>Écouter l'émission</a></p>
+  )}
+</Base>

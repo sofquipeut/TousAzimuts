@@ -1,0 +1,23 @@
+---
+import { withBase } from '../lib/url';
+
+interface Props {
+  slug: string;
+  title: string;
+  pubDate: Date;
+  excerpt: string;
+}
+
+const { slug, title, pubDate, excerpt } = Astro.props;
+const formattedDate = pubDate.toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<article class="emission-card">
+  <h3><a href={withBase(`/emissions/${slug}/`)}>{title}</a></h3>
+  <p class="emission-card__date">{formattedDate}</p>
+  <p>{excerpt}</p>
+</article>

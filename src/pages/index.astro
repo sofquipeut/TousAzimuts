@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../lib/url';
+
+const saisons = (await getCollection('saisons')).sort((a, b) => a.data.number - b.data.number);
+---
+
+<Base title="Accueil">
+  <h1>Tous Azimuts</h1>
+  <p class="tagline">L'émission radio qui éclaire le handicap sous tous ses angles.</p>
+
+  <hr />
+
+  <p>
+    Donner la parole à tous, pour tous : c'est la mission de Tous Azimuts, émission diffusée sur
+    <a href="https://www.radiomonpais.fr/archive-shows/338/tous-azimuts">Radio Mon Païs (90.1 FM)</a>
+    et <a href="https://www.campusfm.net/">Campus FM Toulouse (94 FM)</a>, et
+    <a href={withBase('/podcast/')}>disponible en podcast</a>.
+  </p>
+
+  <p>
+    Chaque épisode explore le quotidien des personnes en situation de handicap — déficiences
+    sensorielles, motrices, psychiques, maladies invisibles. Avec un regard critique, positif et
+    toujours un brin d'humour. Vie quotidienne, santé, innovation, emploi, culture, sports,
+    jeunesse, droits… autant de rubriques pour comprendre, s'informer et agir.
+  </p>
+
+  <p>
+    Témoignages, interviews d'acteurs associatifs, débats avec aidants et professionnels : Tous
+    Azimuts donne la parole à celles et ceux qui vivent le handicap de l'intérieur comme de
+    l'extérieur.
+  </p>
+
+  <p>Une émission animée par une équipe mixte, dont plusieurs membres sont eux-mêmes en situation de handicap.</p>
+
+  <hr />
+
+  <h2>Quand nous écouter ?</h2>
+  <p>
+    Tous Azimuts est diffusée sur <a href="https://www.radiomonpais.fr/archive-shows/338/tous-azimuts">Radio Mon Païs</a>
+    (90.1 FM) les 1er et 3e vendredis du mois de 19h à 20h, et rediffusée le lendemain de 18h à 19h.
+    L'émission est également diffusée sur <a href="https://www.campusfm.net/">Campus FM Toulouse</a>
+    (94 FM) les 2e et 4e mercredis du mois à 13h.
+  </p>
+
+  <p class="cta-center"><strong>Ensemble, collectons et relayons l'info. Contribuons à rendre notre monde plus accessible !</strong></p>
+
+  <p class="cta-center"><a class="button" href={withBase('/podcast/')}>Abonnez-vous au podcast de Tous Azimuts</a></p>
+
+  <hr />
+
+  <h2>L'équipe permanente</h2>
+  <p>
+    <strong>Julien Camaret</strong> – Animateur et programmation musicale<br />
+    <strong>Carinne Péri</strong> – Animatrice et coordination<br />
+    <strong>Marco Lazaro</strong> – Technique et montage<br />
+    <strong>Sofian Babai</strong> – Webmaster
+  </p>
+  <p>Chaque émission accueille également des intervenants invités pour enrichir les débats et les témoignages.</p>
+
+  <hr />
+
+  <h2 id="les-saisons">Les saisons</h2>
+  <ul class="season-grid">
+    {saisons.map((s) => (
+      <li><a class="button button--outline" href={withBase(`/${s.slug}/`)}>Saison {s.data.number} ({s.data.years})</a></li>
+    ))}
+  </ul>
+</Base>

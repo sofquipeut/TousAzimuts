@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+import { withBase } from '../lib/url';
+
+const saisons = await getCollection('saisons');
+const current = saisons.find((s) => s.data.ongoing);
+---
+
+<header class="site-header">
+  <div class="site-header__bar">
+    <a class="site-title" href={withBase('/')}>Tous Azimuts</a>
+    <nav aria-label="Navigation principale" class="site-nav">
+      <ul>
+        <li><a href={withBase('/')}>Accueil</a></li>
+        <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
+        {current && (
+          <li><a href={withBase(`/${current.slug}/`)}>Saison {current.data.number} (en cours)</a></li>
+        )}
+        <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
+        <li><a href={withBase('/contact/')}>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

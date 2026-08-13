@@ -1,0 +1,19 @@
+---
+import { withBase } from '../lib/url';
+---
+
+<footer class="site-footer">
+  <p>Suivez-nous sur les réseaux :</p>
+  <ul class="social-links" aria-label="Réseaux sociaux">
+    <li><a href="https://www.facebook.com/tous.azimuts.9">Facebook</a></li>
+    <li><a href="https://open.spotify.com/show/033jp4P1Z6UzWDYEkihHYA">Spotify</a></li>
+    <li><a href="https://www.youtube.com/@tousazimutsfm6498">YouTube</a></li>
+  </ul>
+  <nav aria-label="Pied de page" class="footer-nav">
+    <ul>
+      <li><a href={withBase('/')}>Accueil</a></li>
+      <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
+      <li><a href={withBase('/contact/')}>Contact</a></li>
+    </ul>
+  </nav>
+</footer>
