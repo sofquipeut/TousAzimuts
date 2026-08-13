@@ -5,5 +5,5 @@ import { defineConfig } from 'astro/config';
 // 'https://tazfm.fr' et base à '/', puis ajouter public/CNAME.
 export default defineConfig({
   site: 'https://sofquipeut.github.io',
-  base: '/emissiontousazimuts',
+  base: '/TousAzimuts',
 });
