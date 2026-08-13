@@ -2,6 +2,15 @@
 import Base from '../layouts/Base.astro';
 
 const base = import.meta.env.BASE_URL;
+const initScript = `
+  window.addEventListener('DOMContentLoaded', function () {
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      bundlePath: '${base}pagefind/'
+    });
+  });
+`;
 ---
 
 <Base title="Recherche" description="Rechercher dans les émissions de Tous Azimuts.">
@@ -11,13 +20,5 @@ const base = import.meta.env.BASE_URL;
   <link href={`${base}pagefind/pagefind-ui.css`} rel="stylesheet" />
   <div id="search"></div>
   <script is:inline src={`${base}pagefind/pagefind-ui.js`}></script>
-  <script is:inline define:vars={{ base }}>
-    window.addEventListener('DOMContentLoaded', () => {
-      new PagefindUI({
-        element: '#search',
-        showSubResults: true,
-        bundlePath: `${base}pagefind/`,
-      });
-    });
-  </script>
+  <script is:inline set:html={initScript} />
 </Base>
