@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Recherche" description="Rechercher dans les émissions de Tous Azimuts.">
+  <h1>Rechercher</h1>
+  <p>Cherchez un mot-clé, un sujet ou un nom dans toutes les émissions du site.</p>
+  <div id="search"></div>
+</Base>
+
+<link href={`${base}pagefind/pagefind-ui.css`} rel="stylesheet" />
+<script is:inline src={`${base}pagefind/pagefind-ui.js`}></script>
+<script is:inline define:vars={{ base }}>
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      bundlePath: `${base}pagefind/`,
+    });
+  });
+</script>
