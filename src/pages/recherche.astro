@@ -2,15 +2,6 @@
 import Base from '../layouts/Base.astro';
 
 const base = import.meta.env.BASE_URL;
-const initScript = `
-  window.addEventListener('DOMContentLoaded', function () {
-    new PagefindUI({
-      element: '#search',
-      showSubResults: true,
-      bundlePath: '${base}pagefind/'
-    });
-  });
-`;
 ---
 
 <Base title="Recherche" description="Rechercher dans les émissions de Tous Azimuts.">
@@ -18,7 +9,24 @@ const initScript = `
   <p>Cherchez un mot-clé, un sujet ou un nom dans toutes les émissions du site.</p>
 
   <link href={`${base}pagefind/pagefind-ui.css`} rel="stylesheet" />
-  <div id="search"></div>
+  <div id="search">Chargement de la recherche…</div>
   <script is:inline src={`${base}pagefind/pagefind-ui.js`}></script>
-  <script is:inline set:html={initScript} />
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', function () {
+      var box = document.getElementById('search');
+      try {
+        if (typeof PagefindUI === 'undefined') {
+          throw new Error('PagefindUI est introuvable (le script pagefind-ui.js ne s\'est pas exécuté).');
+        }
+        box.textContent = '';
+        new PagefindUI({
+          element: '#search',
+          showSubResults: true,
+          bundlePath: '/TousAzimuts/pagefind/'
+        });
+      } catch (err) {
+        box.textContent = 'Erreur recherche : ' + err.message;
+      }
+    });
+  </script>
 </Base>
