@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-07-08T11:04:47Z
 diffusion: "Diffusée sur Radio Mon Païs 90.1 FM le 03/07/2026 à 19h, le 04/07/2026 à 18h et sur Campus Toulouse 94 FM le 08/07/2026 à 13h."
 audioUrl: "https://rss.com/podcasts/tous-azimuts-pour-un-monde-plus-accessible/3063891"
+rssPlayerId: "3063891"
 excerpt: "Le lancement du podcast et du nouveau site, l'app ZEdit, l'accessibilité des plages avec Handiplage, Prisca Laborie sur le vitiligo, et l'appli La Bavarde."
 draft: false
 ---
