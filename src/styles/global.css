@@ -128,6 +128,31 @@ hr {
   border-color: var(--color-brand);
 }
 
+/* Barre de thème */
+.theme-bar {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1.5px solid var(--color-link);
+  color: var(--color-link);
+  border-radius: 6px;
+  padding: 0.35em 0.9em;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--color-link);
+  color: var(--color-bg);
+}
+
 /* En-tête */
 .site-header {
   background: var(--color-brand);
@@ -170,21 +195,6 @@ hr {
 
 .site-nav a:hover, .site-nav a:focus-visible {
   text-decoration: underline;
-}
-
-.theme-toggle {
-  background: transparent;
-  border: 1.5px solid #fff;
-  color: #fff;
-  border-radius: 6px;
-  padding: 0.35em 0.75em;
-  font: inherit;
-  font-size: 0.85rem;
-  cursor: pointer;
-}
-
-.theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.15);
 }
 
 /* Pied de page */
