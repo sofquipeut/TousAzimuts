@@ -6,6 +6,12 @@ const saisons = await getCollection('saisons');
 const current = saisons.find((s) => s.data.ongoing);
 ---
 
+<div class="theme-bar">
+  <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
+    Thème sombre
+  </button>
+</div>
+
 <header class="site-header">
   <div class="site-header__bar">
     <a class="site-title" href={withBase('/')}>Tous Azimuts</a>
@@ -19,11 +25,6 @@ const current = saisons.find((s) => s.data.ongoing);
         <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
         <li><a href={withBase('/recherche/')}>Recherche</a></li>
         <li><a href={withBase('/contact/')}>Contact</a></li>
-        <li>
-          <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
-            Thème sombre
-          </button>
-        </li>
       </ul>
     </nav>
   </div>
