@@ -19,7 +19,42 @@ const current = saisons.find((s) => s.data.ongoing);
         <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
         <li><a href={withBase('/recherche/')}>Recherche</a></li>
         <li><a href={withBase('/contact/')}>Contact</a></li>
+        <li>
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
+            Thème sombre
+          </button>
+        </li>
       </ul>
     </nav>
   </div>
 </header>
+
+<script is:inline>
+  (function () {
+    var STORAGE_KEY = 'taz-theme';
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+
+    function effectiveTheme() {
+      var explicit = document.documentElement.dataset.theme;
+      if (explicit === 'light' || explicit === 'dark') return explicit;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function updateButton(theme) {
+      btn.textContent = theme === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre';
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    }
+
+    updateButton(effectiveTheme());
+
+    btn.addEventListener('click', function () {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      try {
+        localStorage.setItem(STORAGE_KEY, next);
+      } catch (e) {}
+      updateButton(next);
+    });
+  })();
+</script>
