@@ -41,7 +41,9 @@ const showSlug = 'tous-azimuts-pour-un-monde-plus-accessible';
       allowfullscreen
       scrolling="no"
     ></iframe>
-  ) : emission.data.audioUrl && (
+  ) : emission.data.audioUrl ? (
     <p class="cta-center"><a class="button" href={emission.data.audioUrl}>Écouter l'émission</a></p>
+  ) : (
+    <p class="cta-center"><em>L'écoute de cette émission sera bientôt disponible.</em></p>
   )}
 </Base>
