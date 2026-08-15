@@ -9,22 +9,59 @@ import Base from '../layouts/Base.astro';
     simplement nous laisser un message ? Nous serions ravis de vous lire !
   </p>
   <p>
-    Remplissez le formulaire ci-dessous et nous vous répondrons dans les meilleurs délais. Si le
-    formulaire ne s'affiche pas correctement,
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSefKzC42Lg8l0C18OxmYvVu22TrNlTmFeaTtDu0ZAD7UTF0FQ/viewform">ouvrez-le directement dans un nouvel onglet</a>.
+    Remplissez le formulaire ci-dessous et nous vous répondrons dans les meilleurs délais à
+    l'adresse que vous nous laissez.
   </p>
 
   <hr />
 
-  <iframe
-    title="Formulaire de contact Tous Azimuts"
-    src="https://docs.google.com/forms/d/e/1FAIpQLSefKzC42Lg8l0C18OxmYvVu22TrNlTmFeaTtDu0ZAD7UTF0FQ/viewform?embedded=true"
-    width="100%"
-    height="1100"
-    loading="lazy"
-  >
-    Chargement du formulaire…
-  </iframe>
+  <form class="contact-form" action="https://formsubmit.co/contact@tazfm.fr" method="POST">
+    <input type="hidden" name="_subject" value="Nouveau message via tazfm.fr" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://tazfm.fr/merci/" />
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
+
+    <div class="field">
+      <label for="nom">Votre nom *</label>
+      <input type="text" id="nom" name="Nom" required autocomplete="family-name" />
+    </div>
+
+    <div class="field">
+      <label for="prenom">Votre prénom *</label>
+      <input type="text" id="prenom" name="Prénom" required autocomplete="given-name" />
+    </div>
+
+    <div class="field">
+      <label for="email">Votre adresse e-mail *</label>
+      <input type="email" id="email" name="E-mail" required autocomplete="email" />
+    </div>
+
+    <div class="field">
+      <label for="organisation">Votre organisation / association (facultatif)</label>
+      <input type="text" id="organisation" name="Organisation" autocomplete="organization" />
+    </div>
+
+    <div class="field">
+      <label for="objet">Objet de votre message *</label>
+      <select id="objet" name="Objet" required>
+        <option value="">— Choisissez —</option>
+        <option value="Proposer un sujet pour l'émission">Proposer un sujet pour l'émission</option>
+        <option value="Proposer une collaboration">Proposer une collaboration</option>
+        <option value="Question sur le podcast ou le site">Question sur le podcast ou le site</option>
+        <option value="Commentaire général">Commentaire général</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="message">Votre message *</label>
+      <textarea id="message" name="Message" rows="6" required></textarea>
+    </div>
+
+    <p class="cta-center">
+      <button type="submit" class="button">Envoyer le message</button>
+    </p>
+  </form>
 
   <hr />
 
