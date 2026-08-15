@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+---
+
+<Base title="Message envoyé" description="Votre message a bien été envoyé à l'équipe de Tous Azimuts.">
+  <h1>Merci !</h1>
+  <p>Votre message a bien été envoyé à l'équipe de Tous Azimuts. Nous vous répondrons dès que possible à l'adresse que vous nous avez laissée.</p>
+  <p class="cta-center">
+    <a class="button" href={withBase('/')}>← Retour à l'accueil</a>
+  </p>
+</Base>
