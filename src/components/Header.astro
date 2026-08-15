@@ -14,7 +14,10 @@ const current = saisons.find((s) => s.data.ongoing);
 
 <header class="site-header">
   <div class="site-header__bar">
-    <a class="site-title" href={withBase('/')}>Tous Azimuts</a>
+    <a class="site-title" href={withBase('/')}>
+      <img class="site-logo" src={withBase('/images/logo-header.png')} width="40" height="56" alt="" />
+      Tous Azimuts
+    </a>
     <nav aria-label="Navigation principale" class="site-nav">
       <ul>
         <li><a href={withBase('/')}>Accueil</a></li>

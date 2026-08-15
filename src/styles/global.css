@@ -171,10 +171,21 @@ hr {
 }
 
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   color: #fff;
   font-weight: 800;
   font-size: 1.25rem;
   text-decoration: none;
+}
+
+.site-logo {
+  height: 2.5rem;
+  width: auto;
+  border-radius: 4px;
+  background: #fff;
+  padding: 2px;
 }
 
 .site-nav ul {
