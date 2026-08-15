@@ -291,3 +291,36 @@ iframe {
   border-radius: 8px;
   max-width: 100%;
 }
+
+/* Formulaire de contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1.5px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.6em 0.75em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
