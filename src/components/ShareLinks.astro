@@ -14,7 +14,8 @@ const encodedTitle = encodeURIComponent(title);
   <ul>
     <li>
       <a
-        class="button--outline button"
+        class="button"
+        style="background-color:#0F5FCB"
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -24,7 +25,8 @@ const encodedTitle = encodeURIComponent(title);
     </li>
     <li>
       <a
-        class="button--outline button"
+        class="button"
+        style="background-color:#6B6B6B"
         href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -34,7 +36,8 @@ const encodedTitle = encodeURIComponent(title);
     </li>
     <li>
       <a
-        class="button--outline button"
+        class="button"
+        style="background-color:#075E54"
         href={`https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -44,7 +47,8 @@ const encodedTitle = encodeURIComponent(title);
     </li>
     <li>
       <a
-        class="button--outline button"
+        class="button"
+        style="background-color:#0A66C2"
         href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -53,7 +57,7 @@ const encodedTitle = encodeURIComponent(title);
       </a>
     </li>
     <li>
-      <a class="button--outline button" href={`mailto:?subject=${encodedTitle}&body=${encodedUrl}`}>
+      <a class="button" href={`mailto:?subject=${encodedTitle}&body=${encodedUrl}`}>
         Partager par e-mail
       </a>
     </li>
