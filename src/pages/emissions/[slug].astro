@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ShareLinks from '../../components/ShareLinks.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
 
@@ -17,6 +18,7 @@ const formattedDate = emission.data.pubDate.toLocaleDateString('fr-FR', {
   year: 'numeric',
 });
 const showSlug = 'tous-azimuts-pour-un-monde-plus-accessible';
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Base title={emission.data.title} description={emission.data.excerpt}>
@@ -44,4 +46,6 @@ const showSlug = 'tous-azimuts-pour-un-monde-plus-accessible';
   ) : emission.data.audioUrl && (
     <p class="cta-center"><a class="button" href={emission.data.audioUrl}>Écouter l'émission</a></p>
   )}
+
+  <ShareLinks url={canonicalUrl} title={emission.data.title} />
 </Base>

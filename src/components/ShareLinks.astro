@@ -1,0 +1,61 @@
+---
+interface Props {
+  url: string;
+  title: string;
+}
+
+const { url, title } = Astro.props;
+const encodedUrl = encodeURIComponent(url);
+const encodedTitle = encodeURIComponent(title);
+---
+
+<div class="share-links">
+  <p class="share-links__label">Partager cette émission :</p>
+  <ul>
+    <li>
+      <a
+        class="button--outline button"
+        href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Partager sur Facebook
+      </a>
+    </li>
+    <li>
+      <a
+        class="button--outline button"
+        href={`https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedTitle}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Partager sur X
+      </a>
+    </li>
+    <li>
+      <a
+        class="button--outline button"
+        href={`https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Partager sur WhatsApp
+      </a>
+    </li>
+    <li>
+      <a
+        class="button--outline button"
+        href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Partager sur LinkedIn
+      </a>
+    </li>
+    <li>
+      <a class="button--outline button" href={`mailto:?subject=${encodedTitle}&body=${encodedUrl}`}>
+        Partager par e-mail
+      </a>
+    </li>
+  </ul>
+</div>
