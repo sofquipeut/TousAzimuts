@@ -9,10 +9,10 @@ draft: false
 
 Au programme de cet épisode, 4 rubriques et une invitée.
 
-- **Éco-anxiété** - Carinne nous alerte : 58 % des jeunes de 16 à 25 ans pensent que les gouvernements les trahissent face à la crise climatique. Cette « solastalgie » peut devenir invalidante. Des écothérapeutes et le média [Reporterre](https://reporterre.net) proposent des pistes pour transformer l'angoisse en action.
-- **Culture** - Guénaël présente le calendrier « Nos petits héros », créé par 12 mamans d'enfants en situation de handicap. Douze mois de sourires et de courage pour soutenir des associations.
-- **Culture** - Julien nous fait découvrir Blind (BLYND), le « Netflix de la BD audio » : *Long John Silver*, *Cartago* et d'autres bandes dessinées prennent vie avec comédiens, bruitages et narration. Une expérience sonore bluffante.
-- **L'invitée** - Corinne rediffuse l'interview d'Anna, comédienne et modèle non-voyante qui brise les stéréotypes. Du théâtre aux castings en passant par les concours de miss, elle milite pour une représentation juste du handicap dans le spectacle.
+- **Éco-anxiété** - Carinne nous alerte sur l'éco-anxiété : 58 % des jeunes de 16 à 25 ans pensent que les gouvernements les trahissent face à la crise climatique, et le média [Reporterre](https://reporterre.net) propose des pistes pour transformer l'angoisse en action.
+- **Culture** - Guénaël présente le calendrier « Nos petits héros », créé par 12 mamans d'enfants en situation de handicap pour soutenir des associations.
+- **Culture** - Julien nous fait découvrir Blynd, le « Netflix de la BD audio » qui donne vie à des bandes dessinées comme *Long John Silver* ou *Cartago* avec comédiens et bruitages.
+- **L'invitée** - Corinne rediffuse l'interview d'Anna, comédienne et modèle non-voyante qui milite pour une représentation juste du handicap dans le spectacle.
 
 Pour finir, Carinne nous donne rendez-vous avec un agenda consacré à l'emploi : trophées HUP, festival Regards Croisés et Semaine européenne pour l'emploi des personnes handicapées.
 
