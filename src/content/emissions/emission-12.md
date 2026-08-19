@@ -9,13 +9,10 @@ draft: false
 
 Que nous réserve cet épisode ? 4 rubriques.
 
-- **Sport** - Philippe raconte son expérience inédite comme guide pour une personne non-voyante lors d'une course à Escalquens. Une cheville foulée à 2,5 km, mais une belle leçon sur le métier de pilote. Il revient aussi sur le challenge national de Torball N3 masculin, où Toulouse caracole en tête du championnat.
-
-- **C'est comme ça tous les jours ?** - Estelle nous présente le [Café au lait](https://haute-garonne.apf-francehandicap.org/agenda), les soirées citoyennes mensuelles de l'APF Haute-Garonne, ouvertes à tous, valides comme handicapés. Blind tests, scènes ouvertes, débats : un rendez-vous convivial. Elle évoque aussi le petit frère Café au lit, dédié aux aidants et à l'accès aux soins.
-
-- **Culture** - Julien nous emmène en Terre du Milieu : [Le Seigneur des Anneaux de J.R.R. Tolkien](https://www.audiolib.fr/livre/le-seigneur-des-anneaux-1-la-fraternite-de-lanneau-9782356419569/) sort enfin en livre audio officiel chez AudioLib, dans la nouvelle traduction. Lu par le comédien Thierry Janssen, le tome 1 est disponible depuis février 2018. L'occasion de parler aussi des films audio-décrits par France Télévision… et d'écouter un long extrait.
-
-- **Esprit des lois** - Carinne s'interroge : combien de sénateurs en situation de handicap au Palais du Luxembourg ? L'association [APHPP](https://www.aphpp.org/), fondée par Matthieu Annereau, député suppléant non-voyant, milite pour une meilleure représentativité dans la sphère politique. Faut-il instaurer des quotas ? Le débat est lancé.
+- **Sport** : Philippe raconte son expérience inédite comme guide pour une personne non-voyante lors d'une course à Escalquens, et revient sur le championnat de Torball N3 où Toulouse est en tête.
+- **C'est comme ça tous les jours ?** : Estelle nous présente le [Café au lait](https://haute-garonne.apf-francehandicap.org/agenda), les soirées citoyennes mensuelles de l'APF Haute-Garonne, ouvertes à tous.
+- **Culture** : Julien nous emmène en Terre du Milieu : [Le Seigneur des Anneaux](https://www.audiolib.fr/livre/le-seigneur-des-anneaux-1-la-fraternite-de-lanneau-9782356419569/) sort enfin en livre audio officiel chez AudioLib, lu par Thierry Janssen.
+- **Esprit des lois** : Carinne s'interroge sur la représentativité des personnes handicapées en politique, avec l'association [APHPP](https://www.aphpp.org/) qui milite pour l'instauration de quotas.
 
 Enfin, Carinne fait le point sur l'agenda.
 
