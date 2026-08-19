@@ -6,6 +6,7 @@ const saisons = defineCollection({
     number: z.number(),
     years: z.string(),
     ongoing: z.boolean().default(false),
+    recap: z.string().optional(),
   }),
 });
 

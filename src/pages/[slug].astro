@@ -24,6 +24,13 @@ const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.
     Diffusée sur Radio Mon Païs (90.1 FM) et Campus FM Toulouse (94 FM)
   </p>
 
+  {saison.data.recap && (
+    <>
+      <hr />
+      <p>{saison.data.recap}</p>
+    </>
+  )}
+
   <hr />
 
   <h2>Émissions de la saison {saison.data.number}</h2>
