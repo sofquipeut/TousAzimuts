@@ -9,9 +9,9 @@ draft: false
 
 Au programme de cet épisode, 4 rubriques et un invité.
 
-- **L'invité** : Nicolas présente le [Neko Light Orchestra](https://www.youtube.com/@nekolightorchestra), formation toulousaine qui réinvente les musiques de jeux vidéo et de films cultes (Harry Potter, Miyazaki, Final Fantasy) avec ses propres arrangements. Indépendance totale : auto-production, studio maison et festival *Écos et Merveilles*.
-- **Accessibilité** : Julien explore Twitch et Discord côté déficients visuels. Il met en lumière des streamers inspirants comme Edencast, [Cecitek](https://www.twitch.tv/cecitek) (gaming) et le musicien [Vincent Vinel](https://www.youtube.com/@vincentvinel).
-- **Culture** : Julien et Isabelle débattent du *cripping up* : faut-il qu'un personnage handicapé soit joué par un acteur handicapé ? De la polémique Peter Dinklage au remake de *Blanche-Neige*, le cinéma face à ses responsabilités.
+- **L'invité** : Nicolas présente le [Neko Light Orchestra](https://www.youtube.com/@nekolightorchestra), formation toulousaine qui réinvente en toute indépendance les musiques de jeux vidéo et de films cultes.
+- **Accessibilité** : Julien explore Twitch et Discord côté déficients visuels, avec des streamers inspirants comme Edencast, [Cecitek](https://www.twitch.tv/cecitek) et le musicien [Vincent Vinel](https://www.youtube.com/@vincentvinel).
+- **Culture** : Julien et Isabelle débattent du *cripping up* — faut-il qu'un personnage handicapé soit joué par un acteur handicapé ? — de la polémique Peter Dinklage au remake de *Blanche-Neige*.
 - **Agenda** : Carinne rappelle que seuls 0,07 % des personnages de films représentent des personnes handicapées. Le ministère de la Culture débloque un fonds accessibilité — dossiers à déposer avant le 24 mars.
 
 Pour finir, Carinne nous donne rendez-vous avec l'agenda.
