@@ -9,10 +9,10 @@ draft: false
 
 Au menu de cette émission : 5 rubriques.
 
-- **What's new ?** : Corinne présente Sixième Sense, le dispositif de [SeeHaptic](https://www.seehaptic.com/) qui transmet des images au cortex visuel par capteurs sensoriels. Une technologie qui permettait de « voir » par le toucher. Un projet visionnaire, aujourd'hui suspendu.
-- **Culture** : Julien recommande la série audio hilarante [Dernière Terre](https://www.audible.fr/pd/Derniere-Terre-La-serie-complete-Livre-Audio/B07P6PZBVB) et la fresque romanesque [Blackwater de Michael McDowell](https://www.audible.fr/series/Lepique-saga-de-la-famille-Caskey-Blackwater-Livres-Audio/B09VT9HBGX). De quoi remplir vos oreilles pour l'été.
-- **L'Invitée** : Amandine s'entretient avec Chantal Cartier, qui pratique le paradressage. L'équitation adaptée comme vous ne l'avez jamais imaginée.
-- **Esprit des lois** : Isabelle présente les [nouvelles lois sur l'assurance emprunteur (loi Lemoine)](https://www.economie.gouv.fr/particuliers/emprunt-convention-aeras-credit), qui assouplissent l'accès au crédit pour les personnes atteintes d'une maladie ou d'un handicap. Une avancée attendue.
+- **What's new ?** : Corinne présente Sixième Sense, dispositif de [SeeHaptic](https://www.seehaptic.com/) qui transmettait des images au cortex visuel par capteurs sensoriels, aujourd'hui suspendu.
+- **Culture** : Julien recommande la série audio hilarante [Dernière Terre](https://www.audible.fr/pd/Derniere-Terre-La-serie-complete-Livre-Audio/B07P6PZBVB) et la fresque romanesque [Blackwater de Michael McDowell](https://www.audible.fr/series/Lepique-saga-de-la-famille-Caskey-Blackwater-Livres-Audio/B09VT9HBGX).
+- **L'Invitée** : Amandine s'entretient avec Chantal Cartier, qui pratique le paradressage — l'équitation adaptée comme vous ne l'avez jamais imaginée.
+- **Esprit des lois** : Isabelle présente les [nouvelles lois sur l'assurance emprunteur (loi Lemoine)](https://www.economie.gouv.fr/particuliers/emprunt-convention-aeras-credit), qui assouplissent l'accès au crédit pour les personnes atteintes d'une maladie ou d'un handicap.
 - **Agenda** : Julien relaie les annonces préparées par Carinne.
 
 Côté musique, une pause : [JB Dunckel - Zombie Park](https://www.youtube.com/watch?v=Svfpl1H0TzU) (album *Carbon*).
