@@ -9,11 +9,11 @@ draft: false
 
 Au programme de cet épisode, 5 rubriques et une invitée.
 
-- **What's New ?** : Julien nous présente [TIA](https://www.avh.asso.fr/nos-solutions/autonomie/ressources-numeriques/applications-mobiles), une application qui scanne les codes-barres des médicaments et lit la notice à voix haute. Mais il pousse un coup de gueule : comme [Seeing AI](https://www.youtube.com/watch?v=bqeGOMgVWwQ), elle reste bloquée sur iPhone. Quand l'innovation laisse la moitié des utilisateurs sur le quai.
+- **What's New ?** : Julien nous présente [TIA](https://www.avh.asso.fr/nos-solutions/autonomie/ressources-numeriques/applications-mobiles), application qui scanne les médicaments et lit la notice à voix haute, mais reste bloquée sur iPhone comme [Seeing AI](https://www.youtube.com/watch?v=bqeGOMgVWwQ).
 - **Culture** : Isabelle poursuit son enquête sur le handicap dans la publicité avec [une pub rafraîchissante](https://www.youtube.com/watch?v=S9z9b8eZ7Gc) qui met en scène des personnages avec prothèse et fauteuil, simplement, sans pathos.
-- **C'est comme ça tous les jours ?** : Michel lève le voile sur le handicap invisible. 80 % des handicaps déclarés sont invisibles. Révéler ou non son handicap au travail reste un dilemme quotidien.
-- **L'invitée** : Amandine témoigne de son parcours avec le lupus, cette maladie auto-immune qui touche 9 femmes sur 10 et frappe par poussées. Douleurs articulaires, fatigue extrême, éruptions en forme de loup : un combat invisible mené avec courage.
-- **Esprit des lois** : Corinne fait le point sur l'accessibilité électorale. La [loi organique de 2021](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043520002/) confie au CNPCH une mission d'observation des campagnes via un laboratoire dédié, mais sans pouvoir de sanction.
+- **C'est comme ça tous les jours ?** : Michel lève le voile sur le handicap invisible : 80 % des handicaps déclarés le sont, un dilemme quotidien à révéler ou non au travail.
+- **L'invitée** : Amandine témoigne de son parcours avec le lupus, maladie auto-immune qui touche 9 femmes sur 10 et se manifeste par poussées de douleurs articulaires et de fatigue extrême.
+- **Esprit des lois** : Corinne fait le point sur l'accessibilité électorale : la [loi organique de 2021](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000043520002/) confie au CNPCH une mission d'observation, mais sans pouvoir de sanction.
 
 Pour finir, Carinne nous donne rendez-vous avec l'agenda.
 
