@@ -43,8 +43,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
       allowfullscreen
       scrolling="no"
     ></iframe>
-  ) : emission.data.audioUrl && (
+  ) : emission.data.audioUrl ? (
     <p class="cta-center"><a class="button" href={emission.data.audioUrl}>Écouter l'émission</a></p>
+  ) : (
+    <p class="emission-meta">Émission bientôt disponible à l'écoute.</p>
   )}
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
