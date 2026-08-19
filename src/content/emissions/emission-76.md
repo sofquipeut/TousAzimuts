@@ -9,12 +9,12 @@ draft: false
 
 Au menu de cette émission : 6 rubriques.
 
-- **What's new** : Michel (pré-enregistré) nous parle d'optogénétique, une approche qui vise à restaurer la sensibilité à la lumière des cellules rétiniennes. Une protéine d'algues photosensible est introduite dans les neurones de la rétine, leur rendant la capacité de transformer la lumière en signal électrique. Un espoir pour la DMLA et la rétinopathie pigmentaire.
-- **Culture** : Corinne nous présente « Mission Paradis », une comédie américaine où trois jeunes en situation de handicap partent en road trip jusqu'à Montréal pour connaître leur première expérience sexuelle. Porté par Gaboray Sidibé en infirmière déjantée, le film pose la question taboue de la sexualité et du handicap avec humour.
-- Julien nous fait découvrir **Lost in Blindness**, un jeu d'aventure audio où l'on incarne Alex, archéologue non-voyant explorant un temple maya. Navigation par écho-localisation, scénario avec choix de dialogues, deux fins possibles. Une immersion réussie grâce au son binaural et au doublage professionnel.
-- Guénaël détaille les **options d'accessibilité Xbox** : mode Copilote (deux manettes pour un joueur), personnalisation complète, transcription parole-texte, commandes vocales et narrateur intégré. Les Xbox Accessibility Guidelines définissent les standards pour les développeurs.
-- Sofian rend hommage à la **PIMS**, créée en 1970 par son professeur d'espagnol, un homme tétraplégique et très cultivé. Basée à Castanet-Tolosan, l'association a été pionnière : premier transport universitaire adapté, aides pour le matériel spécifique, voyages linguistiques, et depuis 2011, un cours de théâtre.
-- **Agenda** : Carinne annonce le concours des Prix du podcast Strasbourg (festival Entendez Voir, 7-11 juillet), un road trip VTT Équevilly-Marseille de 900 km, un workshop sur l'insertion des étudiants handicapés à l'Université de Haute-Alsace, les candidatures pour les Trophées H'Up entrepreneurs, et les Rencontres CNSA Recherche sur le thème « Vivre à domicile ».
+- **What's new** : Michel (pré-enregistré) nous parle d'optogénétique, technique qui réintroduit une protéine photosensible dans les neurones rétiniens pour restaurer la sensibilité à la lumière, porteuse d'espoir pour la DMLA.
+- **Culture** : Corinne nous présente *Mission Paradis*, comédie américaine portée par Gabourey Sidibé, sur trois jeunes handicapés en road trip pour vivre leur première expérience sexuelle.
+- Julien nous fait découvrir *Lost in Blindness*, jeu d'aventure audio où l'on incarne un archéologue non-voyant explorant un temple maya par écho-localisation.
+- Guénaël détaille les **options d'accessibilité Xbox** : mode Copilote, personnalisation complète, transcription parole-texte et narrateur intégré.
+- Sofian rend hommage à la **PIMS**, association toulousaine pionnière du transport universitaire adapté, fondée en 1970 par son professeur d'espagnol tétraplégique.
+- **Agenda** : Carinne annonce le concours des Prix du podcast Strasbourg, un road trip VTT Équevilly-Marseille, un workshop sur l'insertion des étudiants handicapés, les Trophées H'Up entrepreneurs, et les Rencontres CNSA Recherche.
 
 Côté musique, deux pauses live : [Bear McCreary - All Along the Watchtower](https://www.youtube.com/watch?v=FVkiI9Vm7mE) , extrait de l'album *Battlestar Galactica Live* et « Radiate ».
 
