@@ -9,12 +9,12 @@ draft: false
 
 Que nous réserve cet épisode ? 6 rubriques.
 
-- **Top Chrono** : Philippe relève le défi du marathon de Toulouse en relais par équipe. Entre pavés du centre-ville et reprise post-blessure, il boucle les 42 km en un peu plus de 4 heures - une belle leçon de convivialité sportive.
-- **C'est comme ça tous les jours ?** : Ambroise interviewe Éric, infirmier en psychiatrie, fondateur de [Radio Pinpon](https://peppsy79.wixsite.com/radiopinpon). Cette web radio au sein d'un hôpital psychiatrique est un espace de soin à part entière où les patients créent leurs propres émissions - de la poésie aux polars radiophoniques en passant par des témoignages intimes.
-- **Culture** : Guénaël et Carinne nous embarquent à l'American Cosmograph pour *[Quelle folie](https://www.allocine.fr/film/fichefilm_gen_cfilm=273124.html)*, documentaire de Diego Governatori. Aurélien Deschamps, personne autiste, s'y livre avec une authenticité rare au cœur de la feria de Pampelune. En ligne avec nous, il revient sur ce tournage hors norme et annonce une sortie DVD avec audiodescription.
-- **What's new ?** : Michel nous détaille le système PRIMA de Pixium Vision, un implant sous-rétinien miniaturisé couplé à des lunettes de réalité augmentée. Après 12 mois d'essai clinique, les cinq patients atteints de DMLA sèche ont tous retrouvé une perception lumineuse centrale - une première.
-- Julien nous fait découvrir [Lost in Blindness](https://fr.ulule.com/lost-in-blindness/), un jeu audio en français qui se joue entièrement sans la vue. Immersion sonore binaurale, exploration et résolution d'énigmes : la démo est téléchargeable gratuitement, et une campagne Ulule est en cours jusqu'au 1er décembre.
-- **Agenda** : Carinne annonce la [Semaine européenne pour l'emploi des personnes handicapées](https://www.semaine-emploi-handicap.com/), du 18 au 24 novembre. Théâtre d'impro à Villeneuve-sur-Lot, forum Emploi & Handicap à Cahors et Handy Job à Montpellier sont au programme - elle en profite pour rappeler l'importance de la RQTH.
+- **Top Chrono** : Philippe relève le défi du marathon de Toulouse en relais par équipe, bouclé en un peu plus de 4 heures.
+- **C'est comme ça tous les jours ?** : Ambroise interviewe Éric, infirmier en psychiatrie fondateur de [Radio Pinpon](https://peppsy79.wixsite.com/radiopinpon), une web radio en hôpital psychiatrique où les patients créent leurs propres émissions.
+- **Culture** : Guénaël et Carinne présentent *[Quelle folie](https://www.allocine.fr/film/fichefilm_gen_cfilm=273124.html)*, documentaire de Diego Governatori où Aurélien Deschamps, personne autiste, se livre au cœur de la feria de Pampelune.
+- **What's new ?** : Michel nous détaille le système PRIMA de Pixium Vision, un implant sous-rétinien qui a rendu une perception lumineuse centrale à cinq patients atteints de DMLA sèche.
+- Julien nous fait découvrir [Lost in Blindness](https://fr.ulule.com/lost-in-blindness/), un jeu audio français en son binaural qui se joue entièrement sans la vue.
+- **Agenda** : Carinne annonce la [Semaine européenne pour l'emploi des personnes handicapées](https://www.semaine-emploi-handicap.com/), avec forums et job dating à Villeneuve-sur-Lot, Cahors et Montpellier.
 
 Côté musique, deux pauses : [Electro Deluxe - Sleepwalking](https://www.youtube.com/watch?v=nTG7t_guYCQ) et [Foals - The Runner](https://www.youtube.com/watch?v=h8xZje1jbI0)
 
