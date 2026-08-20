@@ -24,9 +24,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 <Base title={emission.data.title} description={emission.data.excerpt}>
   <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({saison.data.years})</a></p>
   <h1>{emission.data.title}</h1>
-  <p class="emission-meta">
-    {emission.data.diffusion ? emission.data.diffusion : `Diffusée le ${formattedDate}`}
-  </p>
+
+  {emission.data.diffusion && (
+    <p class="emission-meta">{emission.data.diffusion}</p>
+  )}
 
   <div class="emission-body">
     <Content />
@@ -34,9 +35,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
   {emission.data.rssPlayerId ? (
     <iframe
-      src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=default&v=2&volume=false`}
+      src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=color&v=2&share=false&about=false`}
       width="100%"
       height="202"
+      title={`Lecteur audio — ${emission.data.title}`}
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
