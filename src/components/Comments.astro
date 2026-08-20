@@ -1,5 +1,5 @@
 ---
-import { HYVOR_WEBSITE_ID } from '../lib/comments';
+import { COMMENTS_PROVIDER_ID } from '../lib/comments';
 
 interface Props {
   pageId: string;
@@ -7,13 +7,12 @@ interface Props {
   pageTitle: string;
 }
 
-const { pageId } = Astro.props;
+const { pageId, pageUrl, pageTitle } = Astro.props;
 ---
 
-{HYVOR_WEBSITE_ID && (
+{COMMENTS_PROVIDER_ID && (
   <section aria-labelledby="comments-heading" class="comments">
     <h2 id="comments-heading">Commentaires</h2>
-    <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
-    <hyvor-talk-comments website-id={HYVOR_WEBSITE_ID} page-id={pageId}></hyvor-talk-comments>
+    {/* TODO: intégration du fournisseur de commentaires choisi */}
   </section>
 )}
