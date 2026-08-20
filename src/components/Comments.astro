@@ -1,5 +1,5 @@
 ---
-import { COMMENTS_PROVIDER_ID } from '../lib/comments';
+import { COMMENTS_API_BASE } from '../lib/comments';
 
 interface Props {
   pageId: string;
@@ -10,9 +10,123 @@ interface Props {
 const { pageId, pageUrl, pageTitle } = Astro.props;
 ---
 
-{COMMENTS_PROVIDER_ID && (
-  <section aria-labelledby="comments-heading" class="comments">
+{COMMENTS_API_BASE && (
+  <section
+    aria-labelledby="comments-heading"
+    class="comments"
+    data-comments-api={COMMENTS_API_BASE}
+    data-page-id={pageId}
+    data-page-url={pageUrl}
+    data-page-title={pageTitle}
+  >
     <h2 id="comments-heading">Commentaires</h2>
-    {/* TODO: intégration du fournisseur de commentaires choisi */}
+
+    <ul id="comments-list" aria-live="polite">
+      <li id="comments-loading">Chargement des commentaires…</li>
+    </ul>
+
+    <form id="comments-form">
+      <p id="comments-status" role="status"></p>
+
+      <p>
+        <label for="comment-name">Nom</label><br />
+        <input id="comment-name" name="name" type="text" required maxlength="80" autocomplete="name" />
+      </p>
+
+      <p>
+        <label for="comment-body">Votre commentaire</label><br />
+        <textarea id="comment-body" name="body" required maxlength="2000" rows="4"></textarea>
+      </p>
+
+      <p class="comments-hp" aria-hidden="true">
+        <label for="comment-website">Site web (laisser vide)</label>
+        <input id="comment-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </p>
+
+      <button type="submit">Envoyer le commentaire</button>
+      <p class="comments-note">Les commentaires sont modérés avant publication.</p>
+    </form>
   </section>
 )}
+
+<style>
+  .comments-hp {
+    position: absolute;
+    left: -9999px;
+  }
+</style>
+
+<script>
+  function initComments() {
+    const section = document.querySelector<HTMLElement>('.comments');
+    if (!section) return;
+
+    const apiBase = section.dataset.commentsApi;
+    const pageId = section.dataset.pageId;
+    const pageUrl = section.dataset.pageUrl;
+    const pageTitle = section.dataset.pageTitle;
+    const startedAt = Date.now();
+
+    const list = section.querySelector<HTMLUListElement>('#comments-list')!;
+    const loading = section.querySelector<HTMLLIElement>('#comments-loading')!;
+    const form = section.querySelector<HTMLFormElement>('#comments-form')!;
+    const status = section.querySelector<HTMLParagraphElement>('#comments-status')!;
+
+    fetch(`${apiBase}/api/comments?pageId=${encodeURIComponent(pageId || '')}`)
+      .then((res) => res.json())
+      .then((comments: Array<{ author_name: string; body: string }>) => {
+        loading.remove();
+        if (!comments || comments.length === 0) {
+          const empty = document.createElement('li');
+          empty.textContent = 'Aucun commentaire pour le moment. Soyez le premier à réagir !';
+          list.appendChild(empty);
+          return;
+        }
+        for (const c of comments) {
+          const item = document.createElement('li');
+          const author = document.createElement('strong');
+          author.textContent = c.author_name;
+          const body = document.createElement('p');
+          body.textContent = c.body;
+          item.appendChild(author);
+          item.appendChild(body);
+          list.appendChild(item);
+        }
+      })
+      .catch(() => {
+        loading.textContent = 'Impossible de charger les commentaires pour le moment.';
+      });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const website = formData.get('website');
+      if (website) return; // piège à bots
+
+      const name = formData.get('name');
+      const body = formData.get('body');
+
+      status.textContent = 'Envoi en cours…';
+
+      fetch(`${apiBase}/api/comments`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pageId, pageUrl, pageTitle, name, body, website, startedAt }),
+      })
+        .then((res) => {
+          if (!res.ok) throw new Error('failed');
+          form.reset();
+          status.textContent = 'Merci ! Votre commentaire est en attente de modération.';
+        })
+        .catch(() => {
+          status.textContent = "Une erreur est survenue, réessayez plus tard.";
+        });
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initComments);
+  } else {
+    initComments();
+  }
+</script>
