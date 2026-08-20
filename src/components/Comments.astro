@@ -1,5 +1,5 @@
 ---
-import { CUSDIS_APP_ID, CUSDIS_HOST } from '../lib/comments';
+import { HYVOR_WEBSITE_ID } from '../lib/comments';
 
 interface Props {
   pageId: string;
@@ -7,20 +7,13 @@ interface Props {
   pageTitle: string;
 }
 
-const { pageId, pageUrl, pageTitle } = Astro.props;
+const { pageId } = Astro.props;
 ---
 
-{CUSDIS_APP_ID && (
+{HYVOR_WEBSITE_ID && (
   <section aria-labelledby="comments-heading" class="comments">
     <h2 id="comments-heading">Commentaires</h2>
-    <div
-      id="cusdis_thread"
-      data-host={CUSDIS_HOST}
-      data-app-id={CUSDIS_APP_ID}
-      data-page-id={pageId}
-      data-page-url={pageUrl}
-      data-page-title={pageTitle}
-    ></div>
-    <script is:inline src={`${CUSDIS_HOST}/js/cusdis.es.js`} async defer></script>
+    <script async src="https://talk.hyvor.com/embed/embed.js" type="module"></script>
+    <hyvor-talk-comments website-id={HYVOR_WEBSITE_ID} page-id={pageId}></hyvor-talk-comments>
   </section>
 )}
