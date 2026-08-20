@@ -1,0 +1,26 @@
+---
+import { CUSDIS_APP_ID, CUSDIS_HOST } from '../lib/comments';
+
+interface Props {
+  pageId: string;
+  pageUrl: string;
+  pageTitle: string;
+}
+
+const { pageId, pageUrl, pageTitle } = Astro.props;
+---
+
+{CUSDIS_APP_ID && (
+  <section aria-labelledby="comments-heading" class="comments">
+    <h2 id="comments-heading">Commentaires</h2>
+    <div
+      id="cusdis_thread"
+      data-host={CUSDIS_HOST}
+      data-app-id={CUSDIS_APP_ID}
+      data-page-id={pageId}
+      data-page-url={pageUrl}
+      data-page-title={pageTitle}
+    ></div>
+    <script is:inline src={`${CUSDIS_HOST}/js/cusdis.es.js`} async defer></script>
+  </section>
+)}
