@@ -1,0 +1,17 @@
+name = "taz-comments"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "taz-comments"
+database_id = "REPLACE_ME_AFTER_WRANGLER_D1_CREATE"
+
+[vars]
+ALLOWED_ORIGIN = "https://tazfm.fr"
+NOTIFY_TO_EMAIL = "contact@tazfm.fr"
+NOTIFY_FROM_EMAIL = "Tous Azimuts <onboarding@resend.dev>"
+
+# Secrets à définir avec `wrangler secret put <NOM>` (ne pas mettre ici) :
+# - RESEND_API_KEY
+# - MODERATION_SECRET (chaîne aléatoire longue, ex: `openssl rand -hex 32`)
