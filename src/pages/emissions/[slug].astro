@@ -1,6 +1,6 @@
----
 import Base from '../../layouts/Base.astro';
 import ShareLinks from '../../components/ShareLinks.astro';
+import Comments from '../../components/Comments.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
 
@@ -51,4 +51,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
   )}
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
+
+  <Comments pageId={emission.slug} pageUrl={canonicalUrl} pageTitle={emission.data.title} />
 </Base>
