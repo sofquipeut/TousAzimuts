@@ -34,10 +34,10 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
   {emission.data.rssPlayerId ? (
     <iframe
-      src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=color&v=2&share=false&about=false`}
+      src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=default&v=2&volume=false`}
       width="100%"
       height="202"
-      title={`Lecteur audio — ${emission.data.title}`}
+      title={`Tous Azimuts - ${emission.data.title}`}
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
