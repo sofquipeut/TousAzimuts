@@ -1,0 +1,24 @@
+name: Définir le token d'administration du Worker commentaires
+
+on:
+  workflow_dispatch:
+
+jobs:
+  set-secret:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Définir le secret ADMIN_TOKEN
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: echo "$ADMIN_TOKEN" | npx -y wrangler secret put ADMIN_TOKEN
