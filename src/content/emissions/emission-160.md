@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2025-12-10T17:00:00Z
 excerpt: "Visite de l'école des chiens guides de Toulouse Grand Sud-Ouest, et l'accessibilité du vote."
 draft: false
+rssPlayerId: "3087677"
 ---
 
 Cinq sujets à découvrir cette semaine : quelques rubriques.
