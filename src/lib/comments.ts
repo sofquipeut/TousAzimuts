@@ -4,4 +4,4 @@
 // déploiement.
 // Laisser COMMENTS_API_BASE vide désactive complètement le bloc
 // commentaires (voir components/Comments.astro).
-export const COMMENTS_API_BASE = '';
+export const COMMENTS_API_BASE = 'https://taz-comments.hellosof.workers.dev';
