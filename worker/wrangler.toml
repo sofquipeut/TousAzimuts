@@ -9,7 +9,7 @@ database_id = "a3837a29-3437-4fad-971e-322e90fee563"
 
 [vars]
 ALLOWED_ORIGIN = "https://tazfm.fr"
-NOTIFY_TO_EMAIL = "contact@tazfm.fr"
+NOTIFY_TO_EMAIL = "radiotousazimuts@gmail.com"
 NOTIFY_FROM_EMAIL = "Tous Azimuts <notifications@tazfm.fr>"
 
 # Secrets à définir avec `wrangler secret put <NOM>` (ne pas mettre ici) :
