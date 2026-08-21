@@ -16,7 +16,7 @@ Que nous réserve cet épisode ? quelques rubriques.
 
 - **Culture** : Michel dévoile *[Cuisiner à l'aveugle](https://www.ladepeche.fr/2021/05/26/cuisiner-a-laveugle-le-premier-livre-de-cuisine-pour-malvoyants-9567737.php)*, le premier livre de cuisine pensé pour les déficients visuels — un guide sensoriel créé par Maggi, avec 37 arômes d'épices à reconnaître.
 
-- **C'est comme ça tous les jours ?** : Carinne nous raconte l'histoire de notre bonne vieille [télécommande](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9commande) de télévision, de Nikola Tesla aux télécommandes universelles.
+- **C'est comme ça tous les jours ?** : Carinne nous raconte l'histoire de notre bonne vieille [télécommande](https://fr.wikipedia.org/wiki/T%C3%A9l%C3%A9commande) de télévision.
 
 - **Culture** : Nathalie présente ses livres destinés aux ados — notamment son second, consacré aux ados neuro-atypiques — sur son site [ltcnathalie.com](https://www.ltcnathalie.com).
 
