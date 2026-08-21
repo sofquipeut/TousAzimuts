@@ -147,13 +147,13 @@ async function handleModerate(request, env) {
 
 function checkAdminToken(request, env) {
   const url = new URL(request.url);
-  const token = url.searchParams.get('token');
+  const token = url.searchParams.get('coms_token');
   return token && env.ADMIN_TOKEN && token === env.ADMIN_TOKEN;
 }
 
 async function handleAdmin(request, env) {
   const url = new URL(request.url);
-  const token = url.searchParams.get('token');
+  const token = url.searchParams.get('coms_token');
 
   if (!checkAdminToken(request, env)) {
     return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
@@ -176,7 +176,7 @@ async function handleAdmin(request, env) {
         <td>
           <form method="post" action="/admin/delete" style="margin:0">
             <input type="hidden" name="id" value="${c.id}">
-            <input type="hidden" name="token" value="${escapeHtml(token)}">
+            <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
             <button type="submit">Supprimer</button>
           </form>
         </td>
@@ -208,7 +208,7 @@ async function handleAdmin(request, env) {
 async function handleAdminDelete(request, env) {
   const formData = await request.formData();
   const id = formData.get('id');
-  const token = formData.get('token');
+  const token = formData.get('coms_token');
 
   if (!id || !token || !env.ADMIN_TOKEN || token !== env.ADMIN_TOKEN) {
     return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
@@ -216,7 +216,7 @@ async function handleAdminDelete(request, env) {
 
   await env.DB.prepare(`DELETE FROM comments WHERE id = ?`).bind(id).run();
 
-  return Response.redirect(`${new URL(request.url).origin}/admin?token=${encodeURIComponent(token)}`, 302);
+  return Response.redirect(`${new URL(request.url).origin}/admin?coms_token=${encodeURIComponent(token)}`, 302);
 }
 
 export default {
