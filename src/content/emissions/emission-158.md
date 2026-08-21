@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2025-11-12T17:00:00Z
 excerpt: "L'implant rétinien PRIMA, l'exposition Vie ma vie de l'Association des Auxiliaires des Aveugles, une traversée Lyon-Toulouse en tandem, et l'audiodescription au cinéma."
 draft: false
+rssPlayerId: "3087651"
 ---
 
 Au sommaire aujourd'hui : quelques rubriques.
