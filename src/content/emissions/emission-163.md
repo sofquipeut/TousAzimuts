@@ -7,7 +7,7 @@ excerpt: "Le comité AVH de Toulouse et son combat pour libérer le rail de guid
 draft: false
 ---
 
-Au programme de cet épisode : 6 rubriques.
+Au sommaire de cette émission :
 
 - **L'invité** : Denis Barthélémy, président du [comité AVH de Toulouse](https://www.avh.asso.fr/implantations/comite-de-la-haute-garonne), présente les activités du comité (tai-chi, zumba, tandem) et la [médiathèque Éole](https://eole.avh.asso.fr), et évoque son combat pour libérer le rail de guidage de la Grand-Rue-Saint-Michel, encombré de bancs et de terrasses.
 - **C'est comme ça tous les jours ?** : Michel aborde le tabou de [la consommation de drogues chez les personnes handicapées](https://www.has-sante.fr), liée à la douleur chronique et à l'isolement, et présente les structures d'aide toulousaines, [CSAPA](https://addictions-france.org/etablissements/csapa-de-toulouse) et [CAARUD](https://www.sante.fr/centre-daccueil-et-daccompagnement-la-reduction-des-risques-pour-usagers-de-drogues-caarud/toulouse/caarud-association-aides-toulouse).
