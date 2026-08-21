@@ -26,7 +26,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     </ul>
 
     <form id="comments-form">
-      <p id="comments-status" role="status"></p>
+      <p id="comments-status" role="alert" aria-live="assertive" aria-atomic="true"></p>
 
       <p>
         <label for="comment-name">Nom</label><br />
