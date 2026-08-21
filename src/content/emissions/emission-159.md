@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2025-11-26T17:00:00Z
 excerpt: "Le détecteur d'obstacles Rango pour la canne blanche, le RGAA et l'accessibilité des sites gouvernementaux, et l'exposition sonore de Yohan Hennequin au Métronum."
 draft: false
+rssPlayerId: "3087670"
 ---
 
 Au menu de cette émission : quelques rubriques.
