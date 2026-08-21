@@ -36,7 +36,10 @@ function escapeHtml(str) {
 function htmlPage(title, body) {
   return `<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>${escapeHtml(title)}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>body{font-family:system-ui,sans-serif;max-width:40rem;margin:3rem auto;padding:0 1rem;line-height:1.5}</style>
+<style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:3rem auto;padding:0 1rem;line-height:1.5}
+table{border-collapse:collapse;width:100%}
+th,td{border:1px solid #ccc;padding:0.5rem;text-align:left;vertical-align:top}
+</style>
 </head><body><h1>${escapeHtml(title)}</h1>${body}</body></html>`;
 }
 
@@ -142,6 +145,80 @@ async function handleModerate(request, env) {
   return new Response(htmlPage(message, '<p>Vous pouvez fermer cette page.</p>'), { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 }
 
+function checkAdminToken(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+  return token && env.ADMIN_TOKEN && token === env.ADMIN_TOKEN;
+}
+
+async function handleAdmin(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+
+  if (!checkAdminToken(request, env)) {
+    return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+  }
+
+  const { results } = await env.DB.prepare(
+    `SELECT id, page_id, page_title, author_name, body, status, created_at FROM comments ORDER BY created_at DESC`
+  ).all();
+
+  const statusLabels = { pending: 'En attente', approved: 'Publié', rejected: 'Rejeté' };
+
+  const rows = (results || [])
+    .map(
+      (c) => `<tr>
+        <td>${escapeHtml(c.page_title || c.page_id)}</td>
+        <td>${escapeHtml(c.author_name)}</td>
+        <td>${escapeHtml(c.body)}</td>
+        <td>${escapeHtml(statusLabels[c.status] || c.status)}</td>
+        <td>${escapeHtml(c.created_at)}</td>
+        <td>
+          <form method="post" action="/admin/delete" style="margin:0">
+            <input type="hidden" name="id" value="${c.id}">
+            <input type="hidden" name="token" value="${escapeHtml(token)}">
+            <button type="submit">Supprimer</button>
+          </form>
+        </td>
+      </tr>`
+    )
+    .join('');
+
+  const table = `
+    <p>${(results || []).length} commentaire(s) au total.</p>
+    <table>
+      <caption class="sr-only">Liste des commentaires</caption>
+      <thead>
+        <tr>
+          <th scope="col">Émission</th>
+          <th scope="col">Auteur</th>
+          <th scope="col">Commentaire</th>
+          <th scope="col">Statut</th>
+          <th scope="col">Date</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  `;
+
+  return new Response(htmlPage('Administration des commentaires', table), { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+}
+
+async function handleAdminDelete(request, env) {
+  const formData = await request.formData();
+  const id = formData.get('id');
+  const token = formData.get('token');
+
+  if (!id || !token || !env.ADMIN_TOKEN || token !== env.ADMIN_TOKEN) {
+    return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+  }
+
+  await env.DB.prepare(`DELETE FROM comments WHERE id = ?`).bind(id).run();
+
+  return Response.redirect(`${new URL(request.url).origin}/admin?token=${encodeURIComponent(token)}`, 302);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -158,6 +235,12 @@ export default {
     }
     if (url.pathname === '/api/moderate' && request.method === 'GET') {
       return handleModerate(request, env);
+    }
+    if (url.pathname === '/admin' && request.method === 'GET') {
+      return handleAdmin(request, env);
+    }
+    if (url.pathname === '/admin/delete' && request.method === 'POST') {
+      return handleAdminDelete(request, env);
     }
 
     return new Response('Not found', { status: 404 });
