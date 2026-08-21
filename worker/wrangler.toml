@@ -5,7 +5,7 @@ compatibility_date = "2026-08-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "taz-comments"
-database_id = "REPLACE_ME_AFTER_WRANGLER_D1_CREATE"
+database_id = "a3837a29-3437-4fad-971e-322e90fee563"
 
 [vars]
 ALLOWED_ORIGIN = "https://tazfm.fr"
