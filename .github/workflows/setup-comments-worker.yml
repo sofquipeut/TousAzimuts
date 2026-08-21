@@ -1,0 +1,67 @@
+name: Configuration initiale du Worker commentaires
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Créer la base D1
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx -y wrangler d1 create taz-comments | tee d1-create-output.txt
+          DB_ID=$(grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}' d1-create-output.txt | head -1)
+          if [ -z "$DB_ID" ]; then
+            echo "Impossible de récupérer l'ID de la base D1, voir les logs ci-dessus."
+            exit 1
+          fi
+          echo "Database ID : $DB_ID"
+          sed -i "s/REPLACE_ME_AFTER_WRANGLER_D1_CREATE/$DB_ID/" wrangler.toml
+
+      - name: Charger le schéma
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler d1 execute taz-comments --remote --file=./schema.sql
+
+      - name: Configurer les secrets du Worker
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MODERATION_SECRET: ${{ secrets.MODERATION_SECRET }}
+        run: |
+          echo "$RESEND_API_KEY" | npx -y wrangler secret put RESEND_API_KEY
+          echo "$MODERATION_SECRET" | npx -y wrangler secret put MODERATION_SECRET
+
+      - name: Déployer le Worker
+        env:
+          CLOUDFLARE_API_KEY: ${{ secrets.CLOUDFLARE_API_KEY }}
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx -y wrangler deploy | tee deploy-output.txt
+
+      - name: Enregistrer l'ID de la base D1 dans le repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add wrangler.toml
+          git diff --cached --quiet || git commit -m "Enregistre l'ID de la base D1 après création"
+          git push
