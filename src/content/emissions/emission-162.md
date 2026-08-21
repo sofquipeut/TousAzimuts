@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-01-14T17:00:00Z
 excerpt: "Les lauréats du Prix Jeune Bénévole 2025, le livre de cuisine sensoriel Cuisiner à l'aveugle, et des coups de cœur littéraires pour bien commencer 2026."
 draft: false
+rssPlayerId: "3087689"
 ---
 
 Que nous réserve cet épisode ? quelques rubriques.
