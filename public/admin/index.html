@@ -4,8 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Administration — Tous Azimuts</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 30rem;
+        margin: 4rem auto;
+        padding: 0 1rem;
+        line-height: 1.5;
+      }
+      .admin-link {
+        display: block;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: inherit;
+      }
+      .admin-link:hover,
+      .admin-link:focus {
+        background: #f0f0f0;
+      }
+    </style>
   </head>
   <body>
-    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+    <h1>Administration</h1>
+    <a class="admin-link" href="/admin/site/">Gérer le site</a>
+    <a class="admin-link" href="https://taz-comments.hellosof.workers.dev/admin?coms_token=6db187c49e04cd0b66107b88c39dc912c991406934c571c646ced0d54d247d64">Gérer les commentaires</a>
   </body>
 </html>
