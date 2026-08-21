@@ -39,6 +39,7 @@ function htmlPage(title, body) {
 <style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:3rem auto;padding:0 1rem;line-height:1.5}
 table{border-collapse:collapse;width:100%}
 th,td{border:1px solid #ccc;padding:0.5rem;text-align:left;vertical-align:top}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 </head><body><h1>${escapeHtml(title)}</h1>${body}</body></html>`;
 }
@@ -168,53 +169,79 @@ async function handleAdmin(request, env) {
   const rows = (results || [])
     .map(
       (c) => `<tr>
+        <td>
+          <input type="checkbox" name="ids" value="${c.id}" id="c${c.id}">
+          <label class="sr-only" for="c${c.id}">Sélectionner le commentaire de ${escapeHtml(c.author_name)}</label>
+        </td>
         <td>${escapeHtml(c.page_title || c.page_id)}</td>
         <td>${escapeHtml(c.author_name)}</td>
         <td>${escapeHtml(c.body)}</td>
         <td>${escapeHtml(statusLabels[c.status] || c.status)}</td>
         <td>${escapeHtml(c.created_at)}</td>
-        <td>
-          <form method="post" action="/admin/delete" style="margin:0">
-            <input type="hidden" name="id" value="${c.id}">
-            <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
-            <button type="submit">Supprimer</button>
-          </form>
-        </td>
       </tr>`
     )
     .join('');
 
-  const table = `
-    <p>${(results || []).length} commentaire(s) au total.</p>
-    <table>
-      <caption class="sr-only">Liste des commentaires</caption>
-      <thead>
-        <tr>
-          <th scope="col">Émission</th>
-          <th scope="col">Auteur</th>
-          <th scope="col">Commentaire</th>
-          <th scope="col">Statut</th>
-          <th scope="col">Date</th>
-          <th scope="col">Action</th>
-        </tr>
-      </thead>
-      <tbody>${rows}</tbody>
-    </table>
+  const body = `
+    <form method="post" action="/admin/bulk">
+      <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
+
+      <p>${(results || []).length} commentaire(s) au total.</p>
+      <p><label><input type="checkbox" id="select-all"> Tout sélectionner</label></p>
+
+      <table>
+        <caption class="sr-only">Liste des commentaires</caption>
+        <thead>
+          <tr>
+            <th scope="col">Sélection</th>
+            <th scope="col">Émission</th>
+            <th scope="col">Auteur</th>
+            <th scope="col">Commentaire</th>
+            <th scope="col">Statut</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+
+      <p>
+        <button type="submit" name="action" value="approve">Approuver la sélection</button>
+        <button type="submit" name="action" value="reject">Rejeter la sélection</button>
+        <button type="submit" name="action" value="delete">Supprimer la sélection</button>
+      </p>
+    </form>
+
+    <script>
+      document.getElementById('select-all').addEventListener('change', function (e) {
+        document.querySelectorAll('input[name="ids"]').forEach(function (cb) {
+          cb.checked = e.target.checked;
+        });
+      });
+    </script>
   `;
 
-  return new Response(htmlPage('Administration des commentaires', table), { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+  return new Response(htmlPage('Administration des commentaires', body), { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
 }
 
-async function handleAdminDelete(request, env) {
+async function handleAdminBulk(request, env) {
   const formData = await request.formData();
-  const id = formData.get('id');
   const token = formData.get('coms_token');
+  const action = formData.get('action');
+  const ids = formData.getAll('ids');
 
-  if (!id || !token || !env.ADMIN_TOKEN || token !== env.ADMIN_TOKEN) {
+  if (!token || !env.ADMIN_TOKEN || token !== env.ADMIN_TOKEN) {
     return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
   }
 
-  await env.DB.prepare(`DELETE FROM comments WHERE id = ?`).bind(id).run();
+  if (ids.length > 0 && ['approve', 'reject', 'delete'].includes(action)) {
+    const placeholders = ids.map(() => '?').join(',');
+    if (action === 'delete') {
+      await env.DB.prepare(`DELETE FROM comments WHERE id IN (${placeholders})`).bind(...ids).run();
+    } else {
+      const status = action === 'approve' ? 'approved' : 'rejected';
+      await env.DB.prepare(`UPDATE comments SET status = ? WHERE id IN (${placeholders})`).bind(status, ...ids).run();
+    }
+  }
 
   return Response.redirect(`${new URL(request.url).origin}/admin?coms_token=${encodeURIComponent(token)}`, 302);
 }
@@ -239,8 +266,8 @@ export default {
     if (url.pathname === '/admin' && request.method === 'GET') {
       return handleAdmin(request, env);
     }
-    if (url.pathname === '/admin/delete' && request.method === 'POST') {
-      return handleAdminDelete(request, env);
+    if (url.pathname === '/admin/bulk' && request.method === 'POST') {
+      return handleAdminBulk(request, env);
     }
 
     return new Response('Not found', { status: 404 });
