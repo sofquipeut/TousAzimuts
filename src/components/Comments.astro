@@ -26,7 +26,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     </ul>
 
     <form id="comments-form">
-      <p id="comments-status" role="alert" aria-live="assertive" aria-atomic="true"></p>
+      <p id="comments-status" role="alert" aria-live="assertive" aria-atomic="true" tabindex="-1"></p>
 
       <p>
         <label for="comment-name">Nom</label><br />
@@ -54,6 +54,10 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     position: absolute;
     left: -9999px;
   }
+
+  #comments-status:focus {
+    outline: none;
+  }
 </style>
 
 <script>
@@ -71,6 +75,11 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     const loading = section.querySelector<HTMLLIElement>('#comments-loading')!;
     const form = section.querySelector<HTMLFormElement>('#comments-form')!;
     const status = section.querySelector<HTMLParagraphElement>('#comments-status')!;
+
+    function announce(message: string) {
+      status.textContent = message;
+      status.focus();
+    }
 
     fetch(`${apiBase}/api/comments?pageId=${encodeURIComponent(pageId || '')}`)
       .then((res) => res.json())
@@ -116,10 +125,10 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
         .then((res) => {
           if (!res.ok) throw new Error('failed');
           form.reset();
-          status.textContent = 'Merci ! Votre commentaire est en attente de modération.';
+          announce('Merci ! Votre commentaire est en attente de modération.');
         })
         .catch(() => {
-          status.textContent = "Une erreur est survenue, réessayez plus tard.";
+          announce("Une erreur est survenue, réessayez plus tard.");
         });
     });
   }
