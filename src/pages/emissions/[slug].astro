@@ -30,7 +30,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
   {emission.data.tags.length > 0 && (
     <p class="published-in">
-      {emission.data.title}, publié dans :{' '}
+      {emission.data.title}, publié le {formattedDate} dans :{' '}
       {emission.data.tags.map((tag: string, i: number) => (
         <>
           <a href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a>
