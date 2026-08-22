@@ -54,17 +54,6 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
 
-  {emission.data.tags.length > 0 && (
-    <div class="emission-tags" aria-label="Sujets abordés">
-      <h2>Sujets abordés</h2>
-      <ul class="tag-list">
-        {emission.data.tags.map((tag: string) => (
-          <li class="tag">{tag}</li>
-        ))}
-      </ul>
-    </div>
-  )}
-
   <SimilarEpisodes currentSlug={emission.slug} currentTags={emission.data.tags} />
 
   <Comments pageId={emission.slug} pageUrl={canonicalUrl} pageTitle={emission.data.title} />

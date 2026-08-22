@@ -26,19 +26,14 @@ const scored = allEmissions
 if (scored.length === 0) return;
 ---
 
-<section class="similar-episodes" aria-label="Émissions similaires">
-  <h2>Émissions similaires</h2>
+<section class="similar-episodes" aria-label="Émissions sur les mêmes thèmes">
+  <h2>Émissions sur les mêmes thèmes</h2>
   <ul>
-    {scored.map(({ emission, shared }) => (
+    {scored.map(({ emission }) => (
       <li>
         <a href={withBase(`/emissions/${emission.slug}/`)}>
           {emission.data.title}
         </a>
-        <span class="similar-episodes__tags">
-          {emission.data.tags
-            .filter((t: string) => currentTags.includes(t))
-            .join(', ')}
-        </span>
       </li>
     ))}
   </ul>
