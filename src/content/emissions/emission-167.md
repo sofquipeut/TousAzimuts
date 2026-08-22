@@ -16,6 +16,6 @@ Au programme : un dossier santé sur le glaucome, les trimestres de retraite pou
 
 Côté musique : [Gorillaz - The Sweet Prince](https://www.youtube.com/watch?v=s62Usa_3j10), extrait de l'album *The Mountain*, et [Moby - Run On](https://www.youtube.com/watch?v=4UXpmvu35Fk), extrait de l'album *Play*.
 
-**Agenda** : Amandine et Carinne mettent à l'honneur Vincent et son service de transport adapté sur Toulouse et sa région, [ATR 31 Mobilité](https://www.atr-mobilite-france.com) ; le festival Printival de Pézenas, avec un concert chansigné en langue des signes ; et le projet d'habitat participatif bilingue LSF Hibiscus à Empalot.
+**Agenda** : Amandine et Carinne mettent à l'honneur Vincent et son service de transport adapté sur Toulouse et sa région, [ATR Mobility France](https://www.atr-mobility-france.com) (ou ATR 31 pour les intimes) ; le festival Printival de Pézenas, avec un concert chansigné en langue des signes ; et le projet d'habitat participatif bilingue LSF Hibiscus à Empalot.
 
 *Émission animée par Michel, Amandine et Carinne, avec un sujet enregistré de Julien. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
