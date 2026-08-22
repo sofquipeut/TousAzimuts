@@ -7,7 +7,7 @@ excerpt: "L'histoire de la machine à écrire née pour une comtesse aveugle, la
 draft: false
 ---
 
-Au programme de cet épisode : 6 rubriques.
+Au sommaire de cette émission :
 
 - **What's new ?** : Carinne nous raconte l'histoire méconnue de la machine à écrire, inventée en 1808 par l'Italien Pellegrino Turri pour une comtesse aveugle avant d'être industrialisée par Remington en 1873.
 
