@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-03-25T17:00:00Z
 excerpt: "Le dépistage du glaucome, les trimestres de retraite pour les temps partiels, l'histoire des exosquelettes, et la série For All Mankind en audiodescription."
 draft: false
+rssPlayerId: "3088083"
 ---
 
 Au programme : un dossier santé sur le glaucome, les trimestres de retraite pour les temps partiels et emplois saisonniers, l'histoire des exosquelettes, et une série spatiale culte en audio description.
