@@ -6,6 +6,7 @@ pubDate: 2026-06-24T17:00:00Z
 audioUrl: "https://open.spotify.com/episode/2djqJcJUoyQKW6lry3Afak?si=LJ_07-tMREaa3UqJwdlKrQ"
 excerpt: "Le jeu vidéo accessible Marble, la galerie tactile des Abattoirs de Toulouse, et l'action de groupe contre l'inaccessibilité du site des impôts."
 draft: false
+rssPlayerId: "3088738"
 ---
 
 Au programme de cet épisode :
