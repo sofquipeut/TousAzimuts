@@ -4,6 +4,7 @@ number: 166
 season: saison-9
 pubDate: 2026-03-11T17:00:00Z
 excerpt: "La ceinture haptique SeeHaptic, les donneuses de voix de la Bibliothèque Sonore de Toulouse, et le Marius de l'audiodescription 2026."
+tags: ["deficience-visuelle", "technologie", "audiodescription", "culture", "temoignage"]
 draft: false
 rssPlayerId: "3088078"
 ---

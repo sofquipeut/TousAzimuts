@@ -4,6 +4,7 @@ number: 161
 season: saison-9
 pubDate: 2025-12-24T17:00:00Z
 excerpt: "Le roman Les yeux dans le dos d'Azouz Begag, l'association Madacœur qui envoie du matériel médical à Madagascar, et des idées de cadeaux de Noël adaptés."
+tags: ["deficience-visuelle", "handicap-moteur", "culture", "international", "vie-quotidienne"]
 draft: false
 rssPlayerId: "3087685"
 ---

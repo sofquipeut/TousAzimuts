@@ -4,6 +4,7 @@ number: 162
 season: saison-9
 pubDate: 2026-01-14T17:00:00Z
 excerpt: "Les lauréats du Prix Jeune Bénévole 2025, le livre de cuisine sensoriel Cuisiner à l'aveugle, et les livres pour ados de Nathalie. Sans oublier la télécommande et son histoire."
+tags: ["deficience-visuelle", "accessibilite-numerique", "culture", "vie-quotidienne", "temoignage"]
 draft: false
 rssPlayerId: "3087689"
 ---

@@ -4,6 +4,7 @@ number: 164
 season: saison-9
 pubDate: 2026-02-11T17:00:00Z
 excerpt: "Les gilets sensoriels qui transforment le son en vibrations, une sélection de films en audiodescription, et ATR Mobility France."
+tags: ["deficience-auditive", "technologie", "audiodescription", "culture", "vie-quotidienne"]
 draft: false
 rssPlayerId: "3088045"
 ---

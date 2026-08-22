@@ -4,6 +4,7 @@ number: 163
 season: saison-9
 pubDate: 2026-01-28T17:00:00Z
 excerpt: "Le comité AVH de Toulouse et son combat pour libérer le rail de guidage, la consommation de drogues chez les personnes handicapées, et la section handi-ping de l'ASPTT Toulouse."
+tags: ["deficience-visuelle", "sport", "sante", "audiodescription", "culture", "temoignage"]
 draft: false
 rssPlayerId: "3087962"
 ---

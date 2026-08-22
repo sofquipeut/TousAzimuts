@@ -4,6 +4,7 @@ number: 167
 season: saison-9
 pubDate: 2026-03-25T17:00:00Z
 excerpt: "Le dépistage du glaucome, les trimestres de retraite pour les temps partiels, l'histoire des exosquelettes, et la série For All Mankind en audiodescription."
+tags: ["deficience-visuelle", "deficience-auditive", "sante", "legislation", "technologie", "audiodescription", "vie-quotidienne"]
 draft: false
 rssPlayerId: "3088083"
 ---

@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-04-08T17:00:00Z
 audioUrl: "https://open.spotify.com/episode/4TBUeB2D4KZuEXo5zIydWH?si=wdHQXUMJSV6e9h2UEROqYw"
 excerpt: "La communication améliorée et alternative, l'autodiagnostic sur les réseaux sociaux, et l'opération Livre en Braille à la demande du CTEB."
+tags: ["deficience-visuelle", "handicap-psychique", "sante", "braille", "culture"]
 draft: false
 rssPlayerId: "3088089"
 ---

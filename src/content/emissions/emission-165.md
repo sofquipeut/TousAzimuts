@@ -4,6 +4,7 @@ number: 165
 season: saison-9
 pubDate: 2026-02-25T17:00:00Z
 excerpt: "L'histoire de la machine à écrire née pour une comtesse aveugle, la photographe Katy Du'Gwenn qui déclenche avec le nez, les exosquelettes grand public, et l'IA de synthèse vocale personnalisée Invincible Voice."
+tags: ["deficience-visuelle", "handicap-moteur", "technologie", "temoignage", "culture", "audiodescription"]
 draft: false
 rssPlayerId: "3088060"
 ---
