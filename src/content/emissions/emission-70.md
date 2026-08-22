@@ -4,6 +4,7 @@ number: 70
 season: saison-4
 pubDate: 2021-03-24T17:00:00Z
 excerpt: "Le système d'exploitation simplifié WebVox, les bracelets GPS EnVib, le Visual Vernacular sourd, et la série audio The Sandman."
+tags: ["deficience-visuelle", "deficience-auditive", "autisme", "handicap-intellectuel", "technologie", "culture"]
 draft: false
 ---
 

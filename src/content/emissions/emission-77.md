@@ -4,6 +4,7 @@ number: 77
 season: saison-4
 pubDate: 2021-07-14T17:00:00Z
 excerpt: "Le handicap sur Netflix, trois livres audio pour l'été, le programme CAP pour la paralysie cérébrale, un séjour adapté en Suisse, et Swim.me pour nageurs aveugles."
+tags: ["deficience-visuelle", "autisme", "handicap-moteur", "technologie", "culture", "sante", "sport"]
 draft: false
 ---
 

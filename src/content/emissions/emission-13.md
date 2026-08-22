@@ -4,6 +4,7 @@ number: 13
 season: saison-1
 pubDate: 2018-04-11T17:00:00Z
 excerpt: "Les Jeux Paralympiques d'hiver, l'accueil des étudiants handicapés à l'Université Paul Sabatier, le batteur Jocelyn Pellegrini, et les premiers rayons de livres adaptés chez Cultura."
+tags: ["deficience-visuelle", "handicap-moteur", "sport", "culture", "braille", "education", "temoignage"]
 draft: false
 ---
 

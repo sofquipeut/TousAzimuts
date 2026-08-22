@@ -4,6 +4,7 @@ number: 61
 season: saison-4
 pubDate: 2020-11-11T17:00:00Z
 excerpt: "Le dictionnaire LSF Elix, une table de mixage accessible, le jeu audio A Western Drama, et la nouvelle Maison du Don du Sang à Toulouse."
+tags: ["deficience-visuelle", "deficience-auditive", "autisme", "technologie", "culture", "legislation", "sante"]
 draft: false
 ---
 

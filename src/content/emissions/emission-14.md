@@ -4,6 +4,7 @@ number: 14
 season: saison-1
 pubDate: 2018-04-25T17:00:00Z
 excerpt: "Les Jeux paralympiques de PyeongChang, l'association France Dépression, l'histoire des chiens guides, la traversée de la France d'Édouard Detrez, et une plage braille à petit prix."
+tags: ["deficience-visuelle", "handicap-moteur", "handicap-psychique", "sport", "technologie", "braille", "sante"]
 draft: false
 ---
 

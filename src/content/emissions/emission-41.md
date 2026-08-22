@@ -4,6 +4,7 @@ number: 41
 season: saison-3
 pubDate: 2019-11-01T17:00:00Z
 excerpt: "Un exosquelette piloté par la pensée testé au CHU de Grenoble, le GPS vibrant N-Vibe, l'appli StorySign qui traduit les histoires en langue des signes, et le wheelchair motocross d'Aaron Fotheringham."
+tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "technologie", "culture", "sport", "temoignage"]
 draft: false
 ---
 

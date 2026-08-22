@@ -4,6 +4,7 @@ number: 144
 season: saison-8
 pubDate: 2024-12-20T17:00:00Z
 excerpt: "Spécial Noël : idées cadeaux chez Handynamic, un livre de recettes en français facile, des conseils pour des fêtes adaptées aux enfants autistes, et un conte à écouter en famille."
+tags: ["autisme", "culture", "vie-quotidienne", "audiodescription"]
 draft: false
 ---
 

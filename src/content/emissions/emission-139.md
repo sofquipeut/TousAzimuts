@@ -4,6 +4,7 @@ number: 139
 season: saison-8
 pubDate: 2024-10-09T17:00:00Z
 excerpt: "L'annuaire de l'audiodescription Zeugma Concepts, la réglementation sur les nuisances sonores, l'alphabet en langue des signes pour enfants, et l'opéra urbain Le Gardien du Temple."
+tags: ["audiodescription", "deficience-auditive", "culture", "sante", "temoignage"]
 draft: false
 ---
 

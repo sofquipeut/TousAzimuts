@@ -4,6 +4,7 @@ number: 69
 season: saison-4
 pubDate: 2021-03-10T17:00:00Z
 excerpt: "La page App Store dédiée à l'accessibilité, le guide de l'audiodescription du CSA, l'Institut des Arts Inclusifs, et le récit de voyage d'un non-voyant en autostop."
+tags: ["deficience-visuelle", "technologie", "accessibilite-numerique", "audiodescription", "culture", "temoignage", "international"]
 draft: false
 ---
 

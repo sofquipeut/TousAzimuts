@@ -4,6 +4,7 @@ number: 143
 season: saison-8
 pubDate: 2024-12-11T17:00:00Z
 excerpt: "L'association Une École Inclusive pour tous, la boîte à outils Adapta'Box pour les élèves dys, et le Google Accessibility Discovery Center de Paris."
+tags: ["troubles-dys", "autisme", "education", "accessibilite-numerique", "technologie"]
 draft: false
 ---
 

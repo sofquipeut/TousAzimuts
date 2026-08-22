@@ -4,6 +4,7 @@ number: 44
 season: saison-3
 pubDate: 2019-12-20T17:00:00Z
 excerpt: "Le sprinteur aveugle Timothée Adolphe, le rayon de livres adaptés chez Cultura, la Blue Room pour traiter les phobies liées à l'autisme, et le manifeste pour l'inclusion des personnes handicapées dans l'économie."
+tags: ["deficience-visuelle", "autisme", "technologie", "culture", "sport", "legislation", "braille"]
 draft: false
 ---
 

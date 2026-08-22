@@ -4,6 +4,7 @@ number: 52
 season: saison-3
 pubDate: 2020-04-22T17:00:00Z
 excerpt: "Le port du masque, obstacle pour les personnes sourdes qui lisent sur les lèvres, l'appli LEE qui lit les codes-barres, la méditation avec Petit Bambou, et les ressources pour les personnes handicapées pendant le confinement."
+tags: ["deficience-visuelle", "deficience-auditive", "autisme", "technologie", "accessibilite-numerique", "audiodescription", "sante"]
 draft: false
 ---
 

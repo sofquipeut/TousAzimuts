@@ -4,6 +4,7 @@ number: 147
 season: saison-8
 pubDate: 2025-02-12T17:00:00Z
 excerpt: "Le bilan des vingt ans de la loi handicap, une nouvelle rubrique cuisine pour malvoyants, la série de livres illustrés Cookie sur les enfants « dys », et un reportage sur les jardins sensoriels."
+tags: ["deficience-visuelle", "troubles-dys", "legislation", "vie-quotidienne", "education"]
 draft: false
 ---
 

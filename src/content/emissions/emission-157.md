@@ -4,6 +4,7 @@ number: 157
 season: saison-9
 pubDate: 2025-10-22T17:00:00Z
 excerpt: "La réglementation du permis de conduire et la vision, les 9,3 millions d'aidants en France, et le festival de cinéma inclusif Extraordinary Film Festival de Namur."
+tags: ["deficience-visuelle", "aidants", "culture", "sante", "emploi", "international", "audiodescription"]
 draft: false
 rssPlayerId: "3087644"
 ---

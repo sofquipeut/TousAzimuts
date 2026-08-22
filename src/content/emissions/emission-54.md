@@ -4,6 +4,7 @@ number: 54
 season: saison-3
 pubDate: 2020-05-20T17:00:00Z
 excerpt: "L'alerte de l'ONU sur les droits des personnes handicapées pendant la pandémie, l'exo-muscle Myosuit, la plateforme de jeux en ligne accessible de Quentin, et le manga Running Girl sur les Jeux paralympiques."
+tags: ["deficience-visuelle", "handicap-moteur", "maladie-chronique", "technologie", "culture", "legislation", "international"]
 draft: false
 ---
 

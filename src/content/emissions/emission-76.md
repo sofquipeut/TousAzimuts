@@ -4,6 +4,7 @@ number: 76
 season: saison-4
 pubDate: 2021-06-23T17:00:00Z
 excerpt: "L'optogénétique contre la DMLA, les options d'accessibilité de la Xbox, hommage à l'association toulousaine PIMS, et le jeu audio Lost in Blindness."
+tags: ["deficience-visuelle", "handicap-moteur", "technologie", "accessibilite-numerique", "culture", "sante", "education"]
 draft: false
 ---
 

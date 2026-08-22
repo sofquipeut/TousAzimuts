@@ -4,6 +4,7 @@ number: 145
 season: saison-8
 pubDate: 2025-01-08T17:00:00Z
 excerpt: "Une sélection de films sur le handicap, un compagnon numérique pour les maîtres de chiens guides, et un sujet bien-être pour bien démarrer l'année."
+tags: ["deficience-visuelle", "culture", "technologie", "sante"]
 draft: false
 ---
 

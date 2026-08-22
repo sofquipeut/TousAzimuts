@@ -4,6 +4,7 @@ number: 18
 season: saison-1
 pubDate: 2018-06-27T17:00:00Z
 excerpt: "La finale de Torball remportée par Toulouse, l'association Grégory Lemarchal, le remboursement expérimental des séances de psychologue, et une avancée de la recherche contre la sclérose en plaques."
+tags: ["deficience-visuelle", "maladie-chronique", "sport", "audiodescription", "sante", "emploi", "legislation"]
 draft: false
 ---
 

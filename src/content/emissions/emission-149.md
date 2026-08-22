@@ -4,6 +4,7 @@ number: 149
 season: saison-8
 pubDate: 2025-03-12T17:00:00Z
 excerpt: "Le football adapté et la Transtoulousaine, les avancées dans le traitement de la DMLA, et les rendez-vous de l'AVH de Toulouse."
+tags: ["deficience-visuelle", "sport", "sante", "temoignage"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 67
 season: saison-4
 pubDate: 2021-02-10T17:00:00Z
 excerpt: "La clé Amazon Fire Stick, le décodeur d'audiodescription GRIOT, les violences faites aux femmes handicapées, et une carte bancaire connectée pour déficients visuels."
+tags: ["deficience-visuelle", "technologie", "audiodescription", "vie-quotidienne", "accessibilite-numerique"]
 draft: false
 ---
 

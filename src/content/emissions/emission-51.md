@@ -4,6 +4,7 @@ number: 51
 season: saison-3
 pubDate: 2020-04-08T17:00:00Z
 excerpt: "Émission spéciale confinement : les dispositifs d'aide Covid-19 pour les personnes handicapées, la plateforme SOS Répit, et une sélection de rediffusions pour s'occuper pendant le confinement."
+tags: ["deficience-visuelle", "deficience-auditive", "legislation", "sante", "aidants", "culture"]
 draft: false
 ---
 

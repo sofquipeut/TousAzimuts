@@ -5,6 +5,7 @@ season: saison-4
 pubDate: 2021-01-13T18:00:00Z
 audioUrl: "https://open.spotify.com/episode/1XQP2N5wJlyIwn287A8Nd4?si=D59SZ6kNTrCVMEDF08ZCiw"
 excerpt: "La web série « J'en crois pas mes yeux », l'appli de rencontre Limit, Sophie Drouvroy sur l'accessibilité numérique, et le débat sur la représentation du handicap dans la culture."
+tags: ["deficience-visuelle", "deficience-auditive", "technologie", "accessibilite-numerique", "audiodescription", "culture", "temoignage"]
 draft: false
 ---
 

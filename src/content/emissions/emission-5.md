@@ -4,6 +4,7 @@ number: 5
 season: saison-1
 pubDate: 2017-12-13T17:00:00Z
 excerpt: "Spécial Noël : recette de cake aux épices, jeux audio accessibles, Les Mirauds Volants qui font voler des pilotes aveugles, cuisine vocalisée et Christmas Pudding."
+tags: ["deficience-visuelle", "handicap-moteur", "technologie", "culture", "vie-quotidienne", "temoignage"]
 draft: false
 ---
 

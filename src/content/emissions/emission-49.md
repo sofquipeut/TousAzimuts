@@ -4,6 +4,7 @@ number: 49
 season: saison-3
 pubDate: 2020-03-06T17:00:00Z
 excerpt: "Le championnat de torball et de showdown toulousain, l'interface vocale VoxiWeb, la chanson Prends un chien guide de Bruno Esteve, et Ramonville, capitale toulousaine de la culture sourde."
+tags: ["deficience-visuelle", "deficience-auditive", "sport", "culture", "technologie", "temoignage", "education"]
 draft: false
 ---
 

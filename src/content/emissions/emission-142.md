@@ -4,6 +4,7 @@ number: 142
 season: saison-8
 pubDate: 2024-11-27T17:00:00Z
 excerpt: "Le Localisateur pour naviguer sur le web, la pension d'invalidité décryptée, la nouvelle fonction vidéo de Seeing AI, et la Semaine du handicap."
+tags: ["deficience-visuelle", "technologie", "legislation", "sante", "accessibilite-numerique", "emploi"]
 draft: false
 ---
 

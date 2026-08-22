@@ -5,6 +5,7 @@ season: saison-1
 pubDate: 2017-10-06T17:00:00Z
 audioUrl: "https://open.spotify.com/episode/4CT165afgep3qRpVRPnwMX?si=y9P1_ktmSd-d8pV0C0eyaA"
 excerpt: "Un reportage à l'ITEP Saint-Exupéry, le MOTOmed pour faire du sport en fauteuil, la plateforme Wheeliz, et tout savoir sur les chiens-guides."
+tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "sport", "technologie", "vie-quotidienne"]
 draft: false
 ---
 

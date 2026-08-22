@@ -4,6 +4,7 @@ number: 71
 season: saison-4
 pubDate: 2021-04-14T17:00:00Z
 excerpt: "Les Bitmoji en fauteuil roulant, les Marius de l'audiodescription, un appel à témoignages contre le logiciel Pronote, et l'application AIRA de Starbucks."
+tags: ["deficience-visuelle", "handicap-moteur", "technologie", "accessibilite-numerique", "audiodescription", "culture", "education"]
 draft: false
 ---
 

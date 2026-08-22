@@ -4,6 +4,7 @@ number: 43
 season: saison-3
 pubDate: 2019-12-11T17:00:00Z
 excerpt: "Une lettre au Père Noël restée sans réponse, l'ESAT de Carmaux et ses boules de Noël incassables, le service d'audiodescription à la demande Les Souffleurs d'images, et les notices Lego en braille."
+tags: ["deficience-visuelle", "legislation", "emploi", "audiodescription", "culture", "vie-quotidienne", "braille"]
 draft: false
 ---
 

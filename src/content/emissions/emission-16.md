@@ -4,6 +4,7 @@ number: 16
 season: saison-1
 pubDate: 2018-05-23T17:00:00Z
 excerpt: "Le goalball féminin, des plans de bâtiments sonorisés en 3D, un appel à pilote pour un tandem de compétition, les cartes de restaurant qui deviennent sonores, et un gadget pour ne plus faire déborder son café."
+tags: ["deficience-visuelle", "sport", "technologie", "vie-quotidienne", "temoignage"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 46
 season: saison-3
 pubDate: 2020-01-22T17:00:00Z
 excerpt: "La championne d'endurance Marine Leleu qui s'attaque au triathlon en aveugle, l'âge d'or des feuilletons radiophoniques, le documentaire sur la langue des signes J'avancerai vers toi avec les yeux d'un sourd, et le festival Yes We Ride Yes We Rap."
+tags: ["deficience-visuelle", "deficience-auditive", "sport", "culture", "technologie", "emploi"]
 draft: false
 ---
 

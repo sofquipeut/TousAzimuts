@@ -4,6 +4,7 @@ number: 15
 season: saison-1
 pubDate: 2018-05-04T17:00:00Z
 excerpt: "SOS Amitié, la plateforme Hizy d'Handicap International, le groupe toulousain The Buddies en studio, l'Orcam My Eye 2.0, et l'école de danse mixte Incorporel."
+tags: ["deficience-visuelle", "technologie", "culture", "sante", "vie-quotidienne", "temoignage"]
 draft: false
 ---
 

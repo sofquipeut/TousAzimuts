@@ -4,6 +4,7 @@ number: 60
 season: saison-4
 pubDate: 2020-10-16T17:00:00Z
 excerpt: "L'allocation journalière du proche aidant, l'OrCam Read, les BD audio de Blynd, et un débat sur l'assistance sexuelle et le handicap."
+tags: ["deficience-visuelle", "technologie", "legislation", "aidants", "culture", "maladie-chronique", "vie-quotidienne"]
 draft: false
 ---
 

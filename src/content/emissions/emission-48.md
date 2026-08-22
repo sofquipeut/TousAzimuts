@@ -4,6 +4,7 @@ number: 48
 season: saison-3
 pubDate: 2020-02-26T17:00:00Z
 excerpt: "La silver économie au CES de Las Vegas, les 25 ans de l'émission L'œil et la main, le fauteuil roulant modulable Action 3NG, et le sport adapté showdown."
+tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "technologie", "culture", "sport", "international"]
 draft: false
 ---
 

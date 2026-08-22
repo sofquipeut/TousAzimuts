@@ -4,6 +4,7 @@ number: 141
 season: saison-8
 pubDate: 2024-11-13T17:00:00Z
 excerpt: "La méthode FALC pour une information accessible à tous, le théâtre immersif Une Contre Histoire du Monde, et les nouvelles de la communauté aveugle et malvoyante."
+tags: ["deficience-visuelle", "troubles-dys", "audiodescription", "culture", "accessibilite-numerique"]
 draft: false
 ---
 

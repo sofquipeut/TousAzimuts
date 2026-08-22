@@ -4,6 +4,7 @@ number: 148
 season: saison-8
 pubDate: 2025-02-26T17:00:00Z
 excerpt: "Le hackathon de l'accessibilité numérique, la mobilisation citoyenne pour l'application de la loi handicap, des panneaux solaires implantés dans l'œil, et l'application La Bavarde."
+tags: ["deficience-visuelle", "accessibilite-numerique", "audiodescription", "legislation", "technologie", "sante"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 150
 season: saison-8
 pubDate: 2025-04-04T17:00:00Z
 excerpt: "La bague Spellring qui traduit la langue des signes, l'Allocation Supplémentaire d'Invalidité, le Google Accessibility Discovery Center, et les futures fonctionnalités de Gemini Live."
+tags: ["deficience-auditive", "technologie", "legislation", "accessibilite-numerique", "braille"]
 draft: false
 ---
 

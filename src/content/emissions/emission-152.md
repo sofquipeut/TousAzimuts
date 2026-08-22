@@ -4,6 +4,7 @@ number: 152
 season: saison-8
 pubDate: 2025-05-07T17:00:00Z
 excerpt: "La basse vision et la posture, une exposition tactile où il faut toucher pour lire, et un jeu vidéo basé sur le son."
+tags: ["deficience-visuelle", "sante", "culture", "braille", "accessibilite-numerique"]
 draft: false
 ---
 

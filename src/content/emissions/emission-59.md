@@ -4,6 +4,7 @@ number: 59
 season: saison-4
 pubDate: 2020-10-07T17:00:00Z
 excerpt: "Le VoxiOne pour déficients visuels, l'association Un Regard Pour Toi et la mode accessible, et la BD audio Blind (BLYND)."
+tags: ["deficience-visuelle", "technologie", "braille", "culture", "vie-quotidienne"]
 draft: false
 ---
 

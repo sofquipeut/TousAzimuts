@@ -4,6 +4,7 @@ number: 64
 season: saison-4
 pubDate: 2020-12-23T17:00:00Z
 excerpt: "Spécial Noël : le site Hoptoys, des jeux pour apprendre la langue des signes, la recette de la pompe à huile, et un Père Noël facétieux en invité."
+tags: ["deficience-visuelle", "deficience-auditive", "culture", "vie-quotidienne", "international"]
 draft: false
 ---
 

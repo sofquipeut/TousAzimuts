@@ -4,6 +4,7 @@ number: 12
 season: saison-1
 pubDate: 2018-04-06T17:00:00Z
 excerpt: "Un témoignage de guide de course, les soirées Café au lait de l'APF, la sortie du Seigneur des Anneaux en livre audio officiel, et la question de la représentativité politique du handicap."
+tags: ["deficience-visuelle", "sport", "culture", "legislation", "vie-quotidienne", "temoignage"]
 draft: false
 ---
 

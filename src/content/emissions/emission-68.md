@@ -4,6 +4,7 @@ number: 68
 season: saison-4
 pubDate: 2021-02-24T17:00:00Z
 excerpt: "Un projet d'habitat inclusif à Toulouse, les fonctionnalités d'accessibilité de la PlayStation 5, le jeu de plateau tactile Four Sense, et le film Moi Léa."
+tags: ["deficience-visuelle", "autisme", "technologie", "accessibilite-numerique", "culture", "vie-quotidienne", "legislation"]
 draft: false
 ---
 

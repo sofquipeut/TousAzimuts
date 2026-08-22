@@ -4,6 +4,7 @@ number: 4
 season: saison-1
 pubDate: 2017-11-22T17:00:00Z
 excerpt: "Le marathon de Toulouse en relais, l'appli d'audiodescription Greta, les kératoprothèses, le Ticket Don de l'APF, et la relation avec l'assistant de vie."
+tags: ["deficience-visuelle", "sport", "technologie", "audiodescription", "culture", "sante", "vie-quotidienne"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 75
 season: saison-4
 pubDate: 2021-06-09T17:00:00Z
 excerpt: "Portrait de José, musicien et slameur non-voyant, le métier méconnu d'APSH, l'application VIEW, et les nouveautés d'accessibilité Apple."
+tags: ["deficience-visuelle", "technologie", "culture", "temoignage", "emploi", "education"]
 draft: false
 ---
 

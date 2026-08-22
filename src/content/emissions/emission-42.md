@@ -4,6 +4,7 @@ number: 42
 season: saison-3
 pubDate: 2019-11-27T17:00:00Z
 excerpt: "Radio Pinpon, une web radio en hôpital psychiatrique, l'implant sous-rétinien PRIMA de Pixium Vision, le jeu audio Lost in Blindness, et le documentaire Quelle folie."
+tags: ["deficience-visuelle", "handicap-psychique", "autisme", "technologie", "culture", "sante", "temoignage"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 39
 season: saison-3
 pubDate: 2019-10-09T17:00:00Z
 excerpt: "La Dot Watch, première montre connectée en braille, la nouvelle carte Pastel en braille de Tisséo, l'appli Sybel de fictions audio, et trois portraits de jeunes au syndrome d'Asperger."
+tags: ["deficience-visuelle", "autisme", "technologie", "braille", "culture", "vie-quotidienne"]
 draft: false
 ---
 

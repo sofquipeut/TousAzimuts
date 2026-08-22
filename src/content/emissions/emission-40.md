@@ -4,6 +4,7 @@ number: 40
 season: saison-3
 pubDate: 2019-10-23T17:00:00Z
 excerpt: "L'école inclusive et les PIAL, l'appli AI Poly Vision, le livre audio interactif L'École de Magie d'Elentil, et la websérie documentaire Tou.te.s les mêmes."
+tags: ["deficience-visuelle", "polyhandicap", "education", "legislation", "technologie", "culture", "audiodescription"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 62
 season: saison-4
 pubDate: 2020-11-25T17:00:00Z
 excerpt: "Le studio Parolox et ses web documentaires sur le handicap, portrait d'Anna, comédienne et mannequin non-voyante, et le débat sur l'attestation de sortie pendant le confinement."
+tags: ["deficience-visuelle", "audiodescription", "culture", "temoignage", "legislation", "vie-quotidienne"]
 draft: false
 ---
 

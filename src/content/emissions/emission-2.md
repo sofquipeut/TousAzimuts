@@ -5,6 +5,7 @@ season: saison-1
 pubDate: 2017-10-24T22:00:00Z
 audioUrl: "https://open.spotify.com/episode/40xDd1u2OV8Aevndit5MNC?si=xqoujLuqRTG8nv5vzMZUkw"
 excerpt: "Les sagas MP3 accessibles, le parc Sacha au Canada, le comité interministériel du handicap, le PenyTalks et le festival Regards Croisés."
+tags: ["deficience-visuelle", "handicap-moteur", "autisme", "culture", "technologie", "legislation", "international"]
 draft: false
 ---
 
