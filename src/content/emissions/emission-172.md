@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-06-10T17:00:00Z
 audioUrl: "https://open.spotify.com/episode/5Q5LyDwYwPHMir7i0l2G1L?si=HPRd8z1KTyOuEpa_Ni14YQ"
 excerpt: "MBraille for Desktop, l'haptophobie, le podcast illusion de Lucie Jodot, et Dreeft, un système de freinage pour fauteuil roulant primé au concours Lépine."
+tags: ["deficience-visuelle", "handicap-moteur", "technologie", "braille", "sante", "culture"]
 draft: false
 rssPlayerId: "3088730"
 ---

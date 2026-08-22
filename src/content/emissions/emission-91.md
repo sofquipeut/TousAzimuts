@@ -4,6 +4,7 @@ number: 91
 season: saison-5
 pubDate: 2022-04-13T17:00:00Z
 excerpt: "La fiscalité des successions pour les personnes handicapées, la VAST pour regarder des films en VO, l'obligation d'emploi des travailleurs handicapés, et le handicap dans la campagne présidentielle."
+tags: ["deficience-visuelle", "culture", "technologie", "legislation", "emploi"]
 draft: false
 ---
 

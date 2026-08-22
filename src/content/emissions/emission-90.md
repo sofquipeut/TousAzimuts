@@ -4,6 +4,7 @@ number: 90
 season: saison-5
 pubDate: 2022-03-23T17:00:00Z
 excerpt: "La surdité en grandes surfaces, le dépistage du glaucome, les propositions présidentielles sur le handicap, et l'appli Vocaleo pour retrouver ses vêtements."
+tags: ["deficience-visuelle", "deficience-auditive", "autisme", "technologie", "legislation", "sante", "vie-quotidienne"]
 draft: false
 ---
 

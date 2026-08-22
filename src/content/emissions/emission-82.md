@@ -4,6 +4,7 @@ number: 82
 season: saison-5
 pubDate: 2021-11-24T17:00:00Z
 excerpt: "Une cagnotte solidaire pour adapter un logement, les Groupes d'Entraide Mutuelle, la zoothérapie, et l'enquête de l'AVH sur l'emploi des déficients visuels."
+tags: ["deficience-visuelle", "handicap-psychique", "culture", "sante", "emploi", "vie-quotidienne"]
 draft: false
 ---
 

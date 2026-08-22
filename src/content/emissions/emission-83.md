@@ -4,6 +4,7 @@ number: 83
 season: saison-5
 pubDate: 2021-12-08T17:00:00Z
 excerpt: "L'humoriste Quentin Rothschildville et le syndrome de Marfan, une odyssée en 4x4 vers l'Inde avec un chien guide, et l'engagement d'Ubisoft pour l'inclusion."
+tags: ["deficience-visuelle", "maladie-chronique", "culture", "sante", "emploi", "technologie", "temoignage"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 169
 season: saison-9
 pubDate: 2026-04-17T17:00:00Z
 excerpt: "Le syndrome non-24 qui touche les personnes aveugles, la nouvelle galerie tactile du Musée des Abattoirs, et le dispositif Neurinov pour les personnes paraplégiques."
+tags: ["deficience-visuelle", "handicap-moteur", "sante", "culture", "technologie"]
 draft: false
 rssPlayerId: "3088170"
 ---

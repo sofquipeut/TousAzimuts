@@ -4,6 +4,7 @@ number: 89
 season: saison-5
 pubDate: 2022-03-04T17:00:00Z
 excerpt: "Le Neko Light Orchestra, groupe toulousain de musiques de jeux vidéo, l'accessibilité de Twitch et Discord, et le débat sur le cripping up au cinéma."
+tags: ["deficience-visuelle", "culture", "accessibilite-numerique", "legislation"]
 draft: false
 ---
 

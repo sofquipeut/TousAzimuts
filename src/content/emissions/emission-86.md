@@ -4,6 +4,7 @@ number: 86
 season: saison-5
 pubDate: 2022-01-26T17:00:00Z
 excerpt: "Le film Presque avec Bernard Campan, la réforme du crédit d'impôt pour les services à la personne, et le documentaire Rosy sur la sclérose en plaques."
+tags: ["maladie-chronique", "culture", "legislation", "technologie", "vie-quotidienne", "accessibilite-numerique", "temoignage"]
 draft: false
 ---
 

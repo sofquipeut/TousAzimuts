@@ -4,6 +4,7 @@ number: 88
 season: saison-5
 pubDate: 2022-02-23T17:00:00Z
 excerpt: "L'appli TIA bloquée sur iPhone, le handicap invisible au travail, un témoignage sur le lupus, et l'accessibilité électorale."
+tags: ["deficience-visuelle", "handicap-invisible", "maladie-chronique", "technologie", "legislation", "temoignage", "emploi"]
 draft: false
 ---
 

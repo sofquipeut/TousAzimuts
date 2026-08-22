@@ -6,6 +6,7 @@ pubDate: 2026-07-08T11:04:47Z
 audioUrl: "https://rss.com/podcasts/tous-azimuts-pour-un-monde-plus-accessible/3063891"
 rssPlayerId: "3063891"
 excerpt: "Le lancement du podcast et du nouveau site, l'app ZEdit, l'accessibilité des plages avec Handiplage, Prisca Laborie sur le vitiligo, et l'appli La Bavarde."
+tags: ["deficience-visuelle", "maladie-chronique", "technologie", "audiodescription", "temoignage", "accessibilite-numerique", "vie-quotidienne"]
 draft: false
 ---
 

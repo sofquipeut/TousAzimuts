@@ -4,6 +4,7 @@ number: 170
 season: saison-9
 pubDate: 2026-05-06T17:00:00Z
 excerpt: "L'IA au service du remplissage de formulaires, la déclaration d'impôts et l'aide humaine, et les baptêmes de l'air de Rêve de gosses."
+tags: ["accessibilite-numerique", "technologie", "legislation", "audiodescription"]
 draft: false
 rssPlayerId: "3088663"
 ---

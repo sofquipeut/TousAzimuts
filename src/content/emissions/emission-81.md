@@ -4,6 +4,7 @@ number: 81
 season: saison-5
 pubDate: 2021-11-10T17:00:00Z
 excerpt: "DV Sport Auto, qui permet aux déficients visuels de conduire sur circuit, et une sortie tandem de 35 km avec des collégiens de Colomiers."
+tags: ["deficience-visuelle", "sport", "temoignage"]
 draft: false
 ---
 

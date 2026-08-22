@@ -5,6 +5,7 @@ season: saison-9
 pubDate: 2026-05-20T17:00:00Z
 audioUrl: "https://open.spotify.com/episode/6WIBzgoX2QzJW6vYQHmXHP?si=q9FDRLIMQbWCV2J2gsaGyg"
 excerpt: "Les sous-titres en direct sur iOS, le synthétiseur Tonto, Anne Jauseau sur l'image de soi, et la série audio immersive Impact Winter."
+tags: ["deficience-visuelle", "deficience-auditive", "technologie", "braille", "culture", "temoignage"]
 draft: false
 rssPlayerId: "3088710"
 ---
