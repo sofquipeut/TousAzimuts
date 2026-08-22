@@ -8,7 +8,7 @@ excerpt: "MBraille for Desktop, l'haptophobie, le podcast illusion de Lucie Jodo
 draft: false
 ---
 
-Au programme de cet épisode, trois grands thèmes et une invitée (qui n'a pas pu venir finalement) !
+Au sommaire de cette émission :
 
 - **What's new ?** : Sofian nous présente « [MBraille for desktop](https://www.livingbraille.eu/mbraille-desktop-is-available/) » pour Windows, une application qui permet d'apprendre le braille directement depuis le clavier de son PC. Une innovation accessible et pratique pour les personnes déficientes visuelles, mais aussi pour ceux d'entre vous qui voudraient en savoir plus.
 - **Santé** : Carinne aborde l'[haptophobie](https://fr.wikipedia.org/wiki/Haptophobie), cette aversion du toucher qui peut affecter profondément la vie quotidienne. Qu'est-ce que c'est, comment ça se manifeste, comment on vit avec ?
@@ -17,4 +17,4 @@ Au programme de cet épisode, trois grands thèmes et une invitée (qui n'a pas 
 
 Côté musique, deux pauses : [Jérémy Rollando - L'amandier](https://music.youtube.com/watch?v=AOTtTgotQKs) et le coup de cœur de Julien, [Avishai Cohen - Lookie](https://www.youtube.com/watch?v=LjEE9Xwk-f0).
 
-*Émission animée par Julien Camaret, Sofian Babai, Corinne Vergne et Carinne Péri, avec Lucie Jodot en invitée. Technique et montage : Marco Lazaro. Programmation musicale : Julien Camaret. Coordination : Carinne Péri.*
+*Émission animée par Julien, Sofian, Corinne et Carinne, avec Lucie Jodot en invitée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
