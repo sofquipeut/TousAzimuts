@@ -2,8 +2,14 @@
 import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/url';
+import { tagLabel } from '../lib/tags';
 
 const saisons = (await getCollection('saisons')).sort((a, b) => a.data.number - b.data.number);
+
+const emissions = await getCollection('emissions', (e) => !e.data.draft);
+const sujets = [...new Set(emissions.flatMap((e) => e.data.tags))].sort((a, b) =>
+  tagLabel(a).localeCompare(tagLabel(b), 'fr')
+);
 ---
 
 <Base title="Accueil">
@@ -65,6 +71,15 @@ const saisons = (await getCollection('saisons')).sort((a, b) => a.data.number - 
   <ul class="season-grid">
     {saisons.map((s) => (
       <li><a class="button button--outline" href={withBase(`/${s.slug}/`)}>Saison {s.data.number} ({s.data.years})</a></li>
+    ))}
+  </ul>
+
+  <hr />
+
+  <h2 id="les-sujets">Sujets abordés</h2>
+  <ul class="season-grid">
+    {sujets.map((tag) => (
+      <li><a class="button button--outline" href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a></li>
     ))}
   </ul>
 </Base>

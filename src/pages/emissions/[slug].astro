@@ -5,6 +5,7 @@ import SimilarEpisodes from '../../components/SimilarEpisodes.astro';
 import Comments from '../../components/Comments.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
+import { tagLabel } from '../../lib/tags';
 
 export async function getStaticPaths() {
   const emissions = await getCollection('emissions');
@@ -26,6 +27,18 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 <Base title={emission.data.title} description={emission.data.excerpt}>
   <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({saison.data.years})</a></p>
   <h1>{emission.data.title}</h1>
+
+  {emission.data.tags.length > 0 && (
+    <p class="published-in">
+      {emission.data.title}, publié dans :{' '}
+      {emission.data.tags.map((tag: string, i: number) => (
+        <>
+          <a href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a>
+          {i < emission.data.tags.length - 1 ? ', ' : ''}
+        </>
+      ))}
+    </p>
+  )}
 
   {emission.data.diffusion && (
     <p class="emission-meta">{emission.data.diffusion}</p>

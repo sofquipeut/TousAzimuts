@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { withBase } from '../../lib/url';
+import { tagLabel } from '../../lib/tags';
+
+export async function getStaticPaths() {
+  const emissions = await getCollection('emissions', (e) => !e.data.draft);
+  const usedTags = new Set(emissions.flatMap((e) => e.data.tags));
+
+  return [...usedTags].map((tag) => {
+    const matching = emissions
+      .filter((e) => e.data.tags.includes(tag))
+      .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+    return { params: { tag }, props: { tag, emissions: matching } };
+  });
+}
+
+const { tag, emissions } = Astro.props;
+const label = tagLabel(tag);
+---
+
+<Base title={`Sujet : ${label}`} description={`Émissions Tous Azimuts abordant le sujet « ${label} ».`}>
+  <p><a href={withBase('/')}>← Accueil</a></p>
+  <h1>Sujet : {label}</h1>
+
+  <ul class="emission-list">
+    {emissions.map((emission) => (
+      <li class="emission-card">
+        <h3><a href={withBase(`/emissions/${emission.slug}/`)}>{emission.data.title}</a></h3>
+        <p class="emission-card__date">
+          {emission.data.pubDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
+        </p>
+        <p>{emission.data.excerpt}</p>
+      </li>
+    ))}
+  </ul>
+</Base>

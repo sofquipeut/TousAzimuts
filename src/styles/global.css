@@ -289,6 +289,11 @@ hr {
   color: var(--color-text-muted);
 }
 
+.published-in {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
 .emission-body ul {
   padding-left: 1.25rem;
 }
