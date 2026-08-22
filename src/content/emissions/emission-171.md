@@ -17,6 +17,6 @@ Au programme de cet épisode, quatre rubriques et une invitée.
 
 Pour finir, Carinne nous donne rendez-vous avec l'agenda.
 
-Côté musique, deux pauses : [The Lemon Twigs - Bring You Down](https://music.youtube.com/playlist?list=OLAK5uy_lolISP9s7TenojWRW8elt9LdqEfDpmfDo) (album *Look For Your Mind!*) et le coup de cœur de Julien, [Another Taste - Run Into Love](https://www.youtube.com/watch?v=sowIE0K-LLA).
+Côté musique, deux pauses : [The Lemon Twigs - Bring You Down](https://youtu.be/LYxpVe8mIpU) (album *Look For Your Mind!*) et le coup de cœur de Julien, [Another Taste - Run Into Love](https://www.youtube.com/watch?v=sowIE0K-LLA).
 
 *Émission animée par Julien, Sofian, Corinne et Carinne, avec Anne Jausseau en invitée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
