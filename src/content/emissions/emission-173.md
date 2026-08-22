@@ -18,4 +18,4 @@ Pour finir, Carinne nous donne rendez-vous avec l'agenda.
 
 Côté musique, une pause : [Ayreon - Sail Away to Avalon](https://www.youtube.com/watch?v=rxPRXFFO5Yk).
 
-*Émission animée par Carinne Péri, Corinne Vergne et Sofian Babai, avec Marco Lazaro à la technique et au montage. Programmation musicale : Julien Camaret. Coordination : Carinne Péri.*
+*Émission animée par Carinne et Corinne, avec Sofian et Marco à la technique et au montage. Programmation musicale : Julien. Coordination : Carinne.*
