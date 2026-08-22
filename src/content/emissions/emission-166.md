@@ -5,9 +5,10 @@ season: saison-9
 pubDate: 2026-03-11T17:00:00Z
 excerpt: "La ceinture haptique SeeHaptic, les donneuses de voix de la Bibliothèque Sonore de Toulouse, et le Marius de l'audiodescription 2026."
 draft: false
+rssPlayerId: "3088078"
 ---
 
-Au programme de cet épisode : 6 rubriques.
+Au sommaire de cette émission :
 
 - **What's new ?** : Michel présente [SeeHaptic](https://www.seehaptic.com) (ex-Artha), une ceinture haptique couplée à une mini-caméra qui traduit l'environnement en « braille de l'espace », dévoilée au CES de Las Vegas en janvier 2026.
 - **L'invité** : Béatrice et Charlotte, donneuses de voix de la [Bibliothèque Sonore de Toulouse](https://www.advbs.fr), racontent comment elles enregistrent des livres audio pour les personnes empêchées de lire, et annoncent une rencontre avec l'autrice Coralie Cojol le 11 avril.
@@ -16,4 +17,4 @@ Au programme de cet épisode : 6 rubriques.
 
 Côté musique, deux pauses : [Joan Baez - Blue Sky](https://www.youtube.com/watch?v=qZSLO80b0rc), extrait de l'album *Diamonds & Rust*, et [Archive - City Walls](https://www.youtube.com/watch?v=AFfnZSd7cSg), extrait du nouvel album *Glass Minds*.
 
-*Émission animée par Carinne, avec Béatrice et Charlotte en invitées, Michel et Julien. Technique et montage : Marco. Programmation musicale : Carinne. Coordination : Carinne.*
+*Émission animée par Carinne, avec Béatrice et Charlotte en invitées, Michel et Julien. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
