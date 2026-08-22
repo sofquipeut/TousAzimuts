@@ -4,6 +4,7 @@ number: 118
 season: saison-6
 pubDate: 2023-07-21T17:00:00Z
 excerpt: "Une application enfin fonctionnelle après un an et demi d'attente, et le festival Résistances à Foix."
+tags: ["culture", "technologie", "accessibilite-numerique"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 117
 season: saison-6
 pubDate: 2023-07-12T17:00:00Z
 excerpt: "Le tri estival des applis accessibles, et l'accessibilité dans les festivals de musique."
+tags: ["culture", "technologie", "accessibilite-numerique", "audiodescription"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 112
 season: saison-6
 pubDate: 2023-04-26T17:00:00Z
 excerpt: "Le cyberharcèlement reconnu comme délit, les aménagements d'examens pour les personnes handicapées, le permis de conduire et le handicap, et un projet participatif d'audiodescription."
+tags: ["deficience-visuelle", "legislation", "technologie", "audiodescription", "education", "vie-quotidienne"]
 draft: false
 ---
 

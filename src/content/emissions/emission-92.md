@@ -4,6 +4,7 @@ number: 92
 season: saison-5
 pubDate: 2022-04-27T17:00:00Z
 excerpt: "Une série de livres jeunesse sur les chiens guides, l'association Les Yeux Dits qui audiodécrit le patrimoine du cinéma français, des électrodes qui font remarcher des paraplégiques, et le métier d'ergothérapeute."
+tags: ["deficience-visuelle", "handicap-moteur", "culture", "audiodescription", "technologie", "sante", "temoignage"]
 draft: false
 ---
 

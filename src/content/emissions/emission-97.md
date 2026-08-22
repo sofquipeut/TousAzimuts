@@ -4,6 +4,7 @@ number: 97
 season: saison-5
 pubDate: 2022-07-13T17:00:00Z
 excerpt: "Le Centre de Transcription et d'Édition Braille, les idées reçues sur la déficience visuelle, et le tour de France à vélo pour le syndrome de Prader-Willi."
+tags: ["deficience-visuelle", "maladie-chronique", "braille", "culture", "sport", "audiodescription"]
 draft: false
 ---
 

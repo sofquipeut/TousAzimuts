@@ -4,6 +4,7 @@ number: 103
 season: saison-6
 pubDate: 2022-12-14T17:00:00Z
 excerpt: "La dépression post-partum, le tiers-lieu inclusif Café & CO, les avancées sur la greffe de la cornée, et les Marius de l'audiodescription."
+tags: ["deficience-visuelle", "handicap-psychique", "culture", "audiodescription", "sante", "emploi"]
 draft: false
 ---
 

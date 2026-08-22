@@ -4,6 +4,7 @@ number: 114
 season: saison-6
 pubDate: 2023-05-24T17:00:00Z
 excerpt: "Le festival Regards Croisés, un écran tactile à boutons liquides, et un constat accablant sur le handicap en prison."
+tags: ["deficience-visuelle", "braille", "culture", "technologie", "audiodescription", "legislation", "emploi"]
 draft: false
 ---
 

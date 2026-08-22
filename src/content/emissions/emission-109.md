@@ -4,6 +4,7 @@ number: 109
 season: saison-6
 pubDate: 2023-03-08T17:00:00Z
 excerpt: "Le rapport HOMERE sur la déficience visuelle, l'association Cyberdicap pour l'inclusion numérique, et le festival Perception multiple."
+tags: ["deficience-visuelle", "culture", "technologie", "accessibilite-numerique", "audiodescription", "emploi", "education"]
 draft: false
 ---
 

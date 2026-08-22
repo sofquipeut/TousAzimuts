@@ -4,6 +4,7 @@ number: 106
 season: saison-6
 pubDate: 2023-01-25T17:00:00Z
 excerpt: "Les vêtements adaptés d'Atypik'Baby, les améliorations du service Accès Plus SNCF, le média gastronomique inclusif Les Chefs Extraordinaires, et l'audiodescription automatique sur Netflix."
+tags: ["deficience-visuelle", "handicap-moteur", "handicap-intellectuel", "audiodescription", "technologie", "vie-quotidienne", "culture"]
 draft: false
 ---
 

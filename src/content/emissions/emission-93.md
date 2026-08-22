@@ -4,6 +4,7 @@ number: 93
 season: saison-5
 pubDate: 2022-05-11T17:00:00Z
 excerpt: "La DMLA sèche et la thérapie génique, la série audio sur Beethoven, le cinéma adapté à Colomiers, et l'exode des familles françaises vers la Belgique."
+tags: ["deficience-visuelle", "deficience-auditive", "polyhandicap", "culture", "sante", "education", "international"]
 draft: false
 ---
 

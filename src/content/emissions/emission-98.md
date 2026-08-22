@@ -4,6 +4,7 @@ number: 98
 season: saison-5
 pubDate: 2022-07-15T17:00:00Z
 excerpt: "Le dispositif Sixième Sense pour voir par le toucher, le paradressage, la loi Lemoine sur l'assurance emprunteur, et une sélection de séries audio pour l'été."
+tags: ["deficience-visuelle", "handicap-moteur", "culture", "technologie", "legislation", "sport", "temoignage"]
 draft: false
 ---
 

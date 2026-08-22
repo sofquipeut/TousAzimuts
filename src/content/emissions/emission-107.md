@@ -4,6 +4,7 @@ number: 107
 season: saison-6
 pubDate: 2023-02-08T17:00:00Z
 excerpt: "Les Non-Voyants et leurs Drôles de Machines, une exposition tactile itinérante, et l'arrivée du clavier braille en français sur Android."
+tags: ["deficience-visuelle", "braille", "technologie", "accessibilite-numerique", "sport", "culture"]
 draft: false
 ---
 

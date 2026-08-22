@@ -4,6 +4,7 @@ number: 102
 season: saison-6
 pubDate: 2022-11-23T17:00:00Z
 excerpt: "La journée européenne de la dépression, la capsule immersive VirtySens, le nouvel album des Arctic Monkeys, et l'appli Blynd."
+tags: ["handicap-psychique", "culture", "technologie", "sante"]
 draft: false
 ---
 

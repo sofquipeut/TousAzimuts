@@ -4,6 +4,7 @@ number: 101
 season: saison-6
 pubDate: 2022-11-09T17:00:00Z
 excerpt: "Le Mobibus de Tisséo, les dispositifs d'épargne handicap, et les préconisations pour des paiements en ligne accessibles."
+tags: ["deficience-visuelle", "handicap-moteur", "legislation", "accessibilite-numerique", "vie-quotidienne"]
 draft: false
 ---
 

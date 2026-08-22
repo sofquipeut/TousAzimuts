@@ -4,6 +4,7 @@ number: 104
 season: saison-6
 pubDate: 2022-12-28T17:00:00Z
 excerpt: "Spécial Noël : les comédies inclusives, le village du Père Noël en Laponie, la BO de Maman j'ai raté l'avion, et un Père Noël qui répond en langue des signes."
+tags: ["deficience-auditive", "culture", "vie-quotidienne", "education"]
 draft: false
 ---
 

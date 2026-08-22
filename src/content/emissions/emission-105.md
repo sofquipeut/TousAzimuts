@@ -4,6 +4,7 @@ number: 105
 season: saison-6
 pubDate: 2023-01-11T17:00:00Z
 excerpt: "La reconnaissance de la surdicécité comme handicap à part entière, le syndrome de Williams-Beuren, l'histoire de Louis Braille, et le nouveau mode lecture d'Android."
+tags: ["deficience-visuelle", "deficience-auditive", "handicap-intellectuel", "braille", "technologie", "accessibilite-numerique", "legislation"]
 draft: false
 ---
 

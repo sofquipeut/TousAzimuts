@@ -4,6 +4,7 @@ number: 99
 season: saison-6
 pubDate: 2022-10-12T17:00:00Z
 excerpt: "La directive européenne accessibilité et le retard français, les vacances côté accessibilité, et l'état des lieux de l'audiodescription."
+tags: ["deficience-visuelle", "legislation", "accessibilite-numerique", "audiodescription", "vie-quotidienne"]
 draft: false
 ---
 

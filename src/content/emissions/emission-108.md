@@ -4,6 +4,7 @@ number: 108
 season: saison-6
 pubDate: 2023-02-22T17:00:00Z
 excerpt: "La SCOP toulousaine Autrement Dit qui forme à la LSF, la réforme des retraites côté handicap, le podcast Artistes avant tout, et la douleur chez les personnes non communicantes."
+tags: ["deficience-auditive", "polyhandicap", "culture", "legislation", "sante", "emploi", "education"]
 draft: false
 ---
 
