@@ -4,6 +4,7 @@ number: 136
 season: saison-7
 pubDate: 2024-06-26T17:00:00Z
 excerpt: "La Nuit du Handicap à Toulouse, l'Access-Ability Summer Showcase dédié aux jeux vidéo inclusifs, et une visite sensorielle du festival Le Nouveau Printemps."
+tags: ["deficience-visuelle", "handicap-moteur", "accessibilite-numerique", "sport", "culture", "technologie"]
 draft: false
 ---
 

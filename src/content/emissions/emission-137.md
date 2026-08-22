@@ -4,6 +4,7 @@ number: 137
 season: saison-7
 pubDate: 2024-07-10T17:00:00Z
 excerpt: "Le documentaire sonore Let's Go Remix sur un binôme maître-chien guide, la borne audio à conduction osseuse L'Osonante, et l'audiodescription aux Jeux Paralympiques de Paris."
+tags: ["deficience-visuelle", "temoignage", "audiodescription", "culture", "technologie", "sport"]
 draft: false
 ---
 

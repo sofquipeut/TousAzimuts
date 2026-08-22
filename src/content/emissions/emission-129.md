@@ -4,6 +4,7 @@ number: 129
 season: saison-7
 pubDate: 2024-03-13T17:00:00Z
 excerpt: "Hommage à Marcel Nuss, militant de l'accompagnement sexuel, l'association VMEH auprès des patients isolés à l'hôpital, et le palmarès du Marius de l'audiodescription 2024."
+tags: ["temoignage", "audiodescription", "culture", "sante", "legislation"]
 draft: false
 ---
 

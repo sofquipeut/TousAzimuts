@@ -4,6 +4,7 @@ number: 133
 season: saison-7
 pubDate: 2024-05-08T17:00:00Z
 excerpt: "Le nouveau numéro national contre la maltraitance des personnes âgées et handicapées, la friperie solidaire FRIPON, et le guide Handisport 2023-2024."
+tags: ["legislation", "sport", "temoignage", "culture"]
 draft: false
 ---
 

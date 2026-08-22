@@ -4,6 +4,7 @@ number: 126
 season: saison-7
 pubDate: 2024-01-24T17:00:00Z
 excerpt: "Trois films sur le handicap à l'affiche, Parcoursup décrypté pour les candidats en situation de handicap, le scanner de poche OrCam Read, et les nouveautés de Be My Eyes."
+tags: ["deficience-visuelle", "handicap-moteur", "handicap-intellectuel", "troubles-dys", "culture", "technologie", "education", "sport"]
 draft: false
 ---
 

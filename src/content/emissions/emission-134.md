@@ -4,6 +4,7 @@ number: 134
 season: saison-7
 pubDate: 2024-05-22T17:00:00Z
 excerpt: "L'accessibilité du vote aux élections européennes, les dispositifs d'accessibilité des Jeux de Paris 2024, et le portrait de trois athlètes paralympiques français."
+tags: ["legislation", "sport", "accessibilite-numerique", "technologie", "audiodescription"]
 draft: false
 ---
 

@@ -4,6 +4,7 @@ number: 132
 season: saison-7
 pubDate: 2024-04-24T17:00:00Z
 excerpt: "Les recherches sur la DMLA au CERCO de Toulouse, la tablette Touch2See pour suivre le sport, et la programmation Ville pour tous de Toulouse Métropole."
+tags: ["deficience-visuelle", "technologie", "sport", "sante", "audiodescription"]
 draft: false
 ---
 

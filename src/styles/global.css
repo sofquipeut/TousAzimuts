@@ -354,3 +354,59 @@ iframe {
 .contact-form textarea {
   resize: vertical;
 }
+
+/* Tags */
+.emission-tags {
+  margin: 2rem 0;
+}
+
+.tag-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+}
+
+.tag {
+  background: var(--color-brand);
+  color: #fff;
+  padding: 0.25em 0.7em;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Émissions similaires */
+.similar-episodes {
+  margin: 2rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.similar-episodes h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.similar-episodes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.similar-episodes li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.similar-episodes__tags {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}

@@ -4,6 +4,7 @@ number: 131
 season: saison-7
 pubDate: 2024-04-17T17:00:00Z
 excerpt: "L'appli VIP de Philippe Croizon pour le stationnement adapté, le Salon Autonomic de Muret, et l'adaptation audio des Montagnes hallucinées de Lovecraft."
+tags: ["handicap-moteur", "deficience-visuelle", "technologie", "culture", "vie-quotidienne", "sante"]
 draft: false
 ---
 

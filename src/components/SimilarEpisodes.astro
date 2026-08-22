@@ -1,0 +1,45 @@
+---
+import { getCollection } from 'astro:content';
+import { withBase } from '../lib/url';
+
+interface Props {
+  currentSlug: string;
+  currentTags: string[];
+}
+
+const { currentSlug, currentTags } = Astro.props;
+
+if (currentTags.length === 0) return;
+
+const allEmissions = await getCollection('emissions', (e) => !e.data.draft);
+
+const scored = allEmissions
+  .filter((e) => e.slug !== currentSlug && e.data.tags.length > 0)
+  .map((e) => {
+    const shared = e.data.tags.filter((t: string) => currentTags.includes(t)).length;
+    return { emission: e, shared };
+  })
+  .filter((s) => s.shared >= 2)
+  .sort((a, b) => b.shared - a.shared || b.emission.data.pubDate.getTime() - a.emission.data.pubDate.getTime())
+  .slice(0, 5);
+
+if (scored.length === 0) return;
+---
+
+<section class="similar-episodes" aria-label="Émissions similaires">
+  <h2>Émissions similaires</h2>
+  <ul>
+    {scored.map(({ emission, shared }) => (
+      <li>
+        <a href={withBase(`/emissions/${emission.slug}/`)}>
+          {emission.data.title}
+        </a>
+        <span class="similar-episodes__tags">
+          {emission.data.tags
+            .filter((t: string) => currentTags.includes(t))
+            .join(', ')}
+        </span>
+      </li>
+    ))}
+  </ul>
+</section>

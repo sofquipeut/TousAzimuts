@@ -21,6 +21,7 @@ const emissions = defineCollection({
     audioUrl: z.string().url().optional(),
     rssPlayerId: z.string().optional(),
     excerpt: z.string(),
+    tags: z.array(z.string()).default([]),
     draft: z.boolean().default(true),
   }),
 });

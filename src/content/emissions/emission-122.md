@@ -4,6 +4,7 @@ number: 122
 season: saison-7
 pubDate: 2023-11-22T17:00:00Z
 excerpt: "Les jeunes du centre Lestrade de Ramonville et leur projet d'orientation, le métier d'éducateur AVJ, et le podcast Faire des sciences avec Star Wars."
+tags: ["deficience-visuelle", "temoignage", "culture", "education", "vie-quotidienne"]
 draft: false
 ---
 

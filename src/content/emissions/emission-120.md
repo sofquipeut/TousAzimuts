@@ -4,6 +4,7 @@ number: 120
 season: saison-7
 pubDate: 2023-10-25T17:00:00Z
 excerpt: "Le Disability Innovation Challenge de Carrefour, la rencontre entre une princesse Disney et une petite fille autiste, et des chaussures connectées à navigation GPS."
+tags: ["autisme", "emploi", "technologie", "temoignage", "accessibilite-numerique"]
 draft: false
 ---
 

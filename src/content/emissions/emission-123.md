@@ -4,6 +4,7 @@ number: 123
 season: saison-7
 pubDate: 2023-12-13T17:00:00Z
 excerpt: "Le challenge inclusion du groupe Apicile, la loi plein emploi qui crée France Travail, l'enquête HOMERE sur le handicap visuel, et les débuts de l'application d'audiodescription La Bavarde."
+tags: ["autisme", "deficience-visuelle", "emploi", "legislation", "audiodescription", "technologie"]
 draft: false
 ---
 

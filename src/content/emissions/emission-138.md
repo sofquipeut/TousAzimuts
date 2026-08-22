@@ -4,6 +4,7 @@ number: 138
 season: saison-7
 pubDate: 2024-07-24T17:00:00Z
 excerpt: "Dernière de la saison : l'association AccessiJeux qui rend les jeux de société accessibles, le test de la canne blanche à roulette Ouicanne, et une sélection musicale pour l'été."
+tags: ["deficience-visuelle", "technologie", "temoignage", "culture"]
 draft: false
 ---
 

@@ -31,6 +31,37 @@ collections:
       - { label: "Lien d'écoute (optionnel, utilisé si pas de lecteur RSS.com)", name: "audioUrl", widget: "string", required: false }
       - { label: "Identifiant du lecteur RSS.com (optionnel)", name: "rssPlayerId", widget: "string", required: false, hint: "Le numéro à la fin de l'URL de partage RSS.com, ex : 3063891. S'il est renseigné, le lecteur audio intégré remplace le lien d'écoute." }
       - { label: "Résumé court", name: "excerpt", widget: "text" }
+      - label: "Tags"
+        name: "tags"
+        widget: "select"
+        multiple: true
+        required: false
+        default: []
+        options:
+          - { label: "Déficience visuelle", value: "deficience-visuelle" }
+          - { label: "Déficience auditive", value: "deficience-auditive" }
+          - { label: "Handicap moteur", value: "handicap-moteur" }
+          - { label: "Polyhandicap", value: "polyhandicap" }
+          - { label: "Autisme", value: "autisme" }
+          - { label: "Handicap intellectuel", value: "handicap-intellectuel" }
+          - { label: "Handicap psychique", value: "handicap-psychique" }
+          - { label: "Troubles dys", value: "troubles-dys" }
+          - { label: "Maladie chronique", value: "maladie-chronique" }
+          - { label: "Handicap invisible", value: "handicap-invisible" }
+          - { label: "Technologie", value: "technologie" }
+          - { label: "Accessibilité numérique", value: "accessibilite-numerique" }
+          - { label: "Audiodescription", value: "audiodescription" }
+          - { label: "Braille", value: "braille" }
+          - { label: "Culture", value: "culture" }
+          - { label: "Sport", value: "sport" }
+          - { label: "Législation", value: "legislation" }
+          - { label: "Emploi", value: "emploi" }
+          - { label: "Éducation", value: "education" }
+          - { label: "Vie quotidienne", value: "vie-quotidienne" }
+          - { label: "Santé", value: "sante" }
+          - { label: "Aidants", value: "aidants" }
+          - { label: "Témoignage", value: "temoignage" }
+          - { label: "International", value: "international" }
       - { label: "Brouillon (masqué du site tant que coché)", name: "draft", widget: "boolean", default: true }
       - { label: "Contenu du conducteur", name: "body", widget: "markdown" }
 

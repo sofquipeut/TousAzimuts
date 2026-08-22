@@ -4,6 +4,7 @@ number: 125
 season: saison-7
 pubDate: 2024-01-10T17:00:00Z
 excerpt: "Le nouveau service Assist'enGare de la SNCF, la zoopharmacognosie chez les animaux, la révolution des droits dans les ESAT, et l'élargissement de la PCH aux troubles invisibles."
+tags: ["deficience-visuelle", "handicap-invisible", "technologie", "legislation", "vie-quotidienne", "sante", "braille"]
 draft: false
 ---
 
