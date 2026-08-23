@@ -16,6 +16,6 @@ On embarque pour une heure de radio avec 5 rubriques.
 - **What's new ?** : Julien présente deux outils d'IA pour décrire les images : la fonction intégrée au lecteur d'écran TalkBack sur Android, et [Be My AI](https://www.bemyeyes.com/bme-ai/) qui permet de photographier et questionner son environnement.
 - **Agenda** : Carinne annonce la saison d'opéras audio-décrits et rappelle la [Journée mondiale du bégaiement](https://www.begaiement.org/22-octobre-journee-mondiale-du-begaiement/) du 22 octobre.
 
-Côté musique, deux pauses : [Pure Reason Revolution - Betrayal](https://www.youtube.com/watch?v=VUM3tS0edFI) , extrait de l'album *Coming Up To Consciousness* et [The Smile - Eyes & Mouth](https://www.youtube.com/watch?v=bYBFK16wats) , extrait de l'album *Cutouts*.
+Côté musique, deux pauses : [Pure Reason Revolution - Betrayal](https://www.youtube.com/watch?v=VUM3tS0edFI), extrait de l'album *Coming Up To Consciousness* et [The Smile - Eyes & Mouth](https://www.youtube.com/watch?v=bYBFK16wats), extrait de l'album *Cutouts*.
 
 *Émission animée par Julien et Amandine, avec Carinne et Michel en chroniques. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
