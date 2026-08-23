@@ -6,6 +6,7 @@ pubDate: 2024-12-20T17:00:00Z
 excerpt: "Spécial Noël : idées cadeaux chez Handynamic, un livre de recettes en français facile, des conseils pour des fêtes adaptées aux enfants autistes, et un conte à écouter en famille."
 tags: ["autisme", "culture", "vie-quotidienne", "audiodescription"]
 draft: false
+rssPlayerId: "3090032"
 ---
 
 Spécial Noël : des idées cadeaux, un livre de recettes pour tous, la musique des films de fêtes, et de quoi passer les fêtes en douceur.
