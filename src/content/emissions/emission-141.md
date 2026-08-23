@@ -6,6 +6,7 @@ pubDate: 2024-11-13T17:00:00Z
 excerpt: "La méthode FALC pour une information accessible à tous, le théâtre immersif Une Contre Histoire du Monde, et les bandes dessinées audio de Blynd."
 tags: ["deficience-visuelle", "troubles-dys", "audiodescription", "culture", "accessibilite-numerique"]
 draft: false
+rssPlayerId: "3089481"
 ---
 
 Au programme de cette 141ème :
