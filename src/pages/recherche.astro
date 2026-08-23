@@ -15,18 +15,18 @@ import Base from '../layouts/Base.astro';
   <p id="search-status" role="status" aria-live="polite"></p>
   <ul id="search-results" class="emission-list"></ul>
 
-  <script is:inline>
+  <script is:inline define:vars={{ base: import.meta.env.BASE_URL }}>
     window.addEventListener('DOMContentLoaded', function () {
       var status = document.getElementById('search-status');
       var results = document.getElementById('search-results');
       var form = document.getElementById('search-form');
       var input = document.getElementById('search-input');
-      var base = '/TousAzimuts/';
+      var pagefindBase = base.endsWith('/') ? base : base + '/';
       var pagefindPromise = null;
 
       function loadPagefind() {
         if (!pagefindPromise) {
-          pagefindPromise = import(base + 'pagefind/pagefind.js')
+          pagefindPromise = import(pagefindBase + 'pagefind/pagefind.js')
             .then(function (pf) {
               return pf.init().then(function () {
                 return pf;
