@@ -16,6 +16,6 @@ Cinq sujets à découvrir cette semaine.
 - **What's new ?** : Julien explore la nouvelle fonction vidéo de [Seeing AI](https://www.avh.asso.fr/implantations/certam/evaluations-de-produits/seeing-ai-de-microsoft-version-411), capable de décrire une vidéo toutes les 5 secondes.
 - **Agenda** : Carinne invite à la [Semaine du handicap](https://www.semaine-emploi-handicap.com/) du 18 au 24 novembre.
 
-Côté musique, deux pauses : [Bear McCreary - The Automaton's Heart](https://www.youtube.com/watch?v=X6i3GkuZC9k) , extrait de l'album *The Singularity* et [Klone - After The Sun](https://www.youtube.com/watch?v=ahygKmFpgbc) , extrait de l'album *The Unseen*.
+Côté musique, deux pauses : [Bear McCreary - The Automaton's Heart](https://www.youtube.com/watch?v=X6i3GkuZC9k), extrait de l'album *The Singularity* et [Klone - After The Sun](https://www.youtube.com/watch?v=ahygKmFpgbc), extrait de l'album *The Unseen*.
 
 *Émission animée par Julien, Michel et Carinne, avec Amandine en chronique pré-enregistrée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
