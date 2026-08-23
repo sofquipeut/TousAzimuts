@@ -8,7 +8,7 @@ tags: ["deficience-visuelle", "troubles-dys", "audiodescription", "culture", "ac
 draft: false
 ---
 
-On embarque pour une heure de radio avec 4 rubriques.
+Au programme de cette 141ème :
 
 - Michel présente la méthode [FALC](https://falc.unapei.org/) (Facile À Lire et à Comprendre), ces règles de rédaction qui rendent l'information accessible à tous : personnes dyslexiques, malvoyantes, ou dont le français n'est pas la langue maternelle.
 - **L'Invité** : David, metteur en scène, accompagné de Fanny et Romain, présente [« Une Contre Histoire du Monde »](https://hypermature.com/une-contre-histoire-du-monde) — un projet de théâtre qui détourne l'audiodescription pour créer un spectacle où le son prime sur l'image. Ateliers gratuits à la Brique Rouge les samedis de novembre à janvier.
