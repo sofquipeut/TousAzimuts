@@ -6,6 +6,7 @@ pubDate: 2024-10-09T17:00:00Z
 excerpt: "L'annuaire de l'audiodescription Zeugma Concepts, la réglementation sur les nuisances sonores, l'alphabet en langue des signes pour enfants, et l'opéra urbain Le Gardien du Temple."
 tags: ["audiodescription", "deficience-auditive", "culture", "sante", "temoignage"]
 draft: false
+rssPlayerId: "3089378"
 ---
 
 Au programme de ce premier épisode de la saison : l'audiodescription qui progresse partout, le vrai visage des nuisances sonores, la langue des signes pour les petits, et le grand retour de la Compagnie La Machine à Toulouse.
