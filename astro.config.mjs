@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { rehypeExternalLinks } from './src/lib/rehype-external-links.mjs';
 
 // Site hébergé sur GitHub Pages, servi via le domaine personnalisé tazfm.fr
 // (voir public/CNAME). L'ancienne URL sofquipeut.github.io/TousAzimuts
@@ -7,4 +8,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://tazfm.fr',
   base: '/',
+  markdown: {
+    rehypePlugins: [rehypeExternalLinks],
+  },
 });
