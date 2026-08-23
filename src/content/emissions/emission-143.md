@@ -8,13 +8,16 @@ tags: ["troubles-dys", "autisme", "education", "accessibilite-numerique", "techn
 draft: false
 ---
 
-Cinq sujets à découvrir cette semaine : 4 rubriques.
+Au sommaire de cette émission :
 
-- **L'invitée** : Carinne reçoit Audrey Tatry, présidente de « Une École Inclusive pour tous », association qui milite pour l'inclusion scolaire des enfants handicapés depuis 2022.
-- **Adapta'Box** : Michel dévoile cette boîte à outils maligne pour élèves avec TDAH, TSA, dyslexie ou dyspraxie — casque anti-bruit, roue des émotions, ciseaux adaptés. Testée en Île-de-France, la version maternelle arrive !
+- **Adapta'Box** : Michel présente l'[Adapta'Box](https://www.yanous.com/pratique/materiels/materiels241220.html), une boîte d'outils destinée aux élèves avec TDAH, troubles du spectre de l'autisme, dyslexie ou dyspraxie — sablier pour marquer le temps, casque anti-bruit, roue des émotions, stylos ergonomiques. Elle a été créée par Audrey Tatry, présidente de l'[association « Une École Inclusive pour Tous »](https://seinesaintdenis.fr/actualite/solidarites-sante/handicap/Audrey-Tatry-ou-le-combat-pour-linclusion-scolaire), fondée en 2022, dont le fils est atteint de dyspraxie. Testée en Île-de-France, une version maternelle est en préparation.
+
+- **L'invité** : Carinne fait un tour d'horizon de la carrière des [Cats on Trees](https://fr.wikipedia.org/wiki/Cats_on_Trees), le duo toulousain formé par Nina Goern et Yohan Hennequin, puis accueille au téléphone Yohan Hennequin, batteur et co-fondateur du groupe, qui monte l'exposition « Regards Sonores » au [Metronum de Toulouse](https://lemetronum.fr/evenement/regards-sonores-exposition-musicale). Le sujet est développé plus en détail dans [l'émission 159](https://tazfm.fr/emissions/emission-159/).
+
 - **Accessibilité** : Julien nous emmène au [Google Accessibility Discovery Center de Paris](https://blog.google/intl/fr-fr/google-france-inaugure-un-espace-collaboratif-dedie-aux-technologies-de-laccessibilite/), un espace dédié aux technologies pour tous.
+
 - **Agenda** : Carinne partage les rendez-vous à venir.
 
-Côté musique, deux pauses : [Eivør - Hugsi Bert Um Teg](https://www.youtube.com/watch?v=Gm2T5AAG9rA) , extrait de l'album *ENN* et [Cats on Trees, Calogero - Jimmy](https://www.youtube.com/watch?v=-OcNAib5Zl0) , extrait de l'album *Cats On Trees (Deluxe Edition)*.
+Côté musique, deux pauses : [Eivør - Hugsi Bert Um Teg](https://www.youtube.com/watch?v=Gm2T5AAG9rA), extrait de l'album *ENN*, et [Cats on Trees - Dad on the Moon](https://www.youtube.com/watch?v=D_4KLnGqqUs), extrait de l'album *Alie*.
 
 *Émission animée par Julien, Carinne et Michel. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
