@@ -6,6 +6,7 @@ pubDate: 2024-10-23T17:00:00Z
 excerpt: "Une première condamnation de l'État pour inaccessibilité numérique, les promesses du CBD, l'opéra urbain de La Machine, et l'IA Be My AI pour décrire les images."
 tags: ["deficience-visuelle", "legislation", "accessibilite-numerique", "sante", "culture", "technologie"]
 draft: false
+rssPlayerId: "3089390"
 ---
 
 On embarque pour une heure de radio avec 5 rubriques.
