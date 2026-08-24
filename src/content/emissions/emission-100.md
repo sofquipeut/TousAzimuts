@@ -6,6 +6,7 @@ pubDate: 2022-10-26T17:00:00Z
 excerpt: "Le podcast Influence-moi de handicap.fr, l'association La Pause Brindille pour les jeunes aidants, et le festival Ville pour tous à Toulouse."
 tags: ["handicap-moteur", "culture", "sport", "aidants", "temoignage"]
 draft: false
+rssPlayerId: "3091675"
 ---
 
 Au menu de cette émission : 3 rubriques.
