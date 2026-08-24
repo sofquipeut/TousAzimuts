@@ -6,6 +6,7 @@ pubDate: 2021-05-26T17:00:00Z
 excerpt: "Le jeu audio Perilous Marathon, le documentaire 21 jours à l'aveugle, les applications pour le public autiste, et le détecteur d'obstacles Nélo."
 tags: ["deficience-visuelle", "autisme", "technologie", "culture"]
 draft: false
+rssPlayerId: "3091751"
 ---
 
 Au menu de cette émission : 4 rubriques.
