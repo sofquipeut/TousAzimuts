@@ -6,6 +6,7 @@ pubDate: 2025-01-22T17:00:00Z
 excerpt: "Les 20 ans de la loi du 11 février 2005, le boîtier Tom Pouce pour la canne blanche, et une initiation au braille."
 tags: ["deficience-visuelle", "legislation", "technologie", "braille"]
 draft: false
+rssPlayerId: "3091104"
 ---
 
 Au sommaire de cette émission :
