@@ -6,6 +6,7 @@ pubDate: 2020-11-25T17:00:00Z
 excerpt: "Le studio Parolox et ses web documentaires sur le handicap, portrait d'Anna, comédienne et mannequin non-voyante, et le débat sur l'attestation de sortie pendant le confinement."
 tags: ["deficience-visuelle", "audiodescription", "culture", "temoignage", "legislation", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091735"
 ---
 
 Au programme de cet épisode, 5 rubriques et une invitée.
