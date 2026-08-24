@@ -6,6 +6,7 @@ pubDate: 2021-10-20T17:00:00Z
 excerpt: "L'éco-anxiété chez les jeunes, le calendrier solidaire Nos petits héros, la BD audio Blynd, et le portrait de la comédienne non-voyante Anna."
 tags: ["deficience-visuelle", "culture", "emploi", "temoignage"]
 draft: false
+rssPlayerId: "3091706"
 ---
 
 Au programme de cet épisode, 4 rubriques et une invitée.
