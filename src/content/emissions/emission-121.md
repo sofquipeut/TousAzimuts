@@ -6,6 +6,7 @@ pubDate: 2023-11-08T17:00:00Z
 excerpt: "Le téléfilm Droit de regard inspiré d'une juriste non-voyante, un témoignage sur la myopathie de Duchenne, et la bibliothèque Éole désormais pilotable à la voix sur Alexa."
 tags: ["deficience-visuelle", "handicap-moteur", "temoignage", "technologie", "culture", "legislation"]
 draft: false
+rssPlayerId: "3091647"
 ---
 
 Cette semaine, on parle de 5 rubriques.
