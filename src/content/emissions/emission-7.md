@@ -6,6 +6,7 @@ pubDate: 2018-01-10T17:00:00Z
 excerpt: "Le torball toulousain, Mathias et son rêve de devenir DJ malgré le polyhandicap, le débat sur l'écriture inclusive, la main bionique low-cost, et le nouveau site accessible de Handicap Zéro."
 tags: ["deficience-visuelle", "polyhandicap", "handicap-moteur", "sport", "technologie", "accessibilite-numerique", "temoignage"]
 draft: false
+rssPlayerId: "3091802"
 ---
 
 Au programme de ce premier épisode de 2018, cinq rubriques pour bien commencer l'année.
