@@ -6,6 +6,7 @@ pubDate: 2023-06-28T17:00:00Z
 excerpt: "Vacances et handicap, et le club tandem de l'AVH."
 tags: ["deficience-visuelle", "sport", "vie-quotidienne", "temoignage"]
 draft: false
+rssPlayerId: "3091700"
 ---
 
 Cinq sujets à découvrir cette semaine : quelques rubriques.
