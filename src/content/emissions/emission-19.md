@@ -6,6 +6,7 @@ pubDate: 2018-07-11T17:00:00Z
 excerpt: "Dernière de la saison : sensibilisation au handicap à l'école, les nouvelles mesures pour l'emploi des travailleurs handicapés, l'Apple Watch testée par une utilisatrice de VoiceOver, et un jeu vidéo contre l'amblyopie."
 tags: ["deficience-visuelle", "technologie", "accessibilite-numerique", "braille", "legislation", "emploi", "education"]
 draft: false
+rssPlayerId: "3091828"
 ---
 
 Que nous réserve cet épisode ? 6 rubriques.
