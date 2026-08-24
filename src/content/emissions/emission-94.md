@@ -6,6 +6,7 @@ pubDate: 2022-05-25T17:00:00Z
 excerpt: "Le téléfilm Handigang sur TF1, la saga audio Blackwater, le yoga adapté aux déficients visuels, et les prothèses pour animaux handicapés."
 tags: ["deficience-visuelle", "handicap-moteur", "culture", "sport", "temoignage"]
 draft: false
+rssPlayerId: "3091725"
 ---
 
 Cinq sujets à découvrir cette semaine : 5 rubriques.
