@@ -6,6 +6,7 @@ pubDate: 2021-02-24T17:00:00Z
 excerpt: "Un projet d'habitat inclusif à Toulouse, les fonctionnalités d'accessibilité de la PlayStation 5, le jeu de plateau tactile Four Sense, et le film Moi Léa."
 tags: ["deficience-visuelle", "autisme", "technologie", "accessibilite-numerique", "culture", "vie-quotidienne", "legislation"]
 draft: false
+rssPlayerId: "3091742"
 ---
 
 On embarque pour une heure de radio avec 6 rubriques.
