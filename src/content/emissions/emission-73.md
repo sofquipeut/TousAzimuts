@@ -6,6 +6,7 @@ pubDate: 2021-05-12T17:00:00Z
 excerpt: "Le jeu vidéo Blind Drive, le syndrome de Klein-Levin, le répit des aidants avec Bulle d'air, et une formation accessible pour créer son podcast."
 tags: ["deficience-visuelle", "maladie-chronique", "technologie", "culture", "aidants", "sante", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091750"
 ---
 
 On embarque pour une heure de radio avec 5 rubriques.
