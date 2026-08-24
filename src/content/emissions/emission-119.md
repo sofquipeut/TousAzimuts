@@ -6,6 +6,7 @@ pubDate: 2023-10-11T17:00:00Z
 excerpt: "Les 11 millions d'aidants isolés, la LSF en milieu rural avec Ariège en Langue des Signes, et l'adaptation audio de l'Encyclopédie du Savoir Relatif et Absolu."
 tags: ["deficience-auditive", "aidants", "culture", "audiodescription", "legislation"]
 draft: false
+rssPlayerId: "3091645"
 ---
 
 Que nous réserve cet épisode ? 4 rubriques.
