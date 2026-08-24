@@ -6,6 +6,7 @@ pubDate: 2023-05-10T17:00:00Z
 excerpt: "L'association Anna pour les particularités corporelles, les lunettes intelligentes Blind Up, et les lunettes filtrantes contre le daltonisme."
 tags: ["deficience-visuelle", "technologie", "sante", "culture"]
 draft: false
+rssPlayerId: "3091693"
 ---
 
 Cinq sujets à découvrir cette semaine : 4 rubriques.
