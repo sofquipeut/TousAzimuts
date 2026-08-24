@@ -6,6 +6,7 @@ pubDate: 2020-02-12T17:00:00Z
 excerpt: "Le handi-grimpeur Philippe Ribière, le trouble alimentaire Pica au cinéma avec le film Swallow, le jeu de sensibilisation à l'autisme TSARA, et une chambre d'hôtel délibérément inaccessible pour sensibiliser au handicap."
 tags: ["deficience-visuelle", "handicap-moteur", "autisme", "sport", "culture", "technologie", "aidants"]
 draft: false
+rssPlayerId: "3091768"
 ---
 
 Que nous réserve cet épisode ? 6 rubriques.
