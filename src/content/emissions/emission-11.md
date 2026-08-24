@@ -6,6 +6,7 @@ pubDate: 2018-03-02T17:00:00Z
 excerpt: "Le site Game Lover qui note l'accessibilité des jeux vidéo, une histoire du handisport, Clubhouse France pour l'emploi, le compteur Linky non accessible, et un film sur la sexualité et le handicap."
 tags: ["deficience-visuelle", "handicap-psychique", "sport", "technologie", "accessibilite-numerique", "emploi", "culture"]
 draft: false
+rssPlayerId: "3091811"
 ---
 
 Que nous réserve cet épisode ? 7 rubriques.
