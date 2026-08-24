@@ -6,6 +6,7 @@ pubDate: 2020-05-06T17:00:00Z
 excerpt: "Le clavier braille intégré à Android, l'exosquelette de rééducation Enoskelet, l'humoriste québécois William Bernaquez, et le drive fermier accessible du Domaine de Candie."
 tags: ["deficience-visuelle", "handicap-moteur", "technologie", "braille", "culture", "sante", "accessibilite-numerique"]
 draft: false
+rssPlayerId: "3091775"
 ---
 
 Cette semaine, on parle de 6 rubriques.
