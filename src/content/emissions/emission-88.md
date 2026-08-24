@@ -6,6 +6,7 @@ pubDate: 2022-02-23T17:00:00Z
 excerpt: "L'appli TIA bloquée sur iPhone, le handicap invisible au travail, un témoignage sur le lupus, et l'accessibilité électorale."
 tags: ["deficience-visuelle", "handicap-invisible", "maladie-chronique", "technologie", "legislation", "temoignage", "emploi"]
 draft: false
+rssPlayerId: "3091719"
 ---
 
 Au programme de cet épisode, 5 rubriques et une invitée.
