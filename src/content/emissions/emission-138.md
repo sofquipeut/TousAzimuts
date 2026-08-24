@@ -6,6 +6,7 @@ pubDate: 2024-07-24T17:00:00Z
 excerpt: "Dernière de la saison : l'association AccessiJeux qui rend les jeux de société accessibles, le test de la canne blanche à roulette Ouicanne, et une sélection musicale pour l'été."
 tags: ["deficience-visuelle", "technologie", "temoignage", "culture"]
 draft: false
+rssPlayerId: "3091671"
 ---
 
 Au menu de cette dernière émission de la saison : une association qui rend les jeux de société accessibles, le test d'une nouvelle canne blanche à roulette, et des recommandations musicales pour l'été.
