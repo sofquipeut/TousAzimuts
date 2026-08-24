@@ -6,6 +6,7 @@ pubDate: 2025-04-23T17:00:00Z
 excerpt: "Le chatbot en langue des signes Iris, l'association Une maison pour la vie pour les chats handicapés, l'accessibilité du patrimoine, et les options d'accessibilité de la Nintendo Switch 2."
 tags: ["deficience-auditive", "handicap-moteur", "technologie", "culture", "accessibilite-numerique", "temoignage"]
 draft: false
+rssPlayerId: "3091640"
 ---
 
 Au menu de cette émission : 5 rubriques.
