@@ -6,6 +6,7 @@ pubDate: 2022-03-04T17:00:00Z
 excerpt: "Le Neko Light Orchestra, groupe toulousain de musiques de jeux vidéo, l'accessibilité de Twitch et Discord, et le débat sur le cripping up au cinéma."
 tags: ["deficience-visuelle", "culture", "accessibilite-numerique", "legislation"]
 draft: false
+rssPlayerId: "3091720"
 ---
 
 Au programme de cet épisode, 4 rubriques et un invité.
