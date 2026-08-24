@@ -6,6 +6,7 @@ pubDate: 2024-03-27T17:00:00Z
 excerpt: "La carte bancaire biométrique d'Idémia, le podcast Dis moi oui, Handi animé par Mickaël Jeremiasz, et le cabinet de recrutement Specialisterne pour les personnes autistes."
 tags: ["deficience-visuelle", "autisme", "technologie", "culture", "emploi", "audiodescription"]
 draft: false
+rssPlayerId: "3091661"
 ---
 
 Au menu de cette émission : 4 rubriques.
