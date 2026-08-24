@@ -6,6 +6,7 @@ pubDate: 2023-02-08T17:00:00Z
 excerpt: "Les Non-Voyants et leurs Drôles de Machines, une exposition tactile itinérante, et l'arrivée du clavier braille en français sur Android."
 tags: ["deficience-visuelle", "braille", "technologie", "accessibilite-numerique", "sport", "culture"]
 draft: false
+rssPlayerId: "3091685"
 ---
 
 Au menu de cette émission : 4 rubriques.
