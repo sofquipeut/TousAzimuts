@@ -6,6 +6,7 @@ pubDate: 2020-12-09T17:00:00Z
 excerpt: "Les courses en ligne accessibles aux déficients visuels, le Comité interministériel du handicap de novembre 2020, le parcours d'Arthur Battaille, et les agendas adaptés pour 2021."
 tags: ["deficience-visuelle", "handicap-moteur", "braille", "accessibilite-numerique", "legislation", "temoignage", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091736"
 ---
 
 On embarque pour une heure de radio avec 4 rubriques.
