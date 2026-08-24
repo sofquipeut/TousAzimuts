@@ -6,6 +6,7 @@ pubDate: 2022-06-22T17:00:00Z
 excerpt: "Le quotidien sans la vue raconté par Carinne, une serveuse non-voyante au restaurant Dans le Noir ?, l'apraxie dans la maladie d'Alzheimer, et la hausse des aménagements au bac."
 tags: ["deficience-visuelle", "braille", "sante", "emploi", "education", "temoignage", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091727"
 ---
 
 Au sommaire aujourd'hui : 5 rubriques.
