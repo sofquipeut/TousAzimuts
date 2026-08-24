@@ -6,6 +6,7 @@ pubDate: 2020-01-08T17:00:00Z
 excerpt: "Le copilote de rallye Alexandre au Bab El Raid, les 22 mesures du Comité Interministériel du Handicap, le handicap invisible, et la Conférence Nationale du Handicap pour les 15 ans de la loi de 2005."
 tags: ["deficience-visuelle", "handicap-invisible", "sport", "legislation", "emploi", "temoignage"]
 draft: false
+rssPlayerId: "3091766"
 ---
 
 Cinq sujets à découvrir cette semaine : 4 rubriques.
