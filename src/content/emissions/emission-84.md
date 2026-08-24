@@ -6,6 +6,7 @@ pubDate: 2021-12-22T17:00:00Z
 excerpt: "Spécial Noël : le conte audio Jack et la grande aventure du cochon de Noël, la recette du Sachertorte, et le sac à sapin solidaire d'Handicap International."
 tags: ["handicap-intellectuel", "culture", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091711"
 ---
 
 On embarque pour une heure de radio avec 5 rubriques.
