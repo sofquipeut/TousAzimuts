@@ -7,6 +7,7 @@ audioUrl: "https://open.spotify.com/episode/40xDd1u2OV8Aevndit5MNC?si=xqoujLuqRT
 excerpt: "Les sagas MP3 accessibles, le parc Sacha au Canada, le comité interministériel du handicap, le PenyTalks et le festival Regards Croisés."
 tags: ["deficience-visuelle", "handicap-moteur", "autisme", "culture", "technologie", "legislation", "international"]
 draft: false
+rssPlayerId: "3091795"
 ---
 
 Au menu de cette émission : 5 rubriques.
