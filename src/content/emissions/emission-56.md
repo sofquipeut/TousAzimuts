@@ -6,6 +6,7 @@ pubDate: 2020-06-24T17:00:00Z
 excerpt: "Le FALC pour rendre l'information accessible, le métier méconnu de professeur de braille, le jeu de course spatiale Space Wave Race, et le film italien Rouge comme le ciel."
 tags: ["deficience-visuelle", "handicap-intellectuel", "braille", "culture", "audiodescription", "technologie", "emploi"]
 draft: false
+rssPlayerId: "3091787"
 ---
 
 On embarque pour une heure de radio avec 6 rubriques.
