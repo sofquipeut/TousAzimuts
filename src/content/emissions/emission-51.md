@@ -6,6 +6,7 @@ pubDate: 2020-04-08T17:00:00Z
 excerpt: "Émission spéciale confinement : les dispositifs d'aide Covid-19 pour les personnes handicapées, la plateforme SOS Répit, et une sélection de rediffusions pour s'occuper pendant le confinement."
 tags: ["deficience-visuelle", "deficience-auditive", "legislation", "sante", "aidants", "culture"]
 draft: false
+rssPlayerId: "3091773"
 ---
 
 Cette semaine, on parle de 5 rubriques. Émission spéciale confinement : un montage avec plusieurs rediffusions, en raison de la crise sanitaire.
