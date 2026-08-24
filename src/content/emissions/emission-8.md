@@ -6,6 +6,7 @@ pubDate: 2018-01-24T17:00:00Z
 excerpt: "Les courses de Philippe, le dispositif Téléassistance 31, le portrait de l'artiste aveugle Claude Garrandès, et un sujet santé sans tabou sur les fuites urinaires."
 tags: ["deficience-visuelle", "sport", "technologie", "culture", "sante", "braille", "temoignage"]
 draft: false
+rssPlayerId: "3091806"
 ---
 
 Au menu de cette émission : 4 rubriques.
