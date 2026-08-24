@@ -6,6 +6,7 @@ pubDate: 2022-02-09T17:00:00Z
 excerpt: "Les dangers du protoxyde d'azote, l'invisibilité du handicap dans la publicité, la synthèse vocale personnalisée Acapela MyOwnVoice, et l'appli El Picto qui traduit la parole en pictogrammes."
 tags: ["autisme", "handicap-invisible", "technologie", "sante", "vie-quotidienne", "aidants"]
 draft: false
+rssPlayerId: "3091717"
 ---
 
 Au menu de cette émission : 5 rubriques.
