@@ -7,6 +7,7 @@ audioUrl: "https://open.spotify.com/episode/1XQP2N5wJlyIwn287A8Nd4?si=D59SZ6kNTr
 excerpt: "La web série « J'en crois pas mes yeux », l'appli de rencontre Limit, Sophie Drouvroy sur l'accessibilité numérique, et le débat sur la représentation du handicap dans la culture."
 tags: ["deficience-visuelle", "deficience-auditive", "technologie", "accessibilite-numerique", "audiodescription", "culture", "temoignage"]
 draft: false
+rssPlayerId: "3091738"
 ---
 
 Au programme de cet épisode, 6 rubriques et une invitée.
