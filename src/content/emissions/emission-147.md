@@ -6,6 +6,7 @@ pubDate: 2025-02-12T17:00:00Z
 excerpt: "En ce mois de février, l'actualité du handicap, une nouvelle rubrique cuisine, une série de livres pour enfants « dys », et un jardin pensé pour tous les sens."
 tags: ["deficience-visuelle", "troubles-dys", "legislation", "vie-quotidienne", "education"]
 draft: false
+rssPlayerId: "3091492"
 ---
 
 En ce mois de février, l'actualité du handicap, une nouvelle rubrique cuisine, une série de livres pour enfants « dys », et un jardin pensé pour tous les sens.
