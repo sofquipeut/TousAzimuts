@@ -6,6 +6,7 @@ pubDate: 2020-06-10T17:00:00Z
 excerpt: "Les nouveaux formulaires Cerfa en ligne, le wheelchair dancing, la loi Avia contre la haine en ligne, et le site Ludociels pour tous qui recense les jeux vidéo accessibles."
 tags: ["deficience-visuelle", "handicap-moteur", "accessibilite-numerique", "legislation", "sport", "culture", "technologie"]
 draft: false
+rssPlayerId: "3091783"
 ---
 
 Au programme de cet épisode, 4 rubriques.
