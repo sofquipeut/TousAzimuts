@@ -6,6 +6,7 @@ pubDate: 2017-11-03T17:00:00Z
 excerpt: "L'actualité handisport, la DMLA, les bibliothèques sonores ÉOLE et BNFA, le Festival International du Film sur les Handicaps, et la nouvelle Carte Mobilité Inclusion."
 tags: ["deficience-visuelle", "sport", "sante", "culture", "legislation", "emploi"]
 draft: false
+rssPlayerId: "3091796"
 ---
 
 Que nous réserve cet épisode ? 6 rubriques.
