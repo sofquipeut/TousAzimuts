@@ -6,6 +6,7 @@ pubDate: 2020-07-08T17:00:00Z
 excerpt: "L'application Le Localisateur pour naviguer sur le web, un guide des vacances accessibles (Handiplage, Wheeliz, Mon Copilote), le premier flash info de l'émission sur l'école inclusive, et l'accessibilité inédite de The Last of Us Part II."
 tags: ["deficience-visuelle", "handicap-moteur", "technologie", "accessibilite-numerique", "culture", "vie-quotidienne", "education"]
 draft: false
+rssPlayerId: "3091788"
 ---
 
 Que nous réserve cet épisode ? 6 rubriques.
