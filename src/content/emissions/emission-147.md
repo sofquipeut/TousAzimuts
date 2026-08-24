@@ -3,7 +3,7 @@ title: "Émission 147"
 number: 147
 season: saison-8
 pubDate: 2025-02-12T17:00:00Z
-excerpt: "En ce mois de février, l'actualité du handicap, une nouvelle rubrique cuisine, une série de livres pour enfants « dys », et un jardin pensé pour tous les sens." une nouvelle rubrique cuisine pour malvoyants, la série de livres illustrés Cookie sur les enfants « dys », et un reportage sur les jardins sensoriels."
+excerpt: "En ce mois de février, l'actualité du handicap, une nouvelle rubrique cuisine, une série de livres pour enfants « dys », et un jardin pensé pour tous les sens."
 tags: ["deficience-visuelle", "troubles-dys", "legislation", "vie-quotidienne", "education"]
 draft: false
 ---
