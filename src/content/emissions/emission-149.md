@@ -6,6 +6,7 @@ pubDate: 2025-03-12T17:00:00Z
 excerpt: "Le football pour amputés et la Transtoulousaine, des avancées encourageantes pour la DMLA, les Marius et le Portail de l'audiodescription, et l'Institut Robert-Debré du Cerveau de l'Enfant."
 tags: ["deficience-visuelle", "sport", "sante", "audiodescription", "temoignage"]
 draft: false
+rssPlayerId: "3091623"
 ---
 
 Au sommaire de cette émission :
