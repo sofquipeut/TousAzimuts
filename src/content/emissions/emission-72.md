@@ -6,6 +6,7 @@ pubDate: 2021-04-28T17:00:00Z
 excerpt: "Le blind designer Éric Brun-Sanglard, le détecteur d'obstacles Buzz Clip, le groupe de rock Lazuli et son guitariste au bras invalide, et la plateforme BienVoyantEnsemble."
 tags: ["deficience-visuelle", "handicap-moteur", "autisme", "technologie", "culture", "aidants", "temoignage"]
 draft: false
+rssPlayerId: "3091749"
 ---
 
 Que nous réserve cet épisode ? 6 rubriques.
