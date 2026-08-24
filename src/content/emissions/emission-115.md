@@ -6,6 +6,7 @@ pubDate: 2023-06-14T17:00:00Z
 excerpt: "Émission tournée sans électricité : un sac à dos vibrant pensé pour les personnes sourdes, et un sujet de société sur l'accessibilité et les droits."
 tags: ["deficience-auditive", "technologie", "culture", "legislation"]
 draft: false
+rssPlayerId: "3091699"
 ---
 
 Émission enregistrée dans des conditions particulières, sans électricité à Radio Mon Païs.
