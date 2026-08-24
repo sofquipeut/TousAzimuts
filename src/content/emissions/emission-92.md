@@ -6,6 +6,7 @@ pubDate: 2022-04-27T17:00:00Z
 excerpt: "Une série de livres jeunesse sur les chiens guides, l'association Les Yeux Dits qui audiodécrit le patrimoine du cinéma français, des électrodes qui font remarcher des paraplégiques, et le métier d'ergothérapeute."
 tags: ["deficience-visuelle", "handicap-moteur", "culture", "audiodescription", "technologie", "sante", "temoignage"]
 draft: false
+rssPlayerId: "3091723"
 ---
 
 Au menu de cette émission : 4 rubriques.
