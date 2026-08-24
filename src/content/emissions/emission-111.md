@@ -6,6 +6,7 @@ pubDate: 2023-04-12T17:00:00Z
 excerpt: "La réforme des retraites pour les personnes handicapées, des bons plans pour petits budgets, et la websérie CinémAccessible."
 tags: ["culture", "legislation", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091689"
 ---
 
 Cette semaine, on parle de 3 rubriques.
