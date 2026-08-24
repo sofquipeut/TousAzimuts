@@ -6,6 +6,7 @@ pubDate: 2024-06-12T17:00:00Z
 excerpt: "Émission hors studio : la paralysie faciale périphérique, la plateforme Accé Libre, et l'association Hôpital Sourire qui amène le spectacle vivant à l'hôpital."
 tags: ["sante", "accessibilite-numerique", "culture"]
 draft: false
+rssPlayerId: "3091668"
 ---
 
 4 rubriques cette semaine, dans une émission un peu particulière puisqu'elle n'est pas enregistrée en studio.
