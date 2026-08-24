@@ -6,6 +6,7 @@ pubDate: 2021-10-13T17:00:00Z
 excerpt: "Retour en studio après deux ans : le lien entre perte de vision et déclin cognitif, les jouets inclusifs (Lego Braille, Barbie en fauteuil), et Frouzins Bonne Action qui transforme la course à pied en solidarité."
 tags: ["deficience-visuelle", "autisme", "handicap-moteur", "culture", "sante", "sport"]
 draft: false
+rssPlayerId: "3091705"
 ---
 
 **Saison 5, épisode 1 - retour en studio après 2 ans**
