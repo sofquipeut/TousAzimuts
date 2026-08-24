@@ -6,6 +6,7 @@ pubDate: 2024-02-14T17:00:00Z
 excerpt: "L'histoire des Jeux Paralympiques, la sonification en astronomie, le fauteuil roulant en contreplaqué Apollo, et l'association des Auxiliaires des Aveugles."
 tags: ["deficience-visuelle", "handicap-moteur", "sport", "technologie", "temoignage", "audiodescription"]
 draft: false
+rssPlayerId: "3091657"
 ---
 
 Au sommaire aujourd'hui : 4 rubriques.
