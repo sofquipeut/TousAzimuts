@@ -6,6 +6,7 @@ pubDate: 2020-03-25T17:00:00Z
 excerpt: "Spécial 50e numéro : rétrospective des débuts de l'émission en 1999, le nouveau recours RAPO devant la MDPH, l'audiodescription à l'opéra du Capitole, et le lancement de la page Facebook de Tous Azimuts."
 tags: ["deficience-visuelle", "autisme", "audiodescription", "culture", "legislation", "temoignage"]
 draft: false
+rssPlayerId: "3091772"
 ---
 
 Au programme de ce numéro spécial, 6 rubriques pour fêter la 50e.
