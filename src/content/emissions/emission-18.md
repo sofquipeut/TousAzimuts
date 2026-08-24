@@ -6,6 +6,7 @@ pubDate: 2018-06-27T17:00:00Z
 excerpt: "La finale de Torball remportée par Toulouse, l'association Grégory Lemarchal, le remboursement expérimental des séances de psychologue, et une avancée de la recherche contre la sclérose en plaques."
 tags: ["deficience-visuelle", "maladie-chronique", "sport", "audiodescription", "sante", "emploi", "legislation"]
 draft: false
+rssPlayerId: "3091827"
 ---
 
 On embarque pour une heure de radio avec 6 rubriques.
