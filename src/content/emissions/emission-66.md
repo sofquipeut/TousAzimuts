@@ -6,6 +6,7 @@ pubDate: 2021-01-27T18:00:00Z
 excerpt: "L'œil bionique EC-EYE, le film Silent Voice sur le harcèlement d'une élève sourde, le livre La vie m'appelle ailleurs, l'appli ScanVox, et les Trophées Femmes en Entreprise Adaptées."
 tags: ["deficience-visuelle", "deficience-auditive", "technologie", "culture", "sante", "aidants"]
 draft: false
+rssPlayerId: "3091739"
 ---
 
 Au programme de cet épisode, 6 rubriques et deux invitées.
