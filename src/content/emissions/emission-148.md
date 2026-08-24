@@ -6,6 +6,7 @@ pubDate: 2025-02-26T17:00:00Z
 excerpt: "Le hackathon de l'accessibilité numérique, la mobilisation citoyenne pour l'application de la loi handicap, des panneaux solaires implantés dans l'œil, et l'application La Bavarde."
 tags: ["deficience-visuelle", "accessibilite-numerique", "audiodescription", "legislation", "technologie", "sante"]
 draft: false
+rssPlayerId: "3091504"
 ---
 
 Au programme : le hackathon de l'accessibilité numérique, la révolution à roulettes militante, les promesses des panneaux solaires implantés dans l'œil, un nouvel album très attendu et l'appli qui veut rendre le cinéma accessible à tous les handicaps.
