@@ -6,6 +6,7 @@ pubDate: 2023-03-08T17:00:00Z
 excerpt: "Le rapport HOMERE sur la déficience visuelle, l'association Cyberdicap pour l'inclusion numérique, et le festival Perception multiple."
 tags: ["deficience-visuelle", "culture", "technologie", "accessibilite-numerique", "audiodescription", "emploi", "education"]
 draft: false
+rssPlayerId: "3091687"
 ---
 
 Cette semaine, on parle de 3 rubriques.
