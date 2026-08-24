@@ -6,6 +6,7 @@ pubDate: 2018-02-02T17:00:00Z
 excerpt: "Le handbike, hommage à Maudy Piot et l'association FDFA, un test en direct de Seeing AI, et les personnalités à suivre en 2018 selon Carinne."
 tags: ["deficience-visuelle", "handicap-moteur", "sport", "technologie", "sante"]
 draft: false
+rssPlayerId: "3091807"
 ---
 
 Cette semaine, on parle de 4 rubriques.
