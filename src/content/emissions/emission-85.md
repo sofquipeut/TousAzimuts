@@ -6,6 +6,7 @@ pubDate: 2022-01-12T17:00:00Z
 excerpt: "L'association Droit Pluriel pour une justice accessible, l'autisme représenté à l'écran, et l'accessibilité des salles de cinéma toulousaines."
 tags: ["autisme", "polyhandicap", "culture", "legislation", "accessibilite-numerique", "audiodescription"]
 draft: false
+rssPlayerId: "3091714"
 ---
 
 Au programme de ce premier épisode de l'année 2022, 4 rubriques et un invité.
