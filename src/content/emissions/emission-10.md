@@ -6,6 +6,7 @@ pubDate: 2018-02-28T17:00:00Z
 excerpt: "La Handi'Mallette pédagogique, l'attente d'une vraie tablette braille, les enceintes vocales et la vie privée, et le recul inquiétant de l'accessibilité des logements neufs."
 tags: ["deficience-visuelle", "handicap-moteur", "technologie", "braille", "legislation", "vie-quotidienne", "education"]
 draft: false
+rssPlayerId: "3091810"
 ---
 
 On embarque pour une heure de radio avec 6 rubriques.
