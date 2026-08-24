@@ -6,6 +6,7 @@ pubDate: 2017-12-27T17:00:00Z
 excerpt: "Le tandem de l'AVH, le spot TV controversé de l'association, l'appli I Wheel Share, le groupe d'enfants les Lucioles, et les chiens d'assistance Handi'chiens."
 tags: ["deficience-visuelle", "handicap-moteur", "autisme", "sport", "technologie", "vie-quotidienne", "temoignage"]
 draft: false
+rssPlayerId: "3091800"
 ---
 
 On embarque pour une heure de radio avec 5 rubriques.
