@@ -6,6 +6,7 @@ pubDate: 2021-07-28T17:00:00Z
 excerpt: "Le site une-sphère.fr pour les aidants, le 3e schéma national handicaps rares, les coulisses de l'émission en confinement, E-Learningscape Access, et le bilan du premier semestre 2021."
 tags: ["maladie-chronique", "technologie", "accessibilite-numerique", "legislation", "education", "aidants"]
 draft: false
+rssPlayerId: "3091756"
 ---
 
 Au programme de cet épisode, 6 rubriques. Dernière de la saison.
