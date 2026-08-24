@@ -6,6 +6,7 @@ pubDate: 2023-12-22T17:00:00Z
 excerpt: "La prime de Noël et l'AAH, une sélection de livres et séries audio pour les fêtes, la recette du Christstollen, et le film Hook de Steven Spielberg."
 tags: ["legislation", "culture", "vie-quotidienne"]
 draft: false
+rssPlayerId: "3091652"
 ---
 
 On embarque pour une heure de radio avec 4 rubriques.
