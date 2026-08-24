@@ -6,6 +6,7 @@ pubDate: 2022-06-08T17:00:00Z
 excerpt: "Des questions sans filtre sur la vie sans la vue, et la tablette Touch2See pour suivre le sport quand on est aveugle."
 tags: ["deficience-visuelle", "technologie", "sport", "vie-quotidienne", "temoignage"]
 draft: false
+rssPlayerId: "3091726"
 ---
 
 Au programme de cet épisode, 2 rubriques et un invité.
