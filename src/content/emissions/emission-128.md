@@ -6,6 +6,7 @@ pubDate: 2024-02-28T17:00:00Z
 excerpt: "Les formations aux premiers secours en santé mentale, l'accessibilité exemplaire de The Last of Us, et l'association Canne Blanche."
 tags: ["handicap-psychique", "deficience-visuelle", "culture", "technologie", "sante", "accessibilite-numerique", "braille"]
 draft: false
+rssPlayerId: "3091658"
 ---
 
 Au sommaire aujourd'hui : quelques rubriques.
