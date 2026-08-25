@@ -13,7 +13,7 @@ Cette semaine, on parle de 7 rubriques.
 
 - **C'est comme ça tous les jours ?** : Julien nous fait bouger avec les cours de gym adaptée du GIAA-apiDV, conçus par le kiné déficient visuel Gilles de Lorenzo, disponibles sur [apidv.org](https://www.apidv.org).
 - **Esprit des lois** : Carinne fait le point sur [l'alerte de l'ONU concernant les droits des personnes handicapées pendant la pandémie](https://www.ohchr.org/en/press-releases/2020/04/covid-19-bachelet-urges-states-take-extra-steps-include-people-disabilities), portée par Michelle Bachelet et Catalina Devandas.
-- **What's new ?** : Michel nous présente le Myosuit, un exo-muscle de la start-up suisse MyoSwiss qui amplifie les mouvements des personnes atteintes de sclérose en plaques ou de myopathie.
+- **What's new ?** : Michel nous présente le [Myosuit](https://sms.hest.ethz.ch/the-group/spin-offs/myoswiss.html), un exo-muscle de la start-up suisse MyoSwiss qui amplifie les mouvements des personnes atteintes de sclérose en plaques ou de myopathie. Malheureusement, la société semble avoir cessé son activité.
 - **L'invité** : Sofian et Julien font une démonstration en direct du [Salon de Quentin](https://www.qcsalon.net), plateforme de jeux en ligne accessible créée par un développeur suisse déficient visuel.
 - **Culture** : Guénaël nous fait découvrir *Running Girl, ma course vers les Paralympiques*, manga de Narumi Shigematsu publié chez [Akata](https://www.akata.fr).
 - Julien nous présente l'[AlphaTactil](https://fr.ulule.com/vis-ma-vue), un jeu éducatif en bois pour apprendre le braille, financé sur Ulule.
