@@ -15,7 +15,7 @@ Que nous réserve cet épisode ? 6 rubriques.
 - **C'est comme ça tous les jours ?** : Ambroise rend hommage à [Marine Leleu](https://www.franceinfo.fr/sports/triathlon/marine-leleu-premiere-francaise-a-finir-l-enduroman_4463587.html), première Française à avoir terminé l'Enduroman, qui s'attaque désormais au triathlon de Paris en aveugle, guidée par Julien.
 - **Culture** : Julien nous replonge dans l'âge d'or des feuilletons radiophoniques avec les mythiques [Maîtres du Mystère](https://fr.wikipedia.org/wiki/Les_Ma%C3%AEtres_du_myst%C3%A8re) et le renouveau des fictions sonores.
 - **Culture** : Guénaël nous présente « [J'avancerai vers toi avec les yeux d'un sourd](https://www.allocine.fr/film/fichefilm_gen_cfilm=238364.html) », documentaire de Laetitia Carton sur la vie de son ami sourd Vincent.
-- **What's New** : Michel nous parle d'une application nommée « Éaucance ».
+- **What's New** : Michel nous parle d'Elocance, une application gratuite qui transforme en fichier audio tout contenu à lire : notes, cours, articles du web, e-mails, PDF. Disponible sur iOS et Android.
 - **Agenda** : Carinne annonce « [Yes We Ride Yes We Rap](https://www.facebook.com/skiclubax/videos/yes-we-ride-yes-we-rap-/2772598599726811/) » à Ax-les-Thermes, la semaine accessibilité du [musée du Louvre](https://presse.louvre.fr/le-musee-du-louvre-lancebr-sa-4e-semaine-debr-laccessibilite/), et le salon [Hello Handicap](https://www.hello-handicap.fr/) pour l'emploi.
 
 Côté musique, deux pauses : [Dream Theater - The Looking Glass](https://www.youtube.com/watch?v=4Cf1CF6Avvc) (extrait de l'album *Dream Theater*) et [Elbow - Empires](https://www.youtube.com/watch?v=z3MuX0DfeZw)
