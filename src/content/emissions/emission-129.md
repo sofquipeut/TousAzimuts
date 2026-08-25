@@ -9,12 +9,12 @@ draft: false
 rssPlayerId: "3091660"
 ---
 
-Cette semaine, on parle de 4 rubriques.
+Au sommaire de cette émission :
 
 - **Esprit des lois** : Amandine rend hommage à Marcel Nuss, auteur et militant de l'accompagnement sexuel des personnes handicapées, décédé le 13 février. Julien et Carinne retracent son combat pour la légalisation en France et la création de l'association [APPAS](https://www.appas-asso.fr/), pionnière dans la formation d'accompagnants.
 - **L'invitée** : Gislène présente [VMEH](https://www.vmeh.fr/), l'association qui mobilise des bénévoles pour apporter écoute et présence aux personnes seules à l'hôpital. Elle témoigne de ses 19 ans d'expérience au service de neurologie de Purpan.
 - **Culture** : Julien et Carinne, membres du jury, décryptent la 17e édition du [Marius de l'audio description](https://www.cnc.fr/cinema/actualites/leregne-animal-marius-de-laudiodescription-2024_2131152). Parmi les cinq films en lice, c'est *Le Règne animal* qui rafle le prix. Ils évoquent aussi [La Bavarde](https://labavarde.fr/), futur « Shazam de l'audio description » développé par l'association Les Yeux Dits : elle synchronise l'audiodescription d'un film en salle via le micro du smartphone.
-- Michel s'est mis au jeu vidéo et nous raconte son expérience.
+- **What's new** : Michel nous présente [PlayAbility](https://techlab-handicap.org/produit/playability), un logiciel qui permet de jouer à presque n'importe quel jeu vidéo — sur PC, consoles ou smartphones — en exécutant des commandes par de simples mouvements du visage, pour adapter chaque jeu à chaque handicap.
 - **Agenda** : Carinne annonce les rendez-vous à venir.
 
 Côté musique, deux pauses : [The Last Dinner Party - The Feminine Urge](https://www.youtube.com/watch?v=s78dvZBb4DU) , extrait de l'album *Prelude to Ecstasy* et [John Powell - The Hidden World Suite](https://www.youtube.com/watch?v=adDDPTsUTqI) , extrait de l'album *How To Train Your Dragon: The Hidden World*.
