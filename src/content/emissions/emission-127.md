@@ -9,7 +9,7 @@ draft: false
 rssPlayerId: "3091657"
 ---
 
-Au sommaire aujourd'hui : 4 rubriques.
+Au sommaire aujourd'hui :
 
 - Amandine et Inès retracent [l'histoire des Jeux Paralympiques](https://histoire-image.org/etudes/ludwig-guttmann-jeux-paralympiques), du Dr Guttmann aux Jeux de Paris 2024, et explorent les disciplines accessibles aux déficients visuels : goalball, torball, vélo tandem, natation. Inès partage son expérience de ces sports au centre Lestrade.
 - **What's New** : Julien nous fait découvrir la [sonification](https://astrolab.fas.harvard.edu/LightSound.html) en astronomie, popularisée par l'astronome aveugle Wanda Diaz-Merced, et le Light Sound, un appareil open source pour suivre une éclipse par le son.
