@@ -6,6 +6,7 @@ import Comments from '../../components/Comments.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
 import { tagLabel } from '../../lib/tags';
+import { formatYears } from '../../lib/dates';
 
 export async function getStaticPaths() {
   const emissions = await getCollection('emissions');
@@ -25,7 +26,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Base title={emission.data.title} description={emission.data.excerpt}>
-  <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({saison.data.years})</a></p>
+  <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({formatYears(saison.data.years)})</a></p>
 
   <div data-pagefind-body>
     <h1>{emission.data.title}</h1>
