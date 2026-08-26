@@ -26,26 +26,29 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 
 <Base title={emission.data.title} description={emission.data.excerpt}>
   <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({saison.data.years})</a></p>
-  <h1>{emission.data.title}</h1>
 
-  {emission.data.tags.length > 0 && (
-    <p class="published-in">
-      {emission.data.title}, publié le {formattedDate} dans :{' '}
-      {emission.data.tags.map((tag: string, i: number) => (
-        <>
-          <a href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a>
-          {i < emission.data.tags.length - 1 ? ', ' : ''}
-        </>
-      ))}
-    </p>
-  )}
+  <div data-pagefind-body>
+    <h1>{emission.data.title}</h1>
 
-  {emission.data.diffusion && (
-    <p class="emission-meta">{emission.data.diffusion}</p>
-  )}
+    {emission.data.tags.length > 0 && (
+      <p class="published-in">
+        {emission.data.title}, publié le {formattedDate} dans :{' '}
+        {emission.data.tags.map((tag: string, i: number) => (
+          <>
+            <a href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a>
+            {i < emission.data.tags.length - 1 ? ', ' : ''}
+          </>
+        ))}
+      </p>
+    )}
 
-  <div class="emission-body">
-    <Content />
+    {emission.data.diffusion && (
+      <p class="emission-meta">{emission.data.diffusion}</p>
+    )}
+
+    <div class="emission-body">
+      <Content />
+    </div>
   </div>
 
   {emission.data.rssPlayerId ? (

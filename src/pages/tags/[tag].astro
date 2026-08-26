@@ -26,7 +26,7 @@ const label = tagLabel(tag);
 
   <ul class="emission-list">
     {emissions.map((emission) => (
-      <li class="emission-card">
+      <li class="emission-card" data-pagefind-ignore>
         <h3><a href={withBase(`/emissions/${emission.slug}/`)}>{emission.data.title}</a></h3>
         <p class="emission-card__date">
           {emission.data.pubDate.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}

@@ -25,7 +25,7 @@ export function rehypeExternalLinks() {
       node.children.push({
         type: 'element',
         tagName: 'span',
-        properties: { className: ['sr-only'] },
+        properties: { className: ['sr-only'], 'data-pagefind-ignore': true },
         children: [{ type: 'text', value: ' (nouvelle fenêtre)' }],
       });
     });
