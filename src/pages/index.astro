@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { withBase } from '../lib/url';
 import { tagLabel } from '../lib/tags';
+import { formatYears } from '../lib/dates';
 
 const saisons = (await getCollection('saisons')).sort((a, b) => a.data.number - b.data.number);
 
@@ -70,7 +71,7 @@ const sujets = [...new Set(emissions.flatMap((e) => e.data.tags))].sort((a, b) =
   <h2 id="les-saisons">Les saisons</h2>
   <ul class="season-grid">
     {saisons.map((s) => (
-      <li><a class="button button--outline" href={withBase(`/${s.slug}/`)}>Saison {s.data.number} ({s.data.years})</a></li>
+      <li><a class="button button--outline" href={withBase(`/${s.slug}/`)}>Saison {s.data.number} ({formatYears(s.data.years)})</a></li>
     ))}
   </ul>
 

@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import EmissionCard from '../components/EmissionCard.astro';
 import { withBase } from '../lib/url';
+import { formatYears } from '../lib/dates';
 
 export async function getStaticPaths() {
   const saisons = await getCollection('saisons');
@@ -17,8 +18,8 @@ const allEmissions = await getCollection(
 const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<Base title={`Saison ${saison.data.number} (${saison.data.years})`}>
-  <h1>Saison {saison.data.number} ({saison.data.years}){saison.data.ongoing ? ' – Saison en cours' : ''}</h1>
+<Base title={`Saison ${saison.data.number} (${formatYears(saison.data.years)})`}>
+  <h1>Saison {saison.data.number} ({formatYears(saison.data.years)}){saison.data.ongoing ? ' – Saison en cours' : ''}</h1>
   <p>
     Émission <strong>Tous Azimuts : pour un monde plus accessible</strong><br />
     Diffusée sur Radio Mon Païs (90.1 FM) et Campus FM Toulouse (94 FM)
