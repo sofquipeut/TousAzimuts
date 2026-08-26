@@ -16,7 +16,7 @@ const formattedDate = pubDate.toLocaleDateString('fr-FR', {
 });
 ---
 
-<article class="emission-card">
+<article class="emission-card" data-pagefind-ignore>
   <h3><a href={withBase(`/emissions/${slug}/`)}>{title}</a></h3>
   <p class="emission-card__date">{formattedDate}</p>
   <p>{excerpt}</p>
