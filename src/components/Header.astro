@@ -32,14 +32,27 @@ const current = saisons.find((s) => s.data.ongoing);
           <li><a href={withBase(`/${current.slug}/`)}>Saison {current.data.number} (en cours)</a></li>
         )}
         <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
-        <li><a href={withBase('/recherche/')}>Recherche</a></li>
         <li><a href={withBase('/contact/')}>Contact</a></li>
       </ul>
     </nav>
+
+    <form class="site-search" role="search" method="get" action={withBase('/recherche/')}>
+      <label for="site-search-input" class="sr-only">Rechercher sur le site</label>
+      <input type="search" id="site-search-input" name="q" placeholder="Rechercher…" autocomplete="off" />
+      <button type="submit">Rechercher</button>
+    </form>
   </div>
 </header>
 
 <script is:inline>
+  (function () {
+    var searchInput = document.getElementById('site-search-input');
+    var currentQuery = new URLSearchParams(window.location.search).get('q');
+    if (searchInput && currentQuery) {
+      searchInput.value = currentQuery;
+    }
+  })();
+
   (function () {
     var STORAGE_KEY = 'taz-theme';
     var btn = document.getElementById('theme-toggle');
