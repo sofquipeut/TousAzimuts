@@ -1,10 +1,9 @@
 import { visit } from 'unist-util-visit';
 
 // Ouvre dans un nouvel onglet uniquement les liens vraiment externes (autre
-// nom d'hôte que le site lui-même), et prévient les utilisateurs de lecteur
-// d'écran via un texte masqué visuellement (cf. §11 skill.md : ne jamais
-// ouvrir un nouvel onglet sans prévenir, exigence d'accessibilité non
-// négociable sur ce site).
+// nom d'hôte que le site lui-même). Pas d'annonce "(nouvelle fenêtre)" :
+// retirée à la demande de Sofian (utilisateur NVDA), qui la trouvait pénible
+// à l'usage sur un site où la quasi-totalité des liens sont externes.
 const SITE_HOSTNAME = 'tazfm.fr';
 
 export function rehypeExternalLinks() {
@@ -22,12 +21,6 @@ export function rehypeExternalLinks() {
 
       node.properties.target = '_blank';
       node.properties.rel = ['noopener', 'noreferrer'];
-      node.children.push({
-        type: 'element',
-        tagName: 'span',
-        properties: { className: ['sr-only'], 'data-pagefind-ignore': true },
-        children: [{ type: 'text', value: ' (nouvelle fenêtre)' }],
-      });
     });
   };
 }
