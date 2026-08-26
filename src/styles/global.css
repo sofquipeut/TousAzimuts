@@ -220,6 +220,44 @@ hr {
   text-decoration: underline;
 }
 
+.site-search {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.site-search input {
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  padding: 0.35em 0.6em;
+  font: inherit;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  min-width: 8rem;
+}
+
+.site-search input::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.site-search button {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.35em 0.75em;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-search button:hover, .site-search button:focus-visible {
+  background: #fff;
+  color: var(--color-brand);
+}
+
 /* Pied de page */
 .site-footer {
   background: var(--color-brand);
