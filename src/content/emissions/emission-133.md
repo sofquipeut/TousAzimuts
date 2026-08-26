@@ -12,7 +12,7 @@ rssPlayerId: "3091666"
 Cette semaine, on parle de 5 rubriques.
 
 - **Esprit des lois** : Carinne décrypte le plan gouvernemental contre la maltraitance des personnes âgées et vulnérables et présente la nouvelle plateforme nationale d'écoute — [le 3977](https://demarchesadministratives.fr/actualites/3977-un-numero-pour-lutter-contre-la-maltraitance-des-personnes-agees-et-handicapees).
-- **L'invitée** : Amandine reçoit Delphine et Anne-Marie de [FRIPON](https://www.net1901.org/association/FRIPON,2579411.html), une friperie solidaire à prix libre qui fait tomber les barrières sociales dans les cafés associatifs toulousains. Prochaines dates au festival Belher et à L'Itinéraire Bis.
+- **L'invitée** : Amandine reçoit Delphine et Anne-Marie de [Frip'On](https://www.facebook.com/events/lescabel-caf%C3%A9-associatif/fripon-friperie-solidaire-%C3%A0-prix-libre/586338076640548), une friperie solidaire à prix libre qui fait tomber les barrières sociales dans les cafés associatifs toulousains, joignable au 06 77 42 44 52. Prochaines dates au festival Belher et à L'Itinéraire Bis.
 - **Handisport** : Michel présente le [guide Handisport 2023-2024 de la FFH](http://guide.handisport.org/catalogues/catalogue_accessible/catalogue.html), une ressource qui répond aux questions des sportifs comme des clubs sur les 24 disciplines et l'accueil des personnes handicapées.
 - **Archive sonore** : Julien nous fait voyager dans l'histoire de la radio à travers des pépites d'archives sonores.
 - **Agenda** : Carinne dévoile les événements à venir.
