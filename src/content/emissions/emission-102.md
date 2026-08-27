@@ -10,7 +10,7 @@ draft: false
 
 Au sommaire aujourd'hui : 5 rubriques.
 
-- **Dépression** : Isabelle revient sur la [journée européenne de la dépression](https://www.journee-mondiale.com/285/journee-europeenne-de-la-depression.htm). Une femme sur sept, un tabou persistant — en parler, c'est déjà guérir un peu.
+- **Dépression** : Isabelle revient sur la dépression et le site [ladepressiononsensort.fr](https://www.ladepressiononsensort.fr).
 - **Capsule immersive VirtySens** : Amandine interviewe Guillaume Lucas, co-fondateur de cette startup qui imagine une [capsule multisensorielle](https://www.hautsdefrance.fr/innovation-virtysens-bien-etre-handicap/) mêlant réalité virtuelle, odeurs et sensations pour le bien-être des personnes fragilisées.
 - **Arctic Monkeys** : Julien décortique *The Car*, le nouvel album du groupe britannique, et leur évolution vers un son plus orchestral. Du rock qui prend de la hauteur.
 - **Application Blind** : Julien présente [cette appli lyonnaise](https://www.blynd-audio.com/) qui adapte des BD en séries audio et lance ses propres créations originales. Le « Netflix de l'audio » version bande dessinée.
