@@ -3,13 +3,13 @@ title: "Émission 102"
 number: 102
 season: saison-6
 pubDate: 2022-11-23T17:00:00Z
-excerpt: "La journée européenne de la dépression, la capsule immersive VirtySens, le nouvel album des Arctic Monkeys, et l'appli Blynd."
-tags: ["handicap-psychique", "culture", "technologie", "sante"]
+excerpt: "Isabelle parle dépression, Amandine interviewe le co-fondateur de VirtySens et sa capsule multisensorielle, Julien décortique le nouvel album d'Arctic Monkeys et l'appli Blind, et Carinne nous emmène à la boutique « Risquer l'impossible »."
+tags: ["deficience-visuelle", "handicap-moteur", "handicap-psychique", "sante", "culture", "accessibilite-numerique", "vie-quotidienne"]
 draft: false
-rssPlayerId: "3091678"
 ---
 
 Au sommaire aujourd'hui : 5 rubriques.
+
 - **Dépression** : Isabelle revient sur la [journée européenne de la dépression](https://www.journee-mondiale.com/285/journee-europeenne-de-la-depression.htm). Une femme sur sept, un tabou persistant — en parler, c'est déjà guérir un peu.
 - **Capsule immersive VirtySens** : Amandine interviewe Guillaume Lucas, co-fondateur de cette startup qui imagine une [capsule multisensorielle](https://www.hautsdefrance.fr/innovation-virtysens-bien-etre-handicap/) mêlant réalité virtuelle, odeurs et sensations pour le bien-être des personnes fragilisées.
 - **Arctic Monkeys** : Julien décortique *The Car*, le nouvel album du groupe britannique, et leur évolution vers un son plus orchestral. Du rock qui prend de la hauteur.
