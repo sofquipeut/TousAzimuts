@@ -18,4 +18,4 @@ Au sommaire aujourd'hui :
 
 Côté musique, deux pauses : Isabelle a choisi [Lara Fabian - Je suis malade](https://www.youtube.com/watch?v=QPzy7jGQphY), et Julien retrace la carrière des Arctic Monkeys avec [Big Ideas](https://www.youtube.com/watch?v=8-PqYfmxHN8), extrait de leur album *The Car*.
 
-*Émission animée par Carinne, Isabelle, Julien et Amandine. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
+*Émission animée par Carinne, Isabelle, Julien et Amandine. Technique et montage : Marco. Programmation musicale : Isabelle et Julien. Coordination : Carinne.*
