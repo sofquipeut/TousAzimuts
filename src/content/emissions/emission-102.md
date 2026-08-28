@@ -5,6 +5,7 @@ season: saison-6
 pubDate: 2022-11-23T17:00:00Z
 excerpt: "Isabelle parle dépression, Amandine interviewe le co-fondateur de VirtySens et sa capsule multisensorielle, Julien retrace la carrière des Arctic Monkeys et présente l'appli Blynd, et Carinne nous emmène à la boutique « Risquer l'impossible »."
 tags: ["deficience-visuelle", "handicap-moteur", "handicap-psychique", "sante", "culture", "accessibilite-numerique", "vie-quotidienne"]
+rssPlayerId: "3091678"
 draft: false
 ---
 
