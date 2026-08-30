@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import { rehypeExternalLinks } from './src/lib/rehype-external-links.mjs';
 
 // Site hébergé sur GitHub Pages, servi via le domaine personnalisé tazfm.fr
@@ -8,6 +9,7 @@ import { rehypeExternalLinks } from './src/lib/rehype-external-links.mjs';
 export default defineConfig({
   site: 'https://tazfm.fr',
   base: '/',
+  integrations: [sitemap()],
   markdown: {
     rehypePlugins: [rehypeExternalLinks],
   },
