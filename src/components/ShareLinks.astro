@@ -6,7 +6,7 @@ interface Props {
 
 const { url, title } = Astro.props;
 const encodedUrl = encodeURIComponent(url);
-const encodedTitle = encodeURIComponent(title);
+const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
 ---
 
 <div class="share-links">
