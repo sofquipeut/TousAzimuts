@@ -23,9 +23,26 @@ const formattedDate = emission.data.pubDate.toLocaleDateString('fr-FR', {
 });
 const showSlug = 'tous-azimuts-pour-un-monde-plus-accessible';
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastEpisode',
+  name: emission.data.title,
+  url: canonicalUrl,
+  datePublished: emission.data.pubDate.toISOString(),
+  description: emission.data.excerpt,
+  ...(emission.data.number ? { episodeNumber: emission.data.number } : {}),
+  partOfSeries: {
+    '@type': 'PodcastSeries',
+    name: 'Tous Azimuts : pour un monde plus accessible',
+    url: Astro.site?.href,
+  },
+};
 ---
 
 <Base title={emission.data.title} description={emission.data.excerpt}>
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)} />
+
   <p><a href={withBase(`/${saison.slug}/`)}>← Saison {saison.data.number} ({formatYears(saison.data.years)})</a></p>
 
   <div data-pagefind-body>

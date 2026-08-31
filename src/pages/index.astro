@@ -11,9 +11,20 @@ const emissions = await getCollection('emissions', (e) => !e.data.draft);
 const sujets = [...new Set(emissions.flatMap((e) => e.data.tags))].sort((a, b) =>
   tagLabel(a).localeCompare(tagLabel(b), 'fr')
 );
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'PodcastSeries',
+  name: 'Tous Azimuts : pour un monde plus accessible',
+  url: Astro.site?.href,
+  description: "Tous Azimuts, l'émission radio qui éclaire le handicap sous tous ses angles.",
+  webFeed: 'https://media.rss.com/tous-azimuts-pour-un-monde-plus-accessible/feed.xml',
+};
 ---
 
 <Base title="Accueil">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)} />
+
   <h1>Tous Azimuts</h1>
   <p class="tagline">L'émission radio qui éclaire le handicap sous tous ses angles.</p>
 
