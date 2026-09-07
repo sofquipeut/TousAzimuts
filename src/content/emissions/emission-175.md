@@ -2,11 +2,12 @@
 title: "Émission 175"
 number: 175
 season: saison-9
+rssPlayerId: "3130649"
 pubDate: 2026-07-22T17:00:00Z
 diffusion: "Diffusée sur Radio Mon Païs 90.1 FM le 22/07/2026 à 19h."
 excerpt: "Le scratch, l'intelligence artificielle au quotidien, l'application Visionauta, le bilan musical 2026 de Julien et une bande-annonce de film enfin audiodécrite."
 tags: ["technologie", "accessibilite-numerique", "handicap-moteur", "vie-quotidienne", "culture", "audiodescription"]
-draft: true
+draft: false
 ---
 
 Au sommaire de cette dernière émission de la saison : le scratch, cette petite merveille née dans le Jura, l'intelligence artificielle comme alliée de tous les jours, une application d'assistant visuel par IA, le bilan musical de Julien, une bande-annonce de film enfin accessible, et l'agenda de Carinne pour finir l'été en beauté.
