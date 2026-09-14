@@ -16,6 +16,6 @@ Au menu de cette émission : 4 rubriques.
 - **Accessibilité Android** : Julien salue [l'arrivée du clavier braille en français dans TalkBack](https://support.google.com/accessibility/android/answer/9728765?hl=fr) sur Android 13. Une avancée majeure pour saisir du texte dix fois plus vite.
 - **Agenda** : Carinne met en garde contre les faux billets JO 2024, annonce le forum Hello Handicap et la journée de l'épilepsie.
 
-Côté musique, deux pauses : [Tame Impala - The Boat I Row](https://www.youtube.com/watch?v=j706aSetFbI) et [Lazuli - Qui d'autre que l'autre](https://www.youtube.com/watch?v=S0ZTPHLw2kw).
+Côté musique, deux pauses : [Tame Impala - The Boat I Row](https://www.youtube.com/watch?v=j706aSetFbI) et [Lazuli - Qui d'autre que l'autre](https://www.youtube.com/watch?v=S0ZTPHLw2kw), après un tour d'horizon de leur style.
 
 *Émission animée par Julien, Carinne et Michel. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
