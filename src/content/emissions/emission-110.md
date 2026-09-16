@@ -13,7 +13,7 @@ Que nous réserve cet épisode ? 4 rubriques.
 
 - **Surdicécité** : Amandine explore les modes de communication pour les personnes sourdes et aveugles : LSF tactile, méthode Lorm, Tadoma, braille manuel. Un univers sensoriel méconnu qui concerne plus de 5 000 personnes en France, désormais reconnu comme handicap à part entière.
 - **Santé** : Michel alerte sur les effets du tabac sur les yeux. La fumée abîme la rétine et multiplie les risques de cataracte et de DMLA. Un argument de plus pour écraser sa dernière cigarette.
-- **Culture** : Julien reçoit Sylvain et Florine d'[Atolium](https://www.youtube.com/@atolyum), duo électropop toulousain né en 2021, qui marie musique festive et textes sombres. Il présente aussi *[See](https://informations.handicap.fr/a-see-serie-aveugles-appletv-12375.php)* (Apple TV+), série post-apocalyptique où l'humanité est devenue aveugle, construite avec des consultants déficients visuels.
+- **Culture** : Julien reçoit Sylvain et Florine d'[Atolium](https://www.youtube.com/@atolium), duo électropop toulousain né en 2021, qui marie musique festive et textes sombres. Il présente aussi *[See](https://informations.handicap.fr/a-see-serie-aveugles-appletv-12375.php)* (Apple TV+), série post-apocalyptique où l'humanité est devenue aveugle, construite avec des consultants déficients visuels.
 - **Agenda** : Carinne rappelle le festival Perceptions Multiples et détaille le programme des sorties AVH : chiens guides, rando au parc de la Sône, visite de La Dépêche, Martres-Tolosane.
 
 Côté musique, deux pauses : [Gorillaz - Silent Running](https://www.youtube.com/watch?v=_0Pf48RqSsg), extrait de l'album *Cracker Island* et [Atolium - La Vie Nous Entraîne](https://www.youtube.com/watch?v=pIbNk9cID5g).
