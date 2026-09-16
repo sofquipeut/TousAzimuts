@@ -20,7 +20,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     data-page-title={pageTitle}
   >
     <h2 id="comments-heading">Commentaires</h2>
-    <p>Donnez-nous votre avis sur cette émission ou signalez-nous une erreur ou un lien mort : vos commentaires sont les bienvenus !</p>
+    <p id="comments-intro">Donnez-nous votre avis sur cette émission ou signalez-nous une erreur ou un lien mort : vos commentaires sont les bienvenus !</p>
 
     <ul id="comments-list" aria-live="polite">
       <li id="comments-loading">Chargement des commentaires…</li>
@@ -76,6 +76,8 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     const loading = section.querySelector<HTMLLIElement>('#comments-loading')!;
     const form = section.querySelector<HTMLFormElement>('#comments-form')!;
     const status = section.querySelector<HTMLParagraphElement>('#comments-status')!;
+    const heading = section.querySelector<HTMLHeadingElement>('#comments-heading')!;
+    const intro = section.querySelector<HTMLParagraphElement>('#comments-intro')!;
 
     function announce(message: string) {
       status.textContent = message;
@@ -92,6 +94,8 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
           list.appendChild(empty);
           return;
         }
+        heading.textContent = `${comments.length} commentaire${comments.length > 1 ? 's' : ''}`;
+        intro.hidden = true;
         for (const c of comments) {
           const item = document.createElement('li');
           const author = document.createElement('strong');
