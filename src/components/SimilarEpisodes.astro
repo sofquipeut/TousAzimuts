@@ -26,7 +26,7 @@ const scored = allEmissions
 if (scored.length === 0) return;
 ---
 
-<section class="similar-episodes" aria-label="Émissions sur les mêmes thèmes">
+<section role="region" class="similar-episodes" aria-label="Émissions sur les mêmes thèmes">
   <h2>Émissions sur les mêmes thèmes</h2>
   <ul>
     {scored.map(({ emission }) => (
