@@ -17,6 +17,6 @@ Cette semaine, on parle de 3 rubriques.
 
 Et pour terminer, Carinne nous emmène du côté de l'agenda.
 
-Côté musique, deux pauses : [Depeche Mode - Ghost Again](https://www.youtube.com/watch?v=iIyrLRixMs8) , extrait de l'album *Memento Mori* et [Fred Pallem et le Sacre du Tympan - USP](https://www.youtube.com/watch?v=M4F99HKVehM) , extrait de l'album *X*.
+Côté musique, deux pauses : [Depeche Mode - Ghosts Again](https://www.youtube.com/watch?v=iIyrLRixMs8), extrait de l'album *Memento Mori* et [Fred Pallem et le Sacre du Tympan - U.S.P.](https://www.youtube.com/watch?v=N7KRdEsNtoc), extrait de l'album *X*.
 
 *Émission animée par Julien, Amandine, Carinne et Isabelle. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
