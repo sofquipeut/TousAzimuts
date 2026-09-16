@@ -11,7 +11,7 @@ rssPlayerId: "3091692"
 
 Cette semaine, on parle de 4 rubriques.
 
-- **Esprit des lois** : Carinne fait le point sur [le cyberharcèlement](https://www.masecurite.interieur.gouv.fr/fr/demarches-en-ligne/cyberharcelement-enfants-adolescents-mineurs), reconnu comme délit depuis 2020. Signalements, captures d'écran, dépôt de plainte et le numéro 3018 pour les victimes. Les armes existent, encore faut-il les connaître.
+- **Esprit des lois** : Carinne fait le point sur [le cyberharcèlement](https://www.masecurite.interieur.gouv.fr/fr/demarches-en-ligne/cyberharcelement-enfants-adolescents-mineurs), reconnu comme délit. Signalements, captures d'écran, dépôt de plainte et le numéro 3018 pour les victimes. Les armes existent, encore faut-il les connaître.
 - **C'est comme ça tous les jours ?** : Amandine fait le tour des [aménagements d'examens](https://www.monparcourshandicap.gouv.fr/etudes-superieures/quels-sont-les-amenagements-possibles-pour-les-concours-et-examens) pour les personnes handicapées : tiers-temps, salle adaptée, matériel spécifique. Passer un diplôme sans que le handicap soit un obstacle.
 - **Isabelle** : [Le permis de conduire](https://medipermis.fr/patient/conduite-troubles-visuels) n'est pas un diplôme à vie. Visite médicale, restrictions, démarches : ce que les conducteurs en situation de handicap doivent savoir.
 - **What's new ?** : Julien présente une future application participative d'audiodescription qui cherche des soutiens. Citoyens, à vos micros !
