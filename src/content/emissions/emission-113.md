@@ -18,4 +18,4 @@ Quatre rubriques à découvrir cette semaine.
 
 Côté musique, deux pauses : [Rodrigo y Gabriela - Egoland](https://www.youtube.com/watch?v=Rqnw2EQsgWk), extrait de l'album *In Between Thoughts… A New World* et [The Lemon Twigs - Any Time of Day](https://www.youtube.com/watch?v=hmX2wsnzEGE), extrait de l'album *Everything Harmony*.
 
-*Émission animée par Isabelle, Amandine, Michel, Julien et Carinne, avec Billal en invité. Technique et montage : Marco, assisté de Valentin. Programmation musicale : Julien. Coordination : Carinne.*
+*Émission animée par Isabelle, Amandine, Michel, Julien et Carinne, avec Billal en invité. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
