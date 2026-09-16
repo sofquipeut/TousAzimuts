@@ -12,6 +12,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
 
 {COMMENTS_API_BASE && (
   <section
+    role="region"
     aria-labelledby="comments-heading"
     class="comments"
     data-comments-api={COMMENTS_API_BASE}
