@@ -9,10 +9,10 @@ draft: false
 rssPlayerId: "3091693"
 ---
 
-Cinq sujets à découvrir cette semaine : 4 rubriques.
+Quatre rubriques à découvrir cette semaine.
 
 - **Planète Asso** : Isabelle présente [l'association Anna](http://www.anna-asso.fr/), qui accompagne les personnes atteintes de particularités corporelles. Ateliers d'habiletés sociales pour les 7-12 ans, outils contre l'anxiété sociale : l'apparence ne devrait jamais être un fardeau.
-- **L'invité** : Billal Zaidi, étudiant en informatique, présente BlindUp, des lunettes intelligentes qui permettent à un assistant de guider à distance les déficients visuels. GPS, reconnaissance visuelle et assistance humaine dans un seul dispositif.
+- **L'invité** : Amandine reçoit par téléphone Billal Zaidi, étudiant en informatique, qui présente BlindUp, des lunettes intelligentes qui permettent à un assistant de guider à distance les déficients visuels. GPS, reconnaissance visuelle et assistance humaine dans un seul dispositif.
 - **C'est comme ça tous les jours ?** : Michel nous parle du daltonisme, qui touche 300 millions de personnes dans le monde. [Les lunettes filtrantes, nées à Berkeley](https://www.club-innovation-culture.fr/centre-pompidou-enchroma-visiteurs-daltoniens/), restaurent les contrastes — le Centre Pompidou les prête même aux visiteurs.
 - **Agenda** : Carinne présente les événements à venir.
 
