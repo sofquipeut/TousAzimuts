@@ -19,7 +19,7 @@ On embarque pour une heure de radio avec 6 rubriques.
 
 - **Culture** : Guénaël présente *Moi Léa*, film d'Ines Bigoné, réalisatrice autiste Asperger de 16 ans, sur une adolescente en course de VTT.
 
-- **Sites internet** : Sofian présente trois ressources : le [guide pratique handicap](https://www.toulouse.fr/) de Toulouse Métropole, antidiscrimination.fr, et le site du [CERTAM](https://certam-avh.com/).
+- **Sites internet** : Sofian présente trois ressources : le [guide pratique handicap](https://www.toulouse.fr/) de Toulouse Métropole, antidiscrimination.fr, et le site du [CERTAM](https://www.avh.asso.fr/implantations/certam).
 
 - **Agenda** : Carinne relaie un sondage sur l'autisme et la fatigue, et annonce une conférence en ligne sur la refonte des MDPH.
 
