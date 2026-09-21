@@ -21,6 +21,6 @@ Cinq sujets à découvrir cette semaine : 5 rubriques.
 
 - **Agenda** - Estelle annonce le spectacle des 10 ans de l'école de danse mixte [Incorporel](https://incorporel.com/), où valides et personnes en situation de handicap dansent ensemble. Rendez-vous le 26 mai 2018 à 17h, salle Jean Mermoz à Toulouse.
 
-Côté musique, deux pauses : [The Buddies - Daddy Lessons](https://www.youtube.com/watch?v=Rsxrh1CuEjM) et [The Buddies - Bad Ambassador](https://www.youtube.com/watch?v=4tNaalF-yig)
+Côté musique, deux pauses : The Buddies - Daddy Lessons et The Buddies - Bad Ambassador
 
 *Émission animée par Carinne, avec Inès, Estelle et Michel. En invité : le groupe The Buddies (Julien, Étienne et Amandine). Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
