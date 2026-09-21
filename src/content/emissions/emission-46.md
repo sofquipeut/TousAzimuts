@@ -18,6 +18,6 @@ Que nous réserve cet épisode ? 6 rubriques.
 - **What's New** : Michel nous parle d'Elocance, une application gratuite qui transforme en fichier audio tout contenu à lire : notes, cours, articles du web, e-mails, PDF. Disponible sur iOS et Android.
 - **Agenda** : Carinne annonce « [Yes We Ride Yes We Rap](https://www.facebook.com/skiclubax/videos/yes-we-ride-yes-we-rap-/2772598599726811/) » à Ax-les-Thermes, la semaine accessibilité du [musée du Louvre](https://presse.louvre.fr/le-musee-du-louvre-lancebr-sa-4e-semaine-debr-laccessibilite/), et le salon [Hello Handicap](https://www.hello-handicap.fr/) pour l'emploi.
 
-Côté musique, deux pauses : [Dream Theater - The Looking Glass](https://www.youtube.com/watch?v=4Cf1CF6Avvc) (extrait de l'album *Dream Theater*) et [Elbow - Empires](https://www.youtube.com/watch?v=z3MuX0DfeZw)
+Côté musique, deux pauses : [Dream Theater - The Looking Glass](https://www.youtube.com/watch?v=4Cf1CF6Avvc) (extrait de l'album *Dream Theater*) et [Elbow - Empires](https://www.youtube.com/watch?v=EJa5FvCaBJc)
 
 *Émission animée par Philippe, Ambroise, Julien, Guénaël, Michel et Carinne. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
