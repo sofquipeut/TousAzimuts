@@ -17,6 +17,6 @@ Au programme de cet épisode, 4 rubriques.
 - **Culture** : Julien nous emmène sur [Ludociels pour tous](https://www.ludocielspourtous.org/), qui répertorie les jeux vidéo accessibles par type de handicap.
 - **Le spot publicitaire** : Ambroise nous présente Poème Minute, la [chaîne YouTube](https://www.youtube.com/channel/UC8WLyzGIC1VzfEZ4TRphiTA) qui interprète plus de 330 poèmes classiques.
 
-Côté musique, deux pauses : [Nightwish - Music](https://www.youtube.com/watch?v=x2oF9bO9mMY) et [Other Lives - Sound of Violence](https://www.youtube.com/watch?v=_M1MXC_cosc)
+Côté musique, deux pauses : [Nightwish - Music](https://www.youtube.com/watch?v=rwz7-h9LCDU) et [Other Lives - Sound of Violence](https://www.youtube.com/watch?v=_M1MXC_cosc)
 
 *Émission animée par Julien, Carinne, Ambroise, Guénaël et Sofian. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
