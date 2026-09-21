@@ -13,7 +13,7 @@ Cinq sujets à découvrir cette semaine : 5 rubriques.
 
 - **Planète Asso** - Inès nous fait découvrir [SOS Amitié](https://www.sosamitie.org/), association d'écoute née en 1960 et inspirée des Samaritans britanniques. Avec 1 600 bénévoles, elle offre une oreille attentive 24h/24 par téléphone, chat ou messagerie - gratuit, anonyme et confidentiel.
 
-- **C'est comme ça tous les jours ?** - Estelle présente [Hizy](https://www.hizy.org/), une plateforme d'information développée par Handicap International. Mobilité, démarches administratives, logement, vacances, emploi : tout est regroupé en un seul endroit, avec tutoriels, vidéos et infographies.
+- **C'est comme ça tous les jours ?** - Estelle présente Hizy, une plateforme d'information développée par Handicap International (aujourd'hui disparue). Mobilité, démarches administratives, logement, vacances, emploi : tout est regroupé en un seul endroit, avec tutoriels, vidéos et infographies.
 
 - **L'invité** - The Buddies, un trio toulousain composé de Julien, Étienne et Amandine, nous rend visite en studio. Piano-voix, reprises pop rock arrangées avec soin, et des compositions qui arrivent timidement : rencontre avec un groupe qui a du feeling. Ils nous offrent même un morceau en direct !
 
