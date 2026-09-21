@@ -11,7 +11,7 @@ rssPlayerId: "3091774"
 
 Que nous réserve cet épisode ? 6 rubriques.
 
-- **C'est comme ça tous les jours ?** : présentation du site [Rue des confinés](https://ruedesconfines.com), créé par des étudiants en journalisme de l'ESJ Lille, avec un article sur les coulisses de l'audiodescription à la télévision.
+- **C'est comme ça tous les jours ?** : présentation du site [Rue des confinés](https://www.instagram.com/ruedesconfines/), créé par des étudiants en journalisme de l'ESJ Lille, avec un article sur les coulisses de l'audiodescription à la télévision.
 - Guénaël se penche sur la barrière du masque pour les personnes sourdes et malentendantes qui lisent sur les lèvres, et évoque le [masque inclusif transparent d'Anissa](https://informations.handicap.fr/a-sourde-toulousaine-cree-masque-transparent-12812.php).
 - **What's new ?** : Michel nous fait découvrir [LEE](https://www.kisskissbankbank.com/en/projects/lee-application-d-aide-aux-malvoyants), une application qui lit à voix haute les étiquettes des produits via leur code-barres.
 - Corinne nous invite à la relaxation avec [Petit Bambou](https://www.petitbambou.com/en), une application de méditation en pleine conscience.
