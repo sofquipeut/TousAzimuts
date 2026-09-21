@@ -11,7 +11,7 @@ rssPlayerId: "3091719"
 
 Au programme de cet épisode, 5 rubriques et une invitée.
 
-- **What's New ?** : Julien nous présente [TIA](https://www.avh.asso.fr/nos-solutions/autonomie/ressources-numeriques/applications-mobiles), application qui scanne les médicaments et lit la notice à voix haute, mais reste bloquée sur iPhone comme [Seeing AI](https://www.youtube.com/watch?v=bqeGOMgVWwQ).
+- **What's New ?** : Julien nous présente [TIA](https://www.avh.asso.fr/nos-solutions/autonomie/ressources-numeriques/applications-mobiles), application qui scanne les médicaments et lit la notice à voix haute, mais reste bloquée sur iPhone comme [Seeing AI](https://www.youtube.com/watch?v=YhzYlDA-dBE).
 - **Culture** : Isabelle poursuit son enquête sur le handicap dans la publicité avec [une pub rafraîchissante](https://www.youtube.com/watch?v=S9z9b8eZ7Gc) qui met en scène des personnages avec prothèse et fauteuil, simplement, sans pathos.
 - **C'est comme ça tous les jours ?** : Michel lève le voile sur le handicap invisible : 80 % des handicaps déclarés le sont, un dilemme quotidien à révéler ou non au travail.
 - **L'invitée** : Amandine témoigne de son parcours avec le lupus, maladie auto-immune qui touche 9 femmes sur 10 et se manifeste par poussées de douleurs articulaires et de fatigue extrême.
