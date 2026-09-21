@@ -11,7 +11,7 @@ rssPlayerId: "3091766"
 
 Cinq sujets à découvrir cette semaine : 4 rubriques.
 
-- **L'invité** : Ambroise reçoit Alexandre, fondateur de l'[association Frères de regard](https://live2019.babelraid.com/etape-2/alexandre-fourcade-team-157-un-participant-pas-comme-les-autres/), copilote de rallye malvoyant sur le Bab El Raid au Maroc.
+- **L'invité** : Ambroise reçoit Alexandre, fondateur de l'[association Frères de regard](https://www.babelraid.com/), copilote de rallye malvoyant sur le Bab El Raid au Maroc.
 - **Esprit des lois** : Carinne décortique les [22 mesures du CIH annoncées pour 2020](https://handicap.gouv.fr/comite-interministeriel-du-handicap-2020) : PCH et RQTH à vie, congé proche aidant, tarifs préférentiels dans les transports.
 - **C'est comme ça tous les jours ?** : Michel lève le voile sur le handicap invisible, qui concerne 98 % des 500 000 demandeurs d'emploi handicapés, et présente [L'ADAPT](https://www.ladapt.net).
 - **Agenda** : Carinne annonce la Conférence Nationale du Handicap le 11 février 2020 à l'Élysée, pour les 15 ans de la loi du 11 février 2005.
