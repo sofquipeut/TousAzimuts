@@ -16,7 +16,7 @@ Au menu de cette émission : 6 rubriques.
 - **What's new ?** : Michel présente [AI Poly Vision](https://www.oxytude.org/ai-poly-vision-une-app-a-surveiller-du-coin-de-loeil), une application iOS gratuite qui reconnaît et décrit en temps réel les objets filmés par la caméra.
 - **Culture** : Julien nous fait découvrir [L'École de Magie d'Elentil](https://mesmainsenor.com/produit/lecole-de-magie-delentil), un livre audio interactif conçu avec des enfants déficients visuels.
 - **Culture** : Guénaël revient sur [Tou.te.s les mêmes](https://www.france.tv/slash/tou-te-s-les-memes), web-série documentaire de France TV Slash qui dresse huit portraits du handicap.
-- **Agenda** : Carinne, Ambroise et Michel annoncent les championnats d'Europe de [goalball](https://www.handisport.org/goalball/) en Italie, l'arrivée annoncée de l'audiodescription en français sur Netflix, et le salon [BRICKLIVE Toulouse](https://www.occitanie-tribune.com/articles/18714/toulouse-premiere-en-france-l-evenement-bricklive-arrive-a-toulouse-du-au-octobre).
+- **Agenda** : Carinne, Ambroise et Michel annoncent les championnats d'Europe de [goalball](https://www.handisport.org/goalball) en Italie, l'arrivée annoncée de l'audiodescription en français sur Netflix, et le salon [BRICKLIVE Toulouse](https://www.occitanie-tribune.com/articles/18714/toulouse-premiere-en-france-l-evenement-bricklive-arrive-a-toulouse-du-au-octobre).
 
 Côté musique, deux pauses : [Klone - At the End of the Bridge](https://www.youtube.com/watch?v=qw_GbSmuzjI) et [M83 - Lune de fiel](https://www.youtube.com/watch?v=1cCPraE7tcs)
 
