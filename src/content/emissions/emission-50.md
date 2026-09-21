@@ -18,6 +18,6 @@ Au programme de ce numéro spécial, 6 rubriques pour fêter la 50e.
 - **Culture** : Guénaël présente *[La Triade Légendaire - L'Épée de Vie](https://www.eyrolles.com/Litterature/Livre/la-triade-legendaire-tome-2-9791026268345/)*, roman heroic fantasy coécrit par Céline et son fils Gabin, autiste Asperger.
 - **Agenda** : Carinne annonce le lancement de la page Facebook de l'émission.
 
-Côté musique, deux pauses : [Joe Hisaishi - Merry-Go-Round](https://www.youtube.com/watch?v=f7SS57LFPco) et [Faun feat. Versengold - Drei Wanderer](https://www.youtube.com/watch?v=ch-fed2_swY).
+Côté musique, deux pauses : [Joe Hisaishi - Merry-Go-Round](https://www.youtube.com/watch?v=f7SS57LFPco) et [Faun feat. Versengold - Drei Wanderer](https://www.youtube.com/watch?v=_x46aVdOdj4).
 
 *Émission animée par Carinne, Julien, Guénaël et Bruno. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
