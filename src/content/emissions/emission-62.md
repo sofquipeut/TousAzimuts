@@ -19,4 +19,4 @@ Au programme de cet épisode, 5 rubriques et une invitée.
 
 Côté musique, une pause recommandée par Sofian : [Red Dust - Get Back](https://www.youtube.com/watch?v=4-rk-Q17AbM), du groupe toulousain de blues-rock Red Dust.
 
-*Émission animée par Julien, Carinne, Guénaël, Corinne, Estelle et Sofian, avec Ana en invitée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
+*Émission animée par Julien, Carinne, Guénaël, Corinne, Estelle et Sofian, avec Ana en invitée. Technique et montage : Marco. Programmation musicale : Sofian. Coordination : Carinne.*
