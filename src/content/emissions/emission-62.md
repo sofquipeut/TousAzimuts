@@ -17,6 +17,6 @@ Au programme de cet épisode, 5 rubriques et une invitée.
 - **Débat** : l'équipe discute de l'exemption d'attestation de sortie pour les personnes aveugles pendant le confinement, qui laisse les aidants familiaux sans justificatif clair.
 - **Agenda** : Carinne annonce les activités à distance du comité AVH de Pau et signale la plateforme [H'up entrepreneurs](https://www.h-up.fr).
 
-Côté musique, une pause : [Red Dust - Get Back](https://www.youtube.com/watch?v=4-rk-Q17AbM), du groupe toulousain de blues-rock Red Dust.
+Côté musique, une pause recommandée par Sofian : [Red Dust - Get Back](https://www.youtube.com/watch?v=4-rk-Q17AbM), du groupe toulousain de blues-rock Red Dust.
 
 *Émission animée par Julien, Carinne, Guénaël, Corinne, Estelle et Sofian, avec Ana en invitée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
