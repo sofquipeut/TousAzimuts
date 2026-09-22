@@ -11,7 +11,7 @@ rssPlayerId: "3091735"
 
 Au programme de cet épisode, 5 rubriques et une invitée.
 
-- **C'est comme ça tous les jours ?** : Julien nous signale un podcast de Télé-Loisirs qui répertorie chaque semaine les programmes audio-décrits à la télé, et mentionne aussi Cinescence pour le cinéma.
+- **C'est comme ça tous les jours ?** : Julien nous signale [Yakoi en audiodescription](https://podcasts.programme-tv.net/prisma-media-yakoi-en-audiodescription), le podcast de Télé-Loisirs qui répertorie chaque semaine les programmes audio-décrits à la télé, plus actif depuis 2022. Il mentionne aussi Cinescence pour le cinéma.
 - **Culture** : Guénaël présente le [studio Parolox](https://www.cortex-media.fr), entreprise lyonnaise de web documentaires sur le handicap, dont *[Plongez en nos troubles](https://webdoc.plongezennostroubles.com/)* sur le TDAH.
 - **L'invitée** : Corinne interviewe Anna, comédienne non-voyante et mannequin lauréate du prix du jury à Miss Télégances Internationale 2019, qui milite pour une meilleure représentation du handicap à l'écran.
 - **Débat** : l'équipe discute de l'exemption d'attestation de sortie pour les personnes aveugles pendant le confinement, qui laisse les aidants familiaux sans justificatif clair.
