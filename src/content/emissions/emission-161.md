@@ -9,12 +9,12 @@ draft: false
 rssPlayerId: "3087685"
 ---
 
-Au menu de cette émission : quelques rubriques.
+Au menu de cette émission :
 
 - **Culture** : Michel présente *[Les yeux dans le dos](https://www.abilitis.fr/2026/03/24/prix-handi-livres-2025-meilleur-roman/)* d'Azouz Begag, prix du roman historique 2025 — l'histoire d'une amitié indéfectible entre deux garçons, l'un aveugle, l'autre paralytique, dans le Damas de 1860.
 - **Association** : Nathalie présente [Madacœur](https://www.ramonville.fr/culture-sport-associations/associations/annuaire-des-associations/item/madacoeur-france) de Ramonville, qui prépare un conteneur de matériel médical pour Madagascar : fauteuils, cannes, déambulateurs. Ils cherchent du matériel et des soutiens.
 - **C'est comme ça tous les jours ?** : Carinne livre un guide complet pour choisir des cadeaux adaptés aux enfants handicapés — jeu libre, activités sportives, ludothèques.
-- **Livres audio** : Julien recommande *Opération Supernoël*, *Harry Potter Full Cast* avec 100 acteurs, et l'incontournable *Charlie et la chocolaterie* de Roald Dahl, sans oublier la [médiathèque Éole de l'AVH](https://eole.avh.asso.fr/).
+- **Livres audio** : Julien recommande *[Opération Supère Noël](https://www.audible.fr/pd/Operation-Supere-Noel-Livre-Audio/B0G3X4JM8B)*, *[Harry Potter Full Cast](https://www.audible.fr/series/Harry-Potter-Full-Cast-Editions-Livres-Audio/B0FJMKKSQ7)* avec 100 acteurs, et l'incontournable *[Charlie et la chocolaterie](https://www.audible.fr/pd/Charlie-et-la-chocolaterie-Livre-Audio/B07FB6BK3B)* de Roald Dahl, sans oublier la [médiathèque Éole de l'AVH](https://eole.avh.asso.fr/).
 - **Agenda** : Marchés de Noël accessibles de Toulouse : Capitole, Ramblas, Jules-Guesde, labyrinthe de sapins à Saint-Étienne.
 
 Côté musique, deux pauses : [Post-Modern Jukebox - All I Want For Christmas Is You](https://www.youtube.com/watch?v=2Bl9Kx3uCrg) et [John Williams Reimagined - Home Alone (version trio)](https://music.youtube.com/browse/MPREb_gOQnrWSUMYm)
