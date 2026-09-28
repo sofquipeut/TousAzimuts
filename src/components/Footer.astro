@@ -1,5 +1,7 @@
 ---
 import { withBase } from '../lib/url';
+
+const year = new Date().getFullYear();
 ---
 
 <footer class="site-footer">
@@ -15,4 +17,5 @@ import { withBase } from '../lib/url';
       <li><a href={withBase('/contact/')}>Contact</a></li>
     </ul>
   </nav>
+  <p class="footer-copyright">© {year} Tous Azimuts</p>
 </footer>
