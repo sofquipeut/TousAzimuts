@@ -21,9 +21,14 @@ import { withBase } from '../lib/url';
   <h2>Ce que ce site ne collecte pas</h2>
 
   <p>
-    Ce site est entièrement statique : il ne comporte ni compte utilisateur, ni espace commentaire,
-    ni base de données, ni outil de mesure d'audience. Aucun cookie de suivi n'y est déposé, et nous
-    ne cherchons pas à identifier les visiteurs.
+    Ce site est entièrement statique : il ne comporte ni compte utilisateur, ni outil de mesure
+    d'audience, ni traçage publicitaire. Aucun cookie de suivi n'y est déposé, et nous ne cherchons
+    pas à identifier les personnes qui le consultent.
+  </p>
+
+  <p>
+    Deux formulaires font exception, décrits ci-dessous : le formulaire de contact et les
+    commentaires.
   </p>
 
   <h2>Le formulaire de contact</h2>
@@ -38,7 +43,16 @@ import { withBase } from '../lib/url';
 
   <p>
     Vous pouvez nous demander la suppression des messages que vous nous avez adressés, à tout
-    moment, à l'adresse indiquée en bas de page.
+    moment, depuis la page Contact.
+  </p>
+
+  <h2>Les commentaires</h2>
+
+  <p>
+    Chaque page d'émission permet de laisser un commentaire. Seuls un nom ou un pseudonyme et le
+    texte du commentaire sont demandés : aucune adresse e-mail n'est requise. Les commentaires sont
+    enregistrés sur notre propre service, puis relus avant publication. Ils ne servent à aucune
+    autre fin, et sont supprimés sur simple demande.
   </p>
 
   <h2>Les services tiers</h2>
@@ -55,7 +69,11 @@ import { withBase } from '../lib/url';
       le lecteur audio des émissions est fourni par RSS.com : lorsque vous lancez une écoute, ce
       lecteur s'exécute dans une fenêtre intégrée au site ;
     </li>
-    <li>les polices d'écriture sont chargées depuis Google Fonts.</li>
+    <li>les polices d'écriture sont chargées depuis Google Fonts ;</li>
+    <li>
+      les commentaires sont hébergés par le service Cloudflare, et la notification qui nous avertit
+      d'un nouveau commentaire nous parvient par le service d'envoi Resend.
+    </li>
   </ul>
 
   <p>
@@ -76,14 +94,14 @@ import { withBase } from '../lib/url';
   <p>
     Conformément au Règlement général sur la protection des données, vous disposez d'un droit
     d'accès, de rectification, d'effacement et d'opposition sur les données vous concernant. Pour
-    l'exercer, écrivez-nous à l'adresse ci-dessous : nous vous répondrons dans les meilleurs délais,
-    et nous supprimerons vos données si vous le demandez.
+    l'exercer, écrivez-nous depuis la page <a href={withBase('/contact/')}>Contact</a> : nous vous
+    répondrons dans les meilleurs délais, et nous supprimerons vos données si vous le demandez.
   </p>
 
   <h2>Nous contacter</h2>
 
   <p>
-    Pour toute question au sujet de cette page ou de vos données :
-    <a href="mailto:radiotousazimuts@gmail.com">radiotousazimuts@gmail.com</a>.
+    Pour toute question au sujet de cette page ou de vos données, utilisez le formulaire de la page
+    <a href={withBase('/contact/')}>Contact</a> : votre message nous parvient directement.
   </p>
 </Base>
