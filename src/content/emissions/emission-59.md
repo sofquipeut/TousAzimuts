@@ -15,6 +15,6 @@ Au programme de cet épisode de rentrée, 3 rubriques et 2 invités.
 - **Planète Asso** : Corinne nous fait découvrir [Un Regard Pour Toi](https://unregardpourtoi-asso.fr/presentation-association/), l'association créée par Hayet pour rendre la mode accessible aux déficients visuels. Shopping accompagné, étiquetage braille et NFC, et une boutique solidaire à Paris.
 - **Culture** : Julien nous parle de [BLYND](https://www.blynd-audio.com/), le « Netflix de la BD Audio » qui adapte des bandes dessinées en séries audio immersives. Il salue la qualité des productions mais regrette que des actrices voyantes jouent encore des rôles de non-voyantes.
 
-Côté musique, deux pauses : [Ennio Morricone — Menace téléphonique](https://www.youtube.com/results?search_query=Ennio+Morricone+Menace+téléphonique) (bande originale de *Peur sur la ville*) et [Dirty Loops feat. Cory Wong — Thriller](https://www.youtube.com/results?search_query=Dirty+Loops+Cory+Wong+Thriller) (reprise instrumental de Michael Jackson, EP *Turbo*).
+Côté musique, deux pauses : [Ennio Morricone — Menace téléphonique](https://www.youtube.com/watch?v=k5ZdEIHP5pA) (bande originale de *Peur sur la ville*) et [Dirty Loops feat. Cory Wong — Thriller](https://www.youtube.com/watch?v=m34byl2BT1o) (reprise instrumental de Michael Jackson, EP *Turbo*).
 
 *Émission animée par Carinne, Sofian, Julien, Guénaël, Estelle et Corinne. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
