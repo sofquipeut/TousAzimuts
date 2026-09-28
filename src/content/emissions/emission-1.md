@@ -3,7 +3,6 @@ title: "Émission 1"
 number: 1
 season: saison-1
 pubDate: 2017-10-06T17:00:00Z
-audioUrl: "https://open.spotify.com/episode/4CT165afgep3qRpVRPnwMX?si=y9P1_ktmSd-d8pV0C0eyaA"
 excerpt: "Un reportage à l'ITEP Saint-Exupéry, le MOTOmed pour faire du sport en fauteuil, la plateforme Wheeliz, et tout savoir sur les chiens-guides."
 tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "sport", "technologie", "vie-quotidienne"]
 draft: false
@@ -23,7 +22,5 @@ Côté musique, deux pauses :
 [Glass Animals — Life Itself](https://www.youtube.com/watch?v=yd9p4n5hLEg)
 
 [The New Pornographers — This Is The World Of The Theater](https://www.youtube.com/watch?v=Rh9rxC1es0E) (album *Whiteout Conditions*).
-
-[Écouter l'émission](https://open.spotify.com/episode/4CT165afgep3qRpVRPnwMX)
 
 *Émission animée par Carinne, Isabelle, Philippe, Michel, Julien et Estelle. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
