@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sofquipeut/emissiontousazimuts
+  repo: sofquipeut/TousAzimuts
   branch: main
 
 media_folder: "public/images/uploads"
