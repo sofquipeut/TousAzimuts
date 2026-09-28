@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+---
+
+<Base
+  title="Politique de confidentialité"
+  description="Politique de confidentialité du site Tous Azimuts : données collectées, cookies, services tiers et droits des visiteurs."
+>
+  <h1>Politique de confidentialité</h1>
+
+  <p><em>Dernière mise à jour : 28 septembre 2026.</em></p>
+
+  <p>
+    Tous Azimuts est une émission de radio et un podcast consacrés au handicap et à l'accessibilité,
+    diffusée sur Radio Mon Païs et Campus FM Toulouse. Ce site, tazfm.fr, regroupe les émissions
+    passées et à venir. Cette page décrit les données qui peuvent être collectées lors de votre
+    visite, et l'usage qui en est fait.
+  </p>
+
+  <h2>Ce que ce site ne collecte pas</h2>
+
+  <p>
+    Ce site est entièrement statique : il ne comporte ni compte utilisateur, ni espace commentaire,
+    ni base de données, ni outil de mesure d'audience. Aucun cookie de suivi n'y est déposé, et nous
+    ne cherchons pas à identifier les visiteurs.
+  </p>
+
+  <h2>Le formulaire de contact</h2>
+
+  <p>
+    Si vous nous écrivez depuis la page <a href={withBase('/contact/')}>Contact</a>, les informations
+    que vous saisissez — nom, prénom, adresse e-mail, organisation éventuelle, objet et message —
+    sont transmises au service Formspree, qui achemine votre message jusqu'à notre boîte de
+    réception. Elles servent uniquement à vous répondre. Elles ne sont ni vendues, ni transmises à
+    des tiers, ni utilisées à d'autres fins.
+  </p>
+
+  <p>
+    Vous pouvez nous demander la suppression des messages que vous nous avez adressés, à tout
+    moment, à l'adresse indiquée en bas de page.
+  </p>
+
+  <h2>Les services tiers</h2>
+
+  <p>
+    Certains éléments du site sont fournis par des services extérieurs. Ils sont nécessaires à son
+    fonctionnement, et peuvent à cette occasion prendre connaissance de votre adresse IP ou déposer
+    leurs propres cookies :
+  </p>
+
+  <ul>
+    <li>l'hébergement du site est assuré par GitHub Pages, un service de GitHub Inc. ;</li>
+    <li>
+      le lecteur audio des émissions est fourni par RSS.com : lorsque vous lancez une écoute, ce
+      lecteur s'exécute dans une fenêtre intégrée au site ;
+    </li>
+    <li>les polices d'écriture sont chargées depuis Google Fonts.</li>
+  </ul>
+
+  <p>
+    Les liens vers nos pages Facebook et YouTube vous conduisent vers ces plateformes, qui
+    appliquent leurs propres règles de confidentialité, sur lesquelles nous n'avons pas de prise.
+  </p>
+
+  <h2>Nos publications sur les réseaux sociaux</h2>
+
+  <p>
+    Une application créée par l'émission publie automatiquement, sur notre page Facebook, des
+    rappels vers des émissions déjà diffusées. Cette application ne collecte aucune donnée
+    personnelle : elle publie des textes, rien de plus.
+  </p>
+
+  <h2>Vos droits</h2>
+
+  <p>
+    Conformément au Règlement général sur la protection des données, vous disposez d'un droit
+    d'accès, de rectification, d'effacement et d'opposition sur les données vous concernant. Pour
+    l'exercer, écrivez-nous à l'adresse ci-dessous : nous vous répondrons dans les meilleurs délais,
+    et nous supprimerons vos données si vous le demandez.
+  </p>
+
+  <h2>Nous contacter</h2>
+
+  <p>
+    Pour toute question au sujet de cette page ou de vos données :
+    <a href="mailto:radiotousazimuts@gmail.com">radiotousazimuts@gmail.com</a>.
+  </p>
+</Base>
