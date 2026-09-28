@@ -301,6 +301,12 @@ hr {
   color: #fff;
 }
 
+.footer-copyright {
+  margin: 1.5rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
 /* Grilles et cartes */
 .season-grid, .platform-list {
   list-style: none;
