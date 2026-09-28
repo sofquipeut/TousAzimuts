@@ -1,14 +1,4 @@
 ---
-title: "Émission 1"
-number: 1
-season: saison-1
-pubDate: 2017-10-06T17:00:00Z
-audioUrl: "https://open.spotify.com/episode/4CT165afgep3qRpVRPnwMX?si=y9P1_ktmSd-d8pV0C0eyaA"
-excerpt: "Un reportage à l'ITEP Saint-Exupéry, le MOTOmed pour faire du sport en fauteuil, la plateforme Wheeliz, et tout savoir sur les chiens-guides."
-tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "sport", "technologie", "vie-quotidienne"]
-draft: false
-rssPlayerId: "3091794"
----
 
 Au programme de cette émission :
 
@@ -21,3 +11,5 @@ Pour sa pause musicale, Julien nous propose d'écouter de la « Power Pop » ave
 
 - Dans la rubrique « What's new », Julien nous parle d'une montre au design original qui, bien que créée pour les besoins d'une personne aveugle, a su également conquérir un public plus large : il s'agit de la [montre Bradley de la startup américaine Eone](https://www.iguanasell.fr/blogs/news/montres-eone).
 - Carinne conclut avec diverses informations : la plateforme Handivalise (qui ne semble malheureusement plus exister), ainsi que la création d'un nouvel institut pour l'accueil de personnes aveugles et/ou déficientes auditives adultes.
+
+*Émission animée par Carinne, Isabelle, Philippe, Michel, Julien et Estelle. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
