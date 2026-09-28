@@ -4,7 +4,6 @@ number: 88
 season: saison-5
 pubDate: 2022-02-23T17:00:00Z
 diffusion: ''
-audioUrl: ''
 rssPlayerId: '3091719'
 excerpt: Une app iPhone pour identifier des médicaments, le handicap invisible au travail, un témoignage sur le lupus, et l'accessibilité électorale.
 tags:
