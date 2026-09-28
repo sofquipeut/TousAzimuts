@@ -8,6 +8,7 @@ excerpt: "Un reportage à l'ITEP Saint-Exupéry, le MOTOmed pour faire du sport 
 tags: ["deficience-visuelle", "deficience-auditive", "handicap-moteur", "sport", "technologie", "vie-quotidienne"]
 draft: false
 rssPlayerId: "3091794"
+---
 
 Au programme de cette émission :
 
