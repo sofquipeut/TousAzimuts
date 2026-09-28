@@ -10,16 +10,20 @@ draft: false
 rssPlayerId: "3091794"
 ---
 
-Au programme de cette émission :
+Au programme de ce premier épisode, 5 rubriques.
 
-- **Top chrono** : Notre grand sportif Philippe nous propose un reportage avec des élèves de l'ITEP Saint-Exupéry, qui ont couru au bénéfice d'enfants malades.
-- Estelle, quant à elle, nous explique comment faire du vélo d'appartement ou tout simplement de l'exercice quand on est en fauteuil roulant, grâce à un dispositif appelé le [MOTOmed](https://mobilefrance.fr/motomed/).
-- Isabelle met en lumière la plateforme [Wheeliz](https://www.wheeliz.com/fr), une société fondée pour permettre la location de véhicules aménagés entre particuliers. Créée entre autres par Charlotte de Vilmorin, qui est elle-même en fauteuil et qui raconte avec humour et dérision ses aventures sur son blog, [Wheelcome.net](https://wheelcome.net/).
-- Michel nous dit tout ce qu'il faut savoir sur les chiens-guides d'aveugles : depuis quand cela existe, la façon dont ils sont élevés et éduqués.
+- **Top Chrono** : Philippe présente un reportage sur les élèves de l'ITEP Saint-Exupéry qui ont couru un cross solidaire au bénéfice d'enfants malades.
+- **Sport et santé** : Estelle présente le [MOTOmed](https://mobilefrance.fr/motomed/), un appareil adapté aux personnes en fauteuil qui permet le mouvement actif ou passif des membres inférieurs et supérieurs.
+- **Chiens guides** : Michel nous dit tout ce qu'il faut savoir sur les chiens guides d'aveugles, de leur éducation à leur fonctionnement.
+- **What's New** : Julien présente la [montre Bradley de la startup Eone](https://www.iguanasell.fr/blogs/news/montres-eone), une montre tactile pour non-voyants avec deux billes magnétiques (heures et minutes) qui ne se dérèglent pas au toucher. Nommée en hommage à Bradley Snyder, soldat devenu champion paralympique de natation.
+- **Agenda** : Carinne et Isabelle présentent [Wheeliz](https://www.wheeliz.com/fr), une plateforme de location de véhicules aménagés entre particuliers, créée par Charlotte de Vilmorin (blogueuse sur [Wheelcome](https://wheelcome.net/)). Elles annoncent aussi la création d'un nouvel institut pour l'accueil de personnes aveugles et/ou déficientes auditives adultes.
 
-Pour sa pause musicale, Julien nous propose d'écouter de la « Power Pop » avec [This Is the World of the Theater](https://www.youtube.com/watch?v=Rh9rxC1es0E), par The New Pornographers.
+Côté musique, deux pauses : 
 
-- Dans la rubrique « What's new », Julien nous parle d'une montre au design original qui, bien que créée pour les besoins d'une personne aveugle, a su également conquérir un public plus large : il s'agit de la [montre Bradley de la startup américaine Eone](https://www.iguanasell.fr/blogs/news/montres-eone).
-- Carinne conclut avec diverses informations : la plateforme Handivalise (qui ne semble malheureusement plus exister), ainsi que la création d'un nouvel institut pour l'accueil de personnes aveugles et/ou déficientes auditives adultes.
+[Glass Animals — Life Itself](https://www.youtube.com/watch?v=yd9p4n5hLEg)
+
+[The New Pornographers — This Is The World Of The Theater](https://www.youtube.com/watch?v=Rh9rxC1es0E) (album *Whiteout Conditions*).
+
+[Écouter l'émission](https://open.spotify.com/episode/4CT165afgep3qRpVRPnwMX)
 
 *Émission animée par Carinne, Isabelle, Philippe, Michel, Julien et Estelle. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
