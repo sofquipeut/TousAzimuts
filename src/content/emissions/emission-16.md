@@ -20,4 +20,4 @@ Au sommaire aujourd'hui : 6 rubriques.
 
 Côté musique, deux pauses : [Tigran Hamasyan - The Roads That Bring Me Closer to You](https://www.youtube.com/watch?v=ufr4ZNP_cYM) et [Qantice - Hoverland](https://www.youtube.com/watch?v=khb8e2gzj-w)
 
-*Émission animée par Philippe, Bruno et Julien, avec Lucas en invité. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
+*Émission animée par Philippe, Bruno, Julien et Carinne, avec Lucas en invité. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
