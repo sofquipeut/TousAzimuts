@@ -27,6 +27,7 @@ const current = saisons.find((s) => s.data.ongoing);
     <nav aria-label="Navigation principale" class="site-nav">
       <ul>
         <li><a href={withBase('/')}>Accueil</a></li>
+        <li><a href={withBase('/direct/')}>Écouter en direct</a></li>
         <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
         {current && (
           <li><a href={withBase(`/${current.slug}/`)}>Saison {current.data.number} (en cours)</a></li>
