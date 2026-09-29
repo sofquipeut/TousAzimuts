@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+
+const radios = [
+  {
+    nom: 'Radio Mon Païs',
+    frequence: '90.1 FM',
+    creneaux:
+      'Habituellement diffusée les premier et troisième vendredis du mois à 19 heures, avec une rediffusion le samedi suivant à 18 heures.',
+    flux: 'https://www.comequip.eu/Radio-Mon-Pais',
+    page: 'https://www.radiomonpais.fr',
+  },
+  {
+    nom: 'Campus FM Toulouse',
+    frequence: '94 FM',
+    creneaux:
+      "Habituellement diffusée les deuxième et quatrième mercredis du mois à 13 heures.",
+    flux: 'https://api.radio-campus.org/audio/live/campus-fm-toulouse',
+    page: 'https://www.campusfm.net',
+  },
+];
+---
+
+<Base
+  title="Écouter en direct"
+  description="Écoutez Tous Azimuts en direct sur Radio Mon Païs 90.1 FM et Campus FM Toulouse 94 FM."
+>
+  <h1>Écouter Tous Azimuts en direct</h1>
+
+  <p>
+    Pendant les heures de diffusion, l'émission s'écoute en direct sur les deux radios qui la
+    programment. Choisissez votre station ci-dessous, puis lancez la lecture.
+  </p>
+
+  <p>
+    Les émissions sont enregistrées puis programmées par les radios : hors des créneaux ci-dessous,
+    les deux lecteurs diffusent la programmation habituelle de la station, pas Tous Azimuts.
+  </p>
+
+  {
+    radios.map((radio) => (
+      <section class="direct-radio">
+        <h2>
+          {radio.nom} — {radio.frequence}
+        </h2>
+        <p>{radio.creneaux}</p>
+        <p>
+          <audio
+            controls
+            preload="none"
+            aria-label={`Écouter ${radio.nom} en direct`}
+            src={radio.flux}
+          >
+            Votre navigateur ne sait pas lire l'audio en direct.{' '}
+            <a href={radio.flux} target="_blank" rel="noopener">
+              Ouvrir le direct de {radio.nom} dans un nouvel onglet
+            </a>
+          </audio>
+        </p>
+        <p>
+          <a href={radio.flux} target="_blank" rel="noopener">
+            Ouvrir le direct de {radio.nom} dans un nouvel onglet
+          </a>
+        </p>
+        <p>
+          <a href={radio.page} target="_blank" rel="noopener">
+            Voir le site de {radio.nom}
+          </a>
+        </p>
+      </section>
+    ))
+  }
+
+  <hr />
+
+  <p>
+    <em>
+      Si la lecture ne démarre pas, essayez le lien « Ouvrir le direct dans un nouvel onglet » :
+      il ouvre le même flux directement dans votre navigateur.
+    </em>
+  </p>
+</Base>
