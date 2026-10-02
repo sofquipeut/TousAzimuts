@@ -39,6 +39,8 @@ function htmlPage(title, body) {
 <style>body{font-family:system-ui,sans-serif;max-width:60rem;margin:3rem auto;padding:0 1rem;line-height:1.5}
 table{border-collapse:collapse;width:100%}
 th,td{border:1px solid #ccc;padding:0.5rem;text-align:left;vertical-align:top}
+.inline-edit textarea{width:100%;box-sizing:border-box;font:inherit}
+.inline-edit button{margin-top:0.25rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 </head><body><h1>${escapeHtml(title)}</h1>${body}</body></html>`;
@@ -166,16 +168,29 @@ async function handleAdmin(request, env) {
 
   const statusLabels = { pending: 'En attente', approved: 'Publié', rejected: 'Rejeté' };
 
+  // Les cases de sélection et les boutons d'action groupée pointent vers
+  // #bulk-form via l'attribut form="…" plutôt que d'imbriquer un <form>
+  // autour du tableau : chaque ligne a aussi son propre petit formulaire
+  // d'édition dans la cellule "Commentaire", et on ne peut pas imbriquer
+  // un <form> dans un autre.
   const rows = (results || [])
     .map(
       (c) => `<tr>
         <td>
-          <input type="checkbox" name="ids" value="${c.id}" id="c${c.id}">
+          <input type="checkbox" name="ids" value="${c.id}" id="c${c.id}" form="bulk-form">
           <label class="sr-only" for="c${c.id}">Sélectionner le commentaire de ${escapeHtml(c.author_name)}</label>
         </td>
         <td>${escapeHtml(c.page_title || c.page_id)}</td>
         <td>${escapeHtml(c.author_name)}</td>
-        <td>${escapeHtml(c.body)}</td>
+        <td>
+          <form method="post" action="/admin/edit" class="inline-edit">
+            <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
+            <input type="hidden" name="id" value="${c.id}">
+            <label class="sr-only" for="edit${c.id}">Modifier le commentaire de ${escapeHtml(c.author_name)}</label>
+            <textarea id="edit${c.id}" name="body" rows="3" maxlength="2000">${escapeHtml(c.body)}</textarea>
+            <button type="submit">Enregistrer</button>
+          </form>
+        </td>
         <td>${escapeHtml(statusLabels[c.status] || c.status)}</td>
         <td>${escapeHtml(c.created_at)}</td>
       </tr>`
@@ -183,33 +198,33 @@ async function handleAdmin(request, env) {
     .join('');
 
   const body = `
-    <form method="post" action="/admin/bulk">
+    <form id="bulk-form" method="post" action="/admin/bulk">
       <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
-
-      <p>${(results || []).length} commentaire(s) au total.</p>
-      <p><label><input type="checkbox" id="select-all"> Tout sélectionner</label></p>
-
-      <table>
-        <caption class="sr-only">Liste des commentaires</caption>
-        <thead>
-          <tr>
-            <th scope="col">Sélection</th>
-            <th scope="col">Émission</th>
-            <th scope="col">Auteur</th>
-            <th scope="col">Commentaire</th>
-            <th scope="col">Statut</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-
-      <p>
-        <button type="submit" name="action" value="approve">Approuver la sélection</button>
-        <button type="submit" name="action" value="reject">Rejeter la sélection</button>
-        <button type="submit" name="action" value="delete">Supprimer la sélection</button>
-      </p>
     </form>
+
+    <p>${(results || []).length} commentaire(s) au total.</p>
+    <p><label><input type="checkbox" id="select-all"> Tout sélectionner</label></p>
+
+    <table>
+      <caption class="sr-only">Liste des commentaires</caption>
+      <thead>
+        <tr>
+          <th scope="col">Sélection</th>
+          <th scope="col">Émission</th>
+          <th scope="col">Auteur</th>
+          <th scope="col">Commentaire</th>
+          <th scope="col">Statut</th>
+          <th scope="col">Date</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+
+    <p>
+      <button type="submit" form="bulk-form" name="action" value="approve">Approuver la sélection</button>
+      <button type="submit" form="bulk-form" name="action" value="reject">Rejeter la sélection</button>
+      <button type="submit" form="bulk-form" name="action" value="delete">Supprimer la sélection</button>
+    </p>
 
     <script>
       document.getElementById('select-all').addEventListener('change', function (e) {
@@ -246,6 +261,23 @@ async function handleAdminBulk(request, env) {
   return Response.redirect(`${new URL(request.url).origin}/admin?coms_token=${encodeURIComponent(token)}`, 302);
 }
 
+async function handleAdminEdit(request, env) {
+  const formData = await request.formData();
+  const token = formData.get('coms_token');
+  const id = formData.get('id');
+  const body = formData.get('body');
+
+  if (!token || !env.ADMIN_TOKEN || token !== env.ADMIN_TOKEN) {
+    return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+  }
+
+  if (id && typeof body === 'string' && body.trim() && body.trim().length <= 2000) {
+    await env.DB.prepare(`UPDATE comments SET body = ? WHERE id = ?`).bind(body.trim(), id).run();
+  }
+
+  return Response.redirect(`${new URL(request.url).origin}/admin?coms_token=${encodeURIComponent(token)}`, 302);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -268,6 +300,9 @@ export default {
     }
     if (url.pathname === '/admin/bulk' && request.method === 'POST') {
       return handleAdminBulk(request, env);
+    }
+    if (url.pathname === '/admin/edit' && request.method === 'POST') {
+      return handleAdminEdit(request, env);
     }
 
     return new Response('Not found', { status: 404 });
