@@ -37,7 +37,10 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
 
       <p>
         <label for="comment-body">Votre commentaire</label><br />
-        <textarea id="comment-body" name="body" required maxlength="2000" rows="4"></textarea>
+        <textarea id="comment-body" name="body" required maxlength="2000" rows="4" aria-describedby="comment-body-hint"></textarea>
+        <span id="comment-body-hint" class="comments-hint">
+          Astuce : pour nommer un lien, utilisez la syntaxe [texte du lien](https://exemple.fr). Les adresses commençant par http:// ou https:// sont aussi rendues cliquables automatiquement.
+        </span>
       </p>
 
       <p class="comments-hp" aria-hidden="true">
@@ -55,6 +58,13 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
   .comments-hp {
     position: absolute;
     left: -9999px;
+  }
+
+  .comments-hint {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
   }
 
   #comments-status:focus {
@@ -85,6 +95,32 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
       status.focus();
     }
 
+    // Reconnaît [texte](https://...) et les URLs brutes, sans rendre de HTML
+    // arbitraire : on ne construit que des noeuds texte et des liens <a>.
+    const LINK_PATTERN = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)|(https?:\/\/[^\s<>()"']+)/g;
+
+    function renderCommentBody(container: HTMLElement, text: string) {
+      let lastIndex = 0;
+      let match: RegExpExecArray | null;
+      while ((match = LINK_PATTERN.exec(text))) {
+        if (match.index > lastIndex) {
+          container.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+        }
+        const label = match[1];
+        const url = match[2] || match[3];
+        const link = document.createElement('a');
+        link.href = url;
+        link.textContent = label || url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        container.appendChild(link);
+        lastIndex = match.index + match[0].length;
+      }
+      if (lastIndex < text.length) {
+        container.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+    }
+
     fetch(`${apiBase}/api/comments?pageId=${encodeURIComponent(pageId || '')}`)
       .then((res) => res.json())
       .then((comments: Array<{ author_name: string; body: string }>) => {
@@ -102,7 +138,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
           const author = document.createElement('strong');
           author.textContent = c.author_name;
           const body = document.createElement('p');
-          body.textContent = c.body;
+          renderCommentBody(body, c.body);
           item.appendChild(author);
           item.appendChild(body);
           list.appendChild(item);
