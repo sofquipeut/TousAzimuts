@@ -126,6 +126,28 @@ async function handleGet(request, env) {
   return new Response(JSON.stringify(results || []), { headers: { ...JSON_HEADERS, ...corsHeaders(env) } });
 }
 
+async function handleSearch(request, env) {
+  const url = new URL(request.url);
+  const q = (url.searchParams.get('q') || '').trim();
+  if (!q) {
+    return new Response(JSON.stringify([]), { headers: { ...JSON_HEADERS, ...corsHeaders(env) } });
+  }
+
+  const like = `%${q.replace(/[\\%_]/g, '\\$&')}%`;
+
+  const { results } = await env.DB.prepare(
+    `SELECT page_id, page_title, page_url, author_name, body, created_at
+     FROM comments
+     WHERE status = 'approved' AND (body LIKE ? ESCAPE '\\' OR author_name LIKE ? ESCAPE '\\')
+     ORDER BY created_at DESC
+     LIMIT 30`
+  )
+    .bind(like, like)
+    .all();
+
+  return new Response(JSON.stringify(results || []), { headers: { ...JSON_HEADERS, ...corsHeaders(env) } });
+}
+
 async function handleModerate(request, env) {
   const url = new URL(request.url);
   const id = url.searchParams.get('id');
@@ -291,6 +313,9 @@ export default {
     }
     if (url.pathname === '/api/comments' && request.method === 'GET') {
       return handleGet(request, env);
+    }
+    if (url.pathname === '/api/comments/search' && request.method === 'GET') {
+      return handleSearch(request, env);
     }
     if (url.pathname === '/api/moderate' && request.method === 'GET') {
       return handleModerate(request, env);
