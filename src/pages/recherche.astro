@@ -1,30 +1,42 @@
 ---
 import Base from '../layouts/Base.astro';
+import { COMMENTS_API_BASE } from '../lib/comments';
 ---
 
 <Base title="Recherche" description="Rechercher dans les émissions de Tous Azimuts.">
   <h1>Rechercher</h1>
   <p>Utilisez le champ de recherche en haut de page pour chercher un mot-clé, un sujet ou un nom dans toutes les émissions du site.</p>
 
-  <p id="search-status" role="status" aria-live="polite"></p>
-  <ul id="search-results" class="emission-list"></ul>
+  <section aria-labelledby="results-emissions-heading">
+    <h2 id="results-emissions-heading">Résultats dans les émissions</h2>
+    <p id="search-status" role="status" aria-live="polite"></p>
+    <ul id="search-results" class="emission-list"></ul>
+  </section>
 
-  <script is:inline define:vars={{ base: import.meta.env.BASE_URL }}>
-    window.addEventListener('DOMContentLoaded', function () {
-      var status = document.getElementById('search-status');
-      var results = document.getElementById('search-results');
-      var pagefindBase = base.endsWith('/') ? base : base + '/';
-      var pagefindPromise = null;
+  {COMMENTS_API_BASE && (
+    <section aria-labelledby="results-comments-heading">
+      <h2 id="results-comments-heading">Résultats dans les commentaires</h2>
+      <p id="comments-search-status" role="status" aria-live="polite"></p>
+      <ul id="comments-search-results" class="emission-list"></ul>
+    </section>
+  )}
+
+  <script>
+    import { COMMENTS_API_BASE } from '../lib/comments';
+    import { renderCommentBody } from '../lib/comment-links';
+
+    function init() {
+      const status = document.getElementById('search-status')!;
+      const results = document.getElementById('search-results')!;
+      const base = import.meta.env.BASE_URL;
+      const pagefindBase = base.endsWith('/') ? base : base + '/';
+      let pagefindPromise: Promise<any> | null = null;
 
       function loadPagefind() {
         if (!pagefindPromise) {
-          pagefindPromise = import(pagefindBase + 'pagefind/pagefind.js')
-            .then(function (pf) {
-              return pf.init().then(function () {
-                return pf;
-              });
-            })
-            .catch(function (err) {
+          pagefindPromise = import(/* @vite-ignore */ pagefindBase + 'pagefind/pagefind.js')
+            .then((pf) => pf.init().then(() => pf))
+            .catch((err) => {
               status.textContent = 'Erreur de chargement du moteur de recherche : ' + err.message;
               throw err;
             });
@@ -32,7 +44,7 @@ import Base from '../layouts/Base.astro';
         return pagefindPromise;
       }
 
-      function runSearch(query) {
+      function runSearch(query: string) {
         results.innerHTML = '';
         if (!query) {
           status.textContent = '';
@@ -40,43 +52,91 @@ import Base from '../layouts/Base.astro';
         }
         status.textContent = 'Recherche en cours…';
         loadPagefind()
-          .then(function (pf) {
-            return pf.search(query);
-          })
-          .then(function (search) {
+          .then((pf) => pf.search(query))
+          .then((search) => {
             if (!search.results.length) {
               status.textContent = 'Aucun résultat pour « ' + query + ' ».';
               return;
             }
             status.textContent = search.results.length + ' résultat(s) pour « ' + query + ' ».';
-            return Promise.all(search.results.map(function (r) { return r.data(); })).then(function (dataList) {
-              dataList.forEach(function (data) {
-                var li = document.createElement('li');
+            return Promise.all(search.results.map((r: any) => r.data())).then((dataList) => {
+              dataList.forEach((data: any) => {
+                const li = document.createElement('li');
                 li.className = 'emission-card';
-                var a = document.createElement('a');
-                var url = data.url.indexOf(base) === 0 ? data.url : base.slice(0, -1) + data.url;
+                const a = document.createElement('a');
+                const url = data.url.indexOf(base) === 0 ? data.url : base.slice(0, -1) + data.url;
                 a.href = url;
                 a.textContent = (data.meta && data.meta.title) ? data.meta.title : data.url;
-                var h3 = document.createElement('h3');
+                const h3 = document.createElement('h3');
                 h3.appendChild(a);
                 li.appendChild(h3);
-                var excerpt = document.createElement('p');
+                const excerpt = document.createElement('p');
                 excerpt.innerHTML = data.excerpt;
                 li.appendChild(excerpt);
                 results.appendChild(li);
               });
             });
           })
-          .catch(function (err) {
+          .catch((err) => {
             status.textContent = 'Erreur pendant la recherche : ' + err.message;
           });
       }
 
-      var initialQuery = new URLSearchParams(window.location.search).get('q');
+      function runCommentsSearch(query: string) {
+        const commentsStatus = document.getElementById('comments-search-status');
+        const commentsResults = document.getElementById('comments-search-results');
+        if (!commentsStatus || !commentsResults || !COMMENTS_API_BASE) return;
+
+        commentsResults.innerHTML = '';
+        if (!query) {
+          commentsStatus.textContent = '';
+          return;
+        }
+        commentsStatus.textContent = 'Recherche en cours…';
+
+        fetch(`${COMMENTS_API_BASE}/api/comments/search?q=${encodeURIComponent(query)}`)
+          .then((res) => res.json())
+          .then((comments: Array<{ page_url: string; page_title: string; author_name: string; body: string }>) => {
+            if (!comments || comments.length === 0) {
+              commentsStatus.textContent = 'Aucun résultat pour « ' + query + ' ».';
+              return;
+            }
+            commentsStatus.textContent = comments.length + ' résultat(s) pour « ' + query + ' ».';
+            comments.forEach((c) => {
+              const li = document.createElement('li');
+              li.className = 'emission-card';
+              const a = document.createElement('a');
+              a.href = c.page_url;
+              a.textContent = c.page_title || c.page_url;
+              const h3 = document.createElement('h3');
+              h3.appendChild(a);
+              li.appendChild(h3);
+              const excerpt = document.createElement('p');
+              const author = document.createElement('strong');
+              author.textContent = c.author_name + ' : ';
+              excerpt.appendChild(author);
+              renderCommentBody(excerpt, c.body);
+              li.appendChild(excerpt);
+              commentsResults.appendChild(li);
+            });
+          })
+          .catch((err) => {
+            commentsStatus.textContent = 'Erreur pendant la recherche : ' + err.message;
+          });
+      }
+
+      const initialQuery = new URLSearchParams(window.location.search).get('q');
       if (initialQuery && initialQuery.trim()) {
         loadPagefind();
         runSearch(initialQuery.trim());
+        runCommentsSearch(initialQuery.trim());
       }
-    });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   </script>
 </Base>
