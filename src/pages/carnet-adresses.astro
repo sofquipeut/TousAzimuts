@@ -32,6 +32,16 @@ const intro = [
 ];
 
 const nombre = fiches.length;
+
+// Phrase de renvoi vers les émissions : accords au singulier et au pluriel, ponctuation exacte.
+function phraseEmissions(e: number[]): string {
+  const lien = (n: number) => `<a href="${withBase(`/emissions/emission-${n}/`)}">${n}</a>`;
+  if (e.length === 1) {
+    return `Évoquée dans <a href="${withBase(`/emissions/emission-${e[0]}/`)}">l'émission ${e[0]}</a>.`;
+  }
+  const liste = e.map((n, i) => (i > 0 ? (i === e.length - 1 ? ' et ' : ', ') : '') + lien(n)).join('');
+  return `Évoquée dans les émissions ${liste}.`;
+}
 ---
 
 <Base
@@ -116,15 +126,7 @@ const nombre = fiches.length;
             {!f.s && !f.m && !f.p && !f.ad && <li>Aucune coordonnée publique retrouvée.</li>}
           </ul>
           {f.e && f.e.length > 0 && (
-            <p class="carnet-emissions">
-              Évoquée à l'antenne :{' '}
-              {f.e.map((n: number, i: number) => (
-                <>
-                  {i > 0 && ', '}
-                  <a href={withBase(`/emissions/emission-${n}/`)}>émission {n}</a>
-                </>
-              ))}
-            </p>
+            <p class="carnet-emissions" set:html={phraseEmissions(f.e)} />
           )}
         </li>
       ))}
