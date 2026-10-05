@@ -5,9 +5,16 @@ interface Props {
   pageId: string;
   pageUrl: string;
   pageTitle: string;
+  /** Phrase d'introduction du bloc. Par défaut, celle des pages d'émission. */
+  intro?: string;
 }
 
-const { pageId, pageUrl, pageTitle } = Astro.props;
+const {
+  pageId,
+  pageUrl,
+  pageTitle,
+  intro = "Donnez-nous votre avis sur cette émission ou signalez-nous une erreur ou un lien mort : vos commentaires sont les bienvenus !",
+} = Astro.props;
 ---
 
 {COMMENTS_API_BASE && (
@@ -21,7 +28,7 @@ const { pageId, pageUrl, pageTitle } = Astro.props;
     data-page-title={pageTitle}
   >
     <h2 id="comments-heading">Commentaires</h2>
-    <p id="comments-intro">Donnez-nous votre avis sur cette émission ou signalez-nous une erreur ou un lien mort : vos commentaires sont les bienvenus !</p>
+    <p id="comments-intro">{intro}</p>
 
     <ul id="comments-list" aria-live="polite">
       <li id="comments-loading">Chargement des commentaires…</li>
