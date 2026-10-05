@@ -104,7 +104,7 @@ function phraseEmissions(e: number[]): string {
           <h2>{f.n}</h2>
           {f.a && <p class="carnet-alias">Ancien nom : {f.a}</p>}
           <p class="carnet-meta">
-            {[f.t, f.th, f.v].filter(Boolean).join(' — ')}
+            {[f.t, f.th, f.v].filter((x: string) => x && x !== 'Autre').join(' — ')}
           </p>
           <ul class="carnet-contacts">
             {f.s && (
