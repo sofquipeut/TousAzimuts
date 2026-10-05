@@ -1,0 +1,218 @@
+---
+import Base from '../layouts/Base.astro';
+import Comments from '../components/Comments.astro';
+import { withBase } from '../lib/url';
+import carnet from '../data/carnet-adresses.json';
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// Normalisation pour la recherche : sans accents, sans majuscules, sans ponctuation.
+function aplatir(txt: string): string {
+  return (txt || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+const fiches = carnet.map((f: any) => ({
+  ...f,
+  recherche: aplatir([f.n, f.a, f.v, f.th, f.t, f.ad].join(' ')),
+}));
+
+const themes = Array.from(new Set(fiches.map((f: any) => f.th).filter(Boolean))).sort((a: string, b: string) => a.localeCompare(b, 'fr'));
+const types = Array.from(new Set(fiches.map((f: any) => f.t).filter(Boolean))).sort((a: string, b: string) => a.localeCompare(b, 'fr'));
+
+const intro = [
+  "Depuis 2017, l'émission a donné la parole à des centaines d'associations, d'entreprises, de lieux et d'institutions qui travaillent, chacune à sa manière, pour l'autonomie et l'inclusion des personnes en situation de handicap. Nous avons rassemblé ici celles dont un auditeur peut avoir besoin un jour : leur site, leur adresse mail, leur téléphone quand ils sont publics, leur thème, et les émissions où nous les avons évoquées.",
+  "Ce carnet n'est ni un palmarès ni une liste de partenaires. Il n'y a aucun ordre de préférence, aucune sélection : nous y faisons figurer les structures citées à l'antenne dont nous avons pu vérifier les coordonnées, en les lisant sur leur site officiel. Quand une information n'a pas été retrouvée, la case reste vide plutôt que d'être remplie au hasard.",
+  "Deux mises en garde. Les coordonnées changent : un site ferme, une adresse devient caduque, une structure fusionne ou change de nom. Les anciens noms restent donc dans la recherche : tapez Ciné-ma différence et vous trouverez Culture Relax, tapez Humanis et vous arriverez à Malakoff Humanis. Si vous repérez une erreur ou une structure manquante, signalez-la par le formulaire de commentaires en bas de page, nous corrigerons. Et figurer ici ne vaut pas recommandation : c'est un point de départ, pas un label.",
+  "Pour s'en servir, le champ de recherche filtre à mesure que vous tapez, sur le nom, l'ancien nom, la ville et le thème. Les deux listes déroulantes ressortent par exemple les seules structures toulousaines, ou les seules associations.",
+];
+
+const nombre = fiches.length;
+---
+
+<Base
+  title="Carnet d'adresses"
+  description="Le carnet d'adresses de Tous Azimuts : associations, entreprises, lieux et institutions cités dans l'émission, avec leurs coordonnées et les émissions où ils ont été évoqués."
+>
+  <article class="carnet">
+    <h1>Carnet d'adresses</h1>
+
+    <div class="carnet-intro">
+      {intro.map((p) => <p>{p}</p>)}
+    </div>
+
+    <form class="carnet-outils" role="search" onsubmit="return false">
+      <p class="carnet-champ">
+        <label for="carnet-q">Rechercher une structure, une ville ou un thème</label>
+        <input
+          id="carnet-q"
+          type="search"
+          name="q"
+          autocomplete="off"
+          spellcheck="false"
+          aria-describedby="carnet-aide"
+        />
+      </p>
+      <p id="carnet-aide" class="carnet-aide">
+        La liste se réduit à mesure que vous tapez. Les anciens noms des structures fonctionnent aussi.
+      </p>
+      <p class="carnet-filtres">
+        <span class="carnet-etiquette">
+          <label for="carnet-theme">Thème</label>
+          <select id="carnet-theme">
+            <option value="">Tous les thèmes</option>
+            {themes.map((t: string) => <option value={t}>{t}</option>)}
+          </select>
+        </span>
+        <span class="carnet-etiquette">
+          <label for="carnet-type">Type de structure</label>
+          <select id="carnet-type">
+            <option value="">Tous les types</option>
+            {types.map((t: string) => <option value={t}>{t}</option>)}
+          </select>
+        </span>
+        <button type="button" id="carnet-raz">Tout afficher</button>
+      </p>
+    </form>
+
+    <p id="carnet-compteur" class="carnet-compteur" role="status" aria-live="polite">
+      {nombre} structures dans le carnet.
+    </p>
+
+    <ul id="carnet-liste" class="carnet-liste">
+      {fiches.map((f: any) => (
+        <li
+          class="carnet-fiche"
+          data-recherche={f.recherche}
+          data-theme={f.th}
+          data-type={f.t}
+        >
+          <h2>{f.n}</h2>
+          {f.a && <p class="carnet-alias">Ancien nom : {f.a}</p>}
+          <p class="carnet-meta">
+            {[f.t, f.th, f.v].filter(Boolean).join(' — ')}
+          </p>
+          <ul class="carnet-contacts">
+            {f.s && (
+              <li>
+                <a href={f.s} target="_blank" rel="noopener">Site officiel</a>
+              </li>
+            )}
+            {f.m && (
+              <li>
+                <a href={`mailto:${f.m}`}>{f.m}</a>
+              </li>
+            )}
+            {f.p && (
+              <li>
+                <a href={`tel:${f.p.replace(/[^0-9+]/g, '')}`}>{f.p}</a>
+              </li>
+            )}
+            {!f.s && !f.m && !f.p && f.ad && <li>Adresse : {f.ad}</li>}
+            {!f.s && !f.m && !f.p && !f.ad && <li>Aucune coordonnée publique retrouvée.</li>}
+          </ul>
+          {f.e && f.e.length > 0 && (
+            <p class="carnet-emissions">
+              Évoquée à l'antenne :{' '}
+              {f.e.map((n: number, i: number) => (
+                <>
+                  {i > 0 && ', '}
+                  <a href={withBase(`/emissions/emission-${n}/`)}>émission {n}</a>
+                </>
+              ))}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+
+    <p id="carnet-aucun" class="carnet-aucun" hidden>
+      Aucune structure ne correspond à cette recherche. Essayez un autre mot, ou effacez les filtres
+      avec le bouton « Tout afficher ».
+    </p>
+
+    <Comments pageId="carnet-adresses" pageUrl={canonicalUrl} pageTitle="Carnet d'adresses" />
+  </article>
+
+  <script>
+    const champ = document.getElementById('carnet-q') as HTMLInputElement;
+    const theme = document.getElementById('carnet-theme') as HTMLSelectElement;
+    const type = document.getElementById('carnet-type') as HTMLSelectElement;
+    const raz = document.getElementById('carnet-raz') as HTMLButtonElement;
+    const compteur = document.getElementById('carnet-compteur') as HTMLElement;
+    const aucun = document.getElementById('carnet-aucun') as HTMLElement;
+    const fiches = Array.from(document.querySelectorAll('.carnet-fiche')) as HTMLElement[];
+
+    const total = fiches.length;
+
+    function aplatir(txt: string): string {
+      return txt
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim();
+    }
+
+    function appliquer() {
+      const q = aplatir(champ.value);
+      const th = theme.value;
+      const ty = type.value;
+      let visibles = 0;
+      for (const f of fiches) {
+        const ok =
+          (!q || (f.dataset.recherche || '').includes(q)) &&
+          (!th || f.dataset.theme === th) &&
+          (!ty || f.dataset.type === ty);
+        f.hidden = !ok;
+        if (ok) visibles++;
+      }
+      compteur.textContent =
+        visibles === total
+          ? `${total} structures dans le carnet.`
+          : `${visibles} structure${visibles > 1 ? 's' : ''} sur ${total} affichée${visibles > 1 ? 's' : ''}.`;
+      aucun.hidden = visibles !== 0;
+    }
+
+    champ.addEventListener('input', appliquer);
+    theme.addEventListener('change', appliquer);
+    type.addEventListener('change', appliquer);
+    raz.addEventListener('click', () => {
+      champ.value = '';
+      theme.value = '';
+      type.value = '';
+      appliquer();
+      champ.focus();
+    });
+  </script>
+
+  <style>
+    .carnet { max-width: 60rem; }
+    .carnet-intro p { margin: 0 0 1em; }
+    .carnet-outils { margin: 2rem 0 1rem; }
+    .carnet-champ label { display: block; font-weight: bold; margin-bottom: 0.3em; }
+    .carnet-champ input {
+      width: 100%; max-width: 32rem; padding: 0.5em; font-size: 1.1em;
+      border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit;
+    }
+    .carnet-aide { font-size: 0.9em; margin: 0.4em 0 1em; }
+    .carnet-filtres { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; }
+    .carnet-etiquette { display: flex; flex-direction: column; gap: 0.3em; }
+    .carnet-etiquette select { padding: 0.4em; font-size: 1em; background: transparent; color: inherit; border: 1px solid currentColor; border-radius: 4px; }
+    .carnet-filtres button { padding: 0.5em 1em; font-size: 1em; cursor: pointer; border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit; }
+    .carnet-compteur { font-weight: bold; margin: 1.5em 0 1em; }
+    .carnet-liste { list-style: none; padding: 0; margin: 0; }
+    .carnet-fiche { border-top: 1px solid currentColor; padding: 1.2em 0; }
+    .carnet-fiche h2 { margin: 0 0 0.3em; font-size: 1.15em; }
+    .carnet-alias { margin: 0 0 0.3em; font-style: italic; }
+    .carnet-meta { margin: 0 0 0.5em; font-size: 0.95em; }
+    .carnet-contacts { list-style: none; padding: 0; margin: 0 0 0.5em; display: flex; flex-wrap: wrap; gap: 0.4em 1.2em; }
+    .carnet-emissions { margin: 0; font-size: 0.95em; }
+    .carnet-aucun { font-weight: bold; margin: 1.5em 0; }
+    .carnet-fiche:focus-within { outline: 2px solid currentColor; outline-offset: 4px; }
+  </style>
+</Base>
