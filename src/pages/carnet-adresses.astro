@@ -109,27 +109,27 @@ function phraseEmissions(e: number[]): string {
           <ul class="carnet-contacts">
             {f.s && (
               <li>
-                <a href={f.s} target="_blank" rel="noopener">Site officiel</a>
+                <a href={f.s} target="_blank" rel="noopener">Site officiel<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
               </li>
             )}
             {f.m && (
               <li>
-                <a href={`mailto:${f.m}`}>{f.m}</a>
+                <span class="sr-only">Mail : </span><a href={`mailto:${f.m}`}>{f.m}</a>
               </li>
             )}
             {f.p && (
               <li>
-                <a href={`tel:${f.p.replace(/[^0-9+]/g, '')}`}>{f.p}</a>
+                <span class="sr-only">Téléphone : </span><a href={`tel:${f.p.replace(/[^0-9+]/g, '')}`}>{f.p}</a>
               </li>
             )}
             {f.f && (
               <li>
-                <a href={f.f} target="_blank" rel="noopener">Formulaire de contact</a>
+                <a href={f.f} target="_blank" rel="noopener">Formulaire de contact<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
               </li>
             )}
             {f.ap && f.ap.map(([magasin, url]: [string, string]) => (
               <li>
-                <a href={url} target="_blank" rel="noopener">Télécharger l'application ({magasin})</a>
+                <a href={url} target="_blank" rel="noopener">Télécharger l'application ({magasin})<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
               </li>
             ))}
             {!f.s && !f.m && !f.p && !f.f && f.ad && <li>Adresse : {f.ad}</li>}
@@ -165,6 +165,7 @@ function phraseEmissions(e: number[]): string {
     const fiches = Array.from(document.querySelectorAll('.carnet-fiche')) as HTMLElement[];
 
     const total = fiches.length;
+    let minuteur: ReturnType<typeof setTimeout>;
 
     function aplatir(txt: string): string {
       return txt
@@ -188,11 +189,14 @@ function phraseEmissions(e: number[]): string {
         f.hidden = !ok;
         if (ok) visibles++;
       }
-      compteur.textContent =
+      const texte =
         visibles === total
           ? `${total} structures dans le carnet.`
           : `${visibles} structure${visibles > 1 ? 's' : ''} sur ${total} affichée${visibles > 1 ? 's' : ''}.`;
       aucun.hidden = visibles !== 0;
+      // Annonce différée : le lecteur d'écran ne lit que le résultat final de la frappe.
+      clearTimeout(minuteur);
+      minuteur = setTimeout(() => { compteur.textContent = texte; }, 600);
     }
 
     champ.addEventListener('input', appliquer);
