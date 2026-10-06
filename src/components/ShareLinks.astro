@@ -15,7 +15,10 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
     <li>
       <a
         class="button"
+        id="share-facebook"
         style="background-color:#0F5FCB"
+        data-url={url}
+        data-title={`Tous Azimuts - ${title}`}
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -63,3 +66,23 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
     </li>
   </ul>
 </div>
+
+<script>
+  // Sur téléphone/tablette, on ouvre le panneau de partage du système (Facebook
+  // y est proposé et reçoit le lien). Ailleurs, le lien Facebook normal s'ouvre.
+  const fb = document.getElementById('share-facebook');
+  if (
+    fb &&
+    typeof navigator.share === 'function' &&
+    window.matchMedia('(pointer: coarse)').matches
+  ) {
+    fb.addEventListener('click', async (event) => {
+      event.preventDefault();
+      try {
+        await navigator.share({ title: fb.dataset.title, url: fb.dataset.url });
+      } catch (error) {
+        if ((error as Error).name !== 'AbortError') window.open(fb.href, '_blank', 'noopener');
+      }
+    });
+  }
+</script>
