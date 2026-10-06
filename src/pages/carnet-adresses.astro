@@ -55,7 +55,7 @@ function phraseEmissions(e: number[]): string {
       {intro.map((p) => <p>{p}</p>)}
     </div>
 
-    <form class="carnet-outils" role="search" onsubmit="return false">
+    <form class="carnet-outils" role="search" aria-label="Recherche dans le carnet d'adresses" onsubmit="return false">
       <p class="carnet-champ">
         <label for="carnet-q">Rechercher une structure, une ville ou un thème</label>
         <input
@@ -87,13 +87,14 @@ function phraseEmissions(e: number[]): string {
         </span>
         <button type="button" id="carnet-raz">Tout afficher</button>
       </p>
+      <p class="carnet-saut"><a href="#carnet-liste">Aller à la liste des structures</a></p>
     </form>
 
     <p id="carnet-compteur" class="carnet-compteur" role="status" aria-live="polite">
       {nombre} structures dans le carnet.
     </p>
 
-    <ul id="carnet-liste" class="carnet-liste">
+    <ul id="carnet-liste" class="carnet-liste" tabindex="-1" aria-label="Structures du carnet d'adresses">
       {fiches.map((f: any) => (
         <li
           class="carnet-fiche"
@@ -233,6 +234,9 @@ function phraseEmissions(e: number[]): string {
     .carnet-meta { margin: 0 0 0.5em; font-size: 0.95em; }
     .carnet-contacts { list-style: none; padding: 0; margin: 0 0 0.5em; display: flex; flex-wrap: wrap; gap: 0.4em 1.2em; }
     .carnet-emissions { margin: 0; font-size: 0.95em; }
+    .carnet-contacts a { overflow-wrap: anywhere; }
+    .carnet-saut { margin: 0.8em 0 0; }
+    .carnet-liste:focus { outline: none; }
     .carnet-aucun { font-weight: bold; margin: 1.5em 0; }
     .carnet-fiche:focus-within { outline: 2px solid currentColor; outline-offset: 4px; }
   </style>
