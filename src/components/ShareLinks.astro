@@ -12,22 +12,11 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
 <div class="share-links">
   <h2 class="share-links__label">Partager cette émission</h2>
   <ul>
-    <li id="share-native" hidden>
-      <button
-        type="button"
-        class="button"
-        style="background-color:#0F5FCB"
-        data-url={url}
-        data-title={`Tous Azimuts - ${title}`}
-      >
-        Partager via mon appareil (Facebook, etc.)
-      </button>
-    </li>
-    <li id="share-facebook">
+    <li>
       <a
         class="button"
         style="background-color:#0F5FCB"
-        href={`https://www.facebook.com/share.php?u=${encodedUrl}`}
+        href={`https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -74,22 +63,3 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
     </li>
   </ul>
 </div>
-
-<script>
-  // Sur mobile, la page de partage Facebook perd souvent le lien (redirection
-  // vers l'accueil ou l'application). Le partage natif de l'appareil est fiable.
-  const item = document.getElementById('share-native');
-  const btn = item?.querySelector('button');
-  if (item && btn && typeof navigator.share === 'function') {
-    item.hidden = false;
-    const facebook = document.getElementById('share-facebook');
-    if (facebook) facebook.hidden = true;
-    btn.addEventListener('click', async () => {
-      try {
-        await navigator.share({ title: btn.dataset.title, url: btn.dataset.url });
-      } catch {
-        // Partage annulé par l'utilisateur : rien à faire.
-      }
-    });
-  }
-</script>
