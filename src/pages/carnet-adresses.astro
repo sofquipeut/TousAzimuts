@@ -35,12 +35,12 @@ const nombre = fiches.length;
 
 // Phrase de renvoi vers les émissions : accords au singulier et au pluriel, ponctuation exacte.
 function phraseEmissions(e: number[]): string {
-  const lien = (n: number) => `<a href="${withBase(`/emissions/emission-${n}/`)}">${n}</a>`;
+  const lien = (n: number) => `<a href="${withBase(`/emissions/emission-${n}/`)}">émission ${n}</a>`;
   if (e.length === 1) {
     return `Évoquée dans <a href="${withBase(`/emissions/emission-${e[0]}/`)}">l'émission ${e[0]}</a>.`;
   }
   const liste = e.map((n, i) => (i > 0 ? (i === e.length - 1 ? ' et ' : ', ') : '') + lien(n)).join('');
-  return `Évoquée dans les émissions ${liste}.`;
+  return `Évoquée dans : ${liste}.`;
 }
 ---
 
@@ -110,7 +110,7 @@ function phraseEmissions(e: number[]): string {
           <ul class="carnet-contacts">
             {f.s && (
               <li>
-                <a href={f.s} target="_blank" rel="noopener">Site officiel<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
+                <a href={f.s} target="_blank" rel="noopener">Site officiel<span class="sr-only"> de {f.n}</span></a>
               </li>
             )}
             {f.m && (
@@ -125,12 +125,12 @@ function phraseEmissions(e: number[]): string {
             )}
             {f.f && (
               <li>
-                <a href={f.f} target="_blank" rel="noopener">Formulaire de contact<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
+                <a href={f.f} target="_blank" rel="noopener">Formulaire de contact<span class="sr-only"> de {f.n}</span></a>
               </li>
             )}
             {f.ap && f.ap.map(([magasin, url]: [string, string]) => (
               <li>
-                <a href={url} target="_blank" rel="noopener">Télécharger l'application ({magasin})<span class="sr-only"> de {f.n} (s'ouvre dans un nouvel onglet)</span></a>
+                <a href={url} target="_blank" rel="noopener">Télécharger l'application ({magasin})<span class="sr-only"> de {f.n}</span></a>
               </li>
             ))}
             {!f.s && !f.m && !f.p && !f.f && f.ad && <li>Adresse : {f.ad}</li>}
