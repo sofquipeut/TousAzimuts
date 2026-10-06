@@ -23,7 +23,7 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
         Partager via mon appareil (Facebook, etc.)
       </button>
     </li>
-    <li>
+    <li id="share-facebook">
       <a
         class="button"
         style="background-color:#0F5FCB"
@@ -82,6 +82,8 @@ const encodedTitle = encodeURIComponent(`Tous Azimuts - ${title}`);
   const btn = item?.querySelector('button');
   if (item && btn && typeof navigator.share === 'function') {
     item.hidden = false;
+    const facebook = document.getElementById('share-facebook');
+    if (facebook) facebook.hidden = true;
     btn.addEventListener('click', async () => {
       try {
         await navigator.share({ title: btn.dataset.title, url: btn.dataset.url });
