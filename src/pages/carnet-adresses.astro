@@ -25,7 +25,7 @@ const themes = Array.from(new Set(fiches.map((f: any) => f.th).filter(Boolean)))
 const types = Array.from(new Set(fiches.map((f: any) => f.t).filter(Boolean))).sort((a: string, b: string) => a.localeCompare(b, 'fr'));
 
 const intro = [
-  "Depuis 2017, l'émission a donné la parole à des centaines d'associations, d'entreprises, de lieux et d'institutions qui travaillent, chacune à sa manière, pour l'autonomie et l'inclusion des personnes en situation de handicap. Nous avons rassemblé ici celles dont un auditeur peut avoir besoin un jour : leur site, leur adresse mail, leur téléphone quand ils sont publics, leur thème, et les émissions où nous les avons évoquées.",
+  "Depuis 2017, l'émission a donné la parole à des centaines d'associations, d'entreprises, de lieux et d'institutions qui travaillent, chacune à sa manière, pour l'autonomie et l'inclusion des personnes en situation de handicap. Nous avons rassemblé ici celles dont un auditeur peut avoir besoin un jour : leur site, leur adresse mail, leur téléphone ou leur formulaire de contact quand ils sont publics, leur application à télécharger le cas échéant, leur thème, et les émissions où nous les avons évoquées.",
   "Ce carnet n'est ni un palmarès ni une liste de partenaires. Il n'y a aucun ordre de préférence, aucune sélection : nous y faisons figurer les structures citées à l'antenne dont nous avons pu vérifier les coordonnées, en les lisant sur leur site officiel. Quand une information n'a pas été retrouvée, la case reste vide plutôt que d'être remplie au hasard.",
   "Deux mises en garde. Les coordonnées changent : un site ferme, une adresse devient caduque, une structure fusionne ou change de nom. Les anciens noms restent donc dans la recherche : tapez Ciné-ma différence et vous trouverez Culture Relax, tapez Humanis et vous arriverez à Malakoff Humanis. Si vous repérez une erreur ou une structure manquante, signalez-la par le formulaire de commentaires en bas de page, nous corrigerons. Et figurer ici ne vaut pas recommandation : c'est un point de départ, pas un label.",
   "Pour s'en servir, le champ de recherche filtre à mesure que vous tapez, sur le nom, l'ancien nom, la ville et le thème. Les deux listes déroulantes ressortent par exemple les seules structures toulousaines, ou les seules associations.",
@@ -122,8 +122,18 @@ function phraseEmissions(e: number[]): string {
                 <a href={`tel:${f.p.replace(/[^0-9+]/g, '')}`}>{f.p}</a>
               </li>
             )}
-            {!f.s && !f.m && !f.p && f.ad && <li>Adresse : {f.ad}</li>}
-            {!f.s && !f.m && !f.p && !f.ad && <li>Aucune coordonnée publique retrouvée.</li>}
+            {f.f && (
+              <li>
+                <a href={f.f} target="_blank" rel="noopener">Formulaire de contact</a>
+              </li>
+            )}
+            {f.ap && f.ap.map(([magasin, url]: [string, string]) => (
+              <li>
+                <a href={url} target="_blank" rel="noopener">Télécharger l'application ({magasin})</a>
+              </li>
+            ))}
+            {!f.s && !f.m && !f.p && !f.f && f.ad && <li>Adresse : {f.ad}</li>}
+            {!f.s && !f.m && !f.p && !f.f && !f.ad && <li>Aucune coordonnée publique retrouvée.</li>}
           </ul>
           {f.e && f.e.length > 0 && (
             <p class="carnet-emissions" set:html={phraseEmissions(f.e)} />
