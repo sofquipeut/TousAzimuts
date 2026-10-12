@@ -12,6 +12,15 @@ const sujets = [...new Set(emissions.flatMap((e) => e.data.tags))].sort((a, b) =
   tagLabel(a).localeCompare(tagLabel(b), 'fr')
 );
 
+// Bloc « dernière émission publiée » : la plus récente au sens de la date de publication.
+// Les brouillons sont écartés en amont, une émission retirée du dépôt n'existe donc pas ici.
+const derniere = [...emissions].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())[0];
+const derniereDate = derniere?.data.pubDate.toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'PodcastSeries',
@@ -51,6 +60,20 @@ const structuredData = {
   </p>
 
   <p>Une émission animée par une équipe mixte, dont plusieurs membres sont eux-mêmes en situation de handicap.</p>
+
+  {derniere && (
+    <section class="derniere-emission" aria-labelledby="titre-derniere-emission">
+      <h2 id="titre-derniere-emission">Dernière émission publiée</h2>
+      <article class="emission-card">
+        <h3><a href={withBase(`/emissions/${derniere.slug}/`)}>{derniere.data.title}</a></h3>
+        <p class="emission-card__date">Publiée le {derniereDate}</p>
+        <p>{derniere.data.excerpt}</p>
+        <p class="derniere-emission__actions">
+          <a class="button" href={withBase(`/emissions/${derniere.slug}/`)}>Écouter l'émission</a>
+        </p>
+      </article>
+    </section>
+  )}
 
   <hr />
 

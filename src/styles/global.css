@@ -341,6 +341,20 @@ hr {
   margin: 0 0 0.5rem;
 }
 
+/* Bloc « dernière émission publiée » de la page d'accueil : le filet d'accent le distingue
+   des cartes ordinaires des pages de saison. */
+.derniere-emission {
+  margin: 1.5rem 0;
+}
+
+.derniere-emission .emission-card {
+  border-left: 4px solid var(--color-accent);
+}
+
+.derniere-emission__actions {
+  margin: 1rem 0 0;
+}
+
 .emission-meta {
   color: var(--color-text-muted);
 }
