@@ -1,22 +1,30 @@
 ---
-title: "Émission 176"
+title: Émission 176
 number: 176
 season: saison-10
 pubDate: 2026-10-02T17:00:00Z
-diffusion: "Diffusée sur Radio Mon Païs 90.1 FM le 02/10/2026 à 19h."
+diffusion: Diffusée sur Radio Mon Païs 90.1 FM le 02/10/2026 à 19h.
+rssPlayerId: '3227730'
 excerpt: "Au sommaire de cette première émission de la dixième saison : l'emploi inclusif, l'achromatopsie, un chien pas comme les autres, les troubles DYS, la déglutition et l'agenda de Carinne."
-rssPlayerId: "3227730"
-tags: ["deficience-visuelle", "handicap-moteur", "troubles-dys", "maladie-chronique", "culture", "sport", "emploi", "education"]
+tags:
+  - deficience-visuelle
+  - handicap-moteur
+  - troubles-dys
+  - maladie-chronique
+  - culture
+  - sport
+  - emploi
+  - education
 draft: false
 ---
 
-Au sommaire de cette première émission de la dixième saison : l'emploi inclusif, l'achromatopsie, un chien pas comme les autres, les troubles DYS, la déglutition et l'agenda de Carinne.
+Au sommaire de cette émission :
 
 - **Emploi** : Corinne nous parle de l'emploi inclusif, avec une adresse qui vient d'ouvrir à Toulouse, les [Cafés Joyeux](https://www.cafejoyeux.com/btob/fr/content/187-cafe-joyeux-toulouse) de la place des Carmes, où travaillent cinq salariés en situation de handicap.
 
-- **Santé** : Sofian nous parle de l'achromatopsie, cette [maladie rare](https://www.orpha.net/fr/disease/detail/49382) qui prive de toute couleur. Il nous emmène jusqu'à l'île de Pingelap, avec le livre d'Oliver Sacks, [L'île en noir et blanc](https://eole.avh.asso.fr/l%C3%AEle-en-noir-et-blanc), à la médiathèque Éole de l'AVH, et l'artiste britannique Neil Harbisson.
+- **Santé** : Sofian nous parle de l'achromatopsie, cette [maladie rare](https://www.orpha.net/fr/disease/detail/49382) qui prive de toute couleur. Il nous emmène jusqu'à l'île de Pingelap, avec le livre d'Oliver Sacks, [L'île en noir et blanc](https://eole.avh.asso.fr/l%C3%AEle-en-noir-et-blanc) et évoque le cas de l'[artiste britannique Neil Harbisson,](https://fr.wikipedia.org/wiki/Neil_Harbisson) lui-même atteint de cette maladie et qui utilise un moyen original d'y remédier.
 
-- **What's New ?** : Julien et Carinne abordent un chien pas comme les autres. On vous en dit plus dans une prochaine émission.
+- **What's New ?** : Julien et Carinne dévoilent une rencontre avec un chien pas comme les autres. Mais restez connectés à Tous Azimuts, on vous en dit plus dans les prochaines émissions! 😉
 
 - **Jeunesse** : Michel nous parle des troubles DYS à l'école, et des [ressources de la Fédération française des DYS](https://www.ffdys.com/).
 
