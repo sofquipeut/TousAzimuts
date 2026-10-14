@@ -3,7 +3,7 @@ title: Émission 176
 number: 176
 season: saison-10
 pubDate: 2026-10-02T17:00:00Z
-diffusion: Diffusée sur Radio Mon Païs 90.1 FM le 02/10/2026 à 19h.
+diffusion: ''
 rssPlayerId: '3227730'
 excerpt: "Au sommaire de cette première émission de la dixième saison : l'emploi inclusif, l'achromatopsie, un chien pas comme les autres, les troubles DYS, la déglutition et l'agenda de Carinne."
 tags:
