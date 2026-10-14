@@ -5,7 +5,7 @@ season: saison-10
 pubDate: 2026-10-02T17:00:00Z
 diffusion: Diffusée sur Radio montpaïs le 2 octobre 2026 à 19h et sur Radio Campus le 14 octobre à 13h.
 rssPlayerId: '3227730'
-excerpt: "Au sommaire de cette première émission de la dixième saison : l'emploi inclusif, l'achromatopsie, un chien pas comme les autres, les troubles DYS, la déglutition et l'agenda de Carinne."
+excerpt: "Au sommaire de cette première émission de la dixième saison : l'emploi inclusif, l'achromatopsie, un chien pas comme les autres, les troubles DYS et la déglutition."
 tags:
   - deficience-visuelle
   - handicap-moteur
