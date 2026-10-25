@@ -68,6 +68,7 @@
 "e":6,
 "a":"We Draw A",
 "t":"Waking Hour",
+"y":"https://www.youtube.com/watch?v=26BX2Uh0f0Q",
 "l":[
 [
 "SoundCloud",
@@ -550,12 +551,14 @@
 "e":66,
 "a":"Justice",
 "t":"On'n'On",
+"y":"https://www.youtube.com/watch?v=u6RqBUa3nq8",
 "al":"Audio, Video, Disco"
 },
 {
 "e":67,
 "a":"Cactus",
 "t":"Ayo",
+"y":"https://www.youtube.com/watch?v=zuA1bTCGoLE",
 "l":[
 [
 "Site du groupe",
@@ -1651,6 +1654,7 @@
 "e":147,
 "a":"Astral Bakers",
 "t":"I Don't Remember",
+"y":"https://www.youtube.com/watch?v=gAw8netzWmg",
 "l":[
 [
 "Bandcamp",
@@ -1949,7 +1953,8 @@
 {
 "e":176,
 "a":"Stevie Wonder",
-"t":"Pastime Paradise"
+"t":"Pastime Paradise",
+"y":"https://www.youtube.com/watch?v=_H3Sv2zad6s"
 },
 {
 "e":176,

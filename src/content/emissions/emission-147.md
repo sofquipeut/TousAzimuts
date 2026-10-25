@@ -19,7 +19,7 @@ En ce mois de février, l'actualité du handicap, une nouvelle rubrique cuisine,
 
 - **Le jardin sensoriel** : dans un reportage enregistré, Michel présente [le jardin sensoriel](https://handinova.fr/comment-creer-un-jardin-sensoriel-adapte-a-differents-handicaps/), un espace pensé pour stimuler les cinq sens et accessible à tous les handicaps.
 
-Côté musique : [Steve Hackett - Only Happy When It Rains (Live at Trading Boundaries)](https://www.youtube.com/watch?v=uu-6B1N0VZc), puis [Astral Bakers - I Don't Remember](https://astralbakers.bandcamp.com/track/i-don-t-remember).
+Côté musique : [Steve Hackett - Only Happy When It Rains (Live at Trading Boundaries)](https://www.youtube.com/watch?v=uu-6B1N0VZc), puis [Astral Bakers - I Don't Remember](https://astralbakers.bandcamp.com/track/i-don-t-remember) ([également sur YouTube](https://www.youtube.com/watch?v=gAw8netzWmg)).
 
 Agenda : webinaire en ligne le 11 février pour les 20 ans de la loi du 11 février 2005, et rendez-vous de la Saint-Valentin le 14 février.
 
