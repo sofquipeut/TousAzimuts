@@ -19,6 +19,6 @@ On embarque pour une heure de radio avec 5 rubriques.
 
 Pour finir, Carinne nous donne rendez-vous avec l'agenda.
 
-Côté musique, deux pauses : [Gauvain Sers - Dans la bagnole de mon père](https://www.youtube.com/watch?v=wTtg9aGtVko) et [We Draw A - Waking Hour](https://soundcloud.com/we-draw-a/waking-hour)
+Côté musique, deux pauses : [Gauvain Sers - Dans la bagnole de mon père](https://www.youtube.com/watch?v=wTtg9aGtVko) et [We Draw A - Waking Hour](https://soundcloud.com/we-draw-a/waking-hour) ([également sur YouTube](https://www.youtube.com/watch?v=26BX2Uh0f0Q))
 
 *Émission animée par Philippe, Carinne, Michel, Estelle et Isabelle, avec Joanne en invitée. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*

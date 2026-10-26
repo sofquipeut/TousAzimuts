@@ -7,12 +7,14 @@ interface Props {
   title: string;
   description?: string;
   fullTitle?: boolean;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = "Tous Azimuts, l'émission radio qui éclaire le handicap sous tous ses angles.",
   fullTitle = false,
+  noindex = false,
 } = Astro.props;
 
 const ogTitle = fullTitle ? title : `Tous Azimuts - ${title}`;
@@ -39,6 +41,7 @@ const ogImage = new URL(`${import.meta.env.BASE_URL}icon-512.png`, Astro.site).h
     <link rel="icon" type="image/png" sizes="512x512" href={`${import.meta.env.BASE_URL}icon-512.png`} />
     <link rel="apple-touch-icon" href={`${import.meta.env.BASE_URL}apple-touch-icon.png`} />
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <meta name="google-site-verification" content="FltP_nPLgvxEwWmAVEjgkbPt9w-3Dx0wEG8ZGpNHf4w" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Tous Azimuts" />

@@ -1,0 +1,252 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Comments from '../components/Comments.astro';
+import { withBase } from '../lib/url';
+import morceaux from '../data/musiques.json';
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// Normalisation pour la recherche : sans accents, sans majuscules, sans ponctuation.
+function aplatir(txt: string): string {
+  return (txt || '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+const emissions = (await getCollection('emissions')).filter((e) => !e.data.draft);
+const dateEmission = new Map<number, Date>();
+for (const e of emissions) {
+  if (e.data.number != null) dateEmission.set(e.data.number, e.data.pubDate);
+}
+
+function moisAnnee(n: number): string {
+  const d = dateEmission.get(n);
+  return d ? d.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
+}
+
+// Regroupement par émission, de la plus récente à la plus ancienne.
+const parEmission = new Map<number, any[]>();
+for (const m of morceaux as any[]) {
+  if (!parEmission.has(m.e)) parEmission.set(m.e, []);
+  parEmission.get(m.e)!.push({
+    ...m,
+    recherche: aplatir([m.a, m.t, m.al].join(' ')),
+    cherche: `https://www.youtube.com/results?search_query=${encodeURIComponent(`${m.a} ${m.t}`)}`,
+  });
+}
+const groupes = Array.from(parEmission.entries()).sort((a, b) => b[0] - a[0]);
+
+const total = (morceaux as any[]).length;
+const avecYoutube = (morceaux as any[]).filter((m) => m.y).length;
+
+// Lecture en continu : YouTube accepte une liste d'identifiants vidéo (50 au maximum) dans une adresse
+// et crée une liste de lecture temporaire. On découpe donc en lots de 50, du plus récent au plus ancien.
+const ids: { id: string; e: number }[] = [];
+const vus = new Set<string>();
+for (const [e, liste] of groupes) {
+  for (const m of liste) {
+    const id = m.y && /[?&]v=([\w-]{11})/.exec(m.y)?.[1];
+    if (id && !vus.has(id)) {
+      vus.add(id);
+      ids.push({ id, e });
+    }
+  }
+}
+const lots: { url: string; de: number; a: number; nb: number }[] = [];
+for (let i = 0; i < ids.length; i += 50) {
+  const tranche = ids.slice(i, i + 50);
+  lots.push({
+    url: `https://www.youtube.com/watch_videos?video_ids=${tranche.map((t) => t.id).join(',')}`,
+    de: tranche[0].e,
+    a: tranche[tranche.length - 1].e,
+    nb: tranche.length,
+  });
+}
+
+const intro = [
+  "Chaque émission de Tous Azimuts s'accompagne de pauses musicales, choisies par Julien et parfois par d'autres membres de l'équipe. Les voici toutes réunies, de la plus récente à la plus ancienne, avec pour chaque morceau l'artiste, le titre, l'album quand nous le connaissons, et un lien pour l'écouter.",
+  "Nous utilisons surtout YouTube, mais tous les morceaux n'y sont pas : quand un titre n'existe que sur une autre plateforme, le lien correspondant est indiqué (SoundCloud, Bandcamp, Spotify ou site de l'artiste). Quand aucun lien n'a été retrouvé, nous proposons une recherche YouTube pour le retrouver vous-même.",
+];
+---
+
+<Base
+  title="Pauses musicales"
+  noindex
+  description="Toutes les pauses musicales de Tous Azimuts, émission par émission, avec un lien pour écouter chaque morceau et des listes de lecture YouTube."
+>
+  <article class="pm" data-pagefind-ignore>
+    <h1>Pauses musicales</h1>
+
+    <div class="pm-intro">
+      {intro.map((p) => <p>{p}</p>)}
+    </div>
+
+    <h2 id="pm-continu">Écouter en continu sur YouTube</h2>
+    <p>
+      {avecYoutube} morceaux sur {total} sont disponibles sur YouTube. Pour les écouter à la suite, nous les avons
+      regroupés en {lots.length} listes de lecture de 50 morceaux au maximum, de la plus récente à la plus ancienne.
+      Ces listes s'ouvrent directement sur YouTube, sans compte.
+    </p>
+    <ul class="pm-lots">
+      {lots.map((l, i) => (
+        <li>
+          <a href={l.url} target="_blank" rel="noopener">
+            Liste {i + 1} : {l.nb} morceaux, des émissions {l.de} à {l.a}<span class="sr-only"> (s'ouvre sur YouTube)</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <h2 id="pm-recherche">Chercher un morceau</h2>
+    <form class="pm-outils" role="search" aria-label="Recherche dans les pauses musicales" onsubmit="return false">
+      <p class="pm-champ">
+        <label for="pm-q">Rechercher un artiste, un titre ou un album</label>
+        <input id="pm-q" type="search" name="q" autocomplete="off" spellcheck="false" aria-describedby="pm-aide" />
+      </p>
+      <p id="pm-aide" class="pm-aide">La liste se réduit à mesure que vous tapez.</p>
+      <p class="pm-boutons">
+        <button type="button" id="pm-raz">Tout afficher</button>
+      </p>
+      <p class="pm-saut"><a href="#pm-liste">Aller à la liste des pauses musicales</a></p>
+    </form>
+
+    <p id="pm-compteur" class="pm-compteur" role="status" aria-live="polite">{total} morceaux.</p>
+
+    <div id="pm-liste" class="pm-liste" tabindex="-1">
+      {groupes.map(([n, liste]) => (
+        <section class="pm-emission" aria-labelledby={`pm-e${n}`}>
+          <h2 id={`pm-e${n}`}>
+            <a href={withBase(`/emissions/emission-${n}/`)}>Émission {n}</a>
+            {moisAnnee(n) && <span class="pm-date"> — {moisAnnee(n)}</span>}
+          </h2>
+          <ul>
+            {liste.map((m: any) => (
+              <li class="pm-morceau" data-recherche={m.recherche}>
+                <p class="pm-titre">
+                  <strong>{m.a}</strong> — {m.t}
+                  {m.al && <span class="pm-album"> (album {m.al})</span>}
+                </p>
+                <ul class="pm-liens">
+                  {m.y && (
+                    <li>
+                      <a href={m.y} target="_blank" rel="noopener">
+                        Écouter sur YouTube<span class="sr-only"> : {m.a}, {m.t}</span>
+                      </a>
+                    </li>
+                  )}
+                  {m.l && m.l.map(([nom, url]: [string, string]) => (
+                    <li>
+                      <a href={url} target="_blank" rel="noopener">
+                        {nom}<span class="sr-only"> : {m.a}, {m.t}</span>
+                      </a>
+                    </li>
+                  ))}
+                  {!m.y && !m.l && (
+                    <li>
+                      <a href={m.cherche} target="_blank" rel="noopener">
+                        Chercher sur YouTube<span class="sr-only"> : {m.a}, {m.t}</span>
+                      </a>
+                    </li>
+                  )}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+
+    <p id="pm-aucun" class="pm-aucun" hidden>
+      Aucun morceau ne correspond à cette recherche. Essayez un autre mot, ou utilisez le bouton « Tout afficher ».
+    </p>
+
+    <Comments
+      pageId="pauses-musicales"
+      pageUrl={canonicalUrl}
+      pageTitle="Pauses musicales"
+      intro="Un lien qui ne fonctionne plus, un morceau oublié, une erreur de titre ? Signalez-le nous ici, et dites-nous aussi ce que vous avez aimé !"
+    />
+  </article>
+
+  <script>
+    const champ = document.getElementById('pm-q') as HTMLInputElement;
+    const raz = document.getElementById('pm-raz') as HTMLButtonElement;
+    const compteur = document.getElementById('pm-compteur') as HTMLElement;
+    const aucun = document.getElementById('pm-aucun') as HTMLElement;
+    const morceaux = Array.from(document.querySelectorAll('.pm-morceau')) as HTMLElement[];
+    const groupes = Array.from(document.querySelectorAll('.pm-emission')) as HTMLElement[];
+
+    const total = morceaux.length;
+    let minuteur: ReturnType<typeof setTimeout>;
+
+    function aplatir(txt: string): string {
+      return txt
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, ' ')
+        .trim();
+    }
+
+    function appliquer() {
+      const q = aplatir(champ.value);
+      let visibles = 0;
+      for (const m of morceaux) {
+        const ok = !q || (m.dataset.recherche || '').includes(q);
+        m.hidden = !ok;
+        if (ok) visibles++;
+      }
+      // Une émission sans aucun morceau visible disparaît, titre compris.
+      for (const g of groupes) {
+        g.hidden = !g.querySelector('.pm-morceau:not([hidden])');
+      }
+      const texte =
+        visibles === total
+          ? `${total} morceaux.`
+          : `${visibles} morceau${visibles > 1 ? 'x' : ''} sur ${total} affiché${visibles > 1 ? 's' : ''}.`;
+      aucun.hidden = visibles !== 0;
+      // Annonce différée : le lecteur d'écran ne lit que le résultat final de la frappe.
+      clearTimeout(minuteur);
+      minuteur = setTimeout(() => { compteur.textContent = texte; }, 600);
+    }
+
+    champ.addEventListener('input', appliquer);
+    raz.addEventListener('click', () => {
+      champ.value = '';
+      appliquer();
+      champ.focus();
+    });
+  </script>
+
+  <style>
+    .pm { max-width: 60rem; }
+    .pm-intro p { margin: 0 0 1em; }
+    .pm-lots { padding-left: 1.2em; }
+    .pm-lots li { margin: 0.3em 0; }
+    .pm-outils { margin: 1rem 0; }
+    .pm-champ label { display: block; font-weight: bold; margin-bottom: 0.3em; }
+    .pm-champ input {
+      width: 100%; max-width: 32rem; padding: 0.5em; font-size: 1.1em;
+      border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit;
+    }
+    .pm-aide { font-size: 0.9em; margin: 0.4em 0 1em; }
+    .pm-boutons button { padding: 0.5em 1em; font-size: 1em; cursor: pointer; border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit; }
+    .pm-saut { margin: 0.8em 0 0; }
+    .pm-compteur { font-weight: bold; margin: 1.5em 0 1em; }
+    .pm-liste:focus { outline: none; }
+    .pm-emission { border-top: 1px solid currentColor; padding: 1em 0; }
+    .pm-emission h2 { margin: 0 0 0.5em; font-size: 1.15em; }
+    .pm-date { font-weight: normal; }
+    .pm-emission ul { list-style: none; padding: 0; margin: 0; }
+    .pm-morceau { margin: 0 0 0.9em; }
+    .pm-titre { margin: 0 0 0.2em; }
+    .pm-album { font-style: italic; }
+    .pm-liens { display: flex; flex-wrap: wrap; gap: 0.3em 1.2em; }
+    .pm-aucun { font-weight: bold; margin: 1.5em 0; }
+    .pm-morceau:focus-within { outline: 2px solid currentColor; outline-offset: 4px; }
+  </style>
+</Base>

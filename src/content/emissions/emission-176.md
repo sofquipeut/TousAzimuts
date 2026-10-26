@@ -30,7 +30,7 @@ Au sommaire de cette émission :
 
 - **C'est comme ça tous les jours ?** : Isabelle nous parle de la déglutition, un geste dont on ne s'occupe jamais jusqu'au jour où il devient difficile, et des bons gestes pour éviter les fausses routes, avec [un livret de prévention](https://www.soinsetsante.org/wp-content/uploads/2025/11/Livret-TroublesDeglut-2025-F.pdf).
 
-- **Côté musique** : Julien célèbre les 50 ans de *Songs in the Key of Life* avec [Pastime Paradise](https://fr.wikipedia.org/wiki/Pastime_Paradise) de Stevie Wonder, puis fait écouter des extraits du premier album des [Womack Sisters](https://www.thewomacksisters.com) avant de terminer par [You Went Away Too Long](https://www.youtube.com/watch?v=sa4_o4r9nq0).
+- **Côté musique** : Julien célèbre les 50 ans de *Songs in the Key of Life* avec [Pastime Paradise](https://fr.wikipedia.org/wiki/Pastime_Paradise) ([à écouter sur YouTube](https://www.youtube.com/watch?v=_H3Sv2zad6s)) de Stevie Wonder, puis fait écouter des extraits du premier album des [Womack Sisters](https://www.thewomacksisters.com) avant de terminer par [You Went Away Too Long](https://www.youtube.com/watch?v=sa4_o4r9nq0).
 
 - **Agenda** : Carinne nous emmène au [Grand Prix Paragolf Occitanie](https://www.liguegolfoccitanie.org/developpement/paragolf/), les 10 et 11 octobre au golf de Toulouse La Ramée, et au [Pont de l'Emploi](https://emploi.toulouse-metropole.fr/2026/10/02/le-pont-de-lemploi/), le jeudi 15 octobre de 14h30 à 17h30, place Saint-Pierre.
 
