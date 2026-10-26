@@ -49,7 +49,7 @@ const ids: { id: string; e: number }[] = [];
 const vus = new Set<string>();
 for (const [e, liste] of groupes) {
   for (const m of liste) {
-    const id = m.y && /[?&]v=([\w-]{11})/.exec(m.y)?.[1];
+    const id = m.y && /(?:[?&]v=|youtu\.be\/)([\w-]{11})/.exec(m.y)?.[1];
     if (id && !vus.has(id)) {
       vus.add(id);
       ids.push({ id, e });

@@ -17,6 +17,6 @@ Au menu de cette émission : 6 rubriques.
 - **Le Père Noël est devenu sourd** : Isabelle raconte ce [livre jeunesse](https://www.decitre.fr/livres/le-pere-noel-est-devenu-sourd-9782914475662.html) et présente [l'entreprise adaptée Deafi](https://www.deafi.com/), qui permet aux enfants sourds d'appeler le Père Noël en langue des signes.
 - **Livres audio** : Julien propose une sélection à offrir : [*The Sandman* acte 3](https://www.amazon.fr/Audible-The-Sandman-Acte-III/dp/B0BGPHL24G), le nouveau Stephen King [*Billy Summers*](https://www.audiolib.fr/livre/billy-summers-9791035411558/), et les adaptations d'[*Astérix*](https://www.audiolib.fr/livre/asterix-le-gaulois-9782367628684/) chez Audiolib.
 
-Côté musique, deux pauses : [John Williams - Setting the Trap (Home Alone)](https://www.youtube.com/watch?v=ZnVgp7prOo) et [Aretha Franklin - Winter Wonderland](https://www.youtube.com/watch?v=gKZ3tcO-Swo).
+Côté musique, deux pauses : [John Williams - Setting the Trap (Home Alone)](https://www.youtube.com/watch?v=ZnvVgp7prOo) et [Aretha Franklin - Winter Wonderland](https://www.youtube.com/watch?v=gKZ3tcO-Swo).
 
 *Émission animée par Carinne, Amandine, Isabelle, Michel et Julien. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
