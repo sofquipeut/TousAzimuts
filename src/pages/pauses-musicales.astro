@@ -43,29 +43,8 @@ const groupes = Array.from(parEmission.entries()).sort((a, b) => b[0] - a[0]);
 const total = (morceaux as any[]).length;
 const avecYoutube = (morceaux as any[]).filter((m) => m.y).length;
 
-// Lecture en continu : YouTube accepte une liste d'identifiants vidéo (50 au maximum) dans une adresse
-// et crée une liste de lecture temporaire. On découpe donc en lots de 50, du plus récent au plus ancien.
-const ids: { id: string; e: number }[] = [];
-const vus = new Set<string>();
-for (const [e, liste] of groupes) {
-  for (const m of liste) {
-    const id = m.y && /(?:[?&]v=|youtu\.be\/)([\w-]{11})/.exec(m.y)?.[1];
-    if (id && !vus.has(id)) {
-      vus.add(id);
-      ids.push({ id, e });
-    }
-  }
-}
-const lots: { url: string; de: number; a: number; nb: number }[] = [];
-for (let i = 0; i < ids.length; i += 50) {
-  const tranche = ids.slice(i, i + 50);
-  lots.push({
-    url: `https://www.youtube.com/watch_videos?video_ids=${tranche.map((t) => t.id).join(',')}`,
-    de: tranche[0].e,
-    a: tranche[tranche.length - 1].e,
-    nb: tranche.length,
-  });
-}
+// Playlist YouTube de la chaîne Tous Azimuts (non répertoriée : accessible uniquement par ce lien).
+const playlistUrl = 'https://www.youtube.com/playlist?list=PLPFloNwNjLIE';
 
 const intro = [
   "Chaque émission de Tous Azimuts s'accompagne de pauses musicales, choisies par Julien et parfois par d'autres membres de l'équipe. Les voici toutes réunies, de la plus récente à la plus ancienne, avec pour chaque morceau l'artiste, le titre, l'album quand nous le connaissons, et un lien pour l'écouter.",
@@ -87,19 +66,14 @@ const intro = [
 
     <h2 id="pm-continu">Écouter en continu sur YouTube</h2>
     <p>
-      {avecYoutube} morceaux sur {total} sont disponibles sur YouTube. Pour les écouter à la suite, nous les avons
-      regroupés en {lots.length} listes de lecture de 50 morceaux au maximum, de la plus récente à la plus ancienne.
-      Ces listes s'ouvrent directement sur YouTube, sans compte.
+      {avecYoutube} morceaux sur {total} sont disponibles sur YouTube. Nous les avons réunis dans une playlist, dans
+      l'ordre des émissions, pour les écouter à la suite.
     </p>
-    <ul class="pm-lots">
-      {lots.map((l, i) => (
-        <li>
-          <a href={l.url} target="_blank" rel="noopener">
-            Liste {i + 1} : {l.nb} morceaux, des émissions {l.de} à {l.a}<span class="sr-only"> (s'ouvre sur YouTube)</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <p>
+      <a href={playlistUrl} target="_blank" rel="noopener">
+        Écouter la playlist Tous Azimuts - Pauses musicales<span class="sr-only"> (s'ouvre sur YouTube)</span>
+      </a>
+    </p>
 
     <h2 id="pm-recherche">Chercher un morceau</h2>
     <form class="pm-outils" role="search" aria-label="Recherche dans les pauses musicales" onsubmit="return false">
@@ -225,8 +199,6 @@ const intro = [
   <style>
     .pm { max-width: 60rem; }
     .pm-intro p { margin: 0 0 1em; }
-    .pm-lots { padding-left: 1.2em; }
-    .pm-lots li { margin: 0.3em 0; }
     .pm-outils { margin: 1rem 0; }
     .pm-champ label { display: block; font-weight: bold; margin-bottom: 0.3em; }
     .pm-champ input {
