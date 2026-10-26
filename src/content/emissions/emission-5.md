@@ -20,6 +20,6 @@ On embarque pour une heure de radio avec 6 rubriques.
 
 Enfin, Carinne fait le point sur l'agenda, avec un clin d'œil au Père Noël.
 
-Côté musique, deux pauses : John Williams, extrait de la bande originale du film *Home Alone* (Maman, j'ai raté l'avion) : [Main Title](https://www.youtube.com/watch?v=rQ0r-R0M0ZA), et Alan Silvestri, extrait de la bande originale du film *Le Drôle de Noël de Scrooge*.
+Côté musique, deux pauses : John Williams, extrait de la bande originale du film *Home Alone* (Maman, j'ai raté l'avion) : [Main Title](https://www.youtube.com/watch?v=rQ0r-R0M0ZA), et Alan Silvestri, extrait de la bande originale du film *Le Drôle de Noël de Scrooge* : [Touch My Robe](https://www.youtube.com/watch?v=OzFCpNIwLwQ).
 
 *Émission animée par Carinne, Philippe, Julien, Bruno et Michel, avec Isabelle en chronique pré-enregistrée et Patrice en invité. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
