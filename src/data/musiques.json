@@ -51,12 +51,14 @@
 {
 "e":5,
 "a":"John Williams",
-"t":"Home Alone (Maman, j'ai raté l'avion), bande originale"
+"t":"Main Title (Somewhere in My Memory), bande originale de Home Alone (Maman, j'ai raté l'avion)",
+"y":"https://www.youtube.com/watch?v=rQ0r-R0M0ZA"
 },
 {
 "e":5,
 "a":"Alan Silvestri",
-"t":"Le Drôle de Noël de Scrooge, bande originale"
+"t":"Touch My Robe, bande originale du Drôle de Noël de Scrooge",
+"y":"https://www.youtube.com/watch?v=OzFCpNIwLwQ"
 },
 {
 "e":6,
@@ -1622,7 +1624,7 @@
 },
 {
 "e":144,
-"a":"Diego Navarro",
+"a":"Diego Navarro & The City of Prague Philharmonic Orchestra",
 "t":"Santa's Factory (Super Klaus)",
 "l":[
 [
