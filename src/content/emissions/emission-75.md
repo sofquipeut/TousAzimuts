@@ -16,6 +16,6 @@ On embarque pour une heure de radio avec 4 rubriques.
 - **What's new** : Sofian présente VIEW, application qui localise un bâtiment public via une maquette 3D, et les nouveautés d'accessibilité Apple à venir (Assistive Touch, suivi oculaire, Sign Time).
 - **Agenda** : Carinne signale le compte Twitter Réseau Handicap pour les offres d'emploi, la [Nuit du handicap](https://nuitduhandicap.fr/) le 12 juin, la [Course des héros](https://www.coursedesheros.com/) le 14 juin, et un webinaire sur les TOC le 16 juin.
 
-Côté musique, deux pauses : « Mon Héroïne » par José (morceau auto-produit) et [Frost* - Island Life](https://www.youtube.com/watch?v=gT_RH_pKQFk) , extrait de l'album *Day And Age*.
+Côté musique, deux pauses : [« Mon Héroïne »](https://www.youtube.com/watch?v=JsveMVG5d5Y) par [José](https://www.youtube.com/@jopozlicenziato2537) (morceau auto-produit) et [Frost* - Island Life](https://www.youtube.com/watch?v=gT_RH_pKQFk) , extrait de l'album *Day And Age*.
 
 *Émission animée par Julien, Carinne, Corinne, Guénaël et Sofian. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
