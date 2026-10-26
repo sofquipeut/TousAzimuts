@@ -15,6 +15,6 @@ Au menu de cette émission : 4 rubriques.
 - **Greffe de la cornée** : Michel revient sur la greffe de cornée et plus particulièrement sur le [kératocône](https://fr.wikipedia.org/wiki/K%C3%A9ratoc%C3%B4ne), une maladie qui amincit la cornée. Il évoque une thérapie développée à base de protéines de collagène de peau de porcine, une piste prometteuse qui redonne espoir.
 - **Marius de l'audio description** : Julien présente [cette cérémonie](https://apidv.org/remise-marius) qui récompense la meilleure audio description de l'année, parmi les films nommés aux César. Il rappelle que le jury est en cours de recrutement, les inscriptions sont ouvertes jusqu'au 15 janvier.
 
-Côté musique, deux pauses : Isabelle a choisi Rémi Geffroy, un virtuose de l'[accordéon diatonique](https://fr.wikipedia.org/wiki/Accord%C3%A9on_diatonique), un morceau à écouter absolument, et [Threshold - Silenced](https://www.youtube.com/watch?v=XszH7l4Xf4E), extrait de l'album *Dividing Lines*.
+Côté musique, deux pauses : Isabelle a choisi [Rémi Geffroy](https://www.youtube.com/@remigeffroy-music), un virtuose de l'accordéon diatonique, un morceau à écouter absolument (en bonus, [La fuite du chat noir](https://www.youtube.com/watch?v=cayinI74kvA), un autre de ses morceaux), et [Threshold - Silenced](https://www.youtube.com/watch?v=XszH7l4Xf4E), extrait de l'album *Dividing Lines*.
 
 *Émission animée par Isabelle, Amandine, Michel et Julien. Technique et montage : Marco. Programmation musicale : Isabelle et Julien. Coordination : Carinne.*
