@@ -18,6 +18,6 @@ Au programme de cet épisode, 6 rubriques et deux invitées.
 - **What's New ?** : Sofian présente [ScanVox](https://scanvox.com), une application Windows gratuite de reconnaissance de texte, aujourd'hui disponible en extension pour NVDA.
 - **Agenda** : Carinne annonce les Trophées Femmes en Entreprise Adaptées le 11 mars 2021 et épingle avec humour une chronique sur l'inaccessibilité des services publics en ligne.
 
-Côté musique, deux pauses : The New Regime - Let the Space Remain, extrait de l'album *Exhibit B*, et [Justice - On'n'On](https://www.youtube.com/watch?v=u6RqBUa3nq8), extrait de l'album *Audio, Video, Disco*.
+Côté musique, deux pauses : [The New Regime - Let the Space Remain](https://www.youtube.com/watch?v=5Yx8jQx-uCw) (album complet sur YouTube, également [sur Spotify](https://open.spotify.com/track/49mg3pM3CgJGsUZsjMM2hB)), extrait de l'album *Exhibit B*, et [Justice - On'n'On](https://www.youtube.com/watch?v=u6RqBUa3nq8), extrait de l'album *Audio, Video, Disco*.
 
 *Émission animée par Julien, Corinne, Sofian, Guénaël, Michel et Estelle, avec Agathe et Sarah en invitées. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*

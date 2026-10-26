@@ -17,12 +17,12 @@ On embarque pour une heure de radio avec 6 rubriques.
 
 - **Culture** : Carinne nous fait découvrir [Four Sense](https://www.avh.asso.fr/), jeu de plateau tactile édité par l'AVH, inspiré du Puissance 4.
 
-- **Culture** : Guénaël présente *Moi Léa*, film d'Ines Bigoné, réalisatrice autiste Asperger de 16 ans, sur une adolescente en course de VTT.
+- **Culture** : Guénaël présente [*Moi Léa*](https://www.youtube.com/watch?v=EZGhHqJL3fs), moyen métrage d'Ines Bigoné, réalisatrice autiste Asperger de 16 ans, sur une adolescente en course de VTT.
 
 - **Sites internet** : Sofian présente trois ressources : le [guide pratique handicap](https://www.toulouse.fr/) de Toulouse Métropole, antidiscrimination.fr, et le site du [CERTAM](https://www.avh.asso.fr/implantations/certam).
 
 - **Agenda** : Carinne relaie un sondage sur l'autisme et la fatigue, et annonce une conférence en ligne sur la refonte des MDPH.
 
-Côté musique, deux pauses : [L'Impératrice - Paris](https://www.youtube.com/watch?v=OciWTvRnHfw) , extrait de l'album *Matahari* et [Léo Merle - Cet autre](https://leomerle.bandcamp.com/track/cet-autre) , extrait de l'album *Passage Piéton*.
+Côté musique, deux pauses : [L'Impératrice - Paris](https://www.youtube.com/watch?v=OciWTvRnHfw) , extrait de l'album *Matahari* et [Léo Merle - Cet autre](https://leomerle.bandcamp.com/track/cet-autre) , extrait de l'album *Passage Piéton*. Cette pause, proposée par Guénaël en lien avec le film [*Moi Léa*](https://www.youtube.com/watch?v=EZGhHqJL3fs), fait partie de la bande originale du film, composée par Léo Merle.
 
 *Émission animée par Julien, Carinne, Corinne, Guénaël et Sofian. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*

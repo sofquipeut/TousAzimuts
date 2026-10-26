@@ -545,6 +545,16 @@
 "e":66,
 "a":"The New Regime",
 "t":"Let the Space Remain",
+"l":[
+[
+"Album complet sur YouTube",
+"https://www.youtube.com/watch?v=5Yx8jQx-uCw"
+],
+[
+"Spotify",
+"https://open.spotify.com/track/49mg3pM3CgJGsUZsjMM2hB"
+]
+],
 "al":"Exhibit B"
 },
 {
@@ -584,11 +594,15 @@
 {
 "e":68,
 "a":"Léo Merle",
-"t":"Cet autre",
+"t":"Cet autre (bande originale du film Moi Léa, proposée par Guénaël)",
 "l":[
 [
 "Bandcamp",
 "https://leomerle.bandcamp.com/track/cet-autre"
+],
+[
+"Voir le film Moi Léa (moyen métrage) sur YouTube",
+"https://www.youtube.com/watch?v=EZGhHqJL3fs"
 ]
 ],
 "al":"Passage Piéton"
