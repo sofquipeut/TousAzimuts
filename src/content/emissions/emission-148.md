@@ -18,7 +18,7 @@ Au programme : le hackathon de l'accessibilité numérique, la révolution à ro
 - **Le bon plan** : l'application Apple TV, enfin disponible sur Android, donne accès à tout le catalogue Apple TV+ audio décrit en français.
 - **Agenda** : première [Semaine nationale de la protection juridique des majeurs](https://semainenationalepjm.fr) du 3 au 9 mars, et deux opéras en audio description au Capitole, *Norma* et *Le Vaisseau fantôme*.
 
-Côté musique : [Yannis & The Yaw - Clementine](https://www.youtube.com/watch?v=296Y83A4vRI), extrait de l'EP *Lagos Paris London*, et [Budapest - Ambres Blancs](https://www.youtube.com/watch?v=WSaq9uxvlGg), en écho au nouvel album *Paramoon*.
+Côté musique : [Yannis & The Yaw - Clementine](https://www.youtube.com/watch?v=296Y83A4vRI), extrait de l'EP *Lagos Paris London*, puis quatre morceaux de l'album *Paramoon* de Budapest — [Colline Des Ifs](https://www.youtube.com/watch?v=o5KSpLbMn-0), [L'Ombre Amoureuse](https://www.youtube.com/watch?v=ybm2DNAft3o), [Ambres Blancs](https://www.youtube.com/watch?v=WSaq9uxvlGg) et *Sand To Sand*, diffusé en entier.
 
 La citation du jour : « J'aimerais pouvoir m'exprimer avec mes sens. Les mots sont parfois très handicapants. » — Björk.
 
