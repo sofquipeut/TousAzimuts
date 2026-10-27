@@ -9,8 +9,7 @@ import { rehypeExternalLinks } from './src/lib/rehype-external-links.mjs';
 export default defineConfig({
   site: 'https://tazfm.fr',
   base: '/',
-  // Page des pauses musicales : en relecture, absente du plan du site et du menu.
-  integrations: [sitemap({ filter: (page) => !page.includes('/pauses-musicales') })],
+  integrations: [sitemap()],
   markdown: {
     rehypePlugins: [rehypeExternalLinks],
   },
