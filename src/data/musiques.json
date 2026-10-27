@@ -1539,8 +1539,11 @@
 "e":138,
 "a":"Nit",
 "t":"Big Bang Puzzle",
-"y":"https://www.youtube.com/playlist?list=PLCuEH5Tl2B8oO5sVZ6oioaHQ_sXEiYAjX",
 "l":[
+[
+"Playlist YouTube",
+"https://www.youtube.com/playlist?list=PLCuEH5Tl2B8oO5sVZ6oioaHQ_sXEiYAjX"
+],
 [
 "Bandcamp",
 "https://nitmusic.bandcamp.com/album/big-bang-puzzle"
@@ -1797,7 +1800,12 @@
 "e":161,
 "a":"John Williams Reimagined",
 "t":"Home Alone (version trio)",
-"y":"https://music.youtube.com/browse/MPREb_gOQnrWSUMYm"
+"l":[
+[
+"YouTube Music",
+"https://music.youtube.com/browse/MPREb_gOQnrWSUMYm"
+]
+]
 },
 {
 "e":162,
