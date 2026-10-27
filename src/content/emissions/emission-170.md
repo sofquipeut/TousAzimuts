@@ -17,6 +17,6 @@ Au programme de cet épisode, quelques rubriques.
 
 - **Agenda** : Carinne annonce les baptêmes de l'air de « [Rêve de gosses](https://www.revesdegosse.fr/l-association) » à Narbonne, Ajaccio et Perpignan, et *[Carmen](https://opera.toulouse.fr/carmen-programme/)* en audio description au Capitole.
 
-Côté musique, deux pauses : [AURORA - Earthly Delights](https://www.youtube.com/watch?v=VmctsBr6xbU) et [TOMORA - Somewhere Else](https://www.youtube.com/watch?v=EA-OXmappUk), le projet réunissant AURORA et Tom Rowlands des Chemical Brothers.
+Côté musique, deux pauses : [AURORA - Earthly Delights](https://www.youtube.com/watch?v=vEpfjJy53ko) et [TOMORA - Somewhere Else](https://www.youtube.com/watch?v=EA-OXmappUk), le projet réunissant AURORA et Tom Rowlands des Chemical Brothers.
 
 *Émission animée par Julien, Carinne, Sofian et Corinne. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
