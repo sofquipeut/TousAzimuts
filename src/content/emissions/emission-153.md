@@ -4,6 +4,7 @@ number: 153
 season: saison-8
 pubDate: 2025-05-21T17:00:00Z
 diffusion: "Diffusée sur Radio Mon Païs 90.1 FM le 16/05/2025 à 19h."
+rssPlayerId: "3271955"
 excerpt: "Une base sonore mondiale à réinventer, un escape game où les cinq sens mènent l'enquête, et deux démarches en ligne qui résistent encore au lecteur d'écran."
 tags: ["culture", "handicap-moteur", "accessibilite-numerique", "vie-quotidienne"]
 draft: false
