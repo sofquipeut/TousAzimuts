@@ -1532,13 +1532,14 @@
 {
 "e":138,
 "a":"L'Impératrice",
-"t":"Pulsar",
-"y":"https://www.youtube.com/watch?v=HsiylUGh5Wg"
+"t":"Me Da Igual",
+"y":"https://www.youtube.com/watch?v=oFWXpbp-vOI",
+"al":"Pulsar"
 },
 {
 "e":138,
 "a":"Nit",
-"t":"Big Bang Puzzle",
+"t":"Puzzle Effect",
 "l":[
 [
 "Playlist YouTube",
@@ -1548,19 +1549,22 @@
 "Bandcamp",
 "https://nitmusic.bandcamp.com/album/big-bang-puzzle"
 ]
-]
+],
+"al":"Big Bang Puzzle"
 },
 {
 "e":138,
 "a":"Eivør",
-"t":"Enn",
-"y":"https://www.youtube.com/watch?v=CU4ZHG2IZxs"
+"t":"Upp Úr Øskuni",
+"y":"https://www.youtube.com/watch?v=Afy_yTHpBt8",
+"al":"Enn"
 },
 {
 "e":138,
 "a":"Barock Project",
 "t":"The Lost Ship Tavern",
-"y":"https://www.youtube.com/watch?v=ICWG0Bw1iBA"
+"y":"https://www.youtube.com/watch?v=ICWG0Bw1iBA",
+"al":"Time Voyager"
 },
 {
 "e":139,
