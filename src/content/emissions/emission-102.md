@@ -16,6 +16,6 @@ Au sommaire aujourd'hui :
 - **Blynd** : Julien présente [Blynd](https://www.blynd-audio.com/), une appli lyonnaise qui adapte des BD en séries audio et lance ses propres créations originales.
 - **Agenda** : Carinne nous parle de la boutique « [Risquer l'impossible](https://www.apf-francehandicap.org/nos-initiatives-risquer-limpossible) » d'APF France handicap et du salon Autonomic à Marseille.
 
-Côté musique, deux pauses : Isabelle a choisi [Lara Fabian - Je suis malade](https://www.youtube.com/watch?v=QPzy7jGQphY), et Julien retrace la carrière des Arctic Monkeys avec [Big Ideas](https://www.youtube.com/watch?v=8-PqYfmxHN8), extrait de leur album *The Car*.
+Côté musique, deux pauses : Isabelle a choisi [Lara Fabian - Je suis malade](https://www.youtube.com/watch?v=IX1aHQd3WWA), et Julien retrace la carrière des Arctic Monkeys avec [Big Ideas](https://www.youtube.com/watch?v=fhxn67cDDj4), extrait de leur album *The Car*.
 
 *Émission animée par Carinne, Isabelle, Julien et Amandine. Technique et montage : Marco. Programmation musicale : Isabelle et Julien. Coordination : Carinne.*

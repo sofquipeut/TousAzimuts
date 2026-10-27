@@ -25,6 +25,6 @@ Que nous réserve cet épisode ? quelques rubriques.
 
 Enfin, Carinne fait le point sur l'agenda.
 
-Côté musique, deux pauses : [U2 - New Year's Day](https://www.youtube.com/watch?v=jeYCaK_5k) et [Tame Impala - Afterthought](https://www.youtube.com/watch?v=KaZDR2yomgA).
+Côté musique, deux pauses : [U2 - New Year's Day](https://www.youtube.com/watch?v=jeYCyCaK_5k) et [Tame Impala - Afterthought](https://www.youtube.com/watch?v=KaZDR2yomgA).
 
 *Émission animée par Julien, Carinne, Michel, Nathalie et Amandine. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
