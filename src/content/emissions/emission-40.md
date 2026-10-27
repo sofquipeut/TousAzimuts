@@ -18,6 +18,6 @@ Au menu de cette émission : 6 rubriques.
 - **Culture** : Guénaël revient sur [Tou.te.s les mêmes](https://www.france.tv/slash/tou-te-s-les-memes), web-série documentaire de France TV Slash qui dresse huit portraits du handicap.
 - **Agenda** : Carinne, Ambroise et Michel annoncent les championnats d'Europe de [goalball](https://www.handisport.org/goalball) en Italie, l'arrivée annoncée de l'audiodescription en français sur Netflix, et le salon [BRICKLIVE Toulouse](https://www.occitanie-tribune.com/articles/18714/toulouse-premiere-en-france-l-evenement-bricklive-arrive-a-toulouse-du-au-octobre).
 
-Côté musique, deux pauses : [Klone - At the End of the Bridge](https://www.youtube.com/watch?v=qw_GbSmuzjI) et [M83 - Lune de fiel](https://www.youtube.com/watch?v=1cCPraE7tcs)
+Côté musique, deux pauses : [Klone - Breach](https://www.youtube.com/watch?v=yviLDZZDTMk) et [M83 - Lune de fiel](https://www.youtube.com/watch?v=1cCPraE7tcs)
 
 *Émission animée par Ambroise, Carinne, Michel, Julien et Guénaël. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
