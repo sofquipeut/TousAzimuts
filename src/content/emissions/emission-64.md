@@ -25,6 +25,6 @@ Au menu de cette émission : 6 rubriques.
 
 En invité, Franck incarne un Père Noël facétieux qui réagit aux rubriques tout au long de l'émission.
 
-Côté musique, deux pauses : [Chilly Gonzales - God Rest Ye Merry Gentlemen](https://www.youtube.com/watch?v=CHDniVwMN7w) , extrait de l'album *A Very Chilly Christmas* et [Kelly Clarkson - Silent Night (feat. Reba McEntire & Trisha Yearwood)](https://www.youtube.com/watch?v=vWbviojGMtc) , extrait de l'album *Wrapped In Red*.
+Côté musique, deux pauses : [Chilly Gonzales - God Rest Ye Merry Gentlemen](https://www.youtube.com/watch?v=CHDniVwMN7w) , extrait de l'album *A Very Chilly Christmas* et [Kelly Clarkson - Silent Night (feat. Reba McEntire & Trisha Yearwood)](https://www.youtube.com/watch?v=5BRVkgaIcaE) , extrait de l'album *Wrapped In Red*.
 
 *Émission animée par Julien, Sofian, Carinne, Guénaël, Estelle, Corinne et Michel, avec Franck en invité. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*

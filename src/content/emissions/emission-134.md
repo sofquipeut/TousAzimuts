@@ -16,6 +16,6 @@ Cette semaine, on a 4 rubriques.
 - **Top Chrono** : Amandine dresse le portrait de trois athlètes paralympiques aux parcours inspirants — [Faustine Noël, Arnaud Assoumani et Fanny Bertrand](https://www.france24.com/fr/sports/20240820-jeux-paralympiques-paris-2024-dix-athl%C3%A8tes-fran%C3%A7ais-%C3%A0-suivre-hanquinquant-keita-houdet-martinet-assoumani-didier-fran%C3%A7ois-elie-leaute-noel-ferney).
 - **Agenda** : Carinne présente la conférence [a11y Paris](https://www.a11yparis.org/) sur l'accessibilité numérique, [le service d'audio description de la médiathèque de Rennes](https://www.bibliotheques.rennes.fr/informations-pratiques/accessibilite/), et une [ceinture connectée primée au concours Lépine](https://informations.handicap.fr/a-artha-ceinture-lunette-lepine-aveugle-concours-36675.php).
 
-Côté musique, deux pauses : [The Lemon Twigs - Peppermint Roses](https://www.youtube.com/watch?v=QQNI6-VjKmk) , extrait de l'album *Dream Is All We Know* et [Eivør - Segl (Live)](https://www.youtube.com/watch?v=XUFB4qs44GE) , extrait de l'album *Segl Live*.
+Côté musique, deux pauses : [The Lemon Twigs - Peppermint Roses](https://www.youtube.com/watch?v=3lhadnqMP10) (version live ; [version studio sur Spotify](https://open.spotify.com/track/27d4xYkGnwnLnax4otveAu)), extrait de l'album *Dream Is All We Know* et [Eivør - Segl (Live)](https://www.youtube.com/watch?v=XUFB4qs44GE) , extrait de l'album *Segl Live*.
 
 *Émission animée par Julien, Carinne et Amandine. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
