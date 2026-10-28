@@ -19,6 +19,6 @@ Au sommaire de cette émission :
 
 - **Agenda** : Carinne rappelle que le [théâtre Garonne](https://www.theatregaronne.com/information/representations-relax) et le [théâtre Sorano](https://www.theatre-sorano.fr/accessibilite), à Toulouse, proposent aussi des spectacles accessibles aux personnes en situation de handicap.
 
-Côté musique, deux pauses : [Barock Project - The Lost Ship Tavern](https://www.youtube.com/watch?v=ICWG0Bw1iBA), extrait de l'album *Time Voyager*, et [The Night Flight Orchestra - Way To Spend The Night](https://www.youtube.com/watch?v=argnFyOa2E4).
+Côté musique : [Barock Project - The Lost Ship Tavern](https://www.youtube.com/watch?v=ICWG0Bw1iBA), extrait de l'album *Time Voyager*, puis The Night Flight Orchestra à l'honneur — [Living For The Nighttime](https://www.youtube.com/watch?v=C2cL6jKpFCU), extrait de *Skyline Whispers*, [Domino](https://www.youtube.com/watch?v=73a2YZXkPGo), extrait d'*Amber Galactic*, [Burn For Me](https://www.youtube.com/watch?v=xY8e9NNwDng), extrait d'*Aeromantic II*, et *Way To Spend The Night*, diffusé en entier, tiré de *Give Us The Moon*.
 
 *Émission animée par Julien, Carinne et Michel, avec Amandine en enregistrement. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
