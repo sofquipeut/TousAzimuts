@@ -7,6 +7,7 @@ import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
 import { tagLabel } from '../../lib/tags';
 import { formatYears } from '../../lib/dates';
+import youtubeVideos from '../../data/youtube-videos.json';
 
 export async function getStaticPaths() {
   const emissions = await getCollection('emissions');
@@ -23,6 +24,9 @@ const formattedDate = emission.data.pubDate.toLocaleDateString('fr-FR', {
 });
 const showSlug = 'tous-azimuts-pour-un-monde-plus-accessible';
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const youtubeId = emission.data.number
+  ? (youtubeVideos as Record<string, string>)[String(emission.data.number)]
+  : undefined;
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -82,6 +86,14 @@ const structuredData = {
     ></iframe>
   ) : (
     <p class="emission-meta">Émission bientôt disponible à l'écoute.</p>
+  )}
+
+  {youtubeId && (
+    <p class="emission-meta">
+      <a href={`https://www.youtube.com/watch?v=${youtubeId}`} target="_blank" rel="noopener">
+        Écouter l'émission {emission.data.number} sur YouTube
+      </a>
+    </p>
   )}
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
