@@ -73,16 +73,6 @@ const structuredData = {
     </div>
   </div>
 
-  {emission.data.number && youtubeId && (
-    <p class="emission-youtube">
-      <a
-        href={`https://www.youtube.com/watch?v=${youtubeId}`}
-        target="_blank"
-        rel="noopener"
-      >{`Écouter l'émission ${emission.data.number} sur YouTube`}</a>
-    </p>
-  )}
-
   {emission.data.rssPlayerId ? (
     <iframe
       src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=color&v=2&share=false&about=false`}
@@ -96,6 +86,16 @@ const structuredData = {
     ></iframe>
   ) : (
     <p class="emission-meta">Émission bientôt disponible à l'écoute.</p>
+  )}
+
+  {emission.data.number && youtubeId && (
+    <p class="emission-youtube">
+      <a
+        href={`https://www.youtube.com/watch?v=${youtubeId}`}
+        target="_blank"
+        rel="noopener"
+      >{`Écouter l'émission ${emission.data.number} sur YouTube`}</a>
+    </p>
   )}
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
