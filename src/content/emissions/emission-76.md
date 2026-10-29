@@ -18,6 +18,6 @@ Au menu de cette émission : 6 rubriques.
 - Sofian rend hommage à l'[**APIHMS**](http://apihms.org/), association toulousaine pionnière du transport universitaire adapté, fondée en 1970 par son professeur d'espagnol tétraplégique.
 - **Agenda** : Carinne annonce le concours des [Prix du podcast Strasbourg](https://plansonore.fr/), un [road trip VTT Équevilly-Marseille](https://actu.fr/ile-de-france/ecquevilly_78206/yvelines-un-periple-a-velo-d-ecquevilly-a-marseille-en-faveur-du-handicap_40616468.html), un workshop sur l'insertion des étudiants handicapés, les [Trophées H'Up entrepreneurs](https://h-up.fr/trophees/), et les [Rencontres CNSA Recherche](https://rencontres-recherche-innovation-cnsa.fr/).
 
-Côté musique, deux pauses live : [Bear McCreary - All Along the Watchtower](https://www.youtube.com/watch?v=FVkiI9Vm7mE), extrait de l'album *Battlestar Galactica Live*, et [Jeanne Added - Radiate](https://www.youtube.com/watch?v=GfMzk6rJFwk).
+Côté musique, deux pauses live : [Bear McCreary - All Along the Watchtower](https://www.youtube.com/watch?v=FVkiI9Vm7mE), extrait de l'album *Battlestar Galactica Live*, et [Jeanne Added - Radiate](https://www.youtube.com/watch?v=VX0Besj9t64), la version live de son album *Radiate (Live)*.
 
 *Émission animée par Julien, Carinne, Corinne, Guénaël et Sofian, avec Michel. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
