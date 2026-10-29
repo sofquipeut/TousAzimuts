@@ -2131,5 +2131,25 @@
 "a":"The Womack Sisters",
 "t":"You Went Away Too Long",
 "y":"https://www.youtube.com/watch?v=sa4_o4r9nq0"
+},
+{
+"e":177,
+"a":"Alabama Shakes",
+"t":"Waist Deep",
+"y":"https://www.youtube.com/watch?v=m4VYB0UDZA8",
+"al":"I Must Be Dreaming"
+},
+{
+"e":177,
+"a":"Bear McCreary",
+"t":"Blueshift",
+"y":"https://www.youtube.com/watch?v=tOU_F4n87ts",
+"al":"The Singularity: Ekleipsis",
+"l":[
+[
+"Spotify",
+"https://open.spotify.com/album/5ZGIZYHEABTEKAwjCb6H8O"
+]
+]
 }
 ]
