@@ -75,9 +75,12 @@ const structuredData = {
 
   {emission.data.number && youtubeId && (
     <p class="emission-youtube">
-      <a href={`https://www.youtube.com/watch?v=${youtubeId}`} target="_blank" rel="noopener">
-        Écouter l'émission {emission.data.number} sur YouTube
-      </a>
+      <a
+        href={`https://www.youtube.com/watch?v=${youtubeId}`}
+        target="_blank"
+        rel="noopener"
+        aria-label={`Écouter l'émission ${emission.data.number} sur YouTube`}
+      >{`Écouter l'émission ${emission.data.number} sur YouTube`}</a>
     </p>
   )}
 
