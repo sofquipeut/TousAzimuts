@@ -15,7 +15,7 @@ Au menu de cette émission : 6 rubriques.
 - **Culture** : Corinne nous présente *Mission Paradis*, comédie américaine portée par Gabourey Sidibé, sur trois jeunes handicapés en road trip pour vivre leur première expérience sexuelle.
 - Julien nous fait découvrir *Lost in Blindness*, jeu d'aventure audio où l'on incarne un archéologue non-voyant explorant un temple maya par écho-localisation.
 - Guénaël détaille les **options d'accessibilité Xbox** : mode Copilote, personnalisation complète, transcription parole-texte et narrateur intégré.
-- Sofian rend hommage à la **PIMS**, association toulousaine pionnière du transport universitaire adapté, fondée en 1970 par son professeur d'espagnol tétraplégique.
+- Sofian rend hommage à l'[**APIHMS**](http://apihms.org/), association toulousaine pionnière du transport universitaire adapté, fondée en 1970 par son professeur d'espagnol tétraplégique.
 - **Agenda** : Carinne annonce le concours des Prix du podcast Strasbourg, un road trip VTT Équevilly-Marseille, un workshop sur l'insertion des étudiants handicapés, les Trophées H'Up entrepreneurs, et les Rencontres CNSA Recherche.
 
 Côté musique, deux pauses live : [Bear McCreary - All Along the Watchtower](https://www.youtube.com/watch?v=FVkiI9Vm7mE) , extrait de l'album *Battlestar Galactica Live* et « Radiate ».
