@@ -235,6 +235,60 @@
 "y":"https://www.youtube.com/watch?v=kcPpkRIUiQ4"
 },
 {
+"e":20,
+"a":"Threshold",
+"t":"The Shire (Part 2)",
+"y":"https://www.youtube.com/watch?v=JVHNfNzEMQ0",
+"al":"Legends of the Shires"
+},
+{
+"e":20,
+"a":"Jeanne Added",
+"t":"Radiate",
+"y":"https://www.youtube.com/watch?v=GfMzk6rJFwk",
+"al":"Radiate"
+},
+{
+"e":21,
+"a":"Emmanuel Moire",
+"t":"Et si on parlait d'amour",
+"y":"https://www.youtube.com/watch?v=AfsyAXN14xo"
+},
+{
+"e":21,
+"a":"Christine and the Queens",
+"t":"L'étranger (voleur d'eau)",
+"y":"https://www.youtube.com/watch?v=oGuSPaHynJ4",
+"al":"Chris"
+},
+{
+"e":22,
+"a":"Danny Elfman",
+"t":"Flying Scarlett",
+"y":"https://www.youtube.com/watch?v=ZfZLk5psPW0",
+"al":"Iris"
+},
+{
+"e":22,
+"a":"Susanne Sundfør",
+"t":"It's All Gone Tomorrow",
+"y":"https://www.youtube.com/watch?v=MqC-eCU5OgM",
+"al":"The Brothel"
+},
+{
+"e":23,
+"a":"Ash Dargan",
+"t":"Interlude",
+"y":"https://www.youtube.com/watch?v=SFxCuuAHj_U"
+},
+{
+"e":23,
+"a":"District 97",
+"t":"Open Your Eyes",
+"y":"https://www.youtube.com/watch?v=ptJ1kyx3Bhw",
+"al":"Trouble With Machines"
+},
+{
 "e":39,
 "a":"Sonata Arctica",
 "t":"Who Failed the Most",
@@ -719,6 +773,13 @@
 "t":"All Along the Watchtower",
 "y":"https://www.youtube.com/watch?v=FVkiI9Vm7mE",
 "al":"Battlestar Galactica Live"
+},
+{
+"e":76,
+"a":"Jeanne Added",
+"t":"Radiate",
+"y":"https://www.youtube.com/watch?v=VX0Besj9t64",
+"al":"Radiate (Live)"
 },
 {
 "e":77,
@@ -2077,5 +2138,25 @@
 "a":"The Womack Sisters",
 "t":"You Went Away Too Long",
 "y":"https://www.youtube.com/watch?v=sa4_o4r9nq0"
+},
+{
+"e":177,
+"a":"Alabama Shakes",
+"t":"Waist Deep",
+"y":"https://www.youtube.com/watch?v=m4VYB0UDZA8",
+"al":"I Must Be Dreaming"
+},
+{
+"e":177,
+"a":"Bear McCreary",
+"t":"Blueshift",
+"y":"https://www.youtube.com/watch?v=tOU_F4n87ts",
+"al":"The Singularity: Ekleipsis",
+"l":[
+[
+"Spotify",
+"https://open.spotify.com/album/5ZGIZYHEABTEKAwjCb6H8O"
+]
+]
 }
 ]
