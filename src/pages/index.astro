@@ -4,6 +4,10 @@ import { getCollection } from 'astro:content';
 import { withBase } from '../lib/url';
 import { tagLabel } from '../lib/tags';
 import { formatYears } from '../lib/dates';
+import JourneeDuJour from '../components/JourneeDuJour.astro';
+
+// Encadré « journée du jour » : passer à true pour l'afficher sur l'accueil.
+const AFFICHER_JOURNEE_DU_JOUR = false;
 
 const saisons = (await getCollection('saisons')).sort((a, b) => a.data.number - b.data.number);
 
@@ -61,6 +65,8 @@ const structuredData = {
   </p>
 
   <p>Une émission animée par une équipe mixte, dont plusieurs membres sont eux-mêmes en situation de handicap.</p>
+
+  {AFFICHER_JOURNEE_DU_JOUR && <JourneeDuJour />}
 
   {derniere && (
     <section class="derniere-emission" aria-labelledby="titre-derniere-emission">

@@ -9,7 +9,8 @@ import { rehypeExternalLinks } from './src/lib/rehype-external-links.mjs';
 export default defineConfig({
   site: 'https://tazfm.fr',
   base: '/',
-  integrations: [sitemap()],
+  // Calendrier des journées masqué du plan du site tant qu'il n'est pas validé.
+  integrations: [sitemap({ filter: (page) => !page.includes('calendrier-journees-mondiales') })],
   markdown: {
     rehypePlugins: [rehypeExternalLinks],
   },

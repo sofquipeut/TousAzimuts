@@ -1,0 +1,45 @@
+---
+import { withBase } from '../lib/url';
+---
+
+<!-- Encadré « Aujourd'hui, journée mondiale de… » : rempli par le script avec la date du visiteur,
+     donc masqué tant que le script n'a rien à afficher (pas d'information périmée sans JavaScript). -->
+<section
+  id="journee-du-jour"
+  class="journee-du-jour"
+  aria-labelledby="titre-journee-du-jour"
+  data-base={import.meta.env.BASE_URL}
+  hidden
+>
+  <h2 id="titre-journee-du-jour">Journées et semaines à retenir</h2>
+  <div id="journee-du-jour-contenu"></div>
+  <p><a href={withBase('/calendrier-journees-mondiales/')}>Voir tout le calendrier des journées mondiales</a></p>
+</section>
+
+<script>
+  import donnees from '../data/journees.json';
+  import { proches, libelleDate, dateLocaleIso } from '../lib/journees';
+  import type { Journee } from '../lib/journees';
+
+  const bloc = document.getElementById('journee-du-jour') as HTMLElement | null;
+  if (bloc) {
+    const liste = donnees as Journee[];
+    const { enCours, aVenir } = proches(liste, dateLocaleIso(new Date()), 1);
+    const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const ligne = (x: (typeof enCours)[number]) =>
+      `<strong>${esc(x.j.n)}</strong> (<time datetime="${x.o.debut}">${esc(libelleDate(x.o))}</time>)`;
+    let html = '';
+    for (const x of enCours) html += `<p>${x.j.ty === 'semaine' ? 'En ce moment' : "Aujourd'hui"} : ${ligne(x)}.</p>`;
+    if (aVenir[0]) html += `<p>Prochaine date : ${ligne(aVenir[0])}.</p>`;
+    if (html) {
+      (document.getElementById('journee-du-jour-contenu') as HTMLElement).innerHTML = html;
+      bloc.hidden = false;
+    }
+  }
+</script>
+
+<style is:global>
+  .journee-du-jour { border: 2px solid currentColor; border-radius: 6px; padding: 0.5rem 1.2rem 0.8rem; margin: 2rem 0; }
+  .journee-du-jour h2 { margin-top: 0.6em; }
+  .journee-du-jour p { margin: 0 0 0.5em; }
+</style>

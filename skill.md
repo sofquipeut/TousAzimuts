@@ -589,3 +589,10 @@ Page `/calendrier-journees-mondiales/` (lien dans la navigation).
 - **Règle éditoriale** : ne saisir une date que si elle est vérifiée à une
   source officielle ; ne pas inventer de lien source (champ `src` laissé vide
   sinon).
+
+**État actuel (à inverser quand le calendrier est validé)** : la page est en
+ligne mais discrète : `noindex`, exclue du sitemap (`astro.config.mjs`), sans
+lien dans la navigation (ligne commentée dans `Header.astro`). L'encadré
+« journée du jour » de l'accueil (`src/components/JourneeDuJour.astro`) est
+prêt mais désactivé : `AFFICHER_JOURNEE_DU_JOUR = false` dans
+`src/pages/index.astro`.
