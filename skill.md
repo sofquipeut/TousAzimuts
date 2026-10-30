@@ -566,3 +566,26 @@ regarder le dernier run et son `conclusion` (`success`/`failure`).
 - Le podcast est en cours de migration progressive vers RSS.com ; le flux
   RSS affiché sur la page `/podcast/` est encore partiellement l'ancien flux
   Anchor.fm et devra être mis à jour une fois la bascule complète.
+
+---
+
+## 13. Calendrier des journées mondiales
+
+Page `/calendrier-journees-mondiales/` (lien dans la navigation).
+
+- **Données** : `src/data/journees.json`, une entrée par journée ou semaine
+  (`n` nom, `nv` niveau : national / européen / international / mondial,
+  `ty` journée ou semaine, `th` thème, `r` règle de date, `src` lien source
+  optionnel, `tag` slug d'un tag existant, `e` numéros d'émissions où le sujet
+  est évoqué).
+- **Règles de date** (`r`) : `fixe` (mois, jour), `dernier-jour` (du mois),
+  `nieme` (n-ième jour de la semaine d'un mois, `w` : 0 dimanche à 6 samedi) et
+  `annees` (dates saisies année par année, pour les semaines mobiles : à
+  compléter chaque année, sinon la page affiche « Dates à confirmer »).
+- **Code** : `src/lib/journees.ts` calcule les dates et produit le HTML. Il est
+  utilisé au build (version sans JavaScript) et dans le navigateur (encadré
+  « En ce moment et à venir » calculé avec la date du visiteur). Aucune
+  bibliothèque tierce de calendrier : liste par mois, éléments HTML natifs.
+- **Règle éditoriale** : ne saisir une date que si elle est vérifiée à une
+  source officielle ; ne pas inventer de lien source (champ `src` laissé vide
+  sinon).

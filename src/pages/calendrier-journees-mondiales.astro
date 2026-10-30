@@ -1,0 +1,226 @@
+---
+import Base from '../layouts/Base.astro';
+import Comments from '../components/Comments.astro';
+import { withBase } from '../lib/url';
+import { tagLabel } from '../lib/tags';
+import { calendrierHtml, prochesHtml, libelleDate } from '../lib/journees';
+import type { Journee } from '../lib/journees';
+import donnees from '../data/journees.json';
+
+const journees = donnees as Journee[];
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// Version de secours, construite à la date du build : le script la remplace
+// par les dates réelles du jour dès que la page s'affiche dans le navigateur.
+const aujourdhuiBuild = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Paris' });
+const anneeBuild = Number(aujourdhuiBuild.slice(0, 4));
+const ctx = { lien: withBase, tagLabel };
+const situation = libelleDate({ debut: aujourdhuiBuild, fin: aujourdhuiBuild });
+
+const niveaux = ['national', 'européen', 'international', 'mondial'].filter((n) =>
+  journees.some((j) => j.nv === n)
+);
+const types = Array.from(new Set(journees.map((j) => j.ty)));
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+---
+
+<Base
+  title="Calendrier des journées mondiales"
+  description="Calendrier des journées et semaines nationales, européennes, internationales et mondiales consacrées au handicap et aux maladies abordées dans l'émission Tous Azimuts."
+>
+  <article class="journees" data-base={import.meta.env.BASE_URL}>
+    <h1>Calendrier des journées mondiales</h1>
+
+    <div class="journees-intro">
+      <p>
+        Ce calendrier recense les journées et les semaines nationales, européennes, internationales
+        et mondiales consacrées au handicap, ainsi qu'aux maladies dont nous avons parlé dans
+        l'émission. Ce n'est pas une liste complète de toutes les journées de la santé : nous
+        l'enrichissons au fil des sujets abordés à l'antenne.
+      </p>
+      <p>
+        Les dates fixes se calculent chaque année. Les semaines qui changent de dates d'une année à
+        l'autre sont ajoutées quand elles sont annoncées. Si vous repérez une erreur ou une journée
+        manquante, signalez-la par le formulaire de commentaires en bas de page.
+      </p>
+    </div>
+
+    <section id="journees-proches" class="journees-proches" aria-labelledby="titre-proches">
+      <h2 id="titre-proches">En ce moment et à venir</h2>
+      <p id="proches-date">Situation au {situation}.</p>
+      <div id="proches-contenu" set:html={prochesHtml(journees, aujourdhuiBuild)} />
+    </section>
+
+    <h2>Le calendrier de l'année</h2>
+
+    <form class="journees-outils" role="search" aria-label="Recherche dans le calendrier" onsubmit="return false">
+      <p class="journees-champ">
+        <label for="cal-annee">Année</label>
+        <select id="cal-annee">
+          <option value={anneeBuild} selected>{anneeBuild}</option>
+          <option value={anneeBuild + 1}>{anneeBuild + 1}</option>
+        </select>
+      </p>
+      <p class="journees-champ">
+        <label for="cal-q">Rechercher une journée, une semaine ou un thème</label>
+        <input id="cal-q" type="search" name="q" autocomplete="off" spellcheck="false" />
+      </p>
+      <p class="journees-filtres">
+        <span class="journees-etiquette">
+          <label for="cal-niveau">Niveau</label>
+          <select id="cal-niveau">
+            <option value="">Tous les niveaux</option>
+            {niveaux.map((n) => <option value={n}>{cap(n)}</option>)}
+          </select>
+        </span>
+        <span class="journees-etiquette">
+          <label for="cal-type">Journée ou semaine</label>
+          <select id="cal-type">
+            <option value="">Journées et semaines</option>
+            {types.map((t) => <option value={t}>{cap(t)}s</option>)}
+          </select>
+        </span>
+        <button type="button" id="cal-raz">Tout afficher</button>
+      </p>
+      <p class="journees-saut"><a href="#cal-conteneur">Aller au calendrier</a></p>
+    </form>
+
+    <p id="cal-compteur" class="journees-compteur" role="status" aria-live="polite"></p>
+
+    <div id="cal-conteneur" tabindex="-1" set:html={calendrierHtml(journees, anneeBuild, ctx)} />
+
+    <p id="cal-aucun" class="journees-aucun" hidden>
+      Aucune journée ne correspond à cette recherche. Essayez un autre mot, ou effacez les filtres
+      avec le bouton « Tout afficher ».
+    </p>
+
+    <Comments
+      pageId="calendrier-journees-mondiales"
+      pageUrl={canonicalUrl}
+      pageTitle="Calendrier des journées mondiales"
+      intro="Donnez-nous votre avis sur cette page ou signalez-nous une erreur, une date inexacte ou une journée à ajouter : vos commentaires sont les bienvenus !"
+    />
+  </article>
+
+  <script>
+    import donnees from '../data/journees.json';
+    import { tagLabel } from '../lib/tags';
+    import { aplatir, calendrierHtml, prochesHtml, libelleDate, dateLocaleIso } from '../lib/journees';
+    import type { Journee } from '../lib/journees';
+
+    const journees = donnees as Journee[];
+    const base = (document.querySelector('.journees') as HTMLElement).dataset.base || '/';
+    const cleanBase = base.endsWith('/') ? base.slice(0, -1) : base;
+    const ctx = { lien: (p: string) => `${cleanBase}${p.startsWith('/') ? p : '/' + p}`, tagLabel };
+
+    const aujourdhui = dateLocaleIso(new Date());
+    const anneeCourante = Number(aujourdhui.slice(0, 4));
+
+    const annee = document.getElementById('cal-annee') as HTMLSelectElement;
+    const champ = document.getElementById('cal-q') as HTMLInputElement;
+    const niveau = document.getElementById('cal-niveau') as HTMLSelectElement;
+    const type = document.getElementById('cal-type') as HTMLSelectElement;
+    const raz = document.getElementById('cal-raz') as HTMLButtonElement;
+    const compteur = document.getElementById('cal-compteur') as HTMLElement;
+    const aucun = document.getElementById('cal-aucun') as HTMLElement;
+    const conteneur = document.getElementById('cal-conteneur') as HTMLElement;
+
+    // Encadré : dates réelles du jour du visiteur.
+    (document.getElementById('proches-date') as HTMLElement).textContent =
+      `Aujourd'hui, nous sommes le ${libelleDate({ debut: aujourdhui, fin: aujourdhui })}.`;
+    (document.getElementById('proches-contenu') as HTMLElement).innerHTML = prochesHtml(journees, aujourdhui);
+
+    // Années proposées : l'année en cours et la suivante.
+    annee.innerHTML = '';
+    for (const a of [anneeCourante, anneeCourante + 1]) {
+      const o = document.createElement('option');
+      o.value = String(a);
+      o.textContent = String(a);
+      annee.appendChild(o);
+    }
+
+    let minuteur: ReturnType<typeof setTimeout>;
+
+    function appliquer() {
+      const q = aplatir(champ.value);
+      const nv = niveau.value;
+      const ty = type.value;
+      const fiches = Array.from(conteneur.querySelectorAll('.journee')) as HTMLElement[];
+      let visibles = 0;
+      for (const f of fiches) {
+        const ok =
+          (!q || (f.dataset.recherche || '').includes(q)) &&
+          (!nv || f.dataset.niveau === nv) &&
+          (!ty || f.dataset.type === ty);
+        f.hidden = !ok;
+        if (ok) visibles++;
+      }
+      for (const s of Array.from(conteneur.querySelectorAll('.cal-mois')) as HTMLElement[]) {
+        s.hidden = !s.querySelector('.journee:not([hidden])');
+      }
+      aucun.hidden = visibles !== 0;
+      const total = fiches.length;
+      const texte =
+        visibles === total
+          ? `${total} journées et semaines pour ${annee.value}.`
+          : `${visibles} sur ${total} affichée${visibles > 1 ? 's' : ''} pour ${annee.value}.`;
+      // Annonce différée : le lecteur d'écran ne lit que le résultat final de la frappe.
+      clearTimeout(minuteur);
+      minuteur = setTimeout(() => { compteur.textContent = texte; }, 600);
+    }
+
+    function rendre() {
+      conteneur.innerHTML = calendrierHtml(journees, Number(annee.value), ctx);
+      appliquer();
+    }
+
+    annee.addEventListener('change', rendre);
+    champ.addEventListener('input', appliquer);
+    niveau.addEventListener('change', appliquer);
+    type.addEventListener('change', appliquer);
+    raz.addEventListener('click', () => {
+      champ.value = '';
+      niveau.value = '';
+      type.value = '';
+      appliquer();
+      champ.focus();
+    });
+
+    annee.value = String(anneeCourante);
+    rendre();
+  </script>
+
+  <style is:global>
+    .journees { max-width: 60rem; }
+    .journees-intro p { margin: 0 0 1em; }
+    .journees-proches { border: 2px solid currentColor; border-radius: 6px; padding: 0.5rem 1.2rem 1rem; margin: 2rem 0; }
+    .journees-proches h3 { font-size: 1.05em; margin: 1em 0 0.3em; }
+    .journees-proches ul { margin: 0; padding-left: 1.2em; }
+    .journees-outils { margin: 1.5rem 0 1rem; }
+    .journees-champ label { display: block; font-weight: bold; margin-bottom: 0.3em; }
+    .journees-champ input {
+      width: 100%; max-width: 32rem; padding: 0.5em; font-size: 1.1em;
+      border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit;
+    }
+    .journees-champ select, .journees-etiquette select {
+      padding: 0.4em; font-size: 1em; background: transparent; color: inherit;
+      border: 1px solid currentColor; border-radius: 4px;
+    }
+    .journees-filtres { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; }
+    .journees-etiquette { display: flex; flex-direction: column; gap: 0.3em; }
+    .journees-filtres button {
+      padding: 0.5em 1em; font-size: 1em; cursor: pointer;
+      border: 1px solid currentColor; border-radius: 4px; background: transparent; color: inherit;
+    }
+    .journees-compteur { font-weight: bold; margin: 1.5em 0 1em; }
+    .journees-saut { margin: 0.8em 0 0; }
+    #cal-conteneur:focus { outline: none; }
+    .cal-mois h3 { margin: 2rem 0 0.5rem; }
+    .cal-liste { list-style: none; padding: 0; margin: 0; }
+    .journee { border-top: 1px solid currentColor; padding: 1em 0; }
+    .journee p { margin: 0 0 0.3em; }
+    .journee-meta { font-size: 0.95em; }
+    .journee-liens { list-style: none; padding: 0; margin: 0.3em 0 0; display: flex; flex-wrap: wrap; gap: 0.3em 1.2em; font-size: 0.95em; }
+    .journees-aucun { font-weight: bold; margin: 1.5em 0; }
+  </style>
+</Base>
