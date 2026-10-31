@@ -13,7 +13,7 @@ On embarque pour une heure de radio avec 5 rubriques.
 
 - **Top chrono** : Philippe nous fait découvrir les épreuves des Jeux Paralympiques d'hiver (ski alpin, biathlon sonore, hockey en fauteuil) et alerte sur les quatre mois de délai pour obtenir un [duplicata de carte GIC](https://dossier-mdph.fr/duplicata-carte-mobilite-inclusion/).
 - **C'est comme ça tous les jours ?** : Inès et Estelle racontent la révolution silencieuse de l'accueil des étudiants handicapés à l'[Université Paul Sabatier](https://www.univ-tlse3.fr/nos-engagements/handicap), passés de 43 à 511 en 15 ans.
-- **L'invité** : Estelle reçoit Jocelyn Pellegrini, batteur qui a créé [Handi Drum Book](https://www.autonomia.org/article/handi-drum-school-un-blog-dedie-a-l-apprentissage-de-la-batterie-adaptee), une méthode de batterie adaptée aux personnes en fauteuil et aux unibrassistes.
+- **L'invité** : Estelle reçoit Jocelyn Pellegrini, batteur qui a créé [Handi Drum School](https://www.autonomia.org/article/handi-drum-school-un-blog-dedie-a-l-apprentissage-de-la-batterie-adaptee), une méthode de batterie adaptée aux personnes en fauteuil et aux unibrassistes.
 - **Culture** : Julien nous parle de l'expérimentation menée par [Cultura et l'association Signes de Sens](https://informations.handicap.fr/a-cultura-edition-adaptee-10571.php) : un rayon de livres adaptés (braille, tactile, FALC) pour les 3-12 ans.
 - **Agenda** : Carinne nous emmène au CPEDI 3* de Deauville, unique concours de paraéquitation dressage en France, et signale les salons Mardis du Handicap pour l'emploi.
 
