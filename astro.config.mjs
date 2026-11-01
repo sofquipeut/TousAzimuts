@@ -10,7 +10,13 @@ export default defineConfig({
   site: 'https://tazfm.fr',
   base: '/',
   // Calendrier des journées masqué du plan du site tant qu'il n'est pas validé.
-  integrations: [sitemap({ filter: (page) => !page.includes('calendrier-journees-mondiales') })],
+  // Page « Coordonnées à retrouver » : page de travail interne, masquée du plan du site.
+  integrations: [
+    sitemap({
+      filter: (page) =>
+        !page.includes('calendrier-journees-mondiales') && !page.includes('carnet-a-completer'),
+    }),
+  ],
   markdown: {
     rehypePlugins: [rehypeExternalLinks],
   },
