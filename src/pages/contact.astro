@@ -15,7 +15,7 @@ import Base from '../layouts/Base.astro';
 
   <hr />
 
-  <form class="contact-form" action="https://formspree.io/f/xyegdwyr" method="POST">
+  <form id="formulaire-contact" class="contact-form" action="https://formspree.io/f/xyegdwyr" method="POST">
     <input type="hidden" name="_subject" value="Nouveau message via tazfm.fr" />
     <input type="hidden" name="_next" value="https://tazfm.fr/merci/" />
     <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true" />
@@ -56,6 +56,8 @@ import Base from '../layouts/Base.astro';
       <textarea id="message" name="Message" rows="6" required></textarea>
     </div>
 
+    <p id="contact-etat" class="contact-etat" role="alert" tabindex="-1"></p>
+
     <p class="cta-center">
       <button type="submit" class="button">Envoyer le message</button>
     </p>
@@ -64,4 +66,49 @@ import Base from '../layouts/Base.astro';
   <hr />
 
   <p class="cta-center"><em>Tous Azimuts est une émission bénévole. Nous faisons de notre mieux pour répondre à tous les messages.</em></p>
+
+<script>
+  // Envoi en arrière-plan : l'offre gratuite de Formspree renvoie vers sa propre page de
+  // remerciement, pas vers la nôtre. On poste donc la requête nous-mêmes et on emmène le
+  // visiteur sur la page « Merci » du site. Sans JavaScript, le formulaire fonctionne
+  // comme avant (POST natif) : le script ne fait qu'ajouter un comportement.
+  const formulaire = document.getElementById('formulaire-contact');
+  const etat = document.getElementById('contact-etat');
+  const bouton = formulaire.querySelector('button[type="submit"]');
+
+  formulaire.addEventListener('submit', async (evenement) => {
+    if (!window.fetch) return; // repli : POST natif vers Formspree
+    evenement.preventDefault();
+    etat.textContent = '';
+    bouton.disabled = true;
+    formulaire.setAttribute('aria-busy', 'true');
+    const destination = formulaire.querySelector('input[name="_next"]');
+    try {
+      const reponse = await fetch(formulaire.action, {
+        method: 'POST',
+        body: new FormData(formulaire),
+        headers: { Accept: 'application/json' },
+      });
+      if (reponse.ok) {
+        window.location.assign(destination ? destination.value : '/merci/');
+        return;
+      }
+      let detail = '';
+      try {
+        const corps = await reponse.json();
+        detail = (corps.errors || []).map((e) => e.message).join(' ');
+      } catch (erreur) {
+        detail = '';
+      }
+      throw new Error(detail || 'envoi refusé par le serveur');
+    } catch (erreur) {
+      etat.textContent = "Le message n'a pas pu être envoyé. Vérifiez votre connexion et réessayez" +
+        (erreur.message ? ' (' + erreur.message + ')' : '') +
+        ". Vous pouvez aussi nous écrire directement à radiotousazimuts@gmail.com.";
+      etat.focus();
+      bouton.disabled = false;
+      formulaire.removeAttribute('aria-busy');
+    }
+  });
+</script>
 </Base>
