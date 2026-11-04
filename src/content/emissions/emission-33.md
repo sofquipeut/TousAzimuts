@@ -19,7 +19,7 @@ Au sommaire de cette émission : la traversée du golfe de Saint-Tropez par une 
 
 - **Sport** : Philippe interroge [Tony Moggio](https://fr.wikipedia.org/wiki/Tony_Moggio), ancien talonneur devenu tétraplégique après un accident de rugby, qui s'entraîne pour traverser le golfe de Saint-Tropez à la seule force des épaules, le 14 juin, en quatre à cinq heures. Il évoque également son premier ouvrage, [Talonneur brisé](https://shop.tony-moggio.fr/ouvrages/21-tony-moggio-talonneur-brise.html).
 
-On reste ensuite toujours dans le sport avec Ambroise, qui présente [See Surf](https://www.handi-surf.com/), l'association fondée par Claudy Robin, surfeur non-voyant, qui initie les déficients visuels au surf à Lacanau, avec trois journées d'initiation en 2019.
+On reste ensuite toujours dans le sport avec Ambroise, qui présente [See Surf](https://seesurf.fr/), l'association fondée par Claudy Robin, surfeur non-voyant, qui initie les déficients visuels au surf à Lacanau, avec trois journées d'initiation en 2019.
 
 - **Culture** : Carinne reçoit Fabienne du musée [Aéroscopia](https://www.aeroscopia.fr/), à Blagnac, labellisé Tourisme et Handicap : visites sensorielles, visites en langue des signes, et toujours le Concorde.
 
