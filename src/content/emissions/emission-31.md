@@ -19,7 +19,7 @@ Au sommaire de cette émission : une histoire du cécifoot, le chanteur Xavier M
 
 - **Top chrono** : Philippe retrace l'histoire du [cécifoot](https://fr.wikipedia.org/wiki/C%C3%A9cifoot), des premières expériences espagnoles des années 1920 au premier club français créé à Saint-Mandé en 1987, jusqu'à l'entrée de ce sport aux Jeux paralympiques d'Athènes en 2004.
 
-- **Culture** : [Xavier Mérand](https://fr.wikipedia.org/wiki/Xavier_M%C3%A9rand), chanteur malvoyant, est à l'honneur : ses débuts au Baiser Salé en 1997, son titre repéré pour la compilation des cent ans du métro parisien, et sa chanson du bigleux diffusée en pause. Il est également le cofondateur de l'association [AccessiJeux](https://accessijeux.com/), abordée plus en détail dans l'[émission 138](https://tazfm.fr/emissions/emission-138/).
+- **Culture** : [Xavier Mérand](https://fr.wikipedia.org/wiki/Xavier_M%C3%A9rand), chanteur malvoyant, est à l'honneur : ses débuts au Baiser Salé en 1997, son titre repéré pour la compilation des cent ans du métro parisien, et sa chanson du bigleux diffusée en pause. Il est également le cofondateur de l'association [AccessiJeux](https://accessijeux.com/), dont il est question dans l'[émission 32](https://tazfm.fr/emissions/emission-32/) et plus en détail dans l'[émission 138](https://tazfm.fr/emissions/emission-138/).
 
 - **C'est comme ça tous les jours** : Inès raconte [Éric Brun-Sanglard](https://www.franceinfo.fr/culture/arts-expos/design/lyon-city-des-gn-eric-brun-sanglard-un-architecte-aveugle-visionnaire_3391173.html), architecte d'intérieur qui a perdu la vue et retape des maisons à l'oreille et au toucher.
 
