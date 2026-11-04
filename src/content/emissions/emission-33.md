@@ -31,4 +31,4 @@ On reste ensuite toujours dans le sport avec Ambroise, qui présente [See Surf](
 
 Côté musique, deux pauses : [C Duncan - Impossible](https://www.youtube.com/watch?v=7ws_OTGeG-Q), extrait de l'album *Health*, et [Cactus - Wambaliya](https://www.youtube.com/watch?v=HrMb7Ml_el0), extrait de *Ça pique !*.
 
-*Émission animée par Carinne, Philippe, Ambroise, Guénaëlle et Julien. Invitée : Fabienne. Technique et montage : Marco. Programmation musicale : Ghénaël et Julien. Coordination : Carinne.*
+*Émission animée par Carinne, Philippe, Ambroise, Guénaël et Julien. Invitée : Fabienne. Technique et montage : Marco. Programmation musicale : Ghénaël et Julien. Coordination : Carinne.*
