@@ -31,4 +31,4 @@ Ensuite, Guénaël dresse le portrait de [Manami Ito](https://lemediapositif.com
 
 Côté musique, deux pauses : [Manami Ito au violon](https://www.youtube.com/watch?v=ba-BIG2S2a8) et [-M- - Bal de Bamako](https://www.youtube.com/watch?v=E0fKM2XMgpE), extrait de *Lamomali*.
 
-*Émission animée par Julien, Philippe, Guénaëlle, Inès, Florence, Ambroise et Carinne. Invité : Patrick. Technique et montage : Marco. Programmation musicale : Guénaël et Julien. Coordination : Carinne.*
+*Émission animée par Julien, Philippe, Guénaël, Inès, Florence, Ambroise et Carinne. Invité : Patrick. Technique et montage : Marco. Programmation musicale : Guénaël et Julien. Coordination : Carinne.*
