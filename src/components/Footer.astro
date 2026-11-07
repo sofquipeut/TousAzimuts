@@ -27,27 +27,29 @@ const year = new Date().getFullYear();
     Sofian Babai – webmaster<br />
     Et des chroniqueurs réguliers.
   </p>
-  <p class="footer-partenaires-titre">Nos partenaires :</p>
-  <ul class="footer-partenaires">
-    <li>
-      <a href="https://www.radiomonpais.fr/" target="_blank" rel="noopener">
-        <img src={withBase('/images/partenaires/radio-mon-pais.svg')} alt="Radio Mon Païs, 90.1 FM"
-          width="890" height="935" loading="lazy" />
-      </a>
-    </li>
-    <li>
-      <a href="https://www.campusfm.net/" target="_blank" rel="noopener">
-        <img src={withBase('/images/partenaires/campus-fm.png')} alt="Campus FM, Radio Campus Toulouse 94 FM"
-          width="778" height="281" loading="lazy" />
-      </a>
-    </li>
-    <li>
-      <a href="https://www.avh.asso.fr/" target="_blank" rel="noopener">
-        <img src={withBase('/images/partenaires/avh-compact.svg')} alt="Association Valentin Haüy"
-          width="115" height="54" loading="lazy" />
-      </a>
-    </li>
-  </ul>
+  <div class="footer-partenaires-bloc">
+    <p class="footer-partenaires-titre">Nos partenaires :</p>
+    <ul class="footer-partenaires">
+      <li>
+        <a href="https://www.radiomonpais.fr/" target="_blank" rel="noopener">
+          <img src={withBase('/images/partenaires/radio-mon-pais.svg')} alt="Radio Mon Païs, 90.1 FM"
+            width="890" height="935" loading="lazy" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.campusfm.net/" target="_blank" rel="noopener">
+          <img src={withBase('/images/partenaires/campus-fm.png')} alt="Campus FM, Radio Campus Toulouse 94 FM"
+            width="778" height="281" loading="lazy" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.avh.asso.fr/" target="_blank" rel="noopener">
+          <img src={withBase('/images/partenaires/avh-compact.svg')} alt="Association Valentin Haüy"
+            width="115" height="54" loading="lazy" />
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <p class="footer-copyright">© {year} Tous Azimuts</p>
 </footer>
