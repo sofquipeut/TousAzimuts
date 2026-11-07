@@ -225,6 +225,7 @@ hr {
   display: flex;
   gap: 0.4rem;
   align-items: center;
+  margin: 0.9rem 0;
 }
 
 .site-search input {
