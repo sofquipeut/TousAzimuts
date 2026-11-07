@@ -461,3 +461,31 @@ iframe {
   flex-direction: column;
   gap: 0.15rem;
 }
+
+/* Grille des sujets abordés : colonnes régulières, libellés centrés et de même largeur. */
+.sujets-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  padding: 0;
+  margin: 1rem 0;
+}
+.sujets-grid li {
+  display: flex;
+}
+.sujets-grid .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0.6em 0.9em;
+}
+@media (max-width: 700px) {
+  .sujets-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) {
+  .sujets-grid { grid-template-columns: 1fr; }
+}
