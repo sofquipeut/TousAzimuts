@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import BoutonRetour from '../components/BoutonRetour.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -63,6 +64,7 @@ const ogImage = new URL(`${import.meta.env.BASE_URL}icon-512.png`, Astro.site).h
     <a class="skip-link" href="#main">Aller au contenu principal</a>
     <Header />
     <main id="main">
+      <BoutonRetour />
       <slot />
     </main>
     <Footer />
