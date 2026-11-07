@@ -4,6 +4,9 @@ import { withBase } from '../lib/url';
 
 const saisons = await getCollection('saisons');
 const current = saisons.find((s) => s.data.ongoing);
+
+// Flèche de retour : présente sur toutes les pages sauf l'accueil.
+const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
 ---
 
 <div class="theme-bar">
@@ -14,6 +17,14 @@ const current = saisons.find((s) => s.data.ongoing);
 
 <header class="site-header">
   <div class="site-header__bar">
+    {!estAccueil && (
+      <a id="bouton-retour" class="bouton-retour" href={withBase('/')} aria-label="Revenir à la page précédente">
+        <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 4 7 12 15 20"></polyline>
+        </svg>
+      </a>
+    )}
     <a class="site-title" href={withBase('/')}>
       <img
         class="site-logo"
@@ -76,5 +87,19 @@ const current = saisons.find((s) => s.data.ongoing);
       } catch (e) {}
       updateButton(next);
     });
+  })();
+</script>
+
+<script is:inline>
+  (function () {
+    var retour = document.getElementById('bouton-retour');
+    if (!retour) return;
+    // Ramène d'où l'on vient ; sans historique, le lien mène à l'accueil.
+    if (window.history.length > 1) {
+      retour.addEventListener('click', function (evenement) {
+        evenement.preventDefault();
+        window.history.back();
+      });
+    }
   })();
 </script>
