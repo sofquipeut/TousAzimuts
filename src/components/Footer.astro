@@ -11,6 +11,22 @@ const year = new Date().getFullYear();
     <li><a href="https://www.youtube.com/@tousazimutsfm6498">YouTube</a></li>
     <li><a href="https://piaille.fr/@TousAzimutsFM" rel="me">Mastodon</a></li>
   </ul>
+  <nav aria-label="Pied de page" class="footer-nav">
+    <ul>
+      <li><a href={withBase('/')}>Accueil</a></li>
+      <li><a href={withBase('/direct/')}>Écouter en direct</a></li>
+      <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
+      <li><a href={withBase('/contact/')}>Contact</a></li>
+      <li><a href={withBase('/confidentialite/')}>Confidentialité</a></li>
+    </ul>
+  </nav>
+  <p class="footer-equipe">
+    Carinne Péri – animatrice et coordination<br />
+    Marco Lazaro – technique et montage<br />
+    Julien Camaret – animateur et programmation musicale<br />
+    Sofian Babai – webmaster<br />
+    Et des chroniqueurs réguliers.
+  </p>
   <p class="footer-partenaires-titre">Nos partenaires :</p>
   <ul class="footer-partenaires">
     <li>
@@ -32,21 +48,6 @@ const year = new Date().getFullYear();
       </a>
     </li>
   </ul>
-  <nav aria-label="Pied de page" class="footer-nav">
-    <ul>
-      <li><a href={withBase('/')}>Accueil</a></li>
-      <li><a href={withBase('/direct/')}>Écouter en direct</a></li>
-      <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
-      <li><a href={withBase('/contact/')}>Contact</a></li>
-      <li><a href={withBase('/confidentialite/')}>Confidentialité</a></li>
-    </ul>
-  </nav>
-  <p class="footer-equipe">
-    Carinne Péri – animatrice et coordination<br />
-    Marco Lazaro – technique et montage<br />
-    Julien Camaret – animateur et programmation musicale<br />
-    Sofian Babai – webmaster<br />
-    Et des chroniqueurs réguliers.
-  </p>
+
   <p class="footer-copyright">© {year} Tous Azimuts</p>
 </footer>
