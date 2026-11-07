@@ -1,0 +1,24 @@
+---
+import { withBase } from '../lib/url';
+---
+
+<p class="retour">
+  <a id="bouton-retour" class="bouton-retour" href={withBase('/')}>
+    <span aria-hidden="true">←</span>
+    <span>Revenir à la page précédente</span>
+  </a>
+</p>
+
+<script is:inline>
+  (function () {
+    var lien = document.getElementById('bouton-retour');
+    if (!lien) return;
+    // S'il y a un historique, le bouton ramène d'où l'on vient ; sinon il reste un lien vers l'accueil.
+    if (window.history.length > 1) {
+      lien.addEventListener('click', function (evenement) {
+        evenement.preventDefault();
+        window.history.back();
+      });
+    }
+  })();
+</script>
