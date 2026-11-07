@@ -111,15 +111,6 @@ const structuredData = {
 
   <hr />
 
-  <h2 id="les-sujets">Sujets abordés</h2>
-  <ul class="season-grid">
-    {sujets.map((tag) => (
-      <li><a class="button button--outline" href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a></li>
-    ))}
-  </ul>
-
-  <hr />
-
   <h2 id="carnet">Carnet d'adresses</h2>
   <p>
     Les associations, entreprises, lieux et institutions cités dans l'émission, avec leur site, leurs
@@ -135,4 +126,15 @@ const structuredData = {
     pour les retrouver à la suite.
   </p>
   <p class="cta-center"><a class="button" href={withBase('/pauses-musicales/')}>Découvrir les pauses musicales</a></p>
+
+  <hr />
+
+  <h2 id="les-sujets">Sujets abordés</h2>
+  <ul class="sujets-grid">
+    {sujets.map((tag) => (
+      <li><a class="button button--outline" href={withBase(`/tags/${tag}/`)}>{tagLabel(tag)}</a></li>
+    ))}
+  </ul>
+
+  <hr />
 </Base>
