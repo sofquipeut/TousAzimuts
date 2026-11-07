@@ -517,9 +517,18 @@ iframe {
   display: block;
 }
 
-/* Partenaires dans le pied de page : pastilles blanches pour rester lisibles sur le fond bleu. */
+/* Partenaires : bandeau blanc dans le pied de page bleu, logos côte à côte. */
+.footer-partenaires-bloc {
+  background: #fff;
+  color: var(--color-text);
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.4rem auto 1.1rem;
+  max-width: var(--max-width);
+}
 .footer-partenaires-titre {
-  margin: 1.1rem 0 0.6rem;
+  margin: 0 0 0.8rem;
+  font-weight: 600;
 }
 .footer-partenaires {
   list-style: none;
@@ -527,7 +536,7 @@ iframe {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 0;
   margin: 0;
 }
@@ -536,13 +545,11 @@ iframe {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 8.5rem;
-  height: 4.5rem;
-  padding: 0.75rem 0.9rem;
-  background: #fff;
-  border-radius: 8px;
+  width: 8rem;
+  height: 3.4rem;
+  border-radius: 6px;
 }
-.footer-partenaires a:hover { background: #eef4f7; }
+.footer-partenaires a:hover { background: rgba(0, 0, 0, 0.06); }
 .footer-partenaires img {
   display: block;
   max-width: 100%;
@@ -551,6 +558,7 @@ iframe {
   height: auto;
 }
 @media (max-width: 560px) {
-  .footer-partenaires { gap: 0.7rem; }
-  .footer-partenaires a { width: 7rem; height: 3.7rem; padding: 0.45rem 0.5rem; }
+  .footer-partenaires { gap: 1rem; }
+  .footer-partenaires a { width: 6.5rem; height: 3rem; }
+  .footer-partenaires-bloc { padding: 1rem; }
 }
