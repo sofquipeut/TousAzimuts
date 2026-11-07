@@ -517,9 +517,9 @@ iframe {
   display: block;
 }
 
-/* Partenaires dans le pied de page : logos alignés, chacun dans son lien. */
+/* Partenaires dans le pied de page : pastilles blanches pour rester lisibles sur le fond bleu. */
 .footer-partenaires-titre {
-  margin: 0.9rem 0 0.4rem;
+  margin: 1.1rem 0 0.6rem;
 }
 .footer-partenaires {
   list-style: none;
@@ -527,15 +527,30 @@ iframe {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1rem;
   padding: 0;
   margin: 0;
 }
 .footer-partenaires li { display: flex; }
-.footer-partenaires a { display: inline-flex; padding: 0.3rem; border-radius: 6px; }
-.footer-partenaires a:hover { background: rgba(127, 127, 127, 0.18); }
-.footer-partenaires img { display: block; height: 34px; width: auto; }
+.footer-partenaires a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5rem;
+  height: 4.5rem;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  border-radius: 8px;
+}
+.footer-partenaires a:hover { background: #eef4f7; }
+.footer-partenaires img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
 @media (max-width: 560px) {
-  .footer-partenaires { gap: 0.8rem; }
-  .footer-partenaires img { height: 28px; }
+  .footer-partenaires { gap: 0.7rem; }
+  .footer-partenaires a { width: 7rem; height: 3.7rem; padding: 0.45rem 0.5rem; }
 }
