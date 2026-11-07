@@ -517,11 +517,25 @@ iframe {
   display: block;
 }
 
-/* Logos des partenaires, dans le fil du texte et à l'intérieur de leur lien. */
-.logo-partenaire {
-  display: inline-block;
-  height: 1.5em;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 0.35em;
+/* Partenaires dans le pied de page : logos alignés, chacun dans son lien. */
+.footer-partenaires-titre {
+  margin: 0.9rem 0 0.4rem;
+}
+.footer-partenaires {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.footer-partenaires li { display: flex; }
+.footer-partenaires a { display: inline-flex; padding: 0.3rem; border-radius: 6px; }
+.footer-partenaires a:hover { background: rgba(127, 127, 127, 0.18); }
+.footer-partenaires img { display: block; height: 34px; width: auto; }
+@media (max-width: 560px) {
+  .footer-partenaires { gap: 0.8rem; }
+  .footer-partenaires img { height: 28px; }
 }
