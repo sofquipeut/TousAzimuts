@@ -489,22 +489,22 @@ iframe {
 @media (max-width: 420px) {
   .sujets-grid { grid-template-columns: 1fr; }
 }
-
-/* Bouton « revenir à la page précédente », en tête de chaque page. */
-.retour { margin: 1rem 0 0.5rem; }
+/* Flèche de retour (façon Apple), en haut à gauche de chaque page sauf l'accueil. */
 .bouton-retour {
   display: inline-flex;
   align-items: center;
-  gap: 0.45em;
-  padding: 0.45em 0.9em;
-  font-size: 0.95rem;
-  border: 1.5px solid var(--color-link);
-  border-radius: 6px;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
   color: var(--color-link);
   text-decoration: none;
+  flex: 0 0 auto;
 }
 .bouton-retour:hover {
-  background: var(--color-brand);
-  border-color: var(--color-brand);
-  color: #fff;
+  background: rgba(127, 127, 127, 0.18);
+}
+.bouton-retour svg {
+  display: block;
 }
