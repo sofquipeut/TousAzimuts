@@ -146,6 +146,7 @@ hr {
   border-bottom: 1px solid var(--color-border);
   padding: 0.5rem 1.25rem;
   text-align: center;
+  position: relative;
 }
 
 .theme-toggle {
@@ -489,7 +490,14 @@ iframe {
 @media (max-width: 420px) {
   .sujets-grid { grid-template-columns: 1fr; }
 }
-/* Flèche de retour (façon Apple), en haut à gauche de chaque page sauf l'accueil. */
+/* Flèche de retour (façon Apple) : dans la barre du thème, à gauche du bouton de thème, sauf sur l'accueil. */
+.theme-bar .bouton-retour {
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+}
 .bouton-retour {
   display: inline-flex;
   align-items: center;
