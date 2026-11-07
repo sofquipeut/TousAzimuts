@@ -516,3 +516,23 @@ iframe {
 .bouton-retour svg {
   display: block;
 }
+
+/* Partenaires : logos alignés sur une même hauteur. */
+.partenaires {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+}
+.partenaires li { display: flex; align-items: center; }
+.partenaires a { display: inline-flex; padding: 0.4rem; border-radius: 8px; }
+.partenaires a:hover { background: rgba(127, 127, 127, 0.12); }
+.partenaires img { display: block; height: 78px; width: auto; }
+@media (max-width: 560px) {
+  .partenaires { gap: 1.2rem; }
+  .partenaires img { height: 62px; }
+}
