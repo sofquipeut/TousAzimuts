@@ -43,6 +43,22 @@ const structuredData = {
 
   <hr />
 
+  {derniere && (
+    <section class="derniere-emission" aria-labelledby="titre-derniere-emission">
+      <h2 id="titre-derniere-emission">Dernière émission publiée</h2>
+      <article class="emission-card">
+        <h3><a href={withBase(`/emissions/${derniere.slug}/`)}>{derniere.data.title}</a></h3>
+        <p class="emission-card__date">Publiée le {derniereDate}</p>
+        <p>{derniere.data.excerpt}</p>
+        <p class="derniere-emission__actions">
+          <a class="button" href={withBase(`/emissions/${derniere.slug}/`)}>Écouter l'émission</a>
+        </p>
+      </article>
+    </section>
+  )}
+
+  <hr />
+
   <p>
     Donner la parole à tous, pour tous : c'est la mission de Tous Azimuts, émission diffusée sur
     <a href="https://www.radiomonpais.fr/archive-shows/338/tous-azimuts">Radio Mon Païs (90.1 FM)</a>
@@ -66,21 +82,11 @@ const structuredData = {
 
   <p>Une émission animée par une équipe mixte, dont plusieurs membres sont eux-mêmes en situation de handicap.</p>
 
-  {AFFICHER_JOURNEE_DU_JOUR && <JourneeDuJour />}
+  <hr />
 
-  {derniere && (
-    <section class="derniere-emission" aria-labelledby="titre-derniere-emission">
-      <h2 id="titre-derniere-emission">Dernière émission publiée</h2>
-      <article class="emission-card">
-        <h3><a href={withBase(`/emissions/${derniere.slug}/`)}>{derniere.data.title}</a></h3>
-        <p class="emission-card__date">Publiée le {derniereDate}</p>
-        <p>{derniere.data.excerpt}</p>
-        <p class="derniere-emission__actions">
-          <a class="button" href={withBase(`/emissions/${derniere.slug}/`)}>Écouter l'émission</a>
-        </p>
-      </article>
-    </section>
-  )}
+  <p class="cta-center"><strong>Ensemble, collectons et relayons l'info. Contribuons à rendre notre monde plus accessible !</strong></p>
+
+  <p class="cta-center"><a class="button" href={withBase('/podcast/')}>Abonnez-vous au podcast de Tous Azimuts</a></p>
 
   <hr />
 
@@ -92,21 +98,6 @@ const structuredData = {
     (94 FM) les 2e et 4e mercredis du mois à 13h.
   </p>
 
-  <p class="cta-center"><strong>Ensemble, collectons et relayons l'info. Contribuons à rendre notre monde plus accessible !</strong></p>
-
-  <p class="cta-center"><a class="button" href={withBase('/podcast/')}>Abonnez-vous au podcast de Tous Azimuts</a></p>
-
-  <hr />
-
-  <h2>L'équipe permanente</h2>
-  <p>
-    <strong>Julien Camaret</strong> – Animateur et programmation musicale<br />
-    <strong>Carinne Péri</strong> – Animatrice et coordination<br />
-    <strong>Marco Lazaro</strong> – Technique et montage<br />
-    <strong>Sofian Babai</strong> – Webmaster
-  </p>
-  <p>Chaque émission accueille également des intervenants invités pour enrichir les débats et les témoignages.</p>
-
   <hr />
 
   <h2 id="les-saisons">Les saisons</h2>
@@ -115,6 +106,18 @@ const structuredData = {
       <li><a class="button button--outline" href={withBase(`/${s.slug}/`)}>Saison {s.data.number} ({formatYears(s.data.years)})</a></li>
     ))}
   </ul>
+
+  <hr />
+
+  <h2>L'équipe</h2>
+  <p>
+    <strong>Julien Camaret</strong> – Animateur et programmation musicale<br />
+    <strong>Carinne Péri</strong> – Animatrice et coordination<br />
+    <strong>Marco Lazaro</strong> – Technique et montage<br />
+    <strong>Sofian Babai</strong> – Webmaster<br />
+    Et des chroniqueurs réguliers.
+  </p>
+  <p>Certaines émissions accueillent aussi des invités — associations, professionnels, témoins — quand le sujet s'y prête.</p>
 
   <hr />
 
