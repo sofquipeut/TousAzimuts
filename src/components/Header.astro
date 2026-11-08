@@ -48,6 +48,13 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
   </fieldset>
 
   <fieldset>
+    <legend>Espacement du texte</legend>
+    <label><input type="radio" name="espacement" value="normal" /> Normal</label>
+    <label><input type="radio" name="espacement" value="aere" /> Aéré</label>
+    <label><input type="radio" name="espacement" value="tres-aere" /> Très aéré</label>
+  </fieldset>
+
+  <fieldset>
     <legend>Police</legend>
     <label><input type="radio" name="police" value="manrope" /> Police du site</label>
     <label><input type="radio" name="police" value="luciole" /> Luciole (basse vision)</label>
@@ -128,9 +135,10 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
         if (p.palette !== 'contraste') p.palette = 'standard';
         if (['grande', 'tres-grande', 'maximale'].indexOf(p.taille) === -1) p.taille = 'normale';
         if (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(p.police) === -1) p.police = 'manrope';
+        if (['aere', 'tres-aere'].indexOf(p.espacement) === -1) p.espacement = 'normal';
         return p;
       } catch (e) {
-        return { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope' };
+        return { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope', espacement: 'normal' };
       }
     }
 
@@ -143,10 +151,11 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
       racine.dataset.palette = p.palette;
       racine.dataset.taille = p.taille;
       racine.dataset.police = p.police;
+      racine.dataset.espacement = p.espacement;
     }
 
     function cocher(p) {
-      var champs = ['theme', 'palette', 'taille', 'police'];
+      var champs = ['theme', 'palette', 'taille', 'espacement', 'police'];
       champs.forEach(function (nom) {
         var el = panneau.querySelector('input[name="' + nom + '"][value="' + p[nom] + '"]');
         if (el) el.checked = true;
@@ -169,7 +178,13 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
       appliquer(prefs);
       ecrirePrefs(prefs);
       if (statut) {
-        var noms = { theme: 'Thème', palette: 'Contraste', taille: 'Taille du texte', police: 'Police' };
+        var noms = {
+          theme: 'Thème',
+          palette: 'Contraste',
+          taille: 'Taille du texte',
+          espacement: 'Espacement du texte',
+          police: 'Police',
+        };
         statut.textContent = (noms[champ.name] || champ.name) + ' : ' + libelle(champ) + '.';
       }
     });
@@ -177,7 +192,7 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     var reinit = document.getElementById('affichage-reinit');
     if (reinit) {
       reinit.addEventListener('click', function () {
-        prefs = { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope' };
+        prefs = { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope', espacement: 'normal' };
         appliquer(prefs);
         ecrirePrefs(prefs);
         cocher(prefs);

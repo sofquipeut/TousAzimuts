@@ -10,6 +10,10 @@
   --color-text-muted: #4a5560;
   --color-border: #d7dee2;
   --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Espacement du texte : trois valeurs modifiées ensemble par le réglage du même nom. */
+  --interligne: 1.6;
+  --espace-lettres: normal;
+  --espace-mots: normal;
   --max-width: 46rem;
   /* Taille du titre de niveau 1, réutilisée pour le nom de l'émission dans l'en-tête (34 px). */
   --taille-titre: 2.125rem;
@@ -81,6 +85,21 @@ html {
 :root[data-taille='tres-grande'] { font-size: 125%; }
 :root[data-taille='maximale'] { font-size: 150%; }
 
+/* Espacement du texte, pensé pour les lecteurs dyslexiques : l'interligne, l'espace entre les
+   lettres et l'espace entre les mots augmentent ensemble, car c'est ainsi qu'ils servent.
+   Les valeurs du niveau le plus large sont celles du critère WCAG 1.4.12. */
+:root[data-espacement='aere'] {
+  --interligne: 1.8;
+  --espace-lettres: 0.06em;
+  --espace-mots: 0.08em;
+}
+
+:root[data-espacement='tres-aere'] {
+  --interligne: 2;
+  --espace-lettres: 0.12em;
+  --espace-mots: 0.16em;
+}
+
 /* Police : celle du site, deux polices dessinées pour la basse vision (Luciole et Atkinson
    Hyperlegible), ou deux polices système très répandues. Arial et Verdana sont déjà sur
    l'appareil, donc rien à télécharger pour ces deux-là. */
@@ -102,7 +121,9 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-body);
-  line-height: 1.6;
+  line-height: var(--interligne);
+  letter-spacing: var(--espace-lettres);
+  word-spacing: var(--espace-mots);
   font-size: 1.0625rem;
 }
 
@@ -164,7 +185,8 @@ a:hover {
 }
 
 h1, h2, h3 {
-  line-height: 1.2;
+  /* 1,2 au réglage normal, et davantage dès que l'interligne augmente. */
+  line-height: calc(var(--interligne) - 0.4);
   font-weight: 700;
 }
 
@@ -946,7 +968,14 @@ iframe {
    s'impriment pas, tout ce qui portait du texte blanc repasse en texte noir, et les formes qui
    n'existaient que par leur fond reçoivent une bordure. */
 @media print {
-  :root {
+  /* Ces sélecteurs portent les attributs de réglage : sans eux, les palettes du visiteur, plus
+     précises, l'emporteraient sur cette neutralisation. */
+  :root,
+  :root[data-theme],
+  :root[data-palette],
+  :root[data-taille],
+  :root[data-police],
+  :root[data-espacement] {
     --color-bg: #fff;
     --color-text: #000;
     --color-text-muted: #333;
@@ -955,6 +984,9 @@ iframe {
     --color-border: #999;
     --color-brand: #000;
     --color-accent: #000;
+    --interligne: 1.6;
+    --espace-lettres: normal;
+    --espace-mots: normal;
     font-size: 100%;
   }
 

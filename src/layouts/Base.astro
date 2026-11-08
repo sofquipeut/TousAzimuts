@@ -41,6 +41,7 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
           h.dataset.palette = (prefs.palette === 'contraste') ? 'contraste' : 'standard';
           h.dataset.taille = (['grande', 'tres-grande', 'maximale'].indexOf(prefs.taille) !== -1) ? prefs.taille : 'normale';
           h.dataset.police = (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(prefs.police) !== -1) ? prefs.police : 'manrope';
+          h.dataset.espacement = (['aere', 'tres-aere'].indexOf(prefs.espacement) !== -1) ? prefs.espacement : 'normal';
         } catch (e) {}
       })();
     </script>
