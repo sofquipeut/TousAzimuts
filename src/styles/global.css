@@ -309,6 +309,27 @@ hr {
   opacity: 0.8;
 }
 
+/* Retour en haut de page, en bas du pied de page. */
+.footer-haut {
+  margin: 1.25rem 0 0;
+}
+
+.footer-haut a {
+  display: inline-block;
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: 6px;
+  padding: 0.45em 1em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-haut a:hover,
+.footer-haut a:focus-visible {
+  background: #fff;
+  color: var(--color-brand);
+}
+
 /* Grilles et cartes */
 .season-grid, .platform-list {
   list-style: none;
