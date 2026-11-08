@@ -193,6 +193,22 @@ hr {
   text-decoration: none;
 }
 
+.site-title__texte {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.site-title__nom {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.site-title__accroche {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
 .site-logo {
   height: 4rem;
   width: auto;
