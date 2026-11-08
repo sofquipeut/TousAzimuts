@@ -5,6 +5,7 @@ import { withBase } from '../lib/url';
 import { tagLabel } from '../lib/tags';
 import { formatYears } from '../lib/dates';
 import JourneeDuJour from '../components/JourneeDuJour.astro';
+import youtubeVideos from '../data/youtube-videos.json';
 
 // Encadré « journée du jour » : passer à true pour l'afficher sur l'accueil.
 const AFFICHER_JOURNEE_DU_JOUR = false;
@@ -25,6 +26,12 @@ const derniereDate = derniere?.data.pubDate.toLocaleDateString('fr-FR', {
   year: 'numeric',
 });
 
+// Vidéo YouTube de la dernière émission, puisée à la même source que les pages d'émission.
+const derniereYoutubeId =
+  derniere?.data.number != null
+    ? (youtubeVideos as Record<string, string>)[String(derniere.data.number)]
+    : undefined;
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'PodcastSeries',
@@ -44,14 +51,22 @@ const structuredData = {
 
   {derniere && (
     <section class="derniere-emission" aria-labelledby="titre-derniere-emission">
-      <h2 id="titre-derniere-emission">Dernière émission publiée</h2>
+      <h2 id="titre-derniere-emission" class="titre-orange">Dernière émission</h2>
       <article class="emission-card">
-        <p class="pastille-nouvelle">Nouvelle émission</p>
         <h3><a href={withBase(`/emissions/${derniere.slug}/`)}>{derniere.data.title}</a></h3>
         <p class="emission-card__date">Publiée le {derniereDate}</p>
         <p>{derniere.data.excerpt}</p>
         <p class="derniere-emission__actions">
-          <a class="button" href={withBase(`/emissions/${derniere.slug}/`)}>Écouter l'émission</a>
+          {derniereYoutubeId ? (
+            <a
+              class="bouton-youtube"
+              href={`https://www.youtube.com/watch?v=${derniereYoutubeId}`}
+              target="_blank"
+              rel="noopener"
+            >{`Écouter l'émission ${derniere.data.number} sur YouTube`}</a>
+          ) : (
+            <a class="button" href={withBase(`/emissions/${derniere.slug}/`)}>Écouter l'émission</a>
+          )}
         </p>
       </article>
     </section>
@@ -80,6 +95,8 @@ const structuredData = {
     l'extérieur.
   </p>
 
+  {/* Quand la page des chroniqueurs sera en ligne, remplacer « membres » par « chroniqueurs »
+      dans la phrase ci-dessous, et faire pointer « chroniqueurs réguliers » du pied de page vers elle. */}
   <p>Une émission animée par une équipe mixte, dont plusieurs membres sont eux-mêmes en situation de handicap.</p>
 
   <p>Certaines émissions accueillent aussi des invités — associations, professionnels, témoins — quand le sujet s'y prête.</p>

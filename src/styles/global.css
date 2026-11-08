@@ -577,18 +577,16 @@ dialog:not([open]) {
   margin: 0 0 0.5rem;
 }
 
-/* Pastille « Nouvelle émission » sur la dernière parution (information réelle, texte dans la page). */
-.pastille-nouvelle {
+/* Titre « Dernière émission » : il porte lui-même l'orange, en remplacement de l'ancienne
+   pastille. Le blanc sur cet orange donne 5,1 pour 1, au-dessus du seuil de 4,5. */
+.titre-orange {
   display: inline-block;
-  margin: 0 0 0.6rem;
-  padding: 0.2em 0.7em;
-  border-radius: 999px;
+  margin: 0 0 1rem;
+  padding: 0.3em 0.85em;
+  border-radius: 6px;
   background: var(--color-accent);
   color: #fff;
-  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
 }
 
 /* Bloc « dernière émission publiée » de la page d'accueil : le filet d'accent le distingue
@@ -663,9 +661,9 @@ dialog:not([open]) {
   margin: 1.5rem 0 0.75rem;
 }
 
-/* Lien YouTube des pages d'émission : présenté comme un bouton rouge voyant, texte blanc gras.
-   Le blanc sur ce rouge donne 4,8 pour 1. */
-.emission-youtube a {
+/* Bouton rouge YouTube, sur les pages d'émission comme sur le bloc « dernière émission ».
+   Le blanc sur ce rouge donne 4,8 pour 1, au-dessus du seuil de 4,5. */
+.bouton-youtube {
   display: inline-block;
   background: #E60000;
   color: #fff;
@@ -675,8 +673,8 @@ dialog:not([open]) {
   border-radius: 6px;
 }
 
-.emission-youtube a:hover,
-.emission-youtube a:focus-visible {
+.bouton-youtube:hover,
+.bouton-youtube:focus-visible {
   background: #B30000;
   color: #fff;
 }
@@ -915,8 +913,8 @@ iframe {
   .bouton-affichage,
   .bouton-retour,
   .page-nav a,
-  .emission-youtube a,
-  .pastille-nouvelle,
+  .bouton-youtube,
+  .titre-orange,
   .skip-link {
     border: 1px solid CanvasText;
   }
@@ -956,6 +954,7 @@ iframe {
   .skip-link,
   .share-links,
   .emission-youtube,
+  .bouton-youtube,
   #lecteur-rss,
   .footer-partenaires-bloc {
     display: none !important;
@@ -974,7 +973,7 @@ iframe {
   /* Les boutons pleins n'ont pas de bordure : on leur en donne une, sinon ils se confondent
      avec le texte une fois leur fond disparu. */
   .button,
-  .pastille-nouvelle {
+  .titre-orange {
     background: none !important;
     color: #000 !important;
     border: 1px solid #000 !important;
