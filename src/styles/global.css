@@ -9,6 +9,8 @@
   --color-border: #d7dee2;
   --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --max-width: 46rem;
+  /* Taille du titre de niveau 1, réutilisée pour le nom de l'émission dans l'en-tête (34 px). */
+  --taille-titre: 2.125rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +91,10 @@ a:hover {
 h1, h2, h3 {
   line-height: 1.2;
   font-weight: 700;
+}
+
+h1 {
+  font-size: var(--taille-titre);
 }
 
 main {
@@ -191,27 +197,25 @@ hr {
   font-weight: 800;
   font-size: 1.25rem;
   text-decoration: none;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .site-title__texte {
   display: flex;
   flex-direction: column;
   line-height: 1.15;
+  min-width: 0;
 }
 
 .site-title__nom {
-  font-size: 1.75rem;
+  font-size: var(--taille-titre);
   font-weight: 800;
 }
 
 .site-title__accroche {
-  font-size: 1.35rem;
+  font-size: var(--taille-titre);
   font-weight: 600;
-}
-
-@media (max-width: 560px) {
-  .site-title__nom { font-size: 1.35rem; }
-  .site-title__accroche { font-size: 1.05rem; }
 }
 
 .site-logo {
