@@ -780,14 +780,16 @@ iframe {
   gap: 0.15rem;
 }
 
-/* Grille des sujets abordés : colonnes régulières, libellés centrés et de même largeur. */
+/* Grille des sujets abordés : colonnes régulières, libellés centrés et de même largeur.
+   L'écart vertical entre deux rangées est plus large que l'écart horizontal, pour que
+   l'œil distingue bien les rangées. */
 .sujets-grid {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.5rem;
+  gap: 1rem 0.75rem;
   padding: 0;
-  margin: 1rem 0;
+  margin: 1.25rem 0;
 }
 .sujets-grid li {
   display: flex;
