@@ -185,10 +185,10 @@ hr {
   margin: 0 auto;
   padding: 1rem 1.25rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   gap: 0.75rem;
+  text-align: center;
 }
 
 .site-title {
@@ -218,10 +218,12 @@ hr {
 .site-title__accroche {
   font-size: var(--taille-devise);
   font-weight: 600;
+  /* Orange lisible sur le bleu de l'en-tête (le brun orangé du site y serait illisible). */
+  color: #ffb27a;
 }
 
 .site-logo {
-  height: 4.6rem;
+  height: 6rem;
   width: auto;
   border-radius: 4px;
   background: #fff;
@@ -232,6 +234,7 @@ hr {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.25rem 1rem;
   margin: 0;
   padding: 0;
