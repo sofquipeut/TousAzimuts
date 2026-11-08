@@ -46,6 +46,7 @@ const structuredData = {
     <section class="derniere-emission" aria-labelledby="titre-derniere-emission">
       <h2 id="titre-derniere-emission">Dernière émission publiée</h2>
       <article class="emission-card">
+        <p class="pastille-nouvelle">Nouvelle émission</p>
         <h3><a href={withBase(`/emissions/${derniere.slug}/`)}>{derniere.data.title}</a></h3>
         <p class="emission-card__date">Publiée le {derniereDate}</p>
         <p>{derniere.data.excerpt}</p>
