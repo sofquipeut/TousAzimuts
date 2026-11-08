@@ -3,7 +3,7 @@ title: Émission 177
 number: 177
 season: saison-10
 pubDate: 2026-10-14T17:00:00Z
-diffusion: Diffusée sur Radio Mon Païs le 16 octobre 2026 à 19h et sur Radio Campus le 28 octobre à 14h.
+diffusion: Diffusée sur Radio Mon Païs le 16 octobre 2026 à 19h et sur Radio Campus le 28 octobre à 13h.
 rssPlayerId: '3257122'
 excerpt: "Au sommaire de cette émission : l'autisme sans déficience intellectuelle, le quotidien d'un étudiant malvoyant en histoire, l'association qui rend les mangas accessibles et l'agenda de Carinne."
 tags:
