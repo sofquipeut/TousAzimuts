@@ -230,21 +230,25 @@ hr {
   position: relative;
 }
 
-.theme-toggle {
-  background: transparent;
-  border: 1.5px solid var(--color-link);
-  color: var(--color-link);
+/* Bouton « Affichage » du bandeau : orange plein et texte blanc gras, comme les autres
+   boutons du site. Le blanc sur cet orange donne 5,1 pour 1, au-dessus du seuil de 4,5. */
+.bouton-affichage {
+  background: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
+  color: #fff;
   border-radius: 6px;
   padding: 0.35em 0.9em;
   font: inherit;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
-.theme-toggle:hover {
-  background: var(--color-link);
-  color: var(--color-bg);
+.bouton-affichage:hover,
+.bouton-affichage:focus-visible {
+  background: var(--color-accent-fonce);
+  border-color: var(--color-accent-fonce);
+  color: #fff;
 }
 
 /* Sécurité : sur un navigateur ancien qui ne connaît pas la fenêtre native, le panneau
@@ -528,7 +532,9 @@ dialog:not([open]) {
    On lui préfère la couleur du texte, noire en clair et blanche en sombre. */
 .bouton-retour:focus-visible,
 .page-nav a:focus-visible,
-.affichage-actions button:focus-visible {
+.affichage-actions button:focus-visible,
+.bouton-affichage:focus-visible,
+.emission-youtube a:focus-visible {
   outline-color: var(--color-text);
 }
 
@@ -655,6 +661,24 @@ dialog:not([open]) {
 
 .emission-youtube {
   margin: 1.5rem 0 0.75rem;
+}
+
+/* Lien YouTube des pages d'émission : présenté comme un bouton rouge voyant, texte blanc gras.
+   Le blanc sur ce rouge donne 4,8 pour 1. */
+.emission-youtube a {
+  display: inline-block;
+  background: #E60000;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.55em 1.1em;
+  border-radius: 6px;
+}
+
+.emission-youtube a:hover,
+.emission-youtube a:focus-visible {
+  background: #B30000;
+  color: #fff;
 }
 
 .published-in {
