@@ -68,7 +68,20 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+/* Taille du texte : trois niveaux, choisis par le visiteur. Tout le site est en unités
+   relatives, donc cette taille de base se propage partout, jusqu'au titre de l'en-tête. */
+:root[data-taille='grande'] { font-size: 112.5%; }
+:root[data-taille='tres-grande'] { font-size: 125%; }
+
+/* Police : celle du site, ou Atkinson Hyperlegible, dessinée pour la basse vision. */
+:root[data-police='atkinson'] {
+  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
 
 body {
   margin: 0;

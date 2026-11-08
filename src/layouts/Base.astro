@@ -39,6 +39,8 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
           var h = document.documentElement;
           h.dataset.theme = (prefs.theme === 'light' || prefs.theme === 'dark') ? prefs.theme : 'system';
           h.dataset.palette = (prefs.palette === 'contraste') ? 'contraste' : 'standard';
+          h.dataset.taille = (prefs.taille === 'grande' || prefs.taille === 'tres-grande') ? prefs.taille : 'normale';
+          h.dataset.police = (prefs.police === 'atkinson') ? 'atkinson' : 'manrope';
         } catch (e) {}
       })();
     </script>

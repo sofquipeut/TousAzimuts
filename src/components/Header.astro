@@ -39,6 +39,19 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     <label><input type="radio" name="palette" value="contraste" /> Contraste maximal</label>
   </fieldset>
 
+  <fieldset>
+    <legend>Taille du texte</legend>
+    <label><input type="radio" name="taille" value="normale" /> Normale</label>
+    <label><input type="radio" name="taille" value="grande" /> Grande</label>
+    <label><input type="radio" name="taille" value="tres-grande" /> Très grande</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Police</legend>
+    <label><input type="radio" name="police" value="manrope" /> Police du site</label>
+    <label><input type="radio" name="police" value="atkinson" /> Police lisible (basse vision)</label>
+  </fieldset>
+
   <p id="affichage-statut" role="status"></p>
 
   <p class="affichage-actions">
@@ -109,9 +122,11 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
         var p = JSON.parse(localStorage.getItem(CLE) || '{}');
         if (p.theme !== 'light' && p.theme !== 'dark') p.theme = 'system';
         if (p.palette !== 'contraste') p.palette = 'standard';
+        if (p.taille !== 'grande' && p.taille !== 'tres-grande') p.taille = 'normale';
+        if (p.police !== 'atkinson') p.police = 'manrope';
         return p;
       } catch (e) {
-        return { theme: 'system', palette: 'standard' };
+        return { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope' };
       }
     }
 
@@ -122,13 +137,16 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     function appliquer(p) {
       racine.dataset.theme = p.theme;
       racine.dataset.palette = p.palette;
+      racine.dataset.taille = p.taille;
+      racine.dataset.police = p.police;
     }
 
     function cocher(p) {
-      var t = panneau.querySelector('input[name="theme"][value="' + p.theme + '"]');
-      if (t) t.checked = true;
-      var c = panneau.querySelector('input[name="palette"][value="' + p.palette + '"]');
-      if (c) c.checked = true;
+      var champs = ['theme', 'palette', 'taille', 'police'];
+      champs.forEach(function (nom) {
+        var el = panneau.querySelector('input[name="' + nom + '"][value="' + p[nom] + '"]');
+        if (el) el.checked = true;
+      });
     }
 
     function libelle(champ) {
@@ -147,14 +165,15 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
       appliquer(prefs);
       ecrirePrefs(prefs);
       if (statut) {
-        statut.textContent = (champ.name === 'theme' ? 'Thème' : 'Contraste') + ' : ' + libelle(champ) + '.';
+        var noms = { theme: 'Thème', palette: 'Contraste', taille: 'Taille du texte', police: 'Police' };
+        statut.textContent = (noms[champ.name] || champ.name) + ' : ' + libelle(champ) + '.';
       }
     });
 
     var reinit = document.getElementById('affichage-reinit');
     if (reinit) {
       reinit.addEventListener('click', function () {
-        prefs = { theme: 'system', palette: 'standard' };
+        prefs = { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope' };
         appliquer(prefs);
         ecrirePrefs(prefs);
         cocher(prefs);
