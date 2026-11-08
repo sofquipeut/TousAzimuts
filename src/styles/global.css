@@ -812,6 +812,16 @@ iframe {
 .sujets-grid .button:focus-visible {
   border-left: 10px solid #ffb27a;
 }
+
+/* Même accroche orange sur les boutons de saison de l'accueil. */
+.season-grid .button {
+  border-left: 6px solid var(--color-accent);
+}
+
+.season-grid .button:hover,
+.season-grid .button:focus-visible {
+  border-left: 10px solid #ffb27a;
+}
 @media (max-width: 700px) {
   .sujets-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -892,4 +902,91 @@ iframe {
   .footer-partenaires { gap: 1rem; }
   .footer-partenaires a { width: 6.5rem; height: 3rem; }
   .footer-partenaires-bloc { padding: 1rem; }
+}
+
+/* Contraste élevé de Windows : le système impose ses propres couleurs et efface les fonds.
+   Les éléments qui n'étaient visibles que par leur couleur reçoivent donc une bordure, que
+   Windows recolore mais conserve. Le trait orange des sujets et des saisons tient tout seul :
+   c'est déjà une bordure, et non un fond ou une ombre. */
+@media (forced-colors: active) {
+  .button,
+  .button--outline,
+  .affichage-actions button,
+  .bouton-affichage,
+  .bouton-retour,
+  .page-nav a,
+  .emission-youtube a,
+  .pastille-nouvelle,
+  .skip-link {
+    border: 1px solid CanvasText;
+  }
+
+  /* Les logos des partenaires sont des images, que le mode contraste élevé ne recolore pas.
+     Leur bloc garde donc son fond blanc, seul moyen de les laisser lisibles sur un fond noir. */
+  .footer-partenaires-bloc {
+    forced-color-adjust: none;
+  }
+}
+
+/* Impression : une version neutre, noir sur blanc, à la taille de police par défaut. Les
+   réglages d'affichage du visiteur ne s'appliquent pas au papier. Comme les fonds colorés ne
+   s'impriment pas, tout ce qui portait du texte blanc repasse en texte noir, et les formes qui
+   n'existaient que par leur fond reçoivent une bordure. */
+@media print {
+  :root {
+    --color-bg: #fff;
+    --color-text: #000;
+    --color-text-muted: #333;
+    --color-link: #000;
+    --color-link-hover: #000;
+    --color-border: #999;
+    --color-brand: #000;
+    --color-accent: #000;
+    font-size: 100%;
+  }
+
+  /* Tout ce qui se clique disparaît du papier : navigation, recherche, lecteur, partages. */
+  .theme-bar,
+  .affichage-panneau,
+  .site-search,
+  .site-nav,
+  .footer-nav,
+  .social-links,
+  .page-nav,
+  .skip-link,
+  .share-links,
+  .emission-youtube,
+  #lecteur-rss,
+  .footer-partenaires-bloc {
+    display: none !important;
+  }
+
+  .site-header,
+  .site-footer,
+  .site-header a,
+  .site-footer a,
+  .site-title__nom,
+  .site-title__accroche {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  /* Les boutons pleins n'ont pas de bordure : on leur en donne une, sinon ils se confondent
+     avec le texte une fois leur fond disparu. */
+  .button,
+  .pastille-nouvelle {
+    background: none !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+
+  /* Le trait des sujets et des saisons est conservé, en noir. */
+  .sujets-grid .button,
+  .season-grid .button {
+    border-left: 6px solid #000 !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
