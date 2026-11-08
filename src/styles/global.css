@@ -1,6 +1,8 @@
 :root {
   --color-brand: #005F8A;
   --color-accent: #B84D0F;
+  /* Orange foncé, pour le survol des boutons orange : le texte blanc y monte à 7,8 pour 1. */
+  --color-accent-fonce: #8A3A0B;
   --color-link: #005F8A;
   --color-link-hover: #B84D0F;
   --color-bg: #ffffff;
@@ -302,19 +304,20 @@ dialog:not([open]) {
 
 .affichage-actions button {
   font: inherit;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.5em 1em;
-  border: 1.5px solid var(--color-link);
+  border: 1.5px solid var(--color-accent);
   border-radius: 6px;
-  background: transparent;
-  color: var(--color-link);
+  background: var(--color-accent);
+  color: #fff;
   cursor: pointer;
 }
 
 .affichage-actions button:hover,
 .affichage-actions button:focus-visible {
-  background: var(--color-link);
-  color: var(--color-bg);
+  background: var(--color-accent-fonce);
+  border-color: var(--color-accent-fonce);
+  color: #fff;
 }
 
 /* En-tête */
@@ -508,8 +511,8 @@ dialog:not([open]) {
 .page-nav a {
   display: inline-block;
   background: var(--color-accent);
-  color: #000;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 700;
   text-decoration: none;
   padding: 0.55em 1.1em;
   border-radius: 6px;
@@ -517,8 +520,16 @@ dialog:not([open]) {
 
 .page-nav a:hover,
 .page-nav a:focus-visible {
-  background: #000;
-  color: #ffb27a;
+  background: var(--color-accent-fonce);
+  color: #fff;
+}
+
+/* Ces boutons sont orange : le contour de focus orange du site se confondrait avec eux.
+   On lui préfère la couleur du texte, noire en clair et blanche en sombre. */
+.bouton-retour:focus-visible,
+.page-nav a:focus-visible,
+.affichage-actions button:focus-visible {
+  outline-color: var(--color-text);
 }
 
 /* Grilles et cartes */
@@ -789,14 +800,14 @@ iframe {
   margin-right: 0.35rem;
   border-radius: 50%;
   background: var(--color-accent);
-  color: #000;
+  color: #fff;
   text-decoration: none;
   flex: 0 0 auto;
 }
 .bouton-retour:hover,
 .bouton-retour:focus-visible {
-  background: #000;
-  color: #ffb27a;
+  background: var(--color-accent-fonce);
+  color: #fff;
 }
 .bouton-retour svg {
   display: block;
