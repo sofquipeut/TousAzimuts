@@ -25,6 +25,10 @@ const ogImage = new URL(`${import.meta.env.BASE_URL}icon-512.png`, Astro.site).h
 
 // Bouton « Vers Accueil » du bas de page : masqué sur l'accueil (on y est déjà).
 const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
+
+// Bouton « Abonnez-vous au podcast » du bas de page : masqué sur la page du podcast elle-même,
+// où il pointerait vers la page en cours.
+const estPagePodcast = /^\/podcast\/(index\.html)?$/.test(Astro.url.pathname);
 ---
 
 <!doctype html>
@@ -75,6 +79,9 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
       <slot />
     </main>
     <div class="page-nav">
+      {!estPagePodcast && (
+        <a class="button" href={withBase('/podcast/')}>Abonnez-vous au podcast de Tous Azimuts</a>
+      )}
       {!estAccueil && <a href={withBase('/')}>Vers Accueil</a>}
       <a href="#top">Vers le haut</a>
     </div>

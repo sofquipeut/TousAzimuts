@@ -523,7 +523,22 @@ dialog:not([open]) {
   opacity: 0.8;
 }
 
-/* Navigation de bas de page : boutons orange, alignés à droite, juste avant le pied de page. */
+/* Bouton « Abonnez-vous » du bas de page : bleu, comme les autres boutons principaux du site,
+   à côté des boutons orange de navigation. */
+.page-nav .button {
+  margin: 0;
+  background: var(--color-brand);
+  color: #fff;
+  font-weight: 700;
+}
+
+.page-nav .button:hover,
+.page-nav .button:focus-visible {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+/* Boutons du bas de page : boutons orange, alignés à droite, juste avant le pied de page. */
 .page-nav {
   max-width: var(--max-width);
   margin: 0 auto;
