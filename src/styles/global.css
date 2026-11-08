@@ -11,6 +11,8 @@
   --max-width: 46rem;
   /* Taille du titre de niveau 1, réutilisée pour le nom de l'émission dans l'en-tête (34 px). */
   --taille-titre: 2.125rem;
+  /* Devise de l'en-tête (30 px). */
+  --taille-devise: 1.875rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -214,12 +216,12 @@ hr {
 }
 
 .site-title__accroche {
-  font-size: var(--taille-titre);
+  font-size: var(--taille-devise);
   font-weight: 600;
 }
 
 .site-logo {
-  height: 4rem;
+  height: 4.6rem;
   width: auto;
   border-radius: 4px;
   background: #fff;
