@@ -82,7 +82,10 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
         alt="Logo Tous Azimuts : ondes radio bleues, silhouette orange bras ouverts vers tous les horizons."
       />
       <span class="site-title__texte">
-        <span class="site-title__nom">Tous Azimuts</span>
+        {/* Les deux lignes sont empilées par une mise en page souple, ce qui fait disparaître
+            l'espace entre elles pour les lecteurs d'écran : ils annonçaient « Tous AzimutsPour ».
+            Ce séparateur, masqué à l'œil, rétablit la coupure. */}
+        <span class="site-title__nom">Tous Azimuts<span class="sr-only">,&nbsp;</span></span>
         <span class="site-title__accroche">Pour un monde plus&nbsp;accessible</span>
       </span>
     </a>
