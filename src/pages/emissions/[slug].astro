@@ -75,6 +75,7 @@ const structuredData = {
 
   {emission.data.rssPlayerId ? (
     <iframe
+      id="lecteur-rss"
       src={`https://player.rss.com/${showSlug}/${emission.data.rssPlayerId}?theme=color&v=2&share=false&about=false`}
       width="100%"
       height="202"
@@ -84,6 +85,24 @@ const structuredData = {
       allowfullscreen
       scrolling="no"
     ></iframe>
+    <script is:inline>
+      // Le lecteur appartient à rss.com et s'exécute dans une fenêtre intégrée : ni la police, ni
+      // la taille, ni le contraste du site ne peuvent l'atteindre. Le seul réglage qu'il accepte
+      // est son thème. On l'accorde donc à celui du visiteur, pour éviter un bloc clair au milieu
+      // d'une page sombre. Le changement de thème en cours de visite ne le recharge pas : cela
+      // couperait l'écoute. Il suivra au chargement de la page suivante.
+      (function () {
+        var f = document.getElementById('lecteur-rss');
+        if (!f) return;
+        var t = document.documentElement.dataset.theme;
+        var sombre =
+          t === 'dark' ||
+          (t === 'system' &&
+            window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (sombre) f.src = f.src.replace('theme=color', 'theme=dark');
+      })();
+    </script>
   ) : (
     <p class="emission-meta">Émission bientôt disponible à l'écoute.</p>
   )}
