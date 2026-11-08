@@ -35,10 +35,10 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     <script is:inline>
       (function () {
         try {
-          var stored = localStorage.getItem('taz-theme');
-          if (stored === 'light' || stored === 'dark') {
-            document.documentElement.dataset.theme = stored;
-          }
+          var prefs = JSON.parse(localStorage.getItem('taz-prefs-v1') || '{}');
+          var h = document.documentElement;
+          h.dataset.theme = (prefs.theme === 'light' || prefs.theme === 'dark') ? prefs.theme : 'system';
+          h.dataset.palette = (prefs.palette === 'contraste') ? 'contraste' : 'standard';
         } catch (e) {}
       })();
     </script>

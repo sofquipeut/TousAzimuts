@@ -35,6 +35,37 @@
   --color-border: #333f49;
 }
 
+/* Palette « contraste maximal ». Réglage indépendant du thème : elle existe en clair et en sombre.
+   Rapports mesurés : texte 21:1, lien 8,9:1 en clair et 13,9:1 en sombre, bordures 21:1. */
+:root[data-palette='contraste'] {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-text-muted: #3f3f3f;
+  --color-link: #0040b0;
+  --color-link-hover: #8a2b00;
+  --color-border: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light'])[data-palette='contraste'] {
+    --color-bg: #000000;
+    --color-text: #ffffff;
+    --color-text-muted: #d4d4d4;
+    --color-link: #a5d8ff;
+    --color-link-hover: #ffb27a;
+    --color-border: #ffffff;
+  }
+}
+
+:root[data-theme='dark'][data-palette='contraste'] {
+  --color-bg: #000000;
+  --color-text: #ffffff;
+  --color-text-muted: #d4d4d4;
+  --color-link: #a5d8ff;
+  --color-link-hover: #ffb27a;
+  --color-border: #ffffff;
+}
+
 * { box-sizing: border-box; }
 
 html { scroll-behavior: smooth; }
@@ -185,6 +216,72 @@ hr {
 }
 
 .theme-toggle:hover {
+  background: var(--color-link);
+  color: var(--color-bg);
+}
+
+/* Panneau « Affichage » : un seul bouton dans le bandeau, les réglages dans une fenêtre native. */
+.affichage-panneau {
+  width: min(26rem, calc(100% - 2rem));
+  padding: 1.25rem 1.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.affichage-panneau::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.affichage-panneau h2 {
+  margin: 0 0 1rem;
+}
+
+.affichage-panneau fieldset {
+  margin: 0 0 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.affichage-panneau legend {
+  padding: 0 0.4rem;
+  font-weight: 700;
+}
+
+.affichage-panneau label {
+  display: block;
+  margin: 0.35rem 0;
+}
+
+#affichage-statut {
+  min-height: 1.5em;
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.affichage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+}
+
+.affichage-actions button {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  border: 1.5px solid var(--color-link);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-link);
+  cursor: pointer;
+}
+
+.affichage-actions button:hover,
+.affichage-actions button:focus-visible {
   background: var(--color-link);
   color: var(--color-bg);
 }

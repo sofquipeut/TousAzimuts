@@ -18,10 +18,34 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
         </svg>
       </a>
     )}
-  <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
-    Thème sombre
+  <button type="button" id="affichage-ouvrir" class="theme-toggle" aria-haspopup="dialog">
+    Affichage
   </button>
 </div>
+
+<dialog id="affichage" class="affichage-panneau" aria-labelledby="affichage-titre">
+  <h2 id="affichage-titre">Affichage</h2>
+
+  <fieldset>
+    <legend>Thème</legend>
+    <label><input type="radio" name="theme" value="system" /> Système</label>
+    <label><input type="radio" name="theme" value="light" /> Clair</label>
+    <label><input type="radio" name="theme" value="dark" /> Sombre</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contraste</legend>
+    <label><input type="radio" name="palette" value="standard" /> Standard</label>
+    <label><input type="radio" name="palette" value="contraste" /> Contraste maximal</label>
+  </fieldset>
+
+  <p id="affichage-statut" role="status"></p>
+
+  <p class="affichage-actions">
+    <button type="button" id="affichage-reinit">Réinitialiser</button>
+    <button type="button" id="affichage-fermer">Fermer</button>
+  </p>
+</dialog>
 
 <header class="site-header">
   <div class="site-header__bar">
@@ -65,31 +89,83 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
 
 <script is:inline>
   (function () {
-    var STORAGE_KEY = 'taz-theme';
-    var btn = document.getElementById('theme-toggle');
-    if (!btn) return;
+    var CLE = 'taz-prefs-v1';
+    var racine = document.documentElement;
+    var ouvrir = document.getElementById('affichage-ouvrir');
+    var panneau = document.getElementById('affichage');
+    var statut = document.getElementById('affichage-statut');
+    if (!ouvrir || !panneau) return;
 
-    function effectiveTheme() {
-      var explicit = document.documentElement.dataset.theme;
-      if (explicit === 'light' || explicit === 'dark') return explicit;
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-
-    function updateButton(theme) {
-      btn.textContent = theme === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre';
-      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
-    }
-
-    updateButton(effectiveTheme());
-
-    btn.addEventListener('click', function () {
-      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
-      document.documentElement.dataset.theme = next;
+    function lirePrefs() {
       try {
-        localStorage.setItem(STORAGE_KEY, next);
-      } catch (e) {}
-      updateButton(next);
+        var p = JSON.parse(localStorage.getItem(CLE) || '{}');
+        if (p.theme !== 'light' && p.theme !== 'dark') p.theme = 'system';
+        if (p.palette !== 'contraste') p.palette = 'standard';
+        return p;
+      } catch (e) {
+        return { theme: 'system', palette: 'standard' };
+      }
+    }
+
+    function ecrirePrefs(p) {
+      try { localStorage.setItem(CLE, JSON.stringify(p)); } catch (e) {}
+    }
+
+    function appliquer(p) {
+      racine.dataset.theme = p.theme;
+      racine.dataset.palette = p.palette;
+    }
+
+    function cocher(p) {
+      var t = panneau.querySelector('input[name="theme"][value="' + p.theme + '"]');
+      if (t) t.checked = true;
+      var c = panneau.querySelector('input[name="palette"][value="' + p.palette + '"]');
+      if (c) c.checked = true;
+    }
+
+    function libelle(champ) {
+      var l = champ.closest('label');
+      return l ? l.textContent.trim() : champ.value;
+    }
+
+    var prefs = lirePrefs();
+    appliquer(prefs);
+    cocher(prefs);
+
+    panneau.addEventListener('change', function (evenement) {
+      var champ = evenement.target;
+      if (!champ.name) return;
+      prefs[champ.name] = champ.value;
+      appliquer(prefs);
+      ecrirePrefs(prefs);
+      if (statut) {
+        statut.textContent = (champ.name === 'theme' ? 'Thème' : 'Contraste') + ' : ' + libelle(champ) + '.';
+      }
     });
+
+    var reinit = document.getElementById('affichage-reinit');
+    if (reinit) {
+      reinit.addEventListener('click', function () {
+        prefs = { theme: 'system', palette: 'standard' };
+        appliquer(prefs);
+        ecrirePrefs(prefs);
+        cocher(prefs);
+        if (statut) statut.textContent = 'Réglages remis à zéro.';
+      });
+    }
+
+    ouvrir.addEventListener('click', function () {
+      if (statut) statut.textContent = '';
+      panneau.showModal();
+      var premier = panneau.querySelector('input:checked') || panneau.querySelector('input');
+      if (premier) premier.focus();
+    });
+
+    var fermer = document.getElementById('affichage-fermer');
+    if (fermer) fermer.addEventListener('click', function () { panneau.close(); });
+
+    // À la fermeture, le focus revient au bouton qui a ouvert le panneau.
+    panneau.addEventListener('close', function () { ouvrir.focus(); });
   })();
 </script>
 
