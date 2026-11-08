@@ -24,7 +24,7 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
 </div>
 
 <dialog id="affichage" class="affichage-panneau" aria-labelledby="affichage-titre">
-  <h2 id="affichage-titre">Affichage</h2>
+  <h2 id="affichage-titre" tabindex="-1">Affichage</h2>
 
   <fieldset>
     <legend>Thème</legend>
@@ -96,6 +96,14 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     var statut = document.getElementById('affichage-statut');
     if (!ouvrir || !panneau) return;
 
+    // Navigateur ancien sans prise en charge de la fenêtre native : on n'affiche rien plutôt
+    // qu'un panneau cassé, et le site reste utilisable avec le thème du système.
+    if (typeof panneau.showModal !== 'function') {
+      ouvrir.hidden = true;
+      panneau.hidden = true;
+      return;
+    }
+
     function lirePrefs() {
       try {
         var p = JSON.parse(localStorage.getItem(CLE) || '{}');
@@ -157,8 +165,10 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     ouvrir.addEventListener('click', function () {
       if (statut) statut.textContent = '';
       panneau.showModal();
-      var premier = panneau.querySelector('input:checked') || panneau.querySelector('input');
-      if (premier) premier.focus();
+      // Le focus va sur le titre du panneau : le lecteur d'écran annonce « Affichage »,
+      // puis la tabulation mène au premier groupe de réglages.
+      var titre = document.getElementById('affichage-titre');
+      if (titre) titre.focus();
     });
 
     var fermer = document.getElementById('affichage-fermer');

@@ -220,6 +220,12 @@ hr {
   color: var(--color-bg);
 }
 
+/* Sécurité : sur un navigateur ancien qui ne connaît pas la fenêtre native, le panneau
+   reste caché au lieu de s'afficher en clair au milieu de la page. */
+dialog:not([open]) {
+  display: none;
+}
+
 /* Panneau « Affichage » : un seul bouton dans le bandeau, les réglages dans une fenêtre native. */
 .affichage-panneau {
   width: min(26rem, calc(100% - 2rem));
