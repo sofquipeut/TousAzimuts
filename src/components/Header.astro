@@ -44,12 +44,16 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     <label><input type="radio" name="taille" value="normale" /> Normale</label>
     <label><input type="radio" name="taille" value="grande" /> Grande</label>
     <label><input type="radio" name="taille" value="tres-grande" /> Très grande</label>
+    <label><input type="radio" name="taille" value="maximale" /> Maximale</label>
   </fieldset>
 
   <fieldset>
     <legend>Police</legend>
     <label><input type="radio" name="police" value="manrope" /> Police du site</label>
-    <label><input type="radio" name="police" value="atkinson" /> Police lisible (basse vision)</label>
+    <label><input type="radio" name="police" value="luciole" /> Luciole (basse vision)</label>
+    <label><input type="radio" name="police" value="atkinson" /> Atkinson Hyperlegible (basse vision)</label>
+    <label><input type="radio" name="police" value="arial" /> Arial</label>
+    <label><input type="radio" name="police" value="verdana" /> Verdana</label>
   </fieldset>
 
   <p id="affichage-statut" role="status"></p>
@@ -122,8 +126,8 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
         var p = JSON.parse(localStorage.getItem(CLE) || '{}');
         if (p.theme !== 'light' && p.theme !== 'dark') p.theme = 'system';
         if (p.palette !== 'contraste') p.palette = 'standard';
-        if (p.taille !== 'grande' && p.taille !== 'tres-grande') p.taille = 'normale';
-        if (p.police !== 'atkinson') p.police = 'manrope';
+        if (['grande', 'tres-grande', 'maximale'].indexOf(p.taille) === -1) p.taille = 'normale';
+        if (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(p.police) === -1) p.police = 'manrope';
         return p;
       } catch (e) {
         return { theme: 'system', palette: 'standard', taille: 'normale', police: 'manrope' };

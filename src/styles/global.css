@@ -73,14 +73,26 @@ html {
   font-size: 100%;
 }
 
-/* Taille du texte : trois niveaux, choisis par le visiteur. Tout le site est en unités
+/* Taille du texte : quatre niveaux, choisis par le visiteur. Tout le site est en unités
    relatives, donc cette taille de base se propage partout, jusqu'au titre de l'en-tête. */
 :root[data-taille='grande'] { font-size: 112.5%; }
 :root[data-taille='tres-grande'] { font-size: 125%; }
+:root[data-taille='maximale'] { font-size: 150%; }
 
-/* Police : celle du site, ou Atkinson Hyperlegible, dessinée pour la basse vision. */
+/* Police : celle du site, deux polices dessinées pour la basse vision (Luciole et Atkinson
+   Hyperlegible), ou deux polices système très répandues. Arial et Verdana sont déjà sur
+   l'appareil, donc rien à télécharger pour ces deux-là. */
+:root[data-police='luciole'] {
+  --font-body: 'Luciole', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
 :root[data-police='atkinson'] {
   --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+:root[data-police='arial'] {
+  --font-body: Arial, Helvetica, sans-serif;
+}
+:root[data-police='verdana'] {
+  --font-body: Verdana, Geneva, sans-serif;
 }
 
 body {

@@ -39,8 +39,8 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
           var h = document.documentElement;
           h.dataset.theme = (prefs.theme === 'light' || prefs.theme === 'dark') ? prefs.theme : 'system';
           h.dataset.palette = (prefs.palette === 'contraste') ? 'contraste' : 'standard';
-          h.dataset.taille = (prefs.taille === 'grande' || prefs.taille === 'tres-grande') ? prefs.taille : 'normale';
-          h.dataset.police = (prefs.police === 'atkinson') ? 'atkinson' : 'manrope';
+          h.dataset.taille = (['grande', 'tres-grande', 'maximale'].indexOf(prefs.taille) !== -1) ? prefs.taille : 'normale';
+          h.dataset.police = (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(prefs.police) !== -1) ? prefs.police : 'manrope';
         } catch (e) {}
       })();
     </script>

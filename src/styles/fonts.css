@@ -67,3 +67,22 @@
     U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113,
     U+2C60-2C7F, U+A720-A7FF;
 }
+
+/* Police Luciole, dessinée pour les personnes malvoyantes par le Centre Technique Régional
+   pour la Déficience Visuelle. Licence Creative Commons Attribution. Deux graisses. */
+
+@font-face {
+  font-family: 'Luciole';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/luciole-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Luciole';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/luciole-bold.woff2') format('woff2');
+}
