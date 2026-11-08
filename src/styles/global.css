@@ -367,6 +367,11 @@ hr {
   margin: 1rem 0;
 }
 
+/* Liste des saisons de l'accueil : centrée. */
+.season-grid {
+  justify-content: center;
+}
+
 .emission-list {
   display: flex;
   flex-direction: column;
