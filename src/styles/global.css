@@ -566,6 +566,21 @@ dialog:not([open]) {
   padding: 1rem 1.25rem;
 }
 
+/* Listes d'émissions : pages de saison, pages de sujet, et résultats de recherche. Chaque bloc
+   reprend l'aspect du bloc « dernière émission » de l'accueil, filet orange en bas et trait
+   vertical, à gauche pour l'un, à droite pour le suivant. */
+.emission-list > .emission-card {
+  border-bottom: 4px solid var(--color-accent);
+}
+
+.emission-list > .emission-card:nth-child(odd) {
+  border-left: 8px solid var(--color-accent);
+}
+
+.emission-list > .emission-card:nth-child(even) {
+  border-right: 8px solid var(--color-accent);
+}
+
 .emission-card h3 {
   margin: 0 0 0.25rem;
   font-size: 1.1rem;
@@ -977,6 +992,13 @@ iframe {
     background: none !important;
     color: #000 !important;
     border: 1px solid #000 !important;
+  }
+
+  /* Les traits épais des blocs d'émission ne se justifient pas sur le papier : ils repassent
+     en filet fin et gris. */
+  .emission-list > .emission-card,
+  .derniere-emission .emission-card {
+    border: 1px solid #999 !important;
   }
 
   /* Le trait des sujets et des saisons est conservé, en noir. */
