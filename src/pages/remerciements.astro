@@ -1,0 +1,149 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+import chroniqueurs from '../data/remerciements.json';
+
+const emissions = (await getCollection('emissions')).filter((e) => !e.data.draft);
+
+// Numéro d'émission -> adresse de sa page (uniquement si l'émission est en ligne).
+const urlParNumero = new Map<number, string>();
+for (const e of emissions) {
+  const n = e.data.number;
+  const slug = (e as any).slug ?? (e as any).id;
+  if (n != null && slug) urlParNumero.set(n, withBase(`/emissions/${slug}/`));
+}
+
+const gens = (chroniqueurs as any[]).map((c) => ({
+  ...c,
+  liens: (c.nums as number[]).map((n) => ({ n, url: urlParNumero.get(n) ?? null })),
+  enLigne: (c.nums as number[]).filter((n) => urlParNumero.has(n)).length,
+}));
+
+const reguliers = gens.filter((g) => g.cat === 'reguliers');
+const occasionnels = gens.filter((g) => g.cat === 'occasionnels');
+
+const intro = [
+  "Tous Azimuts existe depuis 2017. L'émission parle du handicap sans le réduire à ses difficultés : elle donne la parole à celles et ceux qui le vivent, et à celles et ceux qui travaillent pour que les choses avancent. Une émission comme celle-là ne tient pas sans une équipe, des bénévoles et des structures qui y croient. Cette page leur dit merci.",
+];
+
+const equipe = [
+  {
+    nom: 'Carinne Péri',
+    texte:
+      "Animatrice et coordinatrice de l'émission, elle en tient le fil et veille à ce que chaque sujet trouve sa place.",
+  },
+  {
+    nom: 'Julien Camaret',
+    texte:
+      "Professeur de musique et véritable encyclopédie musicale à lui seul, il signe la programmation musicale de chaque émission. Cinéma, lecture, jeux vidéo, mangas : ses curiosités ne s'arrêtent jamais, et elles s'entendent à l'antenne.",
+  },
+  {
+    nom: 'Sofian Babai',
+    texte:
+      "Technophile, il travaille dans une entreprise qui propose du matériel adapté et des services techniques aux personnes déficientes visuelles. Il s'occupe du site et de tout ce qui touche au numérique.",
+  },
+];
+---
+
+<Base
+  title="Remerciements"
+  description="Merci à l'équipe, aux chroniqueurs, aux bénévoles et aux partenaires qui font vivre l'émission Tous Azimuts depuis 2017."
+>
+  <article class="remerciements">
+    <h1>Remerciements</h1>
+
+    {intro.map((p) => <p>{p}</p>)}
+
+    <h2>Marco, la technique et le montage</h2>
+    <p>
+      Salarié de Radio Campus, Marco assure la technique au moment de l'enregistrement et réalise le montage, pour que
+      nous ayons chaque fois un fichier prêt à diffuser, de qualité. Il est toujours prêt à nous accompagner sur le
+      terrain pour des reportages, à décrocher le téléphone pour une interview à distance, avec le sourire et un
+      soutien sans faille.
+    </p>
+
+    <h2>Merci aux bénévoles</h2>
+    <p>
+      L'Association Valentin Haüy, Radio Mon Païs et Radio Campus remercient tous les bénévoles qui ont participé à
+      l'émission Tous Azimuts pour expliquer qu'une déficience ne provoque pas toujours une situation de handicap.
+      Merci d'avoir apporté vos connaissances, votre dynamisme et votre volonté que l'information circule.
+    </p>
+
+    <h2>L'équipe</h2>
+    {equipe.map((m) => (
+      <div class="rm-personne">
+        <h3>{m.nom}</h3>
+        <p>{m.texte}</p>
+      </div>
+    ))}
+
+    <h2>Les chroniqueurs réguliers</h2>
+    {reguliers.map((g) => (
+      <div class="rm-personne">
+        <h3>{g.nom}</h3>
+        <p>{g.texte}</p>
+        <p class="rm-compte">
+          {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
+        </p>
+        <details>
+          <summary>Voir les {g.n} {g.n > 1 ? 'émissions' : 'émission'} en lien avec ce thème</summary>
+          <p class="rm-liens">
+            {g.liens.map((l, i) => (
+              <>
+                {i > 0 && ' · '}
+                {l.url ? <a href={l.url}>Émission {l.n}</a> : <>Émission {l.n}</>}
+              </>
+            ))}
+          </p>
+        </details>
+      </div>
+    ))}
+
+    <h2>Les chroniqueurs occasionnels</h2>
+    {occasionnels.map((g) => (
+      <div class="rm-personne">
+        <h3>{g.nom}</h3>
+        <p>{g.texte}</p>
+        <p class="rm-compte">
+          {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
+        </p>
+        <details>
+          <summary>Voir les {g.n} {g.n > 1 ? 'émissions' : 'émission'}</summary>
+          <p class="rm-liens">
+            {g.liens.map((l, i) => (
+              <>
+                {i > 0 && ' · '}
+                {l.url ? <a href={l.url}>Émission {l.n}</a> : <>Émission {l.n}</>}
+              </>
+            ))}
+          </p>
+        </details>
+      </div>
+    ))}
+
+    <h2>Merci aussi</h2>
+    <p>
+      Merci aux présidents du comité de Toulouse de l'Association Valentin Haüy, Philippe Bellemer et Denis Bartelemy,
+      d'avoir soutenu ce projet.
+    </p>
+    <p>
+      Merci aux équipes de Radio Mon Païs et de Radio Campus Toulouse pour la diffusion de nos émissions.
+    </p>
+  </article>
+
+  <style>
+    .rm-compte {
+      font-style: italic;
+    }
+    .rm-personne {
+      margin-bottom: 1.6rem;
+    }
+    .rm-liens {
+      line-height: 2;
+    }
+    details summary {
+      cursor: pointer;
+    }
+  </style>
+</Base>
