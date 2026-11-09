@@ -14,11 +14,15 @@ for (const e of emissions) {
   if (n != null && slug) urlParNumero.set(n, withBase(`/emissions/${slug}/`));
 }
 
-const gens = (chroniqueurs as any[]).map((c) => ({
-  ...c,
-  liens: (c.nums as number[]).map((n) => ({ n, url: urlParNumero.get(n) ?? null })),
-  enLigne: (c.nums as number[]).filter((n) => urlParNumero.has(n)).length,
-}));
+const gens = (chroniqueurs as any[]).map((c) => {
+  const nums = (c.nums ?? []) as number[];
+  return {
+    ...c,
+    n: nums.length,
+    liens: nums.map((n) => ({ n, url: urlParNumero.get(n) ?? null })),
+    enLigne: nums.filter((n) => urlParNumero.has(n)).length,
+  };
+});
 
 const reguliers = gens.filter((g) => g.cat === 'reguliers');
 const occasionnels = gens.filter((g) => g.cat === 'occasionnels');
