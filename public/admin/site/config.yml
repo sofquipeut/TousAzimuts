@@ -76,3 +76,31 @@ collections:
       - { label: "Années", name: "years", widget: "string", hint: "Ex : 2025-2026" }
       - { label: "Saison en cours ?", name: "ongoing", widget: "boolean", default: false }
       - { label: "Texte (optionnel)", name: "body", widget: "markdown", required: false }
+
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      - name: "remerciements"
+        label: "Remerciements"
+        file: "src/data/remerciements.json"
+        fields:
+          - label: "Personnes remerciées"
+            label_singular: "Personne"
+            name: "items"
+            widget: "list"
+            root: true
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom", name: "nom", widget: "string" }
+              - label: "Catégorie"
+                name: "cat"
+                widget: "select"
+                options:
+                  - { label: "Chroniqueur régulier", value: "reguliers" }
+                  - { label: "Chroniqueur occasionnel", value: "occasionnels" }
+              - { label: "Années de participation", name: "annees", widget: "string", hint: "Ex : entre 2020 et 2026" }
+              - { label: "Texte de présentation", name: "texte", widget: "text" }
+              - label: "Numéros des émissions"
+                name: "nums"
+                widget: "list"
+                field: { label: "Numéro", name: "numero", widget: "number", value_type: "int" }
