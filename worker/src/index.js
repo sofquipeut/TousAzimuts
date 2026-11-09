@@ -415,6 +415,9 @@ async function handleStats(request, env) {
   const body = `
     <p><a href="/admin?coms_token=${encodeURIComponent(url.searchParams.get('coms_token'))}">Retour à l'administration des commentaires</a></p>
 
+    <h2>Comment revenir sur cette page</h2>
+    <p>Cette page se trouve à l'adresse du service des commentaires, suivie de /admin/stats?coms_token= puis du token d'administration (le même que pour la page des commentaires, c'est-à-dire la valeur du secret COMS_TOKEN du dépôt GitHub). Ajoutez &amp;format=json à la fin pour obtenir les chiffres au format JSON.</p>
+
     <h2>En bref</h2>
     <ul>
       <li>Vues du site, au total : ${stats.total}</li>
