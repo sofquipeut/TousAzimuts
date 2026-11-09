@@ -23,7 +23,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --color-link: #2E9BD6;
+    --color-link: #40CDF2;
     --color-link-hover: #ffa367;
     --color-bg: #14191f;
     --color-text: #eef2f5;
@@ -33,7 +33,7 @@
 }
 
 :root[data-theme='dark'] {
-  --color-link: #2E9BD6;
+  --color-link: #40CDF2;
   --color-link-hover: #ffa367;
   --color-bg: #14191f;
   --color-text: #eef2f5;
