@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Comments from '../components/Comments.astro';
 import { withBase } from '../lib/url';
+import ViewCounter from '../components/ViewCounter.astro';
 import carnet from '../data/carnet-adresses.json';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
@@ -154,6 +155,8 @@ function phraseEmissions(e: number[]): string {
       pageTitle="Carnet d'adresses"
       intro="Donnez-nous votre avis sur cette page ou signalez-nous une erreur, une structure oubliée ou une coordonnée devenue caduque : vos commentaires sont les bienvenus !"
     />
+
+    <ViewCounter />
   </article>
 
   <script>
