@@ -224,6 +224,8 @@ async function handleAdmin(request, env) {
       <input type="hidden" name="coms_token" value="${escapeHtml(token)}">
     </form>
 
+    <p><a href="/admin/stats?coms_token=${encodeURIComponent(token)}">Voir les statistiques de fréquentation</a></p>
+
     <p>${(results || []).length} commentaire(s) au total.</p>
     <p><label><input type="checkbox" id="select-all"> Tout sélectionner</label></p>
 
@@ -411,6 +413,8 @@ async function handleStats(request, env) {
   const others = stats.pages.filter((p) => !p.page_id.startsWith('emissions/'));
 
   const body = `
+    <p><a href="/admin?coms_token=${encodeURIComponent(url.searchParams.get('coms_token'))}">Retour à l'administration des commentaires</a></p>
+
     <h2>En bref</h2>
     <ul>
       <li>Vues du site, au total : ${stats.total}</li>
