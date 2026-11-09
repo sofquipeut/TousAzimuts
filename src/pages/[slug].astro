@@ -85,9 +85,9 @@ const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.
     }
     .tri-emissions .bouton-tri {
       display: inline-block;
-      background: var(--color-accent);
-      color: #fff;
-      border: 0;
+      background: #000000;
+      color: #ffb27a;
+      border: 1px solid currentColor;
       border-radius: 6px;
       padding: 0.55em 1.1em;
       font: inherit;
@@ -96,8 +96,8 @@ const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.
     }
     .tri-emissions .bouton-tri:hover,
     .tri-emissions .bouton-tri:focus-visible {
-      background: var(--color-accent-fonce);
-      color: #fff;
+      background: #ffb27a;
+      color: #000000;
     }
     .tri-emissions .bouton-tri:focus-visible {
       outline-color: var(--color-text);
