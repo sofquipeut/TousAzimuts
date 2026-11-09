@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 import { withBase } from '../lib/url';
 import ViewCounter from '../components/ViewCounter.astro';
 import chroniqueurs from '../data/remerciements.json';
+import RemerciementFiche from '../components/RemerciementFiche.astro';
 
 const emissions = (await getCollection('emissions')).filter((e) => !e.data.draft);
 
@@ -32,23 +33,7 @@ const intro = [
   "Tous Azimuts existe depuis 2017. L'émission parle du handicap sans le réduire à ses difficultés : elle donne la parole à celles et ceux qui le vivent, et à celles et ceux qui travaillent pour que les choses avancent. Une émission comme celle-là ne tient pas sans une équipe, des bénévoles et des structures qui y croient. Cette page leur dit merci.",
 ];
 
-const equipe = [
-  {
-    nom: 'Carinne Péri',
-    texte:
-      "Animatrice et coordinatrice de l'émission depuis sa création. Professeure de braille, bénévole active à l'AVH de Toulouse, elle veille à ce que chaque sujet trouve sa place. Toujours un œil sur la pendule, elle conclut l'émission par son incontournable agenda.",
-  },
-  {
-    nom: 'Julien Camaret',
-    texte:
-      "Professeur de musique et véritable encyclopédie dans ce domaine, il signe la programmation musicale de chaque émission. Cinéma (surtout audiodécrit), lecture, jeux vidéo, mangas... sans oublier les musiques de films. Ses curiosités ne s'arrêtent jamais, et elles s'entendent à l'antenne.",
-  },
-  {
-    nom: 'Sofian Babai',
-    texte:
-      "Geek dans l'âme, il travaille dans une entreprise qui propose du matériel adapté et des services techniques aux personnes déficientes visuelles. Accompagné de son équipe d'agents redoutables menés par Hermès, il bricole notre site qui finit par ressembler à un vrai. 😉",
-  },
-];
+const equipe = gens.filter((g) => g.cat === 'equipe');
 ---
 
 <Base
@@ -75,55 +60,18 @@ const equipe = [
       Merci d'avoir apporté vos connaissances, votre dynamisme et votre volonté que l'information circule.
     </p>
 
-    {equipe.map((m) => (
-      <div class="rm-personne">
-        <h3>{m.nom}</h3>
-        <p>{m.texte}</p>
-      </div>
+    {equipe.map((g) => (
+      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
     ))}
 
     <h2>Les chroniqueurs réguliers</h2>
     {reguliers.map((g) => (
-      <div class="rm-personne">
-        <h3>{g.nom}</h3>
-        <p>{g.texte}</p>
-        <p class="rm-compte">
-          {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
-        </p>
-        <details>
-          <summary>{g.n > 1 ? `Voir les ${g.n} émissions où ${g.nom} apparaît` : `Voir l'émission où ${g.nom} apparaît`}</summary>
-          <p class="rm-liens">
-            {g.liens.map((l, i) => (
-              <>
-                {i > 0 && ' · '}
-                {l.url ? <a href={l.url}>Émission {l.n}</a> : <>Émission {l.n}</>}
-              </>
-            ))}
-          </p>
-        </details>
-      </div>
+      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
     ))}
 
     <h2>Les chroniqueurs occasionnels</h2>
     {occasionnels.map((g) => (
-      <div class="rm-personne">
-        <h3>{g.nom}</h3>
-        <p>{g.texte}</p>
-        <p class="rm-compte">
-          {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
-        </p>
-        <details>
-          <summary>{g.n > 1 ? `Voir les ${g.n} émissions où ${g.nom} apparaît` : `Voir l'émission où ${g.nom} apparaît`}</summary>
-          <p class="rm-liens">
-            {g.liens.map((l, i) => (
-              <>
-                {i > 0 && ' · '}
-                {l.url ? <a href={l.url}>Émission {l.n}</a> : <>Émission {l.n}</>}
-              </>
-            ))}
-          </p>
-        </details>
-      </div>
+      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
     ))}
 
     <h2>Merci aussi</h2>
@@ -138,18 +86,4 @@ const equipe = [
     <ViewCounter />
   </article>
 
-  <style>
-    .rm-compte {
-      font-style: italic;
-    }
-    .rm-personne {
-      margin-bottom: 1.6rem;
-    }
-    .rm-liens {
-      line-height: 2;
-    }
-    details summary {
-      cursor: pointer;
-    }
-  </style>
 </Base>
