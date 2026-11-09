@@ -87,7 +87,7 @@ const equipe = [
           {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
         </p>
         <details>
-          <summary>Voir les {g.n} {g.n > 1 ? 'émissions' : 'émission'} en lien avec ce thème</summary>
+          <summary>{g.n > 1 ? `Voir les ${g.n} émissions où ${g.nom} apparaît` : `Voir l'émission où ${g.nom} apparaît`}</summary>
           <p class="rm-liens">
             {g.liens.map((l, i) => (
               <>
@@ -109,7 +109,7 @@ const equipe = [
           {g.n} {g.n > 1 ? 'émissions' : 'émission'}, {g.annees}.
         </p>
         <details>
-          <summary>Voir les {g.n} {g.n > 1 ? 'émissions' : 'émission'}</summary>
+          <summary>{g.n > 1 ? `Voir les ${g.n} émissions où ${g.nom} apparaît` : `Voir l'émission où ${g.nom} apparaît`}</summary>
           <p class="rm-liens">
             {g.liens.map((l, i) => (
               <>
