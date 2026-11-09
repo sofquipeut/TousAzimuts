@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-09T15:32:33.417Z",
-  "total": 20,
-  "last30": 20,
-  "last7": 20,
-  "emissionsTotal": 7,
+  "generatedAt": "2026-11-09T16:22:25.056Z",
+  "total": 22,
+  "last30": 22,
+  "last7": 22,
+  "emissionsTotal": 8,
   "pages": [
     {
       "page_id": "accueil",
@@ -66,6 +66,12 @@
       "last7": 1
     },
     {
+      "page_id": "emissions/emission-78",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
       "page_id": "emissions/emission-80",
       "total": 1,
       "last30": 1,
@@ -82,12 +88,18 @@
       "total": 1,
       "last30": 1,
       "last7": 1
+    },
+    {
+      "page_id": "saison-4",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
     }
   ],
   "daily": [
     {
       "day": "2026-11-09",
-      "views": 20
+      "views": 22
     }
   ]
 }
