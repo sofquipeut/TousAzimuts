@@ -300,6 +300,140 @@ async function handleAdminEdit(request, env) {
   return Response.redirect(`${new URL(request.url).origin}/admin?coms_token=${encodeURIComponent(token)}`, 302);
 }
 
+// ---------------------------------------------------------------------------
+// Statistiques de fréquentation
+// Seuls des compteurs (page, jour, nombre de vues) sont stockés : ni adresse
+// IP, ni identifiant, ni cookie. Un navigateur ne signale une page qu'une
+// fois par jour (voir src/lib/visites.ts côté site).
+// ---------------------------------------------------------------------------
+
+const PAGE_ID_RE = /^[a-z0-9][a-z0-9/_.-]{0,119}$/;
+const BOT_RE = /bot|crawl|spider|slurp|headless|preview|monitor|curl|wget/i;
+let viewsSchemaReady = false;
+
+async function ensureViewsSchema(env) {
+  if (viewsSchemaReady) return;
+  await env.DB.exec(
+    'CREATE TABLE IF NOT EXISTS page_views (page_id TEXT NOT NULL, day TEXT NOT NULL, views INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (page_id, day))'
+  );
+  viewsSchemaReady = true;
+}
+
+function jsonResponse(data, env, status = 200) {
+  return new Response(JSON.stringify(data), { status, headers: { ...JSON_HEADERS, ...corsHeaders(env) } });
+}
+
+async function pageTotal(env, pageId) {
+  const row = await env.DB.prepare('SELECT COALESCE(SUM(views), 0) AS total FROM page_views WHERE page_id = ?')
+    .bind(pageId)
+    .first();
+  return row ? row.total : 0;
+}
+
+async function handleViews(request, env) {
+  await ensureViewsSchema(env);
+  const url = new URL(request.url);
+  let pageId = url.searchParams.get('pageId');
+  let count = false;
+
+  if (request.method === 'POST') {
+    let data = {};
+    try {
+      data = await request.json();
+    } catch {}
+    pageId = data.pageId;
+    count = true;
+  }
+
+  if (typeof pageId !== 'string' || !PAGE_ID_RE.test(pageId)) {
+    return jsonResponse({ error: 'invalid_page_id' }, env, 400);
+  }
+
+  if (count && !BOT_RE.test(request.headers.get('User-Agent') || '')) {
+    await env.DB.prepare(
+      `INSERT INTO page_views (page_id, day, views) VALUES (?, date('now'), 1)
+       ON CONFLICT(page_id, day) DO UPDATE SET views = views + 1`
+    )
+      .bind(pageId)
+      .run();
+  }
+
+  return jsonResponse({ views: await pageTotal(env, pageId) }, env);
+}
+
+async function collectStats(env) {
+  await ensureViewsSchema(env);
+  const pages = (
+    await env.DB.prepare(
+      `SELECT page_id,
+              SUM(views) AS total,
+              SUM(CASE WHEN day >= date('now', '-29 days') THEN views ELSE 0 END) AS last30,
+              SUM(CASE WHEN day >= date('now', '-6 days') THEN views ELSE 0 END) AS last7
+       FROM page_views GROUP BY page_id ORDER BY total DESC, page_id ASC`
+    ).all()
+  ).results || [];
+  const daily = (
+    await env.DB.prepare(
+      `SELECT day, SUM(views) AS views FROM page_views
+       WHERE day >= date('now', '-29 days') GROUP BY day ORDER BY day DESC`
+    ).all()
+  ).results || [];
+  const sum = (list, key) => list.reduce((n, p) => n + (p[key] || 0), 0);
+  return {
+    generatedAt: new Date().toISOString(),
+    total: sum(pages, 'total'),
+    last30: sum(pages, 'last30'),
+    last7: sum(pages, 'last7'),
+    emissionsTotal: sum(pages.filter((p) => p.page_id.startsWith('emissions/')), 'total'),
+    pages,
+    daily,
+  };
+}
+
+async function handleStats(request, env) {
+  if (!checkAdminToken(request, env)) {
+    return new Response(htmlPage('Accès refusé', '<p>Token invalide ou manquant.</p>'), { status: 403, headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+  }
+  const stats = await collectStats(env);
+  const url = new URL(request.url);
+
+  if (url.searchParams.get('format') === 'json') {
+    return new Response(JSON.stringify(stats, null, 2), { headers: JSON_HEADERS });
+  }
+
+  const row = (cells) => `<tr>${cells.join('')}</tr>`;
+  const pageRows = (list) =>
+    list
+      .map((p) => row([`<th scope="row">${escapeHtml(p.page_id)}</th>`, `<td>${p.total}</td>`, `<td>${p.last30}</td>`, `<td>${p.last7}</td>`]))
+      .join('');
+  const head = `<thead><tr><th scope="col">Page</th><th scope="col">Total</th><th scope="col">30 derniers jours</th><th scope="col">7 derniers jours</th></tr></thead>`;
+  const emissions = stats.pages.filter((p) => p.page_id.startsWith('emissions/'));
+  const others = stats.pages.filter((p) => !p.page_id.startsWith('emissions/'));
+
+  const body = `
+    <h2>En bref</h2>
+    <ul>
+      <li>Vues du site, au total : ${stats.total}</li>
+      <li>Sur les 30 derniers jours : ${stats.last30}</li>
+      <li>Sur les 7 derniers jours : ${stats.last7}</li>
+      <li>Dont pages d'émissions, au total : ${stats.emissionsTotal}</li>
+    </ul>
+    <p>Une vue = une page consultée par un navigateur, au plus une fois par jour. Les visiteurs dont le navigateur bloque les scripts ne sont pas comptés : ce sont des ordres de grandeur.</p>
+
+    <h2>Par émission</h2>
+    <table><caption class="sr-only">Vues par émission</caption>${head}<tbody>${pageRows(emissions)}</tbody></table>
+
+    <h2>Autres pages</h2>
+    <table><caption class="sr-only">Vues des autres pages</caption>${head}<tbody>${pageRows(others)}</tbody></table>
+
+    <h2>Par jour (30 derniers jours)</h2>
+    <table><caption class="sr-only">Vues par jour</caption>
+      <thead><tr><th scope="col">Jour</th><th scope="col">Vues</th></tr></thead>
+      <tbody>${stats.daily.map((d) => row([`<th scope="row">${escapeHtml(d.day)}</th>`, `<td>${d.views}</td>`])).join('')}</tbody></table>
+  `;
+  return new Response(htmlPage('Statistiques de fréquentation', body), { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -319,6 +453,12 @@ export default {
     }
     if (url.pathname === '/api/moderate' && request.method === 'GET') {
       return handleModerate(request, env);
+    }
+    if (url.pathname === '/api/views' && (request.method === 'GET' || request.method === 'POST')) {
+      return handleViews(request, env);
+    }
+    if (url.pathname === '/admin/stats' && request.method === 'GET') {
+      return handleStats(request, env);
     }
     if (url.pathname === '/admin' && request.method === 'GET') {
       return handleAdmin(request, env);

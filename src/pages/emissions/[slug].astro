@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ShareLinks from '../../components/ShareLinks.astro';
 import SimilarEpisodes from '../../components/SimilarEpisodes.astro';
 import Comments from '../../components/Comments.astro';
+import ViewCounter from '../../components/ViewCounter.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { withBase } from '../../lib/url';
 import { tagLabel } from '../../lib/tags';
@@ -119,6 +120,8 @@ const structuredData = {
   )}
 
   <ShareLinks url={canonicalUrl} title={emission.data.title} />
+
+  <ViewCounter />
 
   <SimilarEpisodes currentSlug={emission.slug} currentTags={emission.data.tags} />
 

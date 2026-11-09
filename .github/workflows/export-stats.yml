@@ -1,0 +1,36 @@
+name: Export hebdomadaire des statistiques
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Récupérer les statistiques
+        env:
+          COMS_TOKEN: ${{ secrets.COMS_TOKEN }}
+        run: |
+          mkdir -p data
+          curl -fsS -G "https://taz-comments.hellosof.workers.dev/admin/stats" \
+            --data-urlencode "coms_token=$COMS_TOKEN" \
+            --data-urlencode "format=json" \
+            -o data/stats.json
+          python3 -c "import json; json.load(open('data/stats.json'))"
+
+      - name: Enregistrer dans le dépôt
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/stats.json
+          git diff --cached --quiet || git commit -m "Statistiques de fréquentation : export hebdomadaire"
+          git push

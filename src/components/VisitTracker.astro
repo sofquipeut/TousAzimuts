@@ -1,0 +1,50 @@
+---
+import { COMMENTS_API_BASE } from '../lib/comments';
+---
+
+{COMMENTS_API_BASE && (
+  <script define:vars={{ apiBase: COMMENTS_API_BASE }}>
+    // Comptage de fréquentation sans cookie ni donnée personnelle : on
+    // envoie seulement l'adresse de la page, au plus une fois par jour et
+    // par navigateur. Le Worker n'enregistre qu'un compteur par page et par jour.
+    (function () {
+      var path = location.pathname.replace(/^\/+|\/+$/g, '').toLowerCase();
+      var pageId = path === '' ? 'accueil' : path.replace(/\.html$/, '');
+      if (!/^[a-z0-9][a-z0-9\/_.-]{0,119}$/.test(pageId)) return;
+
+      var target = document.querySelector('[data-view-counter]');
+      var today = new Date().toISOString().slice(0, 10);
+      var key = 'taz-vu:' + pageId;
+      var already = false;
+      try {
+        already = localStorage.getItem(key) === today;
+      } catch (e) {}
+
+      var request = already
+        ? fetch(apiBase + '/api/views?pageId=' + encodeURIComponent(pageId))
+        : fetch(apiBase + '/api/views', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ pageId: pageId }),
+          });
+
+      request
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (data) {
+          if (!data) return;
+          if (!already) {
+            try { localStorage.setItem(key, today); } catch (e) {}
+          }
+          if (target && typeof data.views === 'number') {
+            var n = data.views;
+            target.textContent =
+              n < 2
+                ? 'Cette page a été consultée ' + n + ' fois.'
+                : 'Cette page a été consultée ' + n.toLocaleString('fr-FR') + ' fois.';
+            target.hidden = false;
+          }
+        })
+        .catch(function () {});
+    })();
+  </script>
+)}
