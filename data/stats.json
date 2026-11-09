@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-11-09T15:32:33.417Z",
+  "total": 20,
+  "last30": 20,
+  "last7": 20,
+  "emissionsTotal": 7,
+  "pages": [
+    {
+      "page_id": "accueil",
+      "total": 5,
+      "last30": 5,
+      "last7": 5
+    },
+    {
+      "page_id": "remerciements",
+      "total": 3,
+      "last30": 3,
+      "last7": 3
+    },
+    {
+      "page_id": "saison-9",
+      "total": 2,
+      "last30": 2,
+      "last7": 2
+    },
+    {
+      "page_id": "carnet-adresses",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-129",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-157",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-159",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-176",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-177",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-23",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-80",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "pauses-musicales",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "recherche",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    }
+  ],
+  "daily": [
+    {
+      "day": "2026-11-09",
+      "views": 20
+    }
+  ]
+}
