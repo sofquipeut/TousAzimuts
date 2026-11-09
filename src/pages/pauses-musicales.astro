@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Comments from '../components/Comments.astro';
 import { withBase } from '../lib/url';
+import ViewCounter from '../components/ViewCounter.astro';
 import morceaux from '../data/musiques.json';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
@@ -143,6 +144,8 @@ const intro = [
       pageTitle="Pauses musicales"
       intro="Un lien qui ne fonctionne plus, un morceau oublié, une erreur de titre ? Signalez-le nous ici, et dites-nous aussi ce que vous avez aimé !"
     />
+
+    <ViewCounter />
   </article>
 
   <script>

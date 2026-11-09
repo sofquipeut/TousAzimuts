@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Comments from '../components/Comments.astro';
 import { withBase } from '../lib/url';
+import ViewCounter from '../components/ViewCounter.astro';
 import { tagLabel } from '../lib/tags';
 import { calendrierHtml, prochesHtml, libelleDate } from '../lib/journees';
 import type { Journee } from '../lib/journees';
@@ -101,6 +102,8 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
       pageTitle="Calendrier des journées mondiales"
       intro="Donnez-nous votre avis sur cette page ou signalez-nous une erreur, une date inexacte ou une journée à ajouter : vos commentaires sont les bienvenus !"
     />
+
+    <ViewCounter />
   </article>
 
   <script>
