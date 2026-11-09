@@ -45,7 +45,7 @@ const structuredData = {
 <Base title="Tous Azimuts - Une émission de radio et un podcast d'actualités autour du handicap pour un monde plus accessible" fullTitle>
   <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)} />
 
-  <h1>L'émission radio qui éclaire le handicap sous tous ses angles</h1>
+  <h1 class="accueil-titre">L'émission radio qui éclaire le handicap<br />sous tous ses angles</h1>
 
   <hr />
 
@@ -75,13 +75,16 @@ const structuredData = {
   <hr />
 
   <p class="accueil-slogan">
-    Donner la parole à tous, pour tous : c'est la mission de Tous Azimuts
+    Donner la parole à tous<br />
+    pour tous,<br />
+    c'est la mission de<br />
+    <strong>Tous Azimuts</strong>
   </p>
 
   <p class="accueil-diffusion">
     Émission diffusée sur
-    <a href="https://www.radiomonpais.fr/archive-shows/338/tous-azimuts">Radio Mon Païs (90.1 FM)</a>,
-    <a href="https://www.campusfm.net/">Campus FM Toulouse (94 FM)</a>, et
+    <a href="https://www.radiomonpais.fr/archive-shows/338/tous-azimuts">Radio Mon Païs (90.1&nbsp;FM)</a>,
+    <a href="https://www.campusfm.net/">Campus FM Toulouse (94&nbsp;FM)</a>, et
     <a href={withBase('/podcast/')}>disponible en podcast</a>.
   </p>
 
@@ -167,13 +170,17 @@ const structuredData = {
   <hr />
 
   <style>
+    .accueil-titre {
+      text-align: center;
+    }
     .accueil-slogan {
       font-size: 1.65rem;
       font-weight: 700;
       line-height: 1.3;
-      border-left: 6px solid var(--color-accent);
-      padding-left: 1rem;
       margin: 1.75rem 0;
+    }
+    .accueil-slogan strong {
+      color: var(--color-link-hover);
     }
     .accueil-diffusion {
       font-size: 1.2rem;
