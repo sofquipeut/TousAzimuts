@@ -1,0 +1,14 @@
+---
+import { COMMENTS_API_BASE } from '../lib/comments';
+---
+
+{COMMENTS_API_BASE && (
+  <p class="view-counter" data-view-counter hidden></p>
+)}
+
+<style>
+  .view-counter {
+    font-size: 0.95rem;
+    opacity: 0.85;
+  }
+</style>

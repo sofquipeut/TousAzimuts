@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import VisitTracker from '../components/VisitTracker.astro';
 import { withBase } from '../lib/url';
 import '../styles/fonts.css';
 import '../styles/global.css';
@@ -86,5 +87,6 @@ const estPagePodcast = /^\/podcast\/(index\.html)?$/.test(Astro.url.pathname);
       <a href="#top">Vers le haut</a>
     </div>
     <Footer />
+    <VisitTracker />
   </body>
 </html>
