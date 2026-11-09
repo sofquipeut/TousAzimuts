@@ -1,0 +1,44 @@
+---
+interface Props {
+  nom: string;
+  texte: string;
+  n: number;
+  annees: string;
+  liens: { n: number; url: string | null }[];
+}
+const { nom, texte, n, annees, liens } = Astro.props;
+---
+
+<div class="rm-personne">
+  <h3>{nom}</h3>
+  <p>{texte}</p>
+  <p class="rm-compte">
+    {n} {n > 1 ? 'émissions' : 'émission'}, {annees}.
+  </p>
+  <details>
+    <summary>{n > 1 ? `Voir les ${n} émissions où ${nom} apparaît` : `Voir l'émission où ${nom} apparaît`}</summary>
+    <p class="rm-liens">
+      {liens.map((l, i) => (
+        <>
+          {i > 0 && ' · '}
+          {l.url ? <a href={l.url}>Émission {l.n}</a> : <>Émission {l.n}</>}
+        </>
+      ))}
+    </p>
+  </details>
+</div>
+
+<style>
+  .rm-personne {
+    margin-bottom: 1.6rem;
+  }
+  .rm-compte {
+    font-style: italic;
+  }
+  .rm-liens {
+    line-height: 2;
+  }
+  details summary {
+    cursor: pointer;
+  }
+</style>
