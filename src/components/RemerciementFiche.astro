@@ -12,11 +12,8 @@ const { nom, texte, n, annees, liens } = Astro.props;
 <div class="rm-personne">
   <h3>{nom}</h3>
   <p>{texte}</p>
-  <p class="rm-compte">
-    {n} {n > 1 ? 'émissions' : 'émission'}, {annees}.
-  </p>
   <details>
-    <summary>{n > 1 ? `Voir les ${n} émissions où ${nom} apparaît` : `Voir l'émission où ${nom} apparaît`}</summary>
+    <summary>{n} {n > 1 ? 'émissions' : 'émission'}, {annees}</summary>
     <p class="rm-liens">
       {liens.map((l, i) => (
         <>
@@ -31,9 +28,6 @@ const { nom, texte, n, annees, liens } = Astro.props;
 <style>
   .rm-personne {
     margin-bottom: 1.6rem;
-  }
-  .rm-compte {
-    font-style: italic;
   }
   .rm-liens {
     line-height: 2;
