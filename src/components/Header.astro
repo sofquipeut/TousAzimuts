@@ -215,6 +215,19 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     var fermer = document.getElementById('affichage-fermer');
     if (fermer) fermer.addEventListener('click', function () { panneau.close(); });
 
+    // Un clic en dehors du panneau le referme, comme une fenêtre ordinaire.
+    // On compare aux bords du panneau plutôt qu'a la cible du clic : un clic
+    // dans sa marge intérieure doit compter comme un clic dedans.
+    panneau.addEventListener('click', function (evenement) {
+      var boite = panneau.getBoundingClientRect();
+      var dedans =
+        evenement.clientX >= boite.left &&
+        evenement.clientX <= boite.right &&
+        evenement.clientY >= boite.top &&
+        evenement.clientY <= boite.bottom;
+      if (!dedans) panneau.close();
+    });
+
     // À la fermeture, le focus revient au bouton qui a ouvert le panneau.
     panneau.addEventListener('close', function () { ouvrir.focus(); });
   })();
