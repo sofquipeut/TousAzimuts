@@ -38,7 +38,13 @@ const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.
   {emissions.length > 0 ? (
     <>
       <p>Cliquez sur une émission pour lire sa présentation complète et l'écouter.</p>
-      <div class="emission-list">
+      {emissions.length > 1 && (
+        <p class="tri-emissions">
+          <button type="button" id="tri-emissions" class="button">Trier du plus ancien au plus récent</button>
+          <span class="tri-statut" role="status"></span>
+        </p>
+      )}
+      <div class="emission-list" id="liste-emissions">
         {emissions.map((e) => (
           <EmissionCard slug={e.slug} title={e.data.title} pubDate={e.data.pubDate} excerpt={e.data.excerpt} />
         ))}
@@ -49,4 +55,38 @@ const emissions = allEmissions.sort((a, b) => b.data.pubDate.valueOf() - a.data.
   )}
 
   <hr />
+
+  <script is:inline>
+    (function () {
+      var bouton = document.getElementById('tri-emissions');
+      var liste = document.getElementById('liste-emissions');
+      if (!bouton || !liste) return;
+      var statut = document.querySelector('.tri-statut');
+      var croissant = false;
+      bouton.addEventListener('click', function () {
+        var cartes = Array.prototype.slice.call(liste.children);
+        cartes.reverse().forEach(function (c) { liste.appendChild(c); });
+        croissant = !croissant;
+        bouton.textContent = croissant
+          ? 'Trier du plus récent au plus ancien'
+          : 'Trier du plus ancien au plus récent';
+        if (statut) {
+          statut.textContent = croissant
+            ? 'Émissions triées du plus ancien au plus récent.'
+            : 'Émissions triées du plus récent au plus ancien.';
+        }
+      });
+    })();
+  </script>
+
+  <style>
+    .tri-emissions {
+      margin: 0 0 1.5rem;
+    }
+    .tri-statut {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.95em;
+    }
+  </style>
 </Base>
