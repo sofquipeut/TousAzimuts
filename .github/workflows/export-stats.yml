@@ -21,10 +21,20 @@ jobs:
           COMS_TOKEN: ${{ secrets.COMS_TOKEN }}
         run: |
           mkdir -p data
-          curl -fsS -G "https://taz-comments.hellosof.workers.dev/admin/stats" \
-            --data-urlencode "coms_token=$COMS_TOKEN" \
+          TOKEN=$(printf '%s' "$COMS_TOKEN" | tr -d '[:space:]')
+          echo "Longueur du token : ${#TOKEN} caractères"
+          CODE=$(curl -sS -G "https://taz-comments.hellosof.workers.dev/admin/stats" \
+            --data-urlencode "coms_token=$TOKEN" \
             --data-urlencode "format=json" \
-            -o data/stats.json
+            -o data/stats.json -w '%{http_code}')
+          echo "Réponse HTTP : $CODE"
+          if [ "$CODE" != "200" ]; then
+            echo "--- Début de la réponse du serveur ---"
+            head -c 1500 data/stats.json
+            echo
+            echo "--- Fin ---"
+            exit 1
+          fi
           python3 -c "import json; json.load(open('data/stats.json'))"
 
       - name: Enregistrer dans le dépôt
