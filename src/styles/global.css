@@ -746,8 +746,13 @@ dialog:not([open]) {
 .rm-groupe > .rm-personne,
 .carnet-liste > .carnet-fiche,
 .pm-liste > .pm-emission,
-main > .direct-radio {
+main > .direct-radio,
+.blocs > .bloc-texte {
   border-bottom: 4px solid var(--color-accent);
+}
+
+.blocs > .bloc-texte {
+  padding-bottom: 1rem;
 }
 
 .rm-groupe > .rm-personne {
@@ -757,7 +762,8 @@ main > .direct-radio {
 .rm-groupe > .rm-personne:nth-child(odd),
 .carnet-liste > .carnet-fiche:nth-child(odd),
 .pm-liste > .pm-emission:nth-child(odd),
-main > .direct-radio:nth-child(odd) {
+main > .direct-radio:nth-child(odd),
+.blocs > .bloc-texte:nth-child(odd) {
   border-left: 8px solid var(--color-accent);
   padding-left: 1.1rem;
 }
@@ -765,7 +771,8 @@ main > .direct-radio:nth-child(odd) {
 .rm-groupe > .rm-personne:nth-child(even),
 .carnet-liste > .carnet-fiche:nth-child(even),
 .pm-liste > .pm-emission:nth-child(even),
-main > .direct-radio:nth-child(even) {
+main > .direct-radio:nth-child(even),
+.blocs > .bloc-texte:nth-child(even) {
   border-right: 8px solid var(--color-accent);
   padding-right: 1.1rem;
 }
