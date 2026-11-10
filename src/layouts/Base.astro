@@ -43,7 +43,13 @@ const estPagePodcast = /^\/podcast\/(index\.html)?$/.test(Astro.url.pathname);
           var prefs = JSON.parse(localStorage.getItem('taz-prefs-v1') || '{}');
           var h = document.documentElement;
           h.dataset.theme = (prefs.theme === 'light' || prefs.theme === 'dark') ? prefs.theme : 'system';
-          h.dataset.palette = (prefs.palette === 'contraste') ? 'contraste' : 'standard';
+          // Palette : un choix explicite du visiteur l'emporte ; sinon on suit la préférence
+          // « contraste renforcé » du système. « Standard » enregistré compte comme un choix.
+          var pal = prefs.palette;
+          if (pal !== 'contraste' && pal !== 'jaune' && pal !== 'standard') {
+            pal = (window.matchMedia && window.matchMedia('(prefers-contrast: more)').matches) ? 'contraste' : 'standard';
+          }
+          h.dataset.palette = pal;
           h.dataset.taille = (['grande', 'tres-grande', 'maximale'].indexOf(prefs.taille) !== -1) ? prefs.taille : 'normale';
           h.dataset.police = (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(prefs.police) !== -1) ? prefs.police : 'manrope';
           h.dataset.espacement = (['aere', 'tres-aere'].indexOf(prefs.espacement) !== -1) ? prefs.espacement : 'normal';

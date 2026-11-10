@@ -37,6 +37,7 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     <legend>Contraste</legend>
     <label><input type="radio" name="palette" value="standard" /> Standard</label>
     <label><input type="radio" name="palette" value="contraste" /> Contraste maximal</label>
+    <label><input type="radio" name="palette" value="jaune" /> Jaune sur noir</label>
   </fieldset>
 
   <fieldset>
@@ -135,7 +136,9 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
       try {
         var p = JSON.parse(localStorage.getItem(CLE) || '{}');
         if (p.theme !== 'light' && p.theme !== 'dark') p.theme = 'system';
-        if (p.palette !== 'contraste') p.palette = 'standard';
+        if (p.palette !== 'contraste' && p.palette !== 'jaune' && p.palette !== 'standard') {
+          p.palette = (window.matchMedia && window.matchMedia('(prefers-contrast: more)').matches) ? 'contraste' : 'standard';
+        }
         if (['grande', 'tres-grande', 'maximale'].indexOf(p.taille) === -1) p.taille = 'normale';
         if (['luciole', 'atkinson', 'arial', 'verdana'].indexOf(p.police) === -1) p.police = 'manrope';
         if (['aere', 'tres-aere'].indexOf(p.espacement) === -1) p.espacement = 'normal';

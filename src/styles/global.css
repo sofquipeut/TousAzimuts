@@ -72,6 +72,22 @@
   --color-border: #ffffff;
 }
 
+/* Palette « jaune sur noir ». Contrairement à la palette de contraste maximal, elle n'a qu'une
+   version : le jaune sur noir est un profil en soi, que le thème ne décline pas — la palette
+   impose son fond, comme le fait le profil « blanc sur noir » de Confort de Lecture.
+   Le lien est cyan : il se détache du jaune par la teinte, et les liens sont soulignés partout
+   sur le site, donc l'information n'est pas portée par la seule couleur.
+   Rapports mesurés sur #000000 : texte 19,6:1, texte atténué 12,6:1, lien 13,7:1,
+   lien survolé 14,3:1, bordures 19,6:1. */
+:root[data-palette='jaune'] {
+  --color-bg: #000000;
+  --color-text: #ffff00;
+  --color-text-muted: #cfcf00;
+  --color-link: #00e5ff;
+  --color-link-hover: #7fe3ff;
+  --color-border: #ffff00;
+}
+
 * { box-sizing: border-box; }
 
 html {
