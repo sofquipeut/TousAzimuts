@@ -212,6 +212,19 @@ h2 {
   text-align: center;
 }
 
+/* Retour à la ligne dans un titre : des lignes en bloc, JAMAIS un <br>, que le lecteur d'écran
+   annonce comme un saut de ligne. Le texte reste continu pour NVDA et VoiceOver.
+   Garder un espace avant chaque span, sinon les mots se collent dans la lecture. */
+.ligne-titre {
+  display: block;
+}
+
+/* Mot mis en évidence dans un titre, en orange (couleur du lien survolé, comme le slogan
+   de l'accueil). */
+.titre-accent {
+  color: var(--color-link-hover);
+}
+
 /* Exceptions : les h2 qui nomment un bloc — une structure du carnet, une émission des pauses,
    une radio du direct — restent à gauche, comme le texte qu'ils introduisent. */
 .carnet-fiche h2,
