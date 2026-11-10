@@ -628,9 +628,52 @@ dialog:not([open]) {
   margin: 1rem 0;
 }
 
-/* Liste des saisons de l'accueil : centrée. */
-.season-grid {
+/* Listes de boutons de l'accueil et de la page podcast : centrées. */
+.season-grid,
+.platform-list {
   justify-content: center;
+}
+
+/* Applications d'écoute et systèmes du Localisateur (page podcast) : une vignette par entrée,
+   logo au-dessus du nom, le tout centré. Les logos viennent des éditeurs eux-mêmes. */
+.platform-logos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.platform-logos li {
+  display: flex;
+}
+
+.platform-logos a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 10rem;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-link);
+  text-align: center;
+}
+
+.platform-logos a:hover,
+.platform-logos a:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-link-hover);
+}
+
+.platform-logos img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
 .emission-list {

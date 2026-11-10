@@ -1,5 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+
+// Applications d'écoute : chaque logo vient du site de l'éditeur, et sert de lien vers sa page.
+const applications = [
+  { nom: 'Pocket Casts', url: 'https://pocketcasts.com', logo: 'pocket-casts.png' },
+  { nom: 'Podcast Addict', url: 'https://podcastaddict.com', logo: 'podcast-addict.png' },
+  { nom: 'Overcast', url: 'https://overcast.fm', logo: 'overcast.png' },
+  { nom: 'Podverse', url: 'https://podverse.fm', logo: 'podverse.png' },
+  { nom: 'Castbox', url: 'https://castbox.fm', logo: 'castbox.png' },
+  { nom: 'Castamatic', url: 'https://castamatic.com', logo: 'castamatic.png' },
+  { nom: 'Castro', url: 'https://castro.fm', logo: 'castro.png' },
+  { nom: 'Curiocaster', url: 'https://curiocaster.com', logo: 'curiocaster.png' },
+  { nom: 'PodLP', url: 'https://podlp.com', logo: 'podlp.png' },
+  { nom: 'Podcast Guru', url: 'https://podcastguru.io', logo: 'podcast-guru.jpg' },
+];
+
+// Systèmes où Le Localisateur est disponible.
+const systemes = [
+  { nom: 'Télécharger pour Windows', url: 'https://localisateur.org/windows.html', logo: 'windows.svg' },
+  { nom: 'Installer depuis Google Play', url: 'https://play.google.com/store/apps/details?id=org.localisateur.gps', logo: 'google-play.svg' },
+  { nom: "Installer depuis l'App Store", url: 'https://apps.apple.com/fr/app/localisateur/id1393680449', logo: 'app-store.svg' },
+];
 ---
 
 <Base title="Écouter le podcast" description="Abonnez-vous au podcast de Tous Azimuts sur votre plateforme préférée.">
@@ -40,17 +62,15 @@ import Base from '../layouts/Base.astro';
   <hr />
 
   <h2>Également dans vos applications préférées</h2>
-  <ul class="platform-list">
-    <li><a target="_blank" rel="noopener" href="https://pocketcasts.com">Pocket Casts</a></li>
-    <li><a target="_blank" rel="noopener" href="https://podcastaddict.com">Podcast Addict</a></li>
-    <li><a target="_blank" rel="noopener" href="https://overcast.fm">Overcast</a></li>
-    <li><a target="_blank" rel="noopener" href="https://podverse.fm">Podverse</a></li>
-    <li><a target="_blank" rel="noopener" href="https://castbox.fm">Castbox</a></li>
-    <li><a target="_blank" rel="noopener" href="https://castamatic.com">Castamatic</a></li>
-    <li><a target="_blank" rel="noopener" href="https://castro.fm">Castro</a></li>
-    <li><a target="_blank" rel="noopener" href="https://curiocaster.com">Curiocaster</a></li>
-    <li><a target="_blank" rel="noopener" href="https://podlp.com">PodLP</a></li>
-    <li><a target="_blank" rel="noopener" href="https://podcastguru.io">Podcast Guru</a></li>
+  <ul class="platform-logos">
+    {applications.map((app) => (
+      <li>
+        <a target="_blank" rel="noopener" href={app.url}>
+          <img src={withBase(`/images/plateformes/${app.logo}`)} alt="" width="64" height="64" loading="lazy" />
+          <span>{app.nom}</span>
+        </a>
+      </li>
+    ))}
   </ul>
 
   <hr />
@@ -63,10 +83,15 @@ import Base from '../layouts/Base.astro';
     ouvrages audio et podcasts réunis dans une interface simplifiée. Merci à Philippe Léon et à la
     Fondation Valentin Haüy, qui soutient le projet.
   </p>
-  <ul class="platform-list">
-    <li><a target="_blank" rel="noopener" href="https://localisateur.org/windows.html">Télécharger pour Windows</a></li>
-    <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=org.localisateur.gps">Installer depuis Google Play</a></li>
-    <li><a target="_blank" rel="noopener" href="https://apps.apple.com/fr/app/localisateur/id1393680449">Installer depuis l'App Store</a></li>
+  <ul class="platform-logos">
+    {systemes.map((s) => (
+      <li>
+        <a target="_blank" rel="noopener" href={s.url}>
+          <img src={withBase(`/images/plateformes/${s.logo}`)} alt="" width="64" height="64" loading="lazy" />
+          <span>{s.nom}</span>
+        </a>
+      </li>
+    ))}
   </ul>
 
   <hr />
