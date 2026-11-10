@@ -1,0 +1,82 @@
+---
+import Base from '../layouts/Base.astro';
+import { withBase } from '../lib/url';
+---
+
+<Base
+  title="Accessibilité"
+  description="Accessibilité du site Tous Azimuts : réglages d'affichage, ce qui est mis en place, ce qui reste à améliorer, et comment nous signaler un problème."
+>
+  <h1>Accessibilité</h1>
+
+  <p><em>Dernière mise à jour : 10 novembre 2026.</em></p>
+
+  <p>
+    Tous Azimuts est une émission consacrée au handicap et à l'accessibilité : son site doit
+    l'être aussi. Cette page décrit ce que le site met en place, ce qui n'est pas encore
+    accessible, et comment nous faire part d'une difficulté.
+  </p>
+
+  <h2>Adapter l'affichage à vos besoins</h2>
+
+  <p>
+    En haut de chaque page, le bouton « Ajuster l'affichage » ouvre un panneau de réglages. Vous y
+    choisissez le thème (système, clair ou sombre), le contraste (standard ou maximal), la taille
+    du texte (quatre niveaux), l'espacement du texte (trois niveaux) et la police.
+  </p>
+
+  <p>
+    Deux des polices proposées sont dessinées pour les personnes malvoyantes : Luciole et Atkinson
+    Hyperlegible. Les polices du site sont hébergées ici, sans appel à un service extérieur.
+  </p>
+
+  <p>
+    Vos choix sont conservés dans votre navigateur, sur votre appareil, et nulle part ailleurs. Le
+    bouton « Réinitialiser » du panneau les efface.
+  </p>
+
+  <h2>Ce que le site met en place</h2>
+
+  <ul>
+    <li>la langue de la page est déclarée, pour que les lecteurs d'écran la prononcent correctement ;</li>
+    <li>un lien « Aller au contenu principal » atteint le contenu sans traverser le menu ;</li>
+    <li>les régions de la page — en-tête, navigation, contenu, pied de page — sont nommées ;</li>
+    <li>tout le site se parcourt au clavier, et l'élément qui a le focus reste visible ;</li>
+    <li>
+      les contrastes de texte respectent le niveau AA des règles internationales, dans toutes les
+      palettes proposées ;
+    </li>
+    <li>le zoom du navigateur n'est pas bridé ;</li>
+    <li>les lecteurs d'écoute en direct sont des lecteurs natifs, étiquetés ;</li>
+    <li>les images qui portent une information ont une description textuelle.</li>
+  </ul>
+
+  <h2>Notre approche : corriger le site, pas le masquer</h2>
+
+  <p>
+    Certains sites ajoutent un « widget d'accessibilité » qui promet de rendre une page accessible
+    d'un clic. Nous avons fait l'autre choix : corriger le site lui-même. Ces surcouches ne rendent
+    pas un site conforme, et elles peuvent gêner les lecteurs d'écran ; la Commission européenne,
+    comme les principales organisations d'accessibilité, les déconseillent.
+  </p>
+
+  <h2>Ce qui n'est pas encore accessible</h2>
+
+  <ul>
+    <li>les transcriptions écrites des émissions ne sont pas encore disponibles ;</li>
+    <li>
+      le lecteur audio des épisodes est fourni par le service RSS.com. Il présente des défauts
+      d'accessibilité qui viennent de ce service, et que nous ne pouvons pas corriger nous-mêmes ;
+      ils lui ont été signalés ;
+    </li>
+    <li>les commentaires s'appuient sur un service extérieur.</li>
+  </ul>
+
+  <h2>Nous signaler une difficulté</h2>
+
+  <p>
+    Si une page vous résiste — un élément inaccessible au clavier, un texte illisible, une
+    description manquante —, écrivez-nous depuis la page <a href={withBase('/contact/')}>Contact</a>
+    en précisant la page concernée et ce qui vous a gêné. Votre retour nous aide à corriger.
+  </p>
+</Base>
