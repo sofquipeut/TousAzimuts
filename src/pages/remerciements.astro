@@ -60,27 +60,36 @@ const equipe = gens.filter((g) => g.cat === 'equipe');
       Merci d'avoir apporté vos connaissances, votre dynamisme et votre volonté que l'information circule.
     </p>
 
-    {equipe.map((g) => (
-      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
-    ))}
+    <div class="rm-groupe">
+      {equipe.map((g) => (
+        <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
+      ))}
+    </div>
 
     <h2>Les chroniqueurs réguliers</h2>
-    {reguliers.map((g) => (
-      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
-    ))}
+    <div class="rm-groupe">
+      {reguliers.map((g) => (
+        <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
+      ))}
+    </div>
 
     <h2>Les chroniqueurs occasionnels</h2>
-    {occasionnels.map((g) => (
-      <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
-    ))}
+    <div class="rm-groupe">
+      {occasionnels.map((g) => (
+        <RemerciementFiche nom={g.nom} texte={g.texte} n={g.n} annees={g.annees} liens={g.liens} />
+      ))}
+    </div>
 
-    <h2>Merci aussi</h2>
+    <h2>Et aussi…</h2>
     <p>
-      Merci aux présidents du comité de Toulouse de l'Association Valentin Haüy, Philippe Bellemer et Denis Bartelemy,
+      Merci aux présidents du comité de Toulouse de l'Association Valentin Haüy, Philippe Bellemer et Denis Barthélémy,
       d'avoir soutenu ce projet.
     </p>
     <p>
-      Merci aux équipes de Radio Mon Païs et de Radio Campus Toulouse pour la diffusion de nos émissions.
+      Merci aux équipes de Radio Mon Païs et de Campus FM pour la diffusion de nos émissions.
+    </p>
+    <p>
+      Merci à tous nos auditeurs et auditrices, poditeurs et poditrices !
     </p>
 
     <ViewCounter />

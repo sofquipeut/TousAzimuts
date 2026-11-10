@@ -401,10 +401,10 @@
     ]
   },
   {
-    "nom": "Michel",
+    "nom": "Michel Lagoin",
     "cat": "reguliers",
     "annees": "entre 2017 et 2026",
-    "texte": "Il passe en revue les nouveautés technologiques, les applications et les appareils adaptés. Il s'intéresse aussi à la santé, à la cuisine, aux chiens guides et au handisport.",
+    "texte": "Professeur d'anglais retraité, il a exploré le monde, fait du théâtre et du taï chi. Il passe en revue les nouveautés technologiques, les applications et les appareils adaptés. Il s'intéresse aussi à la santé, à la cuisine, aux chiens-guides et au vieillissement.",
     "nums": [
       1,
       3,
@@ -487,10 +487,10 @@
     ]
   },
   {
-    "nom": "Guénaël",
+    "nom": "Guénaël Péri",
     "cat": "reguliers",
     "annees": "entre 2019 et 2022",
-    "texte": "Il a exploré la culture, la jeunesse, l'autisme et le handicap, avec des reportages, des portraits et des séries documentaires.",
+    "texte": "Sensibilisé au handicap visuel, il accompagne notamment Julien dans sa mission d'enseignement. Il a exploré la culture, la jeunesse et l'autisme, qui lui tient particulièrement à cœur. Il s'appuie sur des reportages, des portraits et des séries documentaires.",
     "nums": [
       29,
       32,
@@ -539,10 +539,10 @@
     ]
   },
   {
-    "nom": "Amandine",
+    "nom": "Amandine Gaudioso",
     "cat": "reguliers",
     "annees": "entre 2022 et 2026",
-    "texte": "Elle raconte le quotidien, les maladies chroniques, l'emploi et les droits des personnes handicapées. Elle interroge aussi des professionnels et des personnes concernées.",
+    "texte": "Serveuse, elle sait mettre les pieds dans le plat ! Elle raconte le quotidien avec une maladie chronique invisible. Elle apprend le braille et en fait sa promotion mieux que certains aveugles ! Sa recette : l'emploi, les droits des personnes handicapées et un soupçon de bien-être animal. À laisser mijoter !",
     "nums": [
       88,
       90,
@@ -588,10 +588,10 @@
     ]
   },
   {
-    "nom": "Isabelle",
+    "nom": "Isabelle Roux",
     "cat": "reguliers",
     "annees": "entre 2017 et 2026",
-    "texte": "Elle s'intéresse aux associations, aux lois, à la santé et aux idées pratiques. Elle a aussi présenté des artistes et des initiatives culturelles.",
+    "texte": "Artiste graphique de métier, elle garde un œil sur des sujets qui touchent les personnes âgées. La santé mentale occupe également ses réflexions d'étudiante en psychologie. Elle présente des artistes et des initiatives culturelles. Bons plans et idées pratiques se dessinent aussi dans ses propos.",
     "nums": [
       1,
       4,
@@ -635,10 +635,10 @@
     ]
   },
   {
-    "nom": "Philippe",
+    "nom": "Philippe Cluzel",
     "cat": "reguliers",
     "annees": "entre 2017 et 2025",
-    "texte": "Il tient la rubrique Top chrono, qui fait le tour de l'actualité du handicap et du sport. Il suit le handisport et parle aussi de cuisine.",
+    "texte": "Passionné par l'histoire de la radio, féru de course à pied particulièrement quand c'est pour une bonne cause, il chevauche souvent son vélo et affectionne le reportage de terrain. Il tient la rubrique Top chrono, qui fait le tour de l'actualité du handicap et du sport.",
     "nums": [
       1,
       3,
@@ -676,10 +676,10 @@
     ]
   },
   {
-    "nom": "Estelle",
+    "nom": "Estelle Dumont",
     "cat": "reguliers",
     "annees": "entre 2017 et 2021",
-    "texte": "Elle a présenté la culture, la jeunesse, la solidarité et le sport, avec des festivals, des associations et des initiatives pour les jeunes.",
+    "texte": "Pro de la com, elle présente des initiatives pour les jeunes. On la retrouve aussi dans les sujets où tout roule, sauf quand le fauteuil électrique tombe en panne : la culture, la jeunesse, la solidarité et le sport, avec des festivals et des activités associatives.",
     "nums": [
       1,
       2,
@@ -703,10 +703,10 @@
     ]
   },
   {
-    "nom": "Ambroise",
+    "nom": "Ambroise Daudin",
     "cat": "reguliers",
     "annees": "entre 2019 et 2020",
-    "texte": "Il a exploré la culture, le sport et la vie quotidienne, avec des jeux de société accessibles, des livres audio et des reportages.",
+    "texte": "Sportif de compétition, il garde un tour d'avance malgré l'évolution de sa maladie de la rétine. Si vous ne savez pas encore ce que sont le goalball et le showdown, il vous en livrera tous les secrets. Il explore aussi la culture et la vie quotidienne, avec des jeux de société accessibles, des livres audio, des reportages et même quelques chroniques caustiques.",
     "nums": [
       31,
       32,
@@ -728,10 +728,10 @@
     ]
   },
   {
-    "nom": "Inès",
+    "nom": "Inès Dallongeville",
     "cat": "reguliers",
     "annees": "entre 2018 et 2019",
-    "texte": "Elle a parlé de sport, de jeux vidéo et d'associations, avec des reportages sur l'accueil des étudiants handicapés et des sites de jeux accessibles.",
+    "texte": "En compagnie de son indéfectible chien-guide, elle sait pointer l'oreille. Entre une écoute active et une partie d'un jeu vidéo accessible aux déficients visuels, elle parle de sport, d'handiparentalité et de l'accueil des étudiants handicapés.",
     "nums": [
       10,
       11,
@@ -751,10 +751,10 @@
     ]
   },
   {
-    "nom": "Bruno",
+    "nom": "Bruno Corcinos",
     "cat": "occasionnels",
     "annees": "entre 2017 et 2020",
-    "texte": "Il a présenté des appareils et des astuces du quotidien, et des recettes de cuisine. Secrétaire de l'association Valentin Haüy, il apporte son expertise et ses conseils aux bénéficiaires dans la boutique de matériel adapté.",
+    "texte": "Il présente des appareils adaptés et il lui arrive même de les vendre (oui, ça arrive) ! Il partage aussi une foule d'astuces pratiques pour les personnes avec un handicap visuel. Secrétaire de l'association Valentin Haüy, il apporte son expertise et ses conseils aux bénéficiaires dans son petit magasin.",
     "nums": [
       2,
       5,
@@ -766,19 +766,19 @@
     ]
   },
   {
-    "nom": "Carole",
+    "nom": "Carole Struxiano",
     "cat": "occasionnels",
     "annees": "en 2017",
-    "texte": "Elle a décrypté le premier comité interministériel du handicap. Membre de l'équipe de longue date, elle a contribué au projet « Le lien », autre émission sur le handicap, et beaucoup au fonctionnement de l'association Valentin Haüy.",
+    "texte": "Membre de l'équipe de longue date, elle a contribué au projet « Le Lien », une autre émission sur le handicap, et a beaucoup participé au fonctionnement de l'association Valentin Haüy. Lors de son intervention à la radio, elle s'est attelée à la lourde tâche de décrypter le premier Comité interministériel du handicap.",
     "nums": [
       2
     ]
   },
   {
-    "nom": "Nathalie",
+    "nom": "Nathalie Jourdain",
     "cat": "occasionnels",
     "annees": "entre 2025 et 2026",
-    "texte": "Elle a présenté ses livres pour les enfants différents et les adolescents neuro-atypiques, et des associations.",
+    "texte": "Artiste pluridisciplinaire et intervenante, notamment en milieu scolaire, elle sensibilise au daltonisme à travers ses livres destinés aux enfants différents et aux adolescents neuroatypiques, et que les adultes feraient bien de lire aussi !",
     "nums": [
       147,
       161,
@@ -786,10 +786,10 @@
     ]
   },
   {
-    "nom": "Florence",
+    "nom": "Florence Sternicha",
     "cat": "occasionnels",
     "annees": "en 2019",
-    "texte": "Elle a parlé de cinéma et de musique, avec des portraits d'artistes.",
+    "texte": "Elle parle de cinéma et de musique, avec des portraits d'artistes. Elle pose des questions pertinentes sur la vie au quotidien des personnes privées du sens de la vue.",
     "nums": [
       30,
       32,
@@ -797,10 +797,10 @@
     ]
   },
   {
-    "nom": "Dimitri",
+    "nom": "Dimitri Dallongeville",
     "cat": "occasionnels",
     "annees": "entre 2018 et 2019",
-    "texte": "Il a exploré les jeux vidéo accessibles et les joueurs non-voyants.",
+    "texte": "Amateur de jeux vidéo, il parle avec passion de ceux qui sont accessibles et des joueurs non-voyants.",
     "nums": [
       24,
       26,
@@ -808,29 +808,29 @@
     ]
   },
   {
-    "nom": "Anthony",
+    "nom": "Anthony Garcia",
     "cat": "occasionnels",
     "annees": "en 2018",
-    "texte": "Il a présenté le cécifoot et son chien guide.",
+    "texte": "Joueur de cécifoot, il aborde ce sport et ses règles. Il nous raconte également l'acquisition de son chien-guide, issu de l'unique école qui éduque et confie ses quadrupèdes à des humains mineurs.",
     "nums": [
       21,
       23
     ]
   },
   {
-    "nom": "Mathias",
+    "nom": "Mathias Blanc",
     "cat": "occasionnels",
     "annees": "en 2018",
-    "texte": "Il a parlé de la maladie de Lyme.",
+    "texte": "Véritable GPS humain capable de vous emmener dans les coins les plus reculés les yeux fermés, il choisit ici de nous parler de santé. Attention aux balades dans les champs l'été !",
     "nums": [
       21
     ]
   },
   {
-    "nom": "Jean-Louis",
+    "nom": "Jean-Louis Par",
     "cat": "occasionnels",
     "annees": "en 2025",
-    "texte": "Il avait inauguré une rubrique de recettes de cuisine pour les malvoyants.",
+    "texte": "Il avait inauguré une rubrique de recettes de cuisine pour les malvoyants. Malheureusement, il nous a quittés quelques jours après. Nous regrettons profondément son absence et nous restons sur notre faim !",
     "nums": [
       147
     ]
