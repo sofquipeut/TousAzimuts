@@ -18,130 +18,152 @@ import { withBase } from '../lib/url';
     visite, et l'usage qui en est fait.
   </p>
 
-  <h2>Ce que ce site ne collecte pas</h2>
+  <div class="blocs">
+    <section class="bloc-texte">
+      <h2>Ce que ce site<br />ne collecte pas</h2>
 
-  <p>
-    Ce site est entièrement statique : il ne comporte ni compte utilisateur, ni traçage publicitaire. Aucun cookie de suivi n'y est déposé, et nous ne cherchons
-    pas à identifier les personnes qui le consultent.
-  </p>
+      <p>
+        Ce site est entièrement statique : il ne comporte ni compte utilisateur, ni traçage publicitaire. Aucun cookie de suivi n'y est déposé, et nous ne cherchons
+        pas à identifier les personnes qui le consultent.
+      </p>
 
-  <p>
-    Deux formulaires font exception, décrits ci-dessous : le formulaire de contact et les
-    commentaires.
-  </p>
+      <p>
+        Deux formulaires font exception, décrits ci-dessous : le formulaire de contact et les
+        commentaires.
+      </p>
+    </section>
 
-  <h2>La mesure de fréquentation</h2>
+    <section class="bloc-texte">
+      <h2>La mesure de fréquentation</h2>
 
-  <p>
-    Pour savoir combien de personnes consultent le site et quelles émissions intéressent le plus,
-    chaque page signale sa consultation à notre propre service (le même que celui des
-    commentaires, hébergé par Cloudflare). Seul un compteur est conservé : l'adresse de la page et
-    le jour. Aucune adresse IP, aucun cookie et aucun identifiant ne sont enregistrés, et il est
-    impossible de reconnaître un visiteur d'un jour à l'autre. Le nombre de consultations est
-    affiché en bas de chaque page d'émission.
-  </p>
+      <p>
+        Pour savoir combien de personnes consultent le site et quelles émissions intéressent le plus,
+        chaque page signale sa consultation à notre propre service (le même que celui des
+        commentaires, hébergé par Cloudflare). Seul un compteur est conservé : l'adresse de la page et
+        le jour. Aucune adresse IP, aucun cookie et aucun identifiant ne sont enregistrés, et il est
+        impossible de reconnaître un visiteur d'un jour à l'autre. Le nombre de consultations est
+        affiché en bas de chaque page d'émission.
+      </p>
+    </section>
 
-  <h2>Le formulaire de contact</h2>
+    <section class="bloc-texte">
+      <h2>Le formulaire de contact</h2>
 
-  <p>
-    Si vous nous écrivez depuis la page <a href={withBase('/contact/')}>Contact</a>, les informations
-    que vous saisissez — nom, prénom, adresse e-mail, organisation éventuelle, objet et message —
-    sont transmises au service Formspree, qui achemine votre message jusqu'à notre boîte de
-    réception. Elles servent uniquement à vous répondre. Elles ne sont ni vendues, ni transmises à
-    des tiers, ni utilisées à d'autres fins.
-  </p>
+      <p>
+        Si vous nous écrivez depuis la page <a href={withBase('/contact/')}>Contact</a>, les informations
+        que vous saisissez — nom, prénom, adresse e-mail, organisation éventuelle, objet et message —
+        sont transmises au service Formspree, qui achemine votre message jusqu'à notre boîte de
+        réception. Elles servent uniquement à vous répondre. Elles ne sont ni vendues, ni transmises à
+        des tiers, ni utilisées à d'autres fins.
+      </p>
 
-  <p>
-    Vous pouvez nous demander la suppression des messages que vous nous avez adressés, à tout
-    moment, depuis la page Contact.
-  </p>
+      <p>
+        Vous pouvez nous demander la suppression des messages que vous nous avez adressés, à tout
+        moment, depuis la page Contact.
+      </p>
+    </section>
 
-  <h2>Les commentaires</h2>
+    <section class="bloc-texte">
+      <h2>Les commentaires</h2>
 
-  <p>
-    Chaque page d'émission permet de laisser un commentaire. Seuls un nom ou un pseudonyme et le
-    texte du commentaire sont demandés : aucune adresse e-mail n'est requise. Les commentaires sont
-    enregistrés sur notre propre service, puis relus avant publication. Ils ne servent à aucune
-    autre fin, et sont supprimés sur simple demande.
-  </p>
+      <p>
+        Chaque page d'émission permet de laisser un commentaire. Seuls un nom ou un pseudonyme et le
+        texte du commentaire sont demandés : aucune adresse e-mail n'est requise. Les commentaires sont
+        enregistrés sur notre propre service, puis relus avant publication. Ils ne servent à aucune
+        autre fin, et sont supprimés sur simple demande.
+      </p>
+    </section>
 
-  <h2>Les services tiers</h2>
+    <section class="bloc-texte">
+      <h2>Les services tiers</h2>
 
-  <p>
-    Certains éléments du site sont fournis par des services extérieurs. Ils sont nécessaires à son
-    fonctionnement, et peuvent à cette occasion prendre connaissance de votre adresse IP ou déposer
-    leurs propres cookies :
-  </p>
+      <p>
+        Certains éléments du site sont fournis par des services extérieurs. Ils sont nécessaires à son
+        fonctionnement, et peuvent à cette occasion prendre connaissance de votre adresse IP ou déposer
+        leurs propres cookies :
+      </p>
 
-  <ul>
-    <li>l'hébergement du site est assuré par GitHub Pages, un service de GitHub Inc. ;</li>
-    <li>
-      le lecteur audio des émissions est fourni par RSS.com : lorsque vous lancez une écoute, ce
-      lecteur s'exécute dans une fenêtre intégrée au site ;
-    </li>
-    <li>
-      notre compte Mastodon est hébergé par l'instance piaille.fr, animée bénévolement : c'est elle
-      qui conserve les messages publiés ;
-    </li>
-    <li>
-      les commentaires sont hébergés par le service Cloudflare, et la notification qui nous avertit
-      d'un nouveau commentaire nous parvient par le service d'envoi Resend.
-    </li>
-  </ul>
+      <ul>
+        <li>l'hébergement du site est assuré par GitHub Pages, un service de GitHub Inc. ;</li>
+        <li>
+          le lecteur audio des émissions est fourni par RSS.com : lorsque vous lancez une écoute, ce
+          lecteur s'exécute dans une fenêtre intégrée au site ;
+        </li>
+        <li>
+          notre compte Mastodon est hébergé par l'instance piaille.fr, animée bénévolement : c'est elle
+          qui conserve les messages publiés ;
+        </li>
+        <li>
+          les commentaires sont hébergés par le service Cloudflare, et la notification qui nous avertit
+          d'un nouveau commentaire nous parvient par le service d'envoi Resend.
+        </li>
+      </ul>
 
-  <p>
-    Les liens vers nos pages Facebook et YouTube, comme ceux vers notre compte Mastodon, vous
-    conduisent vers ces plateformes, qui appliquent leurs propres règles de confidentialité, sur
-    lesquelles nous n'avons pas de prise.
-  </p>
+      <p>
+        Les liens vers nos pages Facebook et YouTube, comme ceux vers notre compte Mastodon, vous
+        conduisent vers ces plateformes, qui appliquent leurs propres règles de confidentialité, sur
+        lesquelles nous n'avons pas de prise.
+      </p>
+    </section>
 
-  <h2>Les polices d'écriture</h2>
+    <section class="bloc-texte">
+      <h2>Les polices d'écriture</h2>
 
-  <p>
-    Deux polices dessinées pour les personnes malvoyantes sont proposées au choix dans le panneau
-    « Affichage » : Luciole et Atkinson Hyperlegible. Luciole a été créée par Laurent Bourcellier et
-    Jonathan Perez, pour le Centre Technique Régional pour la Déficience Visuelle, et diffusée sous
-    licence Creative Commons Attribution. Atkinson Hyperlegible est l'œuvre du Braille Institute of
-    America, sous licence SIL Open Font. La police d'origine du site, Manrope, est elle aussi sous
-    licence libre.
-  </p>
+      <p>
+        Deux polices dessinées pour les personnes malvoyantes sont proposées au choix dans le panneau
+        « Affichage » : Luciole et Atkinson Hyperlegible. Luciole a été créée par Laurent Bourcellier et
+        Jonathan Perez, pour le Centre Technique Régional pour la Déficience Visuelle, et diffusée sous
+        licence Creative Commons Attribution. Atkinson Hyperlegible est l'œuvre du Braille Institute of
+        America, sous licence SIL Open Font. La police d'origine du site, Manrope, est elle aussi sous
+        licence libre.
+      </p>
 
-  <p>
-    Ces trois polices sont hébergées sur le site : leur chargement n'appelle aucun service extérieur.
-  </p>
+      <p>
+        Ces trois polices sont hébergées sur le site : leur chargement n'appelle aucun service extérieur.
+      </p>
+    </section>
 
-  <h2>Les réglages d'affichage</h2>
+    <section class="bloc-texte">
+      <h2>Les réglages d'affichage</h2>
 
-  <p>
-    Le panneau « Affichage » propose cinq réglages : le thème, le contraste, la taille du texte,
-    l'espacement du texte et la police. Vos choix sont enregistrés dans votre navigateur, sur votre appareil, et nulle
-    part ailleurs. Aucun cookie n'est déposé pour cela, et nous n'avons aucun moyen de savoir
-    quels réglages vous avez retenus. Le bouton « Réinitialiser » du panneau les efface ; vous
-    pouvez aussi vider les données du site depuis votre navigateur.
-  </p>
+      <p>
+        Le panneau « Affichage » propose cinq réglages : le thème, le contraste, la taille du texte,
+        l'espacement du texte et la police. Vos choix sont enregistrés dans votre navigateur, sur votre appareil, et nulle
+        part ailleurs. Aucun cookie n'est déposé pour cela, et nous n'avons aucun moyen de savoir
+        quels réglages vous avez retenus. Le bouton « Réinitialiser » du panneau les efface ; vous
+        pouvez aussi vider les données du site depuis votre navigateur.
+      </p>
+    </section>
 
-  <h2>Nos publications sur les réseaux sociaux</h2>
+    <section class="bloc-texte">
+      <h2>Nos publications<br />sur les réseaux sociaux</h2>
 
-  <p>
-    Une application créée par l'émission publie automatiquement, sur notre page Facebook et sur
-    notre compte Mastodon, des rappels vers des émissions déjà diffusées et des pauses musicales
-    tirées de nos archives. Cette application ne collecte aucune donnée personnelle : elle publie
-    des textes, rien de plus.
-  </p>
+      <p>
+        Une application créée par l'émission publie automatiquement, sur notre page Facebook et sur
+        notre compte Mastodon, des rappels vers des émissions déjà diffusées et des pauses musicales
+        tirées de nos archives. Cette application ne collecte aucune donnée personnelle : elle publie
+        des textes, rien de plus.
+      </p>
+    </section>
 
-  <h2>Vos droits</h2>
+    <section class="bloc-texte">
+      <h2>Vos droits</h2>
 
-  <p>
-    Conformément au Règlement général sur la protection des données, vous disposez d'un droit
-    d'accès, de rectification, d'effacement et d'opposition sur les données vous concernant. Pour
-    l'exercer, écrivez-nous depuis la page <a href={withBase('/contact/')}>Contact</a> : nous vous
-    répondrons dans les meilleurs délais, et nous supprimerons vos données si vous le demandez.
-  </p>
+      <p>
+        Conformément au Règlement général sur la protection des données, vous disposez d'un droit
+        d'accès, de rectification, d'effacement et d'opposition sur les données vous concernant. Pour
+        l'exercer, écrivez-nous depuis la page <a href={withBase('/contact/')}>Contact</a> : nous vous
+        répondrons dans les meilleurs délais, et nous supprimerons vos données si vous le demandez.
+      </p>
+    </section>
 
-  <h2>Nous contacter</h2>
+    <section class="bloc-texte">
+      <h2>Nous contacter</h2>
 
-  <p>
-    Pour toute question au sujet de cette page ou de vos données, utilisez le formulaire de la page
-    <a href={withBase('/contact/')}>Contact</a> : votre message nous parvient directement.
-  </p>
+      <p>
+        Pour toute question au sujet de cette page ou de vos données, utilisez le formulaire de la page
+        <a href={withBase('/contact/')}>Contact</a> : votre message nous parvient directement.
+      </p>
+    </section>
+  </div>
 </Base>
