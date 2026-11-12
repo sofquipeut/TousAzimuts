@@ -100,11 +100,11 @@ const structuredData = {
   </p>
 
   <p class="accueil-slogan">
-    <strong>Tous Azimuts</strong><br />
-    donne la parole à celles et ceux<br />
-    qui vivent le handicap<br />
-    de l'intérieur<br />
-    comme de l'extérieur.
+    <strong>Tous Azimuts</strong>
+    <span>donne la parole à celles et ceux</span>
+    <span>qui vivent le handicap</span>
+    <span>de l'intérieur</span>
+    <span>comme de l'extérieur.</span>
   </p>
 
   <p>
@@ -175,12 +175,19 @@ const structuredData = {
     .accueil-titre {
       text-align: center;
     }
+    /* Les lignes du slogan sont des blocs, pas des <br> : la coupure reste la même
+       à l'écran, mais le lecteur d'écran ne rencontre plus de saut de ligne à annoncer. */
     .accueil-slogan {
       font-size: 1.65rem;
       font-weight: 700;
-      line-height: 1.3;
+      line-height: 1.35;
       text-align: center;
-      margin: 1.75rem 0;
+      /* une ligne blanche au-dessus et au-dessous */
+      margin: 3.5rem 0;
+    }
+    .accueil-slogan strong,
+    .accueil-slogan span {
+      display: block;
     }
     .accueil-slogan strong {
       color: var(--color-link-hover);
