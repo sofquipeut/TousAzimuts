@@ -176,9 +176,11 @@ const structuredData = {
       text-align: center;
     }
     /* Les lignes du slogan sont des blocs, pas des <br> : la coupure reste la même
-       à l'écran, mais le lecteur d'écran ne rencontre plus de saut de ligne à annoncer. */
+       à l'écran, mais le lecteur d'écran ne rencontre plus de saut de ligne à annoncer.
+       `nowrap` garantit qu'une ligne reste une ligne même dans une fenêtre étroite ;
+       la taille suit la largeur pour que la plus longue tienne sans déborder. */
     .accueil-slogan {
-      font-size: 1.65rem;
+      font-size: min(1.65rem, 4.2vw);
       font-weight: 700;
       line-height: 1.35;
       text-align: center;
@@ -188,6 +190,7 @@ const structuredData = {
     .accueil-slogan strong,
     .accueil-slogan span {
       display: block;
+      white-space: nowrap;
     }
     .accueil-slogan strong {
       color: var(--color-link-hover);
