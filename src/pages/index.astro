@@ -32,6 +32,12 @@ const derniereYoutubeId =
     ? (youtubeVideos as Record<string, string>)[String(derniere.data.number)]
     : undefined;
 
+// Les slogans sont coupés en lignes pour l'œil, mais lus d'un seul trait : le texte
+// affiché est masqué au lecteur d'écran et remplacé par la phrase entière. Une seule
+// source dans le code, donc les deux versions ne peuvent pas diverger.
+const sloganAccueil = ['Donner la parole à tous', 'pour tous,', "c'est la mission de", 'Tous Azimuts'];
+const sloganMission = ['Tous Azimuts', "laisse s'exprimer celles et ceux", 'qui vivent le handicap', "de l'intérieur", "comme de l'extérieur."];
+
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'PodcastSeries',
@@ -74,12 +80,14 @@ const structuredData = {
 
   <hr />
 
-  <p class="accueil-slogan">
-    <span>Donner la parole à tous&nbsp;</span>
-    <span>pour tous,&nbsp;</span>
-    <span>c'est la mission de&nbsp;</span>
-    <span class="accueil-slogan__marque">Tous Azimuts</span>
+  <p class="accueil-slogan" aria-hidden="true">
+    {sloganAccueil.map((ligne, i) => (
+      <span class={i === sloganAccueil.length - 1 ? 'accueil-slogan__marque' : ''}>
+        {ligne}{i < sloganAccueil.length - 1 ? '\u00a0' : ''}
+      </span>
+    ))}
   </p>
+  <p class="sr-only">{sloganAccueil.join(' ')}</p>
 
   <p class="accueil-diffusion">
     Émission diffusée sur<br />
@@ -99,13 +107,14 @@ const structuredData = {
     regard critique, positif et toujours un brin d'humour, pour comprendre, s'informer et agir.
   </p>
 
-  <p class="accueil-slogan accueil-slogan--mission">
-    <span class="accueil-slogan__marque">Tous Azimuts&nbsp;</span>
-    <span>laisse s'exprimer celles et ceux&nbsp;</span>
-    <span>qui vivent le handicap&nbsp;</span>
-    <span>de l'intérieur&nbsp;</span>
-    <span>comme de l'extérieur.</span>
+  <p class="accueil-slogan accueil-slogan--mission" aria-hidden="true">
+    {sloganMission.map((ligne, i) => (
+      <span class={i === 0 ? 'accueil-slogan__marque' : ''}>
+        {ligne}{i < sloganMission.length - 1 ? '\u00a0' : ''}
+      </span>
+    ))}
   </p>
+  <p class="sr-only">{sloganMission.join(' ')}</p>
 
   <p>
     Témoignages, interviews d'acteurs associatifs, débats avec aidants et professionnels. Une
