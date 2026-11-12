@@ -844,9 +844,11 @@ main > .direct-radio:nth-child(even),
   background: #E60000;
   color: #fff;
   font-weight: 700;
+  font-size: 1.05rem;
   text-decoration: none;
-  padding: 0.55em 1.1em;
+  padding: 0.7em 1.3em;
   border-radius: 6px;
+  margin: 0.25em;
 }
 
 .bouton-youtube:hover,
