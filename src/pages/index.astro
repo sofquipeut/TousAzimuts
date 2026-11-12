@@ -75,9 +75,9 @@ const structuredData = {
   <hr />
 
   <p class="accueil-slogan">
-    Donner la parole à tous<br />
-    pour tous,<br />
-    c'est la mission de<br />
+    <span>Donner la parole à tous&nbsp;</span>
+    <span>pour tous,&nbsp;</span>
+    <span>c'est la mission de&nbsp;</span>
     <strong>Tous Azimuts</strong>
   </p>
 
@@ -99,7 +99,7 @@ const structuredData = {
     regard critique, positif et toujours un brin d'humour, pour comprendre, s'informer et agir.
   </p>
 
-  <p class="accueil-slogan">
+  <p class="accueil-slogan accueil-slogan--mission">
     <strong>Tous Azimuts&nbsp;</strong>
     <span>laisse s'exprimer celles et ceux&nbsp;</span>
     <span>qui vivent le handicap&nbsp;</span>
@@ -186,7 +186,10 @@ const structuredData = {
       font-weight: 700;
       line-height: 1.35;
       text-align: center;
-      /* une ligne blanche au-dessus et au-dessous */
+      margin: 1.75rem 0;
+    }
+    /* Le slogan du milieu a, lui, une ligne blanche au-dessus et au-dessous. */
+    .accueil-slogan--mission {
       margin: 3.5rem 0;
     }
     .accueil-slogan strong,
