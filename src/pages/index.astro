@@ -179,8 +179,10 @@ const structuredData = {
        à l'écran, mais le lecteur d'écran ne rencontre plus de saut de ligne à annoncer.
        `nowrap` garantit qu'une ligne reste une ligne même dans une fenêtre étroite ;
        la taille suit la largeur pour que la plus longue tienne sans déborder. */
+    /* 1,65 rem est la taille voulue ; 5,2 vw ne prend le relais que si la fenêtre
+       descend sous ~500 px, largeur où la plus longue ligne ne tiendrait plus. */
     .accueil-slogan {
-      font-size: 1.65rem;
+      font-size: min(1.65rem, 5.2vw);
       font-weight: 700;
       line-height: 1.35;
       text-align: center;
