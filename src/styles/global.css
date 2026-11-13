@@ -556,8 +556,18 @@ dialog:not([open]) {
   font-size: 0.9rem;
 }
 
-.footer-nav a {
+/* Le pied de page est bleu : ses liens restent blancs, au repos comme au survol.
+   Sans cette règle, un lien sans couleur propre hérite du bleu des liens et tombe
+   à 1,35:1 sur ce fond — illisible. Relevé le 13/11/2026 par l'extension Pour,
+   sur « chroniqueurs réguliers ». */
+.site-footer a {
   color: #fff;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .footer-copyright {
