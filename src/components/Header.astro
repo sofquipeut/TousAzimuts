@@ -92,13 +92,12 @@ const estAccueil = /^\/(index\.html)?$/.test(Astro.url.pathname);
     </a>
     <nav aria-label="Navigation principale" class="site-nav">
       <ul>
-        <li><a href={withBase('/')}>Accueil</a></li>
+        <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
         <li><a href={withBase('/direct/')}>Écouter en direct</a></li>
         <li><a href={withBase('/podcast/')}>Suivre en podcast</a></li>
         {current && (
           <li><a href={withBase(`/${current.slug}/`)}>Saison {current.data.number} (en cours)</a></li>
         )}
-        <li><a href={withBase('/#les-saisons')}>Toutes les émissions</a></li>
         <li><a href={withBase('/pauses-musicales/')}>Pauses musicales</a></li>
         <li><a href={withBase('/carnet-adresses/')}>Carnet d'adresses</a></li>
         {/* Lien à réactiver une fois le calendrier validé :
