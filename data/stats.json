@@ -1,54 +1,96 @@
 {
-  "generatedAt": "2026-11-16T15:47:42.337Z",
-  "total": 152,
-  "last30": 152,
-  "last7": 122,
-  "emissionsTotal": 74,
+  "generatedAt": "2026-11-23T18:10:06.192Z",
+  "total": 220,
+  "last30": 220,
+  "last7": 67,
+  "emissionsTotal": 100,
   "pages": [
     {
       "page_id": "accueil",
-      "total": 19,
-      "last30": 19,
-      "last7": 13
+      "total": 43,
+      "last30": 43,
+      "last7": 24
     },
     {
       "page_id": "remerciements",
       "total": 14,
       "last30": 14,
-      "last7": 10
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-178",
-      "total": 7,
-      "last30": 7,
-      "last7": 7
+      "total": 11,
+      "last30": 11,
+      "last7": 4
     },
     {
       "page_id": "carnet-adresses",
+      "total": 8,
+      "last30": 8,
+      "last7": 2
+    },
+    {
+      "page_id": "podcast",
+      "total": 7,
+      "last30": 7,
+      "last7": 3
+    },
+    {
+      "page_id": "saison-10",
+      "total": 7,
+      "last30": 7,
+      "last7": 3
+    },
+    {
+      "page_id": "recherche",
       "total": 6,
       "last30": 6,
-      "last7": 4
+      "last7": 3
     },
     {
       "page_id": "accessibilite",
       "total": 5,
       "last30": 5,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-24",
+      "total": 5,
+      "last30": 5,
       "last7": 5
     },
     {
-      "page_id": "podcast",
-      "total": 4,
-      "last30": 4,
-      "last7": 4
+      "page_id": "emissions/emission-46",
+      "total": 5,
+      "last30": 5,
+      "last7": 5
     },
     {
-      "page_id": "saison-10",
+      "page_id": "contact",
       "total": 4,
       "last30": 4,
       "last7": 2
     },
     {
       "page_id": "direct",
+      "total": 4,
+      "last30": 4,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-65",
+      "total": 4,
+      "last30": 4,
+      "last7": 1
+    },
+    {
+      "page_id": "merci",
+      "total": 4,
+      "last30": 4,
+      "last7": 2
+    },
+    {
+      "page_id": "emissions/emission-133",
       "total": 3,
       "last30": 3,
       "last7": 3
@@ -57,109 +99,97 @@
       "page_id": "emissions/emission-160",
       "total": 3,
       "last30": 3,
-      "last7": 3
-    },
-    {
-      "page_id": "emissions/emission-65",
-      "total": 3,
-      "last30": 3,
-      "last7": 3
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-80",
       "total": 3,
       "last30": 3,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-96",
       "total": 3,
       "last30": 3,
-      "last7": 3
-    },
-    {
-      "page_id": "recherche",
-      "total": 3,
-      "last30": 3,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "confidentialite",
       "total": 2,
       "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "contact",
-      "total": 2,
-      "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-102",
       "total": 2,
       "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
-      "page_id": "emissions/emission-12",
-      "total": 2,
-      "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "emissions/emission-152",
-      "total": 2,
-      "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "emissions/emission-169",
-      "total": 2,
-      "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "emissions/emission-177",
+      "page_id": "emissions/emission-110",
       "total": 2,
       "last30": 2,
       "last7": 1
     },
     {
+      "page_id": "emissions/emission-12",
+      "total": 2,
+      "last30": 2,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-14",
+      "total": 2,
+      "last30": 2,
+      "last7": 1
+    },
+    {
+      "page_id": "emissions/emission-152",
+      "total": 2,
+      "last30": 2,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-169",
+      "total": 2,
+      "last30": 2,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-177",
+      "total": 2,
+      "last30": 2,
+      "last7": 0
+    },
+    {
       "page_id": "emissions/emission-25",
       "total": 2,
       "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-43",
       "total": 2,
       "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-6",
       "total": 2,
       "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-83",
       "total": 2,
       "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-92",
       "total": 2,
       "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "merci",
-      "total": 2,
-      "last30": 2,
-      "last7": 2
+      "last7": 0
     },
     {
       "page_id": "pauses-musicales",
@@ -177,22 +207,22 @@
       "page_id": "tags/legislation",
       "total": 2,
       "last30": 2,
-      "last7": 2
-    },
-    {
-      "page_id": "emissions/emission-110",
-      "total": 1,
-      "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-111",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-114",
+      "total": 1,
+      "last30": 1,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-118",
       "total": 1,
       "last30": 1,
       "last7": 1
@@ -201,7 +231,7 @@
       "page_id": "emissions/emission-125",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-129",
@@ -213,46 +243,52 @@
       "page_id": "emissions/emission-13",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-131",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-134",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-135",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-138",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-142",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-143",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-144",
+      "total": 1,
+      "last30": 1,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-146",
       "total": 1,
       "last30": 1,
       "last7": 1
@@ -261,16 +297,22 @@
       "page_id": "emissions/emission-147",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-148",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-15",
+      "total": 1,
+      "last30": 1,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-151",
       "total": 1,
       "last30": 1,
       "last7": 1
@@ -288,7 +330,19 @@
       "last7": 0
     },
     {
+      "page_id": "emissions/emission-162",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
       "page_id": "emissions/emission-165",
+      "total": 1,
+      "last30": 1,
+      "last7": 0
+    },
+    {
+      "page_id": "emissions/emission-175",
       "total": 1,
       "last30": 1,
       "last7": 1
@@ -303,7 +357,7 @@
       "page_id": "emissions/emission-20",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-23",
@@ -315,37 +369,37 @@
       "page_id": "emissions/emission-3",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-31",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-55",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-62",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-69",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-77",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-78",
@@ -357,43 +411,43 @@
       "page_id": "emissions/emission-81",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-85",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-86",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-90",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-93",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "emissions/emission-99",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "saison-1",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "saison-2",
@@ -417,31 +471,71 @@
       "page_id": "tags/emploi",
       "total": 1,
       "last30": 1,
+      "last7": 0
+    },
+    {
+      "page_id": "tags/handicap-intellectuel",
+      "total": 1,
+      "last30": 1,
+      "last7": 1
+    },
+    {
+      "page_id": "tags/handicap-invisible",
+      "total": 1,
+      "last30": 1,
       "last7": 1
     },
     {
       "page_id": "tags/handicap-psychique",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "tags/maladie-chronique",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     },
     {
       "page_id": "tags/sport",
       "total": 1,
       "last30": 1,
-      "last7": 1
+      "last7": 0
     }
   ],
   "daily": [
     {
-      "day": "2026-11-16",
+      "day": "2026-11-23",
+      "views": 19
+    },
+    {
+      "day": "2026-11-22",
+      "views": 7
+    },
+    {
+      "day": "2026-11-21",
+      "views": 2
+    },
+    {
+      "day": "2026-11-20",
+      "views": 16
+    },
+    {
+      "day": "2026-11-19",
+      "views": 9
+    },
+    {
+      "day": "2026-11-18",
       "views": 4
+    },
+    {
+      "day": "2026-11-17",
+      "views": 10
+    },
+    {
+      "day": "2026-11-16",
+      "views": 5
     },
     {
       "day": "2026-11-15",
