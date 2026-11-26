@@ -26,6 +26,6 @@ Au programme de cet épisode, 5 rubriques. Dernière de la saison.
 - **Top chrono** : Sofian présente [Swim.me](https://www.swimteaching.com/2023/04/help-blind-swimmers-greek-students.html), casquette à capteurs pour nageurs aveugles développée par des étudiants grecs, qui détecte les murs du bassin.
 - **Agenda** : Carinne signale le stage de création d'audio description du festival d'Angers, et le festival Entre Deux Marches à Cannes (rebaptisé [entre deux... Cannes](https://www.faire-face.fr/2026/05/13/cinema-festival-entre-deux-cannes-handicap/) en 2024), qui récompense les films sur le handicap.
 
-Côté musique, deux pauses : Nirvana - Come As You Are, extrait de l'album *Nevermind* et [Rover - Burning Flag](https://www.youtube.com/watch?v=L6giwiuTmuc), extrait de l'album *Eiskeller*.
+Côté musique, deux pauses : [Nirvana - Come As You Are](https://www.youtube.com/watch?v=vabnZ9-ex7o), extrait de l'album *Nevermind* et [Rover - Burning Flag](https://www.youtube.com/watch?v=L6giwiuTmuc), extrait de l'album *Eiskeller*.
 
 *Émission animée par Julien, Carinne, Corinne, Guénaël et Sofian, avec Jeanne. Technique et montage : Marco. Programmation musicale : Julien. Coordination : Carinne.*
